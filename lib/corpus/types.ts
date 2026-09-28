@@ -73,6 +73,11 @@ export interface CorpusSite {
   commodity: string[];
   waterStressReported: string | null;
   status: string | null;
+  /** Approximate location (data/extracted/_site_locations.json), null if not locatable. */
+  lat?: number | null;
+  lon?: number | null;
+  locationPrecision?: string;
+  place?: string;
 }
 
 /** A documented change of basis in a company's series (method, scope, classification). */

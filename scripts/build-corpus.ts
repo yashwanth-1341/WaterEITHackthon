@@ -56,6 +56,20 @@ for (const name of readdirSync(extractedDir).filter((f) => f.endsWith(".json") &
   for (const o of ex.observations ?? []) corpus.observations.push({ company: ex.company, text: o });
 }
 
+const locPath = resolve(extractedDir, "_site_locations.json");
+if (existsSync(locPath)) {
+  const locs = JSON.parse(readFileSync(locPath, "utf8")) as { company: string; site: string; lat: number | null; lon: number | null; precision: string; place?: string }[];
+  const m = new Map(locs.map((l) => [`${l.company}|${l.site}`, l]));
+  let n = 0;
+  for (const s of corpus.sites) {
+    const l = m.get(`${s.company}|${s.site}`);
+    if (!l) continue;
+    Object.assign(s, { lat: l.lat, lon: l.lon, locationPrecision: l.precision, place: l.place });
+    if (l.lat !== null) n++;
+  }
+  console.log(`locations: ${n} of ${corpus.sites.length} sites placed on the map`);
+}
+
 for (const b of breaks) if (!corpus.companies.includes(b.company)) problems.push(`_breaks.json: unknown company "${b.company}"`);
 
 writeFileSync(resolve(root, "lib/data/corpus.json"), JSON.stringify(corpus));

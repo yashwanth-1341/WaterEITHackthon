@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Newcrest · MineWater Ledger</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="css/app.css?v=4">
+</head>
+<body>
+<div class="register"><div class="wrap">
+  <span><a href="index.html"><b>MineWater Ledger</b></a></span>
+  <span>Company <b>Newcrest Mining</b></span>
+  <span>Period <b>FY20 · 1 Jul 2019 – 30 Jun 2020</b></span>
+  <span>Unit <b>ML</b> (1 ML = 1,000 m³)</span>
+  <span>Source <b>2020 Sustainability Report, GRI data file</b></span>
+</div></div>
+
+<header class="hero slim"><div class="wrap">
+  <div>
+    <div class="eyebrow">Company overview</div>
+    <h1>Newcrest Mining</h1>
+    <p class="lede">Gold and copper. Five operating mines: Lihir (Papua New Guinea), Telfer and Cadia (Australia), Gosowong (Indonesia, sold in March 2020) and Red Chris (Canada, bought in August 2019).</p>
+  </div>
+  <div class="card stack">
+    <div class="row" style="justify-content:space-between"><div class="eyebrow">Data</div><span class="small" id="data-state">No data yet</span></div>
+    <div class="row"><button class="btn primary" id="btn-import">Import report</button><button class="btn" id="btn-enter">Enter values</button></div>
+    <div class="eyebrow" id="show-label" hidden>Show</div>
+    <div class="chips" id="chips" role="group" aria-label="Site" hidden></div>
+  </div>
+</div></header>
+
+<section class="panel" id="empty"><div class="wrap">
+  <div class="empty card">
+    <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 6c9 11.6 16 20 16 28a16 16 0 0 1-32 0c0-8 7-16.4 16-28z" fill="none" stroke="currentColor" stroke-width="3"/><path d="M24 38h16M32 30v16" stroke="currentColor" stroke-width="3"/></svg>
+    <h2>No water data yet</h2>
+    <p>Bring Newcrest's figures in the way a mining company would: import its sustainability data file, or type a site's numbers into the form.</p>
+    <div class="row" style="justify-content:center"><button class="btn primary big" id="empty-import">Import the FY20 report</button><button class="btn big" id="empty-enter">Enter values by hand</button></div>
+  </div>
+</div></section>
+
+<nav class="tabs" aria-label="Sections" id="nav" hidden><div class="wrap" role="tablist">
+  <button class="tab" role="tab" id="t-overview" aria-controls="p-overview" aria-selected="true">Overview</button>
+  <button class="tab" role="tab" id="t-withdrawal" aria-controls="p-withdrawal" aria-selected="false">Water in</button>
+  <button class="tab" role="tab" id="t-outflows" aria-controls="p-outflows" aria-selected="false">Water out</button>
+  <button class="tab" role="tab" id="t-balance" aria-controls="p-balance" aria-selected="false">Balance check</button>
+  <button class="tab" role="tab" id="t-efficiency" aria-controls="p-efficiency" aria-selected="false">Efficiency</button>
+  <button class="tab" role="tab" id="t-outlook" aria-controls="p-outlook" aria-selected="false">Outlook</button>
+  <a href="risk.html" style="margin-left:auto;align-self:center;padding:10px 12px;font:600 14px/1 var(--f-body);color:var(--copper-ink);text-decoration:none;white-space:nowrap">Water-at-Risk →</a>
+</div></nav>
+
+<main id="main" hidden>
+<section class="panel" id="p-overview" role="tabpanel" aria-labelledby="t-overview"><div class="wrap stack">
+  <div class="answers" id="ov-answers"></div>
+  <div class="kpis" id="ov-kpis" hidden></div>
+  <div class="card stack"><h3>What stands out</h3><ul class="findings" id="ov-findings"></ul></div>
+  <div class="card stack"><h3>Sites</h3><div class="tbl-wrap" style="border:0"><table id="ov-table"></table></div></div>
+</div></section>
+
+<section class="panel" id="p-withdrawal" role="tabpanel" aria-labelledby="t-withdrawal" hidden><div class="wrap stack">
+  <div class="panel-head"><div><div class="eyebrow">Water withdrawn · GRI 303-3</div><h2 id="wd-title">Where the water comes from</h2></div>
+    <p>Category 1 and 2 are freshwater ("high quality" in the ICMM guide). Category 3 is low quality, here almost all seawater.</p></div>
+  <div class="card">
+    <div class="controls"><span class="ctl-label">Split by</span><div class="seg" id="wd-seg" role="group" aria-label="Split"><button data-v="quality" aria-pressed="true">Quality</button><button data-v="source" aria-pressed="false">Source</button></div></div>
+    <div class="chart" id="wd-chart"></div><div class="legend" id="wd-legend"></div>
+  </div>
+</div></section>
+
+<section class="panel" id="p-outflows" role="tabpanel" aria-labelledby="t-outflows" hidden><div class="wrap stack">
+  <div class="panel-head"><div><div class="eyebrow">Water discharged and consumed · GRI 303-4, 303-5</div><h2>Where the water goes</h2></div>
+    <p>Discharge goes back to rivers, groundwater or the sea. Consumption is water that does not come back: evaporated, held in tailings or used up.</p></div>
+  <div class="card"><div class="chart" id="of-chart"></div><div class="legend" id="of-legend"></div></div>
+  <p class="note" id="of-note"></p>
+</div></section>
+
+<section class="panel" id="p-balance" role="tabpanel" aria-labelledby="t-balance" hidden><div class="wrap stack">
+  <div class="panel-head"><div><div class="eyebrow">ICMM 2021 · site water balance</div><h2>Does water in equal water out?</h2></div>
+    <p>Withdrawal − discharge − change in storage should equal consumption. We allow ±5%. Pick a site above or below.</p></div>
+  <div class="card stack"><div id="bl-status"></div><div class="chart" id="bl-chart"></div><div class="eq" id="bl-eq"></div></div>
+  <div class="card stack"><h3>All sites</h3><div class="tbl-wrap" style="border:0"><table id="bl-table"></table></div></div>
+</div></section>
+
+<section class="panel" id="p-efficiency" role="tabpanel" aria-labelledby="t-efficiency" hidden><div class="wrap stack">
+  <div class="panel-head"><div><div class="eyebrow">Freshwater per unit of output</div><h2>Same gold, very different water</h2></div>
+    <p>Freshwater withdrawal divided by ore milled, gold-equivalent ounces or revenue, per site. Newcrest reports these ratios for energy but not for water.</p></div>
+  <div class="card">
+    <div class="controls"><span class="ctl-label">Per</span><div class="seg" id="ef-seg" role="group" aria-label="Denominator"><button data-v="t" aria-pressed="true">tonne of ore</button><button data-v="oz" aria-pressed="false">ounce of gold</button><button data-v="rev" aria-pressed="false">US$ million revenue</button><button data-v="rr" aria-pressed="false">recycled share</button></div></div>
+    <div class="chart" id="ef-chart"></div>
+  </div>
+</div></section>
+
+<section class="panel" id="p-outlook" role="tabpanel" aria-labelledby="t-outlook" hidden><div class="wrap stack">
+  <div class="panel-head"><div><div class="eyebrow">Trend, forecast and the sustainable option</div><h2 id="ol-title">–</h2></div>
+    <p>Past years: the Lutter et al. (2025) copper-mine model where the site is covered. From FY20: a projection to 2030, with and without more recycling.</p></div>
+  <div class="row"><div class="slider"><label for="ol-rr">Recycle more of the water used <output id="o-rr"></output></label><input type="range" id="ol-rr" min="0" max="30" value="10"></div></div>
+  <div class="card stack">
+    <div class="chart" id="ol-chart"></div>
+    <div class="legend"><span><i class="sw" style="background:var(--muted)"></i>Model estimate (Lutter et al.)</span><span><i class="sw" style="background:var(--ink)"></i>Reported FY20</span><span><i class="sw" style="background:var(--q2)"></i>Forecast, business as usual</span><span><i class="sw" style="background:var(--good)"></i>Forecast, sustainable option</span></div>
+  </div>
+  <div class="kpis k3" id="ol-kpis"></div>
+  <div class="card stack"><h3>Outcome</h3><ul class="findings" id="ol-outcome"></ul></div>
+</div></section>
+</main>
+<footer><div class="wrap">Data: Newcrest Mining 2020 Sustainability Report, GRI Content Index and supplementary data (GRI 200 and 300 sheets). Model: Lutter, Maus, Luckeneder &amp; Tost (2025). Forecasts and the sustainable option are projections.</div></footer>
+<div id="tip" role="status" aria-live="polite"></div>
+<div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="m-title"><div class="modal-box">
+  <div class="row" style="justify-content:space-between"><h2 id="m-title">Add water data</h2><button class="btn" id="m-close" aria-label="Close">✕</button></div>
+  <div class="seg" id="m-seg" role="group" aria-label="Method"><button data-v="import" aria-pressed="true">Import a report</button><button data-v="enter" aria-pressed="false">Enter values</button></div>
+  <div id="m-import" class="stack">
+    <div class="drop" id="m-drop" tabindex="0">Drop the company's sustainability data file here (.xlsx, .csv)<br><span class="small">or</span> <button class="btn" id="m-sample">Use Newcrest's FY20 GRI data file</button></div>
+    <ol class="progress" id="m-progress"></ol>
+    <p class="small">Demo: the import runs on Newcrest's FY20 data file; any file dropped here shows the same result.</p>
+  </div>
+  <div id="m-enter" class="stack" hidden>
+    <div class="form-grid">
+      <label>Site<select id="f-site"></select></label>
+      <label>New site name (optional)<input type="text" id="f-new" placeholder="e.g. Wafi-Golpu"></label>
+    </div>
+    <div class="eyebrow">Water in (ML)</div>
+    <div class="form-grid">
+      <label>Freshwater: surface water<input type="number" id="f-sw" min="0" step="any"></label>
+      <label>Freshwater: groundwater<input type="number" id="f-gw" min="0" step="any"></label>
+      <label>Third-party water (e.g. town supply)<input type="number" id="f-tp" min="0" step="any"></label>
+      <label>Seawater<input type="number" id="f-sea" min="0" step="any"></label>
+    </div>
+    <div class="eyebrow">Water out and reuse (ML)</div>
+    <div class="form-grid">
+      <label>Discharge<input type="number" id="f-d" min="0" step="any"></label>
+      <label>Consumption (evaporation, tailings)<input type="number" id="f-c" min="0" step="any"></label>
+      <label>Change in storage (+ stored, − drawn)<input type="number" id="f-ds" step="any"></label>
+      <label>Recycled or reused<input type="number" id="f-r" min="0" step="any"></label>
+    </div>
+    <div class="entry-check" id="f-check"></div>
+    <div class="row"><button class="btn primary" id="f-save">Save to dashboard</button><button class="btn" id="f-example">Fill example values</button></div><p class="small">Example values are illustrative, sized to the model estimate for Red Chris (4,914 ML); Newcrest did not report them.</p><div></div>
+  </div>
+</div></div>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<script src="data/newcrest.js?v=4"></script>
+<script src="data/lutter.js?v=4"></script>
+<script src="js/dashboard.js?v=4"></script>
+</body>
+</html>

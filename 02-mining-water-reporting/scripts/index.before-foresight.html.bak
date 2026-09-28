@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MineWater Passport</title>
+<link rel="stylesheet" href="vendor/leaflet.css">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><rect x="1" y="1" width="32" height="32" rx="8" fill="#1c5cab"/><path d="M17 6c4 5.2 7 9 7 13a7 7 0 0 1-14 0c0-4 3-7.8 7-13z" fill="#fff"/><path d="M12.5 21h9M14 24h6" stroke="#1c5cab" stroke-width="1.8" stroke-linecap="round"/></svg>
+    <div><h1>MineWater Passport</h1><div class="sub">Open site-level water reporting for mines &middot; standard + tool + extraction</div></div>
+  </div>
+  <div class="spacer"></div>
+  <span class="ver">Draft standard v0.1</span>
+  <span class="synth" title="All sites, operators and figures in this prototype are fictional">Illustrative synthetic data &middot; fictional sites</span>
+</header>
+<nav class="tabs" id="tabs">
+  <button data-view="explorer" class="active"><span class="n">1</span>Explorer</button>
+  <button data-view="hotspots"><span class="n">2</span>Hotspots</button>
+  <button data-view="supply"><span class="n">3</span>Supply-chain lens</button>
+  <button data-view="card"><span class="n">4</span>Report card</button>
+  <button data-view="entry"><span class="n">5</span>Enter &amp; validate</button>
+  <button data-view="extract"><span class="n">6</span>Report extractor</button>
+  <button data-view="framework"><span class="n">7</span>The standard</button>
+</nav>
+<main>
+  <!-- 1 EXPLORER -->
+  <section class="view active" id="v-explorer">
+    <div class="vhead"><div><h2>Who uses how much water &ndash; and where it hurts</h2>
+      <p>17 fictional sites reported in the MineWater Passport format. Circle colour = basin baseline water stress; circle size = water volume. Toggle withdrawal vs consumption to see why the distinction matters.</p></div>
+      <div class="seg" id="sizeSeg"><button data-k="C" class="on">Size: consumption</button><button data-k="W">Size: withdrawal</button></div>
+    </div>
+    <div class="tiles" id="tiles"></div>
+    <div class="grid2">
+      <div class="card"><div id="map"></div><div class="legend" id="mapLegend"></div></div>
+      <div class="card" id="siteDetail"></div>
+    </div>
+    <div class="card" style="margin-top:16px">
+      <div class="row between wrap" style="margin-bottom:8px"><h3>Comparison table &ndash; normalised KPIs</h3><div class="chipf" id="comFilter"></div></div>
+      <div class="tscroll"><table class="tbl" id="cmpTable"></table></div>
+      <p class="tiny muted">m³/t metal uses economic allocation between co-products; lithium on a lithium-carbonate-equivalent (LCE) basis. Stress categories are illustrative placeholders; the production tool looks up WRI Aqueduct 4.0 from coordinates.</p>
+    </div>
+  </section>
+
+  <!-- 2 HOTSPOTS -->
+  <section class="view" id="v-hotspots">
+    <div class="vhead"><div><h2>Hotspots: high consumption in high-stress basins</h2>
+      <p>Where should regulators, investors and buyers look first? Each bubble is a site: x = basin water stress, y = water consumed (log scale). Top-right quadrant = hotspot. Ranking uses stress-weighted consumption (consumption &times; stress weight; illustrative weights).</p></div></div>
+    <div class="grid2">
+      <div class="card"><div class="chartbox" id="hotBox"><canvas id="hotChart"></canvas></div>
+        <div class="legend"><span><span class="sw" style="background:#c23434"></span>Hotspot (stress &ge; high and consumption &ge; 3,000 ML)</span><span><span class="sw" style="background:#2a78d6"></span>Other sites</span><span class="muted">Bubble area &prop; consumption per t ore</span></div></div>
+      <div class="card rank"><h3>Ranking &ndash; stress-weighted consumption</h3><ol id="rankList"></ol></div>
+    </div>
+  </section>
+
+  <!-- 3 SUPPLY CHAIN -->
+  <section class="view" id="v-supply">
+    <div class="vhead"><div><h2>Supply-chain lens for due-diligence teams</h2>
+      <p>Pick a battery / transition metal and compare the water footprint per tonne of metal across candidate supplier sites &ndash; split by water quality, coloured by basin stress &ndash; then test a sourcing mix.</p></div>
+      <div class="chipf" id="supCom"></div></div>
+    <div class="grid2e">
+      <div class="card"><h3>Consumption per t metal (allocated) &ndash; coloured by basin stress</h3><div class="chartbox sm"><canvas id="supC"></canvas></div><div class="legend" id="supLegend"></div></div>
+      <div class="card"><h3>Withdrawal per t metal by water quality (WAF category)</h3><div class="chartbox sm"><canvas id="supW"></canvas></div>
+        <p class="tiny muted">Brine sites withdraw large volumes of Cat 3 (hypersaline) water but little freshwater &ndash; a single &ldquo;litres per tonne&rdquo; figure hides this. MWP reports both.</p></div>
+    </div>
+    <div class="grid2e" style="margin-top:16px">
+      <div class="card"><h3>Sourcing-mix simulator</h3><p class="small muted">Set the share of annual offtake from each site. Results update live.</p><div id="mix"></div><div class="result" id="mixRes"></div></div>
+      <div class="card"><div class="row between"><h3>Supplier screening</h3><select id="supSite" style="width:auto"></select></div><ul class="flags" id="supFlags"></ul>
+        <div class="reg" id="supReg"></div></div>
+    </div>
+  </section>
+
+  <!-- 4 REPORT CARD -->
+  <section class="view" id="v-card">
+    <div class="toolbar noprint"><strong>Site:</strong><select id="cardSite" style="width:auto"></select><button class="btn ghost" id="printBtn">Print / save as PDF</button></div>
+    <div class="rc" id="rc"></div>
+  </section>
+
+  <!-- 5 ENTRY -->
+  <section class="view" id="v-entry">
+    <div class="vhead"><div><h2>Enter &amp; validate a site passport</h2>
+      <p>The form is generated from <code>mine-water-passport.schema.json</code>. Validation, mass balance (inputs &minus; outputs &minus; &Delta;storage &asymp; 0) and the transparency score update as you type. Tier 1 = 12 must-report data points; switch to Tier 2 for the full balance.</p></div></div>
+    <div class="toolbar">
+      <button class="btn" id="fBlank">New blank (Tier 1)</button>
+      <select id="fExample" style="width:auto"></select>
+      <button class="btn ghost" id="fDownload">Download JSON</button>
+      <label class="btn ghost" style="display:inline-block">Import JSON<input type="file" id="fImport" accept=".json,application/json" hidden></label>
+      <span class="small muted" id="fMsg"></span>
+    </div>
+    <div class="formwrap"><div id="formRoot"></div><aside class="side" id="formSide"></aside></div>
+  </section>
+
+  <!-- 6 EXTRACTOR -->
+  <section class="view" id="v-extract">
+    <div class="vhead"><div><h2>Report extractor &ndash; backfill passports from existing reports</h2>
+      <p>Paste a paragraph from a sustainability report. A deterministic extractor pulls water figures, normalises units to megalitres, detects the year, and flags confidence. This is the seed (and the verifier) of an LLM-assisted pipeline that backfills thousands of sites from public reports.</p></div></div>
+    <div class="grid2e">
+      <div class="card"><h3>Input text</h3><div class="samples" id="samples"></div>
+        <textarea id="exText" placeholder="Paste report text here..."></textarea>
+        <div class="row" style="margin-top:8px"><button class="btn" id="exRun">Extract</button><button class="btn ghost" id="exSend">Open in passport form &rarr;</button><span class="tiny muted">Sample paragraphs are fictional.</span></div>
+        <div class="pipeline"><div class="now"><b>1 &middot; Heuristic parse</b>units, years, keywords (this demo)</div><div><b>2 &middot; LLM extraction</b>schema-constrained JSON, page cites</div><div><b>3 &middot; Cross-check</b>regex vs LLM, mass balance, units</div><div><b>4 &middot; Human review</b>low-confidence queue</div><div><b>5 &middot; Publish</b>passport + provenance</div></div>
+      </div>
+      <div class="card"><h3>Detected figures</h3><div class="hl" id="exHl"><span class="muted">Run the extractor to see highlighted evidence.</span></div>
+        <div class="tscroll" style="margin-top:10px"><table class="tbl" id="exTable"></table></div><div id="exNotes" class="small" style="margin-top:8px"></div></div>
+    </div>
+  </section>
+
+  <!-- 7 FRAMEWORK -->
+  <section class="view" id="v-framework">
+    <div class="vhead"><div><h2>The MineWater Passport standard (draft v0.1)</h2>
+      <p>A minimum site-level reporting format built on ICMM (2021) and the MCA Water Accounting Framework, with every field mapped to GRI 303 / GRI 14, ESRS E3, CDP and IRMA. The crosswalk below is read live from the schema&rsquo;s machine-readable annotations.</p></div></div>
+    <div class="principles">
+      <div class="card"><h3>Comparability</h3><p>Site level, not company level. Normalised intensities (m³/t ore, m³/t metal or LCE with explicit allocation). Consumption and withdrawal always reported separately, with WAF water-quality categories.</p></div>
+      <div class="card"><h3>Minimal burden</h3><p>Tier 1 = 12 data points any site can report in a day. Tier 2 = full WAF-style balance. Basin context is derived from coordinates &ndash; not asked of the reporter.</p></div>
+      <div class="card"><h3>Decision relevance</h3><p>Every figure carries a data-quality flag. Basin stress, competing users and monthly profiles turn totals into impact signals for buyers, basin authorities and researchers.</p></div>
+      <div class="card"><h3>Open data</h3><p>Open JSON Schema, open validator, CC-BY dataset. One passport satisfies GRI, ESRS, CDP and IRMA requests &ndash; &ldquo;report once, reuse everywhere&rdquo;.</p></div>
+    </div>
+    <div class="grid2">
+      <div class="card"><h3>Field crosswalk (from schema <code>x-mwp</code> annotations)</h3><div class="tscroll"><table class="tbl fwtable" id="fwTable"></table></div></div>
+      <div class="card"><h3>Tier 1 &ndash; the 12 must-report data points</h3><ol id="t1List" style="padding-left:20px;margin:6px 0"></ol>
+        <h3 style="margin-top:14px">Quality categories (MCA WAF)</h3>
+        <table class="kv"><tr><td><span class="sq" style="display:inline-block;width:10px;height:10px;background:var(--q1);border-radius:2px"></span> Cat 1</td><td style="font-weight:400;text-align:left;padding-left:10px">High quality, minimal treatment (ICMM &ldquo;high&rdquo;)</td></tr>
+        <tr><td><span style="display:inline-block;width:10px;height:10px;background:var(--q2);border-radius:2px"></span> Cat 2</td><td style="font-weight:400;text-align:left;padding-left:10px">Medium quality, moderate treatment (ICMM &ldquo;low&rdquo;)</td></tr>
+        <tr><td><span style="display:inline-block;width:10px;height:10px;background:var(--q3);border-radius:2px"></span> Cat 3</td><td style="font-weight:400;text-align:left;padding-left:10px">Low quality: high TDS, metals, extreme pH (ICMM &ldquo;low&rdquo;)</td></tr></table>
+        <p class="tiny muted">ICMM high/low split vs WAF Cat 1/2/3 is our crosswalk convention; GRI 303 &ldquo;freshwater&rdquo; (&le;1,000 mg/L TDS) is a separate flag per flow.</p>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>MineWater Passport &middot; EIT Water Hackathon Munich 2026 prototype &middot; <b>All site data are illustrative synthetic data (fictional sites, operators and figures).</b> Framework references: ICMM (2021), MCA WAF v2.0, GRI 303 / GRI 14, ESRS E3, CDP, IRMA 4.2. Basemap: Natural Earth (public domain). Runs fully offline.</footer>
+
+<script src="vendor/leaflet.js"></script>
+<script src="vendor/chart.umd.min.js"></script>
+<script src="vendor/world-50m.geo.js"></script>
+<script src="data/schema.js"></script>
+<script src="data/sites.js"></script>
+<script src="js/validator.js"></script>
+<script src="js/metrics.js"></script>
+<script src="js/form.js"></script>
+<script src="js/extractor.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,3001 @@
+[
+  {
+    "passport_version": "0.1",
+    "synthetic": true,
+    "tier": "tier2",
+    "site": {
+      "site_id": "MWP-CL-0001",
+      "name": "Cerro Andino Copper",
+      "operator": "Andino Minerals S.A. (fictional)",
+      "country": "CL",
+      "latitude": -23.62,
+      "longitude": -68.94,
+      "primary_commodity": "Cu",
+      "mine_type": "open_pit",
+      "processing_route": [
+        "flotation"
+      ],
+      "lifecycle_stage": "operating",
+      "basin": {
+        "name": "Atacama coastal-range basin (illustrative)",
+        "bws_score": 4.8,
+        "bws_category": "extremely_high",
+        "bws_source": "Illustrative placeholder - production system looks up WRI Aqueduct 4.0 from coordinates"
+      }
+    },
+    "period": {
+      "year": 2025,
+      "start_date": "2025-01-01",
+      "end_date": "2025-12-31"
+    },
+    "production": {
+      "products": [
+        {
+          "commodity": "Cu",
+          "product_form": "Cu concentrate",
+          "metal_content_t": 245500,
+          "basis": "contained_metal",
+          "allocation_share": 1.0,
+          "product_t": 880000
+        }
+      ],
+      "ore_processed_t": 45000000
+    },
+    "water": {
+      "withdrawals": [
+        {
+          "source": "seawater",
+          "volume_ml": 12150.0,
+          "dq": "measured",
+          "subtype": "desalinated_seawater",
+          "quality": "cat3",
+          "freshwater_gri": false
+        },
+        {
+          "source": "groundwater",
+          "volume_ml": 10800.0,
+          "dq": "measured",
+          "subtype": "bore_field",
+          "quality": "cat1",
+          "freshwater_gri": true
+        },
+        {
+          "source": "groundwater",
+          "volume_ml": 2160.0,
+          "dq": "measured",
+          "subtype": "mine_dewatering",
+          "quality": "cat2",
+          "freshwater_gri": false
+        },
+        {
+          "source": "groundwater",
+          "volume_ml": 1755.0,
+          "dq": "calculated",
+          "subtype": "ore_entrainment",
+          "quality": "cat2",
+          "freshwater_gri": false
+        },
+        {
+          "source": "surface_water",
+          "volume_ml": 135.0,
+          "dq": "calculated",
+          "subtype": "precipitation_runoff",
+          "quality": "cat1",
+          "freshwater_gri": true
+        }
+      ],
+      "discharges": [
+        {
+          "destination": "third_party",
+          "volume_ml": 420,
+          "dq": "measured",
+          "treated": true,
+          "quality": "cat2"
+        }
+      ],
+      "consumption": {
+        "total_ml": 26240.5,
+        "total_dq": "calculated",
+        "evaporation_ml": 14432.3,
+        "evaporation_dq": "calculated",
+        "entrainment_ml": 10496.2,
+        "entrainment_dq": "calculated",
+        "other_ml": 1312.0,
+        "other_dq": "estimated"
+      },
+      "reuse": {
+        "reused_recycled_ml": 40014.0,
+        "dq": "measured",
+        "task_water_ml": 51300.0,
+        "tsf_return_ml": 22007.7
+      },
+      "storage": {
+        "opening_ml": 5482.0,
+        "closing_ml": 5862.0,
+        "dq": "measured"
+      },
+      "monthly": [
+        {
+          "month": 1,
+          "withdrawal_ml": 2520.0,
+          "consumption_ml": 2449.1,
+          "discharge_ml": 30.8
+        },
+        {
+          "month": 2,
+          "withdrawal_ml": 2483.8,
+          "consumption_ml": 2414.0,
+          "discharge_ml": 31.4
+        },
+        {
+          "month": 3,
+          "withdrawal_ml": 2385.0,
+          "consumption_ml": 2317.9,
+          "discharge_ml": 32.9
+        },
+        {
+          "month": 4,
+          "withdrawal_ml": 2250.0,
+          "consumption_ml": 2186.7,
+          "discharge_ml": 35.0
+        },
+        {
+          "month": 5,
+          "withdrawal_ml": 2115.0,
+          "consumption_ml": 2055.5,
+          "discharge_ml": 37.1
+        },
+        {
+          "month": 6,
+          "withdrawal_ml": 2016.2,
+          "consumption_ml": 1959.5,
+          "discharge_ml": 38.6
+        },
+        {
+          "month": 7,
+          "withdrawal_ml": 1980.0,
+          "consumption_ml": 1924.3,
+          "discharge_ml": 39.2
+        },
+        {
+          "month": 8,
+          "withdrawal_ml": 2016.2,
+          "consumption_ml": 1959.5,
+          "discharge_ml": 38.6
+        },
+        {
+          "month": 9,
+          "withdrawal_ml": 2115.0,
+          "consumption_ml": 2055.5,
+          "discharge_ml": 37.1
+        },
+        {
+          "month": 10,
+          "withdrawal_ml": 2250.0,
+          "consumption_ml": 2186.7,
+          "discharge_ml": 35.0
+        },
+        {
+          "month": 11,
+          "withdrawal_ml": 2385.0,
+          "consumption_ml": 2317.9,
+          "discharge_ml": 32.9
+        },
+        {
+          "month": 12,
+          "withdrawal_ml": 2483.8,
+          "consumption_ml": 2414.0,
+          "discharge_ml": 31.4
+        }
+      ]
+    },
+    "assurance": {
+      "level": "limited",
+      "methodology": "ICMM_2021",
+      "provider": "Example Assurance Partner (fictional)"
+    },
+    "sources": [
+      {
+        "title": "Synthetic demo record (generate_synthetic.py)",
+        "extraction": "reported_directly"
+      }
+    ],
+    "context": {
+      "competing_users": [
+        "agriculture",
+        "indigenous_communities",
+        "ecosystems_wetlands",
+        "other_mining"
+      ],
+      "seasonality": "moderate",
+      "water_grievances": 2,
+      "water_incidents": 0
+    }
+  },
+  {
+    "passport_version": "0.1",
+    "synthetic": true,
+    "tier": "tier2",
+    "site": {
+      "site_id": "MWP-CL-0002",
+      "name": "Pampa Roja Copper",
+      "operator": "Pampa Roja SpA (fictional)",
+      "country": "CL",
+      "latitude": -22.41,
+      "longitude": -68.72,
+      "primary_commodity": "Cu",
+      "mine_type": "open_pit",
+      "processing_route": [
+        "heap_leach_sx_ew"
+      ],
+      "lifecycle_stage": "operating",
+      "basin": {
+        "name": "Loa river basin (illustrative)",
+        "bws_score": 4.9,
+        "bws_category": "extremely_high",
+        "bws_source": "Illustrative placeholder - production system looks up WRI Aqueduct 4.0 from coordinates"
+      }
+    },
+    "period": {
+      "year": 2025,
+      "start_date": "2025-01-01",
+      "end_date": "2025-12-31"
+    },
+    "production": {
+      "products": [
+        {
+          "commodity": "Cu",
+          "product_form": "Cu cathode",
+          "metal_content_t": 78000,
+          "basis": "contained_metal",
+          "allocation_share": 1.0,
+          "product_t": 78000
+        }
+      ],
+      "ore_processed_t": 22000000
+    },
+    "water": {
+      "withdrawals": [
+        {
+          "source": "groundwater",
+          "volume_ml": 2805.0,
+          "dq": "measured",
+          "subtype": "bore_field",
+          "quality": "cat1",
+          "freshwater_gri": true
+        },
+        {
+          "source": "groundwater",
+          "volume_ml": 495.0,
+          "dq": "estimated",
+          "subtype": "mine_dewatering",
+          "quality": "cat2",
+          "freshwater_gri": false
+        }
+      ],
+      "discharges": [],
+      "consumption": {
+        "total_ml": 3128.7,
+        "total_dq": "calculated",
+        "evaporation_ml": 2252.7,
+        "evaporation_dq": "calculated",
+        "entrainment_ml": 782.2,
+        "entrainment_dq": "calculated",
+        "other_ml": 93.8,
+        "other_dq": "estimated"
+      },
+      "reuse": {
+        "reused_recycled_ml": 4752.0,
+        "dq": "calculated",
+        "task_water_ml": 7920.0,
+        "tsf_return_ml": 0.0
+      },
+      "storage": {
+        "opening_ml": 4732.0,
+        "closing_ml": 4922.0,
+        "dq": "calculated"
+      },
+      "monthly": [
+        {
+          "month": 1,
+          "withdrawal_ml": 330.0,
+          "consumption_ml": 312.9,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 2,
+          "withdrawal_ml": 322.6,
+          "consumption_ml": 305.9,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 3,
+          "withdrawal_ml": 302.5,
+          "consumption_ml": 286.8,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 4,
+          "withdrawal_ml": 275.0,
+          "consumption_ml": 260.7,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 5,
+          "withdrawal_ml": 247.5,
+          "consumption_ml": 234.7,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 6,
+          "withdrawal_ml": 227.4,
+          "consumption_ml": 215.6,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 7,
+          "withdrawal_ml": 220.0,
+          "consumption_ml": 208.6,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 8,
+          "withdrawal_ml": 227.4,
+          "consumption_ml": 215.6,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 9,
+          "withdrawal_ml": 247.5,
+          "consumption_ml": 234.7,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 10,
+          "withdrawal_ml": 275.0,
+          "consumption_ml": 260.7,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 11,
+          "withdrawal_ml": 302.5,
+          "consumption_ml": 286.8,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 12,
+          "withdrawal_ml": 322.6,
+          "consumption_ml": 305.9,
+          "discharge_ml": 0.0
+        }
+      ]
+    },
+    "assurance": {
+      "level": "limited",
+      "methodology": "ICMM_2021",
+      "provider": "Example Assurance Partner (fictional)"
+    },
+    "sources": [
+      {
+        "title": "Synthetic demo record (generate_synthetic.py)",
+        "extraction": "reported_directly"
+      }
+    ],
+    "context": {
+      "competing_users": [
+        "agriculture",
+        "indigenous_communities",
+        "ecosystems_wetlands"
+      ],
+      "seasonality": "moderate",
+      "water_grievances": 4,
+      "water_incidents": 1
+    }
+  },
+  {
+    "passport_version": "0.1",
+    "synthetic": true,
+    "tier": "tier2",
+    "site": {
+      "site_id": "MWP-CL-0003",
+      "name": "Salar Ventisca Lithium",
+      "operator": "Ventisca Litio Ltda. (fictional)",
+      "country": "CL",
+      "latitude": -23.71,
+      "longitude": -68.31,
+      "primary_commodity": "Li",
+      "mine_type": "brine",
+      "processing_route": [
+        "brine_evaporation"
+      ],
+      "lifecycle_stage": "operating",
+      "basin": {
+        "name": "Endorheic salar basin (illustrative)",
+        "bws_score": 4.5,
+        "bws_category": "arid_low_water_use",
+        "bws_source": "Illustrative placeholder - production system looks up WRI Aqueduct 4.0 from coordinates"
+      }
+    },
+    "period": {
+      "year": 2025,
+      "start_date": "2025-01-01",
+      "end_date": "2025-12-31"
+    },
+    "production": {
+      "products": [
+        {
+          "commodity": "Li",
+          "product_form": "Li2CO3",
+          "metal_content_t": 45000,
+          "basis": "LCE",
+          "allocation_share": 1.0,
+          "product_t": 45000
+        }
+      ],
+      "brine_processed_m3": 38000000
+    },
+    "water": {
+      "withdrawals": [
+        {
+          "source": "groundwater",
+          "volume_ml": 38000.0,
+          "dq": "measured",
+          "subtype": "brine",
+          "quality": "cat3",
+          "freshwater_gri": false
+        },
+        {
+          "source": "groundwater",
+          "volume_ml": 750.0,
+          "dq": "estimated",
+          "subtype": "bore_field",
+          "quality": "cat1",
+          "freshwater_gri": true
+        }
+      ],
+      "discharges": [],
+      "consumption": {
+        "total_ml": 37595.9,
+        "total_dq": "calculated",
+        "evaporation_ml": 35716.1,
+        "evaporation_dq": "calculated",
+        "entrainment_ml": 1503.8,
+        "entrainment_dq": "calculated",
+        "other_ml": 376.0,
+        "other_dq": "estimated"
+      },
+      "reuse": {
+        "reused_recycled_ml": 2034.4,
+        "dq": "calculated",
+        "task_water_ml": 40687.5,
+        "tsf_return_ml": 0.0
+      },
+      "storage": {
+        "opening_ml": 5726.0,
+        "closing_ml": 6336.0,
+        "dq": "calculated"
+      },
+      "monthly": [
+        {
+          "month": 1,
+          "withdrawal_ml": 4359.4,
+          "consumption_ml": 4229.5,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 2,
+          "withdrawal_ml": 4208.0,
+          "consumption_ml": 4082.6,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 3,
+          "withdrawal_ml": 3794.3,
+          "consumption_ml": 3681.3,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 4,
+          "withdrawal_ml": 3229.2,
+          "consumption_ml": 3133.0,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 5,
+          "withdrawal_ml": 2664.1,
+          "consumption_ml": 2584.7,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 6,
+          "withdrawal_ml": 2250.4,
+          "consumption_ml": 2183.4,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 7,
+          "withdrawal_ml": 2099.0,
+          "consumption_ml": 2036.4,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 8,
+          "withdrawal_ml": 2250.4,
+          "consumption_ml": 2183.4,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 9,
+          "withdrawal_ml": 2664.1,
+          "consumption_ml": 2584.7,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 10,
+          "withdrawal_ml": 3229.2,
+          "consumption_ml": 3133.0,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 11,
+          "withdrawal_ml": 3794.3,
+          "consumption_ml": 3681.3,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 12,
+          "withdrawal_ml": 4208.0,
+          "consumption_ml": 4082.6,
+          "discharge_ml": 0.0
+        }
+      ]
+    },
+    "assurance": {
+      "level": "limited",
+      "methodology": "MCA_WAF_2_0",
+      "provider": "Example Assurance Partner (fictional)"
+    },
+    "sources": [
+      {
+        "title": "Synthetic demo record (generate_synthetic.py)",
+        "extraction": "reported_directly"
+      }
+    ],
+    "context": {
+      "competing_users": [
+        "indigenous_communities",
+        "ecosystems_wetlands",
+        "agriculture"
+      ],
+      "seasonality": "moderate",
+      "water_grievances": 5,
+      "water_incidents": 0
+    }
+  },
+  {
+    "passport_version": "0.1",
+    "synthetic": true,
+    "tier": "tier2",
+    "site": {
+      "site_id": "MWP-AR-0004",
+      "name": "Puna Alta DLE Lithium",
+      "operator": "Puna Alta Litio S.A. (fictional)",
+      "country": "AR",
+      "latitude": -24.18,
+      "longitude": -66.72,
+      "primary_commodity": "Li",
+      "mine_type": "brine",
+      "processing_route": [
+        "direct_lithium_extraction"
+      ],
+      "lifecycle_stage": "operating",
+      "basin": {
+        "name": "Puna endorheic basin (illustrative)",
+        "bws_score": 4.5,
+        "bws_category": "arid_low_water_use",
+        "bws_source": "Illustrative placeholder - production system looks up WRI Aqueduct 4.0 from coordinates"
+      }
+    },
+    "period": {
+      "year": 2025,
+      "start_date": "2025-01-01",
+      "end_date": "2025-12-31"
+    },
+    "production": {
+      "products": [
+        {
+          "commodity": "Li",
+          "product_form": "Li2CO3",
+          "metal_content_t": 25000,
+          "basis": "LCE",
+          "allocation_share": 1.0,
+          "product_t": 25000
+        }
+      ],
+      "brine_processed_m3": 25000000
+    },
+    "water": {
+      "withdrawals": [
+        {
+          "source": "groundwater",
+          "volume_ml": 25000.0,
+          "dq": "measured",
+          "subtype": "brine",
+          "quality": "cat3",
+          "freshwater_gri": false
+        },
+        {
+          "source": "groundwater",
+          "volume_ml": 420.0,
+          "dq": "measured",
+          "subtype": "bore_field",
+          "quality": "cat1",
+          "freshwater_gri": true
+        }
+      ],
+      "discharges": [
+        {
+          "destination": "groundwater",
+          "volume_ml": 22500,
+          "dq": "measured",
+          "treated": false,
+          "quality": "cat3"
+        }
+      ],
+      "consumption": {
+        "total_ml": 2878.2,
+        "total_dq": "calculated",
+        "evaporation_ml": 1583.0,
+        "evaporation_dq": "calculated",
+        "entrainment_ml": 1007.4,
+        "entrainment_dq": "calculated",
+        "other_ml": 287.8,
+        "other_dq": "estimated"
+      },
+      "reuse": {
+        "reused_recycled_ml": 16014.6,
+        "dq": "measured",
+        "task_water_ml": 35588.0,
+        "tsf_return_ml": 0.0
+      },
+      "storage": {
+        "opening_ml": 5809.0,
+        "closing_ml": 5909.0,
+        "dq": "measured"
+      },
+      "monthly": [
+        {
+          "month": 1,
+          "withdrawal_ml": 2330.2,
+          "consumption_ml": 263.8,
+          "discharge_ml": 1687.5
+        },
+        {
+          "month": 2,
+          "withdrawal_ml": 2301.8,
+          "consumption_ml": 260.6,
+          "discharge_ml": 1712.6
+        },
+        {
+          "month": 3,
+          "withdrawal_ml": 2224.2,
+          "consumption_ml": 251.8,
+          "discharge_ml": 1781.2
+        },
+        {
+          "month": 4,
+          "withdrawal_ml": 2118.3,
+          "consumption_ml": 239.9,
+          "discharge_ml": 1875.0
+        },
+        {
+          "month": 5,
+          "withdrawal_ml": 2012.4,
+          "consumption_ml": 227.9,
+          "discharge_ml": 1968.7
+        },
+        {
+          "month": 6,
+          "withdrawal_ml": 1934.9,
+          "consumption_ml": 219.1,
+          "discharge_ml": 2037.4
+        },
+        {
+          "month": 7,
+          "withdrawal_ml": 1906.5,
+          "consumption_ml": 215.9,
+          "discharge_ml": 2062.5
+        },
+        {
+          "month": 8,
+          "withdrawal_ml": 1934.9,
+          "consumption_ml": 219.1,
+          "discharge_ml": 2037.4
+        },
+        {
+          "month": 9,
+          "withdrawal_ml": 2012.4,
+          "consumption_ml": 227.9,
+          "discharge_ml": 1968.8
+        },
+        {
+          "month": 10,
+          "withdrawal_ml": 2118.3,
+          "consumption_ml": 239.9,
+          "discharge_ml": 1875.0
+        },
+        {
+          "month": 11,
+          "withdrawal_ml": 2224.2,
+          "consumption_ml": 251.8,
+          "discharge_ml": 1781.2
+        },
+        {
+          "month": 12,
+          "withdrawal_ml": 2301.8,
+          "consumption_ml": 260.6,
+          "discharge_ml": 1712.6
+        }
+      ]
+    },
+    "assurance": {
+      "level": "reasonable",
+      "methodology": "MCA_WAF_2_0",
+      "provider": "Example Assurance Partner (fictional)"
+    },
+    "sources": [
+      {
+        "title": "Synthetic demo record (generate_synthetic.py)",
+        "extraction": "reported_directly"
+      }
+    ],
+    "context": {
+      "competing_users": [
+        "indigenous_communities",
+        "ecosystems_wetlands"
+      ],
+      "seasonality": "moderate",
+      "water_grievances": 1,
+      "water_incidents": 0
+    }
+  },
+  {
+    "passport_version": "0.1",
+    "synthetic": true,
+    "tier": "tier2",
+    "site": {
+      "site_id": "MWP-PE-0005",
+      "name": "Quebrada Sol Copper",
+      "operator": "Minera Quebrada Sol S.A.C. (fictional)",
+      "country": "PE",
+      "latitude": -17.12,
+      "longitude": -70.58,
+      "primary_commodity": "Cu",
+      "mine_type": "open_pit",
+      "processing_route": [
+        "flotation"
+      ],
+      "lifecycle_stage": "operating",
+      "basin": {
+        "name": "Pacific slope river basin (illustrative)",
+        "bws_score": 4.2,
+        "bws_category": "extremely_high",
+        "bws_source": "Illustrative placeholder - production system looks up WRI Aqueduct 4.0 from coordinates"
+      }
+    },
+    "period": {
+      "year": 2025,
+      "start_date": "2025-01-01",
+      "end_date": "2025-12-31"
+    },
+    "production": {
+      "products": [
+        {
+          "commodity": "Cu",
+          "product_form": "Cu concentrate",
+          "metal_content_t": 116100,
+          "basis": "contained_metal",
+          "allocation_share": 0.92,
+          "product_t": 420000
+        },
+        {
+          "commodity": "other",
+          "product_form": "Mo concentrate",
+          "metal_content_t": 2900,
+          "basis": "contained_metal",
+          "allocation_share": 0.08,
+          "product_t": 6000
+        }
+      ],
+      "ore_processed_t": 30000000
+    },
+    "water": {
+      "withdrawals": [
+        {
+          "source": "surface_water",
+          "volume_ml": 11550.0,
+          "dq": "measured",
+          "subtype": "river_lake_abstraction",
+          "quality": "cat1",
+          "freshwater_gri": true
+        },
+        {
+          "source": "groundwater",
+          "volume_ml": 6300.0,
+          "dq": "measured",
+          "subtype": "bore_field",
+          "quality": "cat1",
+          "freshwater_gri": true
+        },
+        {
+          "source": "surface_water",
+          "volume_ml": 1050.0,
+          "dq": "estimated",
+          "subtype": "precipitation_runoff",
+          "quality": "cat1",
+          "freshwater_gri": true
+        },
+        {
+          "source": "groundwater",
+          "volume_ml": 2100.0,
+          "dq": "estimated",
+          "subtype": "ore_entrainment",
+          "quality": "cat2",
+          "freshwater_gri": false
+        }
+      ],
+      "discharges": [
+        {
+          "destination": "surface_water",
+          "volume_ml": 3500,
+          "dq": "measured",
+          "treated": true,
+          "quality": "cat2"
+        }
+      ],
+      "consumption": {
+        "total_ml": 17910.9,
+        "total_dq": "calculated",
+        "evaporation_ml": 6268.8,
+        "evaporation_dq": "calculated",
+        "entrainment_ml": 10388.3,
+        "entrainment_dq": "calculated",
+        "other_ml": 1253.8,
+        "other_dq": "estimated"
+      },
+      "reuse": {
+        "reused_recycled_ml": 39312.0,
+        "dq": "calculated",
+        "task_water_ml": 54600.0,
+        "tsf_return_ml": 19656.0
+      },
+      "storage": {
+        "opening_ml": 1818.0,
+        "closing_ml": 1668.0,
+        "dq": "calculated"
+      },
+      "monthly": [
+        {
+          "month": 1,
+          "withdrawal_ml": 2275.0,
+          "consumption_ml": 1940.3,
+          "discharge_ml": 204.2
+        },
+        {
+          "month": 2,
+          "withdrawal_ml": 2204.7,
+          "consumption_ml": 1880.4,
+          "discharge_ml": 215.9
+        },
+        {
+          "month": 3,
+          "withdrawal_ml": 2012.5,
+          "consumption_ml": 1716.5,
+          "discharge_ml": 247.9
+        },
+        {
+          "month": 4,
+          "withdrawal_ml": 1750.0,
+          "consumption_ml": 1492.6,
+          "discharge_ml": 291.7
+        },
+        {
+          "month": 5,
+          "withdrawal_ml": 1487.5,
+          "consumption_ml": 1268.7,
+          "discharge_ml": 335.4
+        },
+        {
+          "month": 6,
+          "withdrawal_ml": 1295.3,
+          "consumption_ml": 1104.8,
+          "discharge_ml": 367.4
+        },
+        {
+          "month": 7,
+          "withdrawal_ml": 1225.0,
+          "consumption_ml": 1044.8,
+          "discharge_ml": 379.2
+        },
+        {
+          "month": 8,
+          "withdrawal_ml": 1295.3,
+          "consumption_ml": 1104.8,
+          "discharge_ml": 367.4
+        },
+        {
+          "month": 9,
+          "withdrawal_ml": 1487.5,
+          "consumption_ml": 1268.7,
+          "discharge_ml": 335.4
+        },
+        {
+          "month": 10,
+          "withdrawal_ml": 1750.0,
+          "consumption_ml": 1492.6,
+          "discharge_ml": 291.7
+        },
+        {
+          "month": 11,
+          "withdrawal_ml": 2012.5,
+          "consumption_ml": 1716.5,
+          "discharge_ml": 247.9
+        },
+        {
+          "month": 12,
+          "withdrawal_ml": 2204.7,
+          "consumption_ml": 1880.4,
+          "discharge_ml": 215.9
+        }
+      ]
+    },
+    "assurance": {
+      "level": "limited",
+      "methodology": "GRI_303_2018",
+      "provider": "Example Assurance Partner (fictional)"
+    },
+    "sources": [
+      {
+        "title": "Synthetic demo record (generate_synthetic.py)",
+        "extraction": "reported_directly"
+      }
+    ],
+    "context": {
+      "competing_users": [
+        "agriculture",
+        "municipal_drinking",
+        "indigenous_communities"
+      ],
+      "seasonality": "strong",
+      "water_grievances": 9,
+      "water_incidents": 2
+    }
+  },
+  {
+    "passport_version": "0.1",
+    "synthetic": true,
+    "tier": "tier2",
+    "site": {
+      "site_id": "MWP-AU-0006",
+      "name": "Red Ridge Spodumene",
+      "operator": "Red Ridge Lithium Pty Ltd (fictional)",
+      "country": "AU",
+      "latitude": -31.22,
+      "longitude": 119.81,
+      "primary_commodity": "Li",
+      "mine_type": "open_pit",
+      "processing_route": [
+        "dense_media_separation",
+        "flotation"
+      ],
+      "lifecycle_stage": "operating",
+      "basin": {
+        "name": "Inland drainage division (illustrative)",
+        "bws_score": 2.4,
+        "bws_category": "medium_high",
+        "bws_source": "Illustrative placeholder - production system looks up WRI Aqueduct 4.0 from coordinates"
+      }
+    },
+    "period": {
+      "year": 2025,
+      "start_date": "2025-01-01",
+      "end_date": "2025-12-31"
+    },
+    "production": {
+      "products": [
+        {
+          "commodity": "Li",
+          "product_form": "Spodumene concentrate (SC6)",
+          "metal_content_t": 78000,
+          "basis": "LCE",
+          "allocation_share": 1.0,
+          "product_t": 600000
+        }
+      ],
+      "ore_processed_t": 4500000
+    },
+    "water": {
+      "withdrawals": [
+        {
+          "source": "groundwater",
+          "volume_ml": 2520.0,
+          "dq": "measured",
+          "subtype": "mine_dewatering",
+          "quality": "cat3",
+          "freshwater_gri": false
+        },
+        {
+          "source": "groundwater",
+          "volume_ml": 1260.0,
+          "dq": "measured",
+          "subtype": "bore_field",
+          "quality": "cat2",
+          "freshwater_gri": false
+        },
+        {
+          "source": "surface_water",
+          "volume_ml": 420.0,
+          "dq": "calculated",
+          "subtype": "precipitation_runoff",
+          "quality": "cat1",
+          "freshwater_gri": true
+        }
+      ],
+      "discharges": [],
+      "consumption": {
+        "total_ml": 4107.0,
+        "total_dq": "calculated",
+        "evaporation_ml": 1848.1,
+        "evaporation_dq": "calculated",
+        "entrainment_ml": 2053.5,
+        "entrainment_dq": "calculated",
+        "other_ml": 205.4,
+        "other_dq": "estimated"
+      },
+      "reuse": {
+        "reused_recycled_ml": 5728.8,
+        "dq": "measured",
+        "task_water_ml": 9240.0,
+        "tsf_return_ml": 2291.5
+      },
+      "storage": {
+        "opening_ml": 3460.0,
+        "closing_ml": 3560.0,
+        "dq": "measured"
+      },
+      "monthly": [
+        {
+          "month": 1,
+          "withdrawal_ml": 402.5,
+          "consumption_ml": 393.6,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 2,
+          "withdrawal_ml": 395.5,
+          "consumption_ml": 386.7,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 3,
+          "withdrawal_ml": 376.3,
+          "consumption_ml": 367.9,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 4,
+          "withdrawal_ml": 350.0,
+          "consumption_ml": 342.2,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 5,
+          "withdrawal_ml": 323.8,
+          "consumption_ml": 316.6,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 6,
+          "withdrawal_ml": 304.5,
+          "consumption_ml": 297.8,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 7,
+          "withdrawal_ml": 297.5,
+          "consumption_ml": 290.9,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 8,
+          "withdrawal_ml": 304.5,
+          "consumption_ml": 297.8,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 9,
+          "withdrawal_ml": 323.8,
+          "consumption_ml": 316.6,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 10,
+          "withdrawal_ml": 350.0,
+          "consumption_ml": 342.2,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 11,
+          "withdrawal_ml": 376.3,
+          "consumption_ml": 367.9,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 12,
+          "withdrawal_ml": 395.5,
+          "consumption_ml": 386.7,
+          "discharge_ml": 0.0
+        }
+      ]
+    },
+    "assurance": {
+      "level": "reasonable",
+      "methodology": "MCA_WAF_2_0",
+      "provider": "Example Assurance Partner (fictional)"
+    },
+    "sources": [
+      {
+        "title": "Synthetic demo record (generate_synthetic.py)",
+        "extraction": "reported_directly"
+      }
+    ],
+    "context": {
+      "competing_users": [
+        "agriculture",
+        "ecosystems_wetlands"
+      ],
+      "seasonality": "moderate",
+      "water_grievances": 0,
+      "water_incidents": 0
+    }
+  },
+  {
+    "passport_version": "0.1",
+    "synthetic": true,
+    "tier": "tier2",
+    "site": {
+      "site_id": "MWP-AU-0007",
+      "name": "Tallawong Nickel",
+      "operator": "Tallawong Resources Pty Ltd (fictional)",
+      "country": "AU",
+      "latitude": -28.61,
+      "longitude": 121.93,
+      "primary_commodity": "Ni",
+      "mine_type": "underground",
+      "processing_route": [
+        "flotation"
+      ],
+      "lifecycle_stage": "operating",
+      "basin": {
+        "name": "Salt-lake palaeodrainage (illustrative)",
+        "bws_score": 2.8,
+        "bws_category": "medium_high",
+        "bws_source": "Illustrative placeholder - production system looks up WRI Aqueduct 4.0 from coordinates"
+      }
+    },
+    "period": {
+      "year": 2025,
+      "start_date": "2025-01-01",
+      "end_date": "2025-12-31"
+    },
+    "production": {
+      "products": [
+        {
+          "commodity": "Ni",
+          "product_form": "Ni concentrate",
+          "metal_content_t": 29900,
+          "basis": "contained_metal",
+          "allocation_share": 0.95,
+          "product_t": 210000
+        },
+        {
+          "commodity": "Co",
+          "product_form": "in Ni concentrate",
+          "metal_content_t": 700,
+          "basis": "contained_metal",
+          "allocation_share": 0.05
+        }
+      ],
+      "ore_processed_t": 2200000
+    },
+    "water": {
+      "withdrawals": [
+        {
+          "source": "groundwater",
+          "volume_ml": 1820.0,
+          "dq": "measured",
+          "subtype": "mine_dewatering",
+          "quality": "cat3",
+          "freshwater_gri": false
+        },
+        {
+          "source": "groundwater",
+          "volume_ml": 650.0,
+          "dq": "measured",
+          "subtype": "bore_field",
+          "quality": "cat2",
+          "freshwater_gri": false
+        },
+        {
+          "source": "third_party",
+          "volume_ml": 130.0,
+          "dq": "measured",
+          "subtype": "municipal_supply",
+          "quality": "cat1",
+          "freshwater_gri": true
+        }
+      ],
+      "discharges": [
+        {
+          "destination": "groundwater",
+          "volume_ml": 250,
+          "dq": "measured",
+          "treated": false,
+          "quality": "cat3"
+        }
+      ],
+      "consumption": {
+        "total_ml": 2290.3,
+        "total_dq": "calculated",
+        "evaporation_ml": 1145.1,
+        "evaporation_dq": "calculated",
+        "entrainment_ml": 1030.6,
+        "entrainment_dq": "calculated",
+        "other_ml": 114.6,
+        "other_dq": "estimated"
+      },
+      "reuse": {
+        "reused_recycled_ml": 2574.0,
+        "dq": "measured",
+        "task_water_ml": 4680.0,
+        "tsf_return_ml": 900.9
+      },
+      "storage": {
+        "opening_ml": 951.0,
+        "closing_ml": 1001.0,
+        "dq": "measured"
+      },
+      "monthly": [
+        {
+          "month": 1,
+          "withdrawal_ml": 227.5,
+          "consumption_ml": 200.4,
+          "discharge_ml": 19.8
+        },
+        {
+          "month": 2,
+          "withdrawal_ml": 226.0,
+          "consumption_ml": 199.1,
+          "discharge_ml": 19.9
+        },
+        {
+          "month": 3,
+          "withdrawal_ml": 222.1,
+          "consumption_ml": 195.6,
+          "discharge_ml": 20.3
+        },
+        {
+          "month": 4,
+          "withdrawal_ml": 216.7,
+          "consumption_ml": 190.9,
+          "discharge_ml": 20.8
+        },
+        {
+          "month": 5,
+          "withdrawal_ml": 211.2,
+          "consumption_ml": 186.1,
+          "discharge_ml": 21.4
+        },
+        {
+          "month": 6,
+          "withdrawal_ml": 207.3,
+          "consumption_ml": 182.6,
+          "discharge_ml": 21.7
+        },
+        {
+          "month": 7,
+          "withdrawal_ml": 205.8,
+          "consumption_ml": 181.3,
+          "discharge_ml": 21.9
+        },
+        {
+          "month": 8,
+          "withdrawal_ml": 207.3,
+          "consumption_ml": 182.6,
+          "discharge_ml": 21.7
+        },
+        {
+          "month": 9,
+          "withdrawal_ml": 211.2,
+          "consumption_ml": 186.1,
+          "discharge_ml": 21.4
+        },
+        {
+          "month": 10,
+          "withdrawal_ml": 216.7,
+          "consumption_ml": 190.9,
+          "discharge_ml": 20.8
+        },
+        {
+          "month": 11,
+          "withdrawal_ml": 222.1,
+          "consumption_ml": 195.6,
+          "discharge_ml": 20.3
+        },
+        {
+          "month": 12,
+          "withdrawal_ml": 226.0,
+          "consumption_ml": 199.1,
+          "discharge_ml": 19.9
+        }
+      ]
+    },
+    "assurance": {
+      "level": "limited",
+      "methodology": "MCA_WAF_2_0",
+      "provider": "Example Assurance Partner (fictional)"
+    },
+    "sources": [
+      {
+        "title": "Synthetic demo record (generate_synthetic.py)",
+        "extraction": "reported_directly"
+      }
+    ],
+    "context": {
+      "competing_users": [
+        "ecosystems_wetlands",
+        "other_mining"
+      ],
+      "seasonality": "none",
+      "water_grievances": 0,
+      "water_incidents": 0
+    }
+  },
+  {
+    "passport_version": "0.1",
+    "synthetic": true,
+    "tier": "tier2",
+    "site": {
+      "site_id": "MWP-AU-0008",
+      "name": "Gibber Plains Copper-Gold",
+      "operator": "Gibber Plains Mining Pty Ltd (fictional)",
+      "country": "AU",
+      "latitude": -30.58,
+      "longitude": 136.71,
+      "primary_commodity": "Cu",
+      "mine_type": "underground",
+      "processing_route": [
+        "flotation",
+        "smelting_refining"
+      ],
+      "lifecycle_stage": "operating",
+      "basin": {
+        "name": "Artesian-fed arid basin (illustrative)",
+        "bws_score": 3.4,
+        "bws_category": "high",
+        "bws_source": "Illustrative placeholder - production system looks up WRI Aqueduct 4.0 from coordinates"
+      }
+    },
+    "period": {
+      "year": 2025,
+      "start_date": "2025-01-01",
+      "end_date": "2025-12-31"
+    },
+    "production": {
+      "products": [
+        {
+          "commodity": "Cu",
+          "product_form": "Cu cathode",
+          "metal_content_t": 162000,
+          "basis": "contained_metal",
+          "allocation_share": 0.85,
+          "product_t": 162000
+        },
+        {
+          "commodity": "Au",
+          "product_form": "Au dore",
+          "metal_content_t": 3.2,
+          "basis": "contained_metal",
+          "allocation_share": 0.15,
+          "product_t": 3.2
+        }
+      ],
+      "ore_processed_t": 10000000
+    },
+    "water": {
+      "withdrawals": [
+        {
+          "source": "groundwater",
+          "volume_ml": 8050.0,
+          "dq": "measured",
+          "subtype": "bore_field",
+          "quality": "cat1",
+          "freshwater_gri": true
+        },
+        {
+          "source": "groundwater",
+          "volume_ml": 2875.0,
+          "dq": "measured",
+          "subtype": "bore_field",
+          "quality": "cat3",
+          "freshwater_gri": false
+        },
+        {
+          "source": "surface_water",
+          "volume_ml": 575.0,
+          "dq": "calculated",
+          "subtype": "precipitation_runoff",
+          "quality": "cat1",
+          "freshwater_gri": true
+        }
+      ],
+      "discharges": [],
+      "consumption": {
+        "total_ml": 11265.6,
+        "total_dq": "calculated",
+        "evaporation_ml": 4506.2,
+        "evaporation_dq": "calculated",
+        "entrainment_ml": 6196.1,
+        "entrainment_dq": "calculated",
+        "other_ml": 563.3,
+        "other_dq": "estimated"
+      },
+      "reuse": {
+        "reused_recycled_ml": 15180.0,
+        "dq": "measured",
+        "task_water_ml": 23000.0,
+        "tsf_return_ml": 6831.0
+      },
+      "storage": {
+        "opening_ml": 2892.0,
+        "closing_ml": 3142.0,
+        "dq": "measured"
+      },
+      "monthly": [
+        {
+          "month": 1,
+          "withdrawal_ml": 1035.0,
+          "consumption_ml": 1013.9,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 2,
+          "withdrawal_ml": 1024.7,
+          "consumption_ml": 1003.8,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 3,
+          "withdrawal_ml": 996.7,
+          "consumption_ml": 976.4,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 4,
+          "withdrawal_ml": 958.3,
+          "consumption_ml": 938.8,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 5,
+          "withdrawal_ml": 920.0,
+          "consumption_ml": 901.2,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 6,
+          "withdrawal_ml": 891.9,
+          "consumption_ml": 873.8,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 7,
+          "withdrawal_ml": 881.7,
+          "consumption_ml": 863.7,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 8,
+          "withdrawal_ml": 891.9,
+          "consumption_ml": 873.8,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 9,
+          "withdrawal_ml": 920.0,
+          "consumption_ml": 901.2,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 10,
+          "withdrawal_ml": 958.3,
+          "consumption_ml": 938.8,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 11,
+          "withdrawal_ml": 996.7,
+          "consumption_ml": 976.4,
+          "discharge_ml": 0.0
+        },
+        {
+          "month": 12,
+          "withdrawal_ml": 1024.7,
+          "consumption_ml": 1003.8,
+          "discharge_ml": 0.0
+        }
+      ]
+    },
+    "assurance": {
+      "level": "reasonable",
+      "methodology": "ICMM_2021",
+      "provider": "Example Assurance Partner (fictional)"
+    },
+    "sources": [
+      {
+        "title": "Synthetic demo record (generate_synthetic.py)",
+        "extraction": "reported_directly"
+      }
+    ],
+    "context": {
+      "competing_users": [
+        "agriculture",
+        "ecosystems_wetlands",
+        "indigenous_communities"
+      ],
+      "seasonality": "none",
+      "water_grievances": 1,
+      "water_incidents": 0
+    }
+  },
+  {
+    "passport_version": "0.1",
+    "synthetic": true,
+    "tier": "tier2",
+    "site": {
+      "site_id": "MWP-SE-0009",
+      "name": "Norrberg Copper",
+      "operator": "Norrberg Koppar AB (fictional)",
+      "country": "SE",
+      "latitude": 67.02,
+      "longitude": 20.84,
+      "primary_commodity": "Cu",
+      "mine_type": "open_pit",
+      "processing_route": [
+        "flotation"
+      ],
+      "lifecycle_stage": "operating",
+      "basin": {
+        "name": "Boreal river catchment (illustrative)",
+        "bws_score": 0.4,
+        "bws_category": "low",
+        "bws_source": "Illustrative placeholder - production system looks up WRI Aqueduct 4.0 from coordinates"
+      }
+    },
+    "period": {
+      "year": 2025,
+      "start_date": "2025-01-01",
+      "end_date": "2025-12-31"
+    },
+    "production": {
+      "products": [
+        {
+          "commodity": "Cu",
+          "product_form": "Cu concentrate",
+          "metal_content_t": 83200,
+          "basis": "contained_metal",
+          "allocation_share": 0.8,
+          "product_t": 330000
+        },
+        {
+          "commodity": "Au",
+          "product_form": "in Cu concentrate",
+          "metal_content_t": 2.1,
+          "basis": "contained_metal",
+          "allocation_share": 0.2
+        }
+      ],
+      "ore_processed_t": 42000000
+    },
+    "water": {
+      "withdrawals": [
+        {
+          "source": "surface_water",
+          "volume_ml": 15400.0,
+          "dq": "calculated",
+          "subtype": "precipitation_runoff",
+          "quality": "cat1",
+          "freshwater_gri": true
+        },
+        {
+          "source": "surface_water",
+          "volume_ml": 7000.0,
+          "dq": "measured",
+          "subtype": "river_lake_abstraction",
+          "quality": "cat1",
+          "freshwater_gri": true
+        },
+        {
+          "source": "groundwater",
+          "volume_ml": 5600.0,
+          "dq": "measured",
+          "subtype": "mine_dewatering",
+          "quality": "cat2",
+          "freshwater_gri": false
+        }
+      ],
+      "discharges": [
+        {
+          "destination": "surface_water",
+          "volume_ml": 21500,
+          "dq": "measured",
+          "treated": true,
+          "quality": "cat2"
+        }
+      ],
+      "consumption": {
+        "total_ml": 6017.0,
+        "total_dq": "calculated",
+        "evaporation_ml": 902.6,
+        "evaporation_dq": "calculated",
+        "entrainment_ml": 4813.6,
+        "entrainment_dq": "calculated",
+        "other_ml": 300.8,
+        "other_dq": "estimated"
+      },
+      "reuse": {
+        "reused_recycled_ml": 71400.0,
+        "dq": "measured",
+        "task_water_ml": 84000.0,
+        "tsf_return_ml": 42840.0
+      },
+      "storage": {
+        "opening_ml": 4970.0,
+        "closing_ml": 5470.0,
+        "dq": "measured"
+      },
+      "monthly": [
+        {
+          "month": 1,
+          "withdrawal_ml": 1050.0,
+          "consumption_ml": 225.6,
+          "discharge_ml": 2777.1
+        },
+        {
+          "month": 2,
+          "withdrawal_ml": 1221.9,
+          "consumption_ml": 262.6,
+          "discharge_ml": 2645.1
+        },
+        {
+          "month": 3,
+          "withdrawal_ml": 1691.7,
+          "consumption_ml": 363.5,
+          "discharge_ml": 2284.4
+        },
+        {
+          "month": 4,
+          "withdrawal_ml": 2333.3,
+          "consumption_ml": 501.4,
+          "discharge_ml": 1791.7
+        },
+        {
+          "month": 5,
+          "withdrawal_ml": 2975.0,
+          "consumption_ml": 639.3,
+          "discharge_ml": 1299.0
+        },
+        {
+          "month": 6,
+          "withdrawal_ml": 3444.7,
+          "consumption_ml": 740.3,
+          "discharge_ml": 938.3
+        },
+        {
+          "month": 7,
+          "withdrawal_ml": 3616.7,
+          "consumption_ml": 777.2,
+          "discharge_ml": 806.2
+        },
+        {
+          "month": 8,
+          "withdrawal_ml": 3444.7,
+          "consumption_ml": 740.3,
+          "discharge_ml": 938.3
+        },
+        {
+          "month": 9,
+          "withdrawal_ml": 2975.0,
+          "consumption_ml": 639.3,
+          "discharge_ml": 1299.0
+        },
+        {
+          "month": 10,
+          "withdrawal_ml": 2333.3,
+          "consumption_ml": 501.4,
+          "discharge_ml": 1791.7
+        },
+        {
+          "month": 11,
+          "withdrawal_ml": 1691.7,
+          "consumption_ml": 363.5,
+          "discharge_ml": 2284.4
+        },
+        {
+          "month": 12,
+          "withdrawal_ml": 1221.9,
+          "consumption_ml": 262.6,
+          "discharge_ml": 2645.1
+        }
+      ]
+    },
+    "assurance": {
+      "level": "reasonable",
+      "methodology": "ICMM_2021",
+      "provider": "Example Assurance Partner (fictional)"
+    },
+    "sources": [
+      {
+        "title": "Synthetic demo record (generate_synthetic.py)",
+        "extraction": "reported_directly"
+      }
+    ],
+    "context": {
+      "competing_users": [
+        "ecosystems_wetlands",
+        "indigenous_communities",
+        "hydropower"
+      ],
+      "seasonality": "strong",
+      "water_grievances": 1,
+      "water_incidents": 0
+    }
+  },
+  {
+    "passport_version": "0.1",
+    "synthetic": true,
+    "tier": "tier2",
+    "site": {
+      "site_id": "MWP-FI-0010",
+      "name": "Kivijarvi Nickel",
+      "operator": "Kivijarvi Metals Oy (fictional)",
+      "country": "FI",
+      "latitude": 63.91,
+      "longitude": 28.24,
+      "primary_commodity": "Ni",
+      "mine_type": "open_pit",
+      "processing_route": [
+        "bioheap_leach"
+      ],
+      "lifecycle_stage": "operating",
+      "basin": {
+        "name": "Lake-district catchment (illustrative)",
+        "bws_score": 0.3,
+        "bws_category": "low",
+        "bws_source": "Illustrative placeholder - production system looks up WRI Aqueduct 4.0 from coordinates"
+      }
+    },
+    "period": {
+      "year": 2025,
+      "start_date": "2025-01-01",
+      "end_date": "2025-12-31"
+    },
+    "production": {
+      "products": [
+        {
+          "commodity": "Ni",
+          "product_form": "Mixed sulphide precipitate",
+          "metal_content_t": 30000,
+          "basis": "contained_metal",
+          "allocation_share": 0.7,
+          "product_t": 75000
+        },
+        {
+          "commodity": "Zn",
+          "product_form": "ZnS precipitate",
+          "metal_content_t": 60000,
+          "basis": "contained_metal",
+          "allocation_share": 0.25,
+          "product_t": 110000
+        },
+        {
+          "commodity": "Co",
+          "product_form": "in MSP",
+          "metal_content_t": 900,
+          "basis": "contained_metal",
+          "allocation_share": 0.05
+        }
+      ],
+      "ore_processed_t": 13000000
+    },
+    "water": {
+      "withdrawals": [
+        {
+          "source": "surface_water",
+          "volume_ml": 5700.0,
+          "dq": "calculated",
+          "subtype": "precipitation_runoff",
+          "quality": "cat1",
+          "freshwater_gri": true
+        },
+        {
+          "source": "surface_water",
+          "volume_ml": 2850.0,
+          "dq": "measured",
+          "subtype": "river_lake_abstraction",
+          "quality": "cat1",
+          "freshwater_gri": true
+        },
+        {
+          "source": "groundwater",
+          "volume_ml": 950.0,
+          "dq": "measured",
+          "subtype": "mine_dewatering",
+          "quality": "cat2",
+          "freshwater_gri": false
+        }
+      ],
+      "discharges": [
+        {
+          "destination": "surface_water",
+          "volume_ml": 7400,
+          "dq": "measured",
+          "treated": true,
+          "quality": "cat2"
+        }
+      ],
+      "consumption": {
+        "total_ml": 1824.7,
+        "total_dq": "calculated",
+        "evaporation_ml": 638.7,
+        "evaporation_dq": "calculated",
+        "entrainment_ml": 1003.6,
+        "entrainment_dq": "calculated",
+        "other_ml": 182.4,
+        "other_dq": "estimated"
+      },
+      "reuse": {
+        "reused_recycled_ml": 16625.0,
+        "dq": "measured",
+        "task_water_ml": 23750.0,
+        "tsf_return_ml": 4987.5
+      },
+      "storage": {
+        "opening_ml": 5612.0,
+        "closing_ml": 5912.0,
+        "dq": "measured"
+      },
+      "monthly": [
+        {
+          "month": 1,
+          "withdrawal_ml": 395.8,
+          "consumption_ml": 76.0,
+          "discharge_ml": 925.0
+        },
+        {
+          "month": 2,
+          "withdrawal_ml": 448.9,
+          "consumption_ml": 86.2,
+          "discharge_ml": 883.7
+        },
+        {
+          "month": 3,
+          "withdrawal_ml": 593.8,
+          "consumption_ml": 114.0,
+          "discharge_ml": 770.8
+        },
+        {
+          "month": 4,
+          "withdrawal_ml": 791.7,
+          "consumption_ml": 152.1,
+          "discharge_ml": 616.7
+        },
+        {
+          "month": 5,
+          "withdrawal_ml": 989.6,
+          "consumption_ml": 190.1,
+          "discharge_ml": 462.5
+        },
+        {
+          "month": 6,
+          "withdrawal_ml": 1134.5,
+          "consumption_ml": 217.9,
+          "discharge_ml": 349.6
+        },
+        {
+          "month": 7,
+          "withdrawal_ml": 1187.5,
+          "consumption_ml": 228.1,
+          "discharge_ml": 308.3
+        },
+        {
+          "month": 8,
+          "withdrawal_ml": 1134.5,
+          "consumption_ml": 217.9,
+          "discharge_ml": 349.6
+        },
+        {
+          "month": 9,
+          "withdrawal_ml": 989.6,
+          "consumption_ml": 190.1,
+          "discharge_ml": 462.5
+        },
+        {
+          "month": 10,
+          "withdrawal_ml": 791.7,
+          "consumption_ml": 152.1,
+          "discharge_ml": 616.7
+        },
+        {
+          "month": 11,
+          "withdrawal_ml": 593.8,
+          "consumption_ml": 114.0,
+          "discharge_ml": 770.8
+        },
+        {
+          "month": 12,
+          "withdrawal_ml": 448.9,
+          "consumption_ml": 86.2,
+          "discharge_ml": 883.7
+        }
+      ]
+    },
+    "assurance": {
+      "level": "limited",
+      "methodology": "GRI_303_2018",
+      "provider": "Example Assurance Partner (fictional)"
+    },
+    "sources": [
+      {
+        "title": "Synthetic demo record (generate_synthetic.py)",
+        "extraction": "reported_directly"
+      }
+    ],
+    "context": {
+      "competing_users": [
+        "ecosystems_wetlands",
+        "tourism"
+      ],
+      "seasonality": "strong",
+      "water_grievances": 3,
+      "water_incidents": 2
+    }
+  },
+  {
+    "passport_version": "0.1",
+    "synthetic": true,
+    "tier": "tier2",
+    "site": {
+      "site_id": "MWP-AT-0011",
+      "name": "Alpenglanz Lithium (project)",
+      "operator": "Alpenglanz Lithium GmbH (fictional)",
+      "country": "AT",
+      "latitude": 46.88,
+      "longitude": 14.93,
+      "primary_commodity": "Li",
+      "mine_type": "underground",
+      "processing_route": [
+        "dense_media_separation",
+        "flotation"
+      ],
+      "lifecycle_stage": "construction",
+      "basin": {
+        "name": "Alpine tributary catchment (illustrative)",
+        "bws_score": 1.4,
+        "bws_category": "low_medium",
+        "bws_source": "Illustrative placeholder - production system looks up WRI Aqueduct 4.0 from coordinates"
+      }
+    },
+    "period": {
+      "year": 2025,
+      "start_date": "2025-01-01",
+      "end_date": "2025-12-31"
+    },
+    "production": {
+      "products": [
+        {
+          "commodity": "Li",
+          "product_form": "Spodumene concentrate (design)",
+          "metal_content_t": 10000,
+          "basis": "LCE",
+          "allocation_share": 1.0,
+          "product_t": 100000
+        }
+      ],
+      "ore_processed_t": 800000
+    },
+    "water": {
+      "withdrawals": [
+        {
+          "source": "groundwater",
+          "volume_ml": 245.0,
+          "dq": "calculated",
+          "subtype": "mine_dewatering",
+          "quality": "cat2",
+          "freshwater_gri": false
+        },
+        {
+          "source": "third_party",
+          "volume_ml": 35.0,
+          "dq": "estimated",
+          "subtype": "municipal_supply",
+          "quality": "cat1",
+          "freshwater_gri": true
+        },
+        {
+          "source": "surface_water",
+          "volume_ml": 70.0,
+          "dq": "estimated",
+          "subtype": "precipitation_runoff",
+          "quality": "cat1",
+          "freshwater_gri": true
+        }
+      ],
+      "discharges": [
+        {
+          "destination": "surface_water",
+          "volume_ml": 180,
+          "dq": "calculated",
+          "treated": true,
+          "quality": "cat2"
+        }
+      ],
+      "consumption": {
+        "total_ml": 160.0,
+        "total_dq": "estimated",
+        "evaporation_ml": 32.0,
+        "evaporation_dq": "estimated",
+        "entrainment_ml": 112.0,
+        "entrainment_dq": "estimated",
+        "other_ml": 16.0,
+        "other_dq": "estimated"
+      },
+      "reuse": {
+        "reused_recycled_ml": 490.0,
+        "dq": "calculated",
+        "task_water_ml": 700.0,
+        "tsf_return_ml": 245.0
+      },
+      "storage": {
+        "opening_ml": 1779.0,
+        "closing_ml": 1789.0,
+        "dq": "calculated"
+      },
+      "monthly": [
+        {
+          "month": 1,
+          "withdrawal_ml": 20.4,
+          "consumption_ml": 9.3,
+          "discharge_ml": 19.5
+        },
+        {
+          "month": 2,
+          "withdrawal_ml": 21.6,
+          "consumption_ml": 9.9,
+          "discharge_ml": 18.9
+        },
+        {
+          "month": 3,
+          "withdrawal_ml": 24.8,
+          "consumption_ml": 11.3,
+          "discharge_ml": 17.2
+        },
+        {
+          "month": 4,
+          "withdrawal_ml": 29.2,
+          "consumption_ml": 13.3,
+          "discharge_ml": 15.0
+        },
+        {
+          "month": 5,
+          "withdrawal_ml": 33.5,
+          "consumption_ml": 15.3,
+          "discharge_ml": 12.8
+        },
+        {
+          "month": 6,
+          "withdrawal_ml": 36.7,
+          "consumption_ml": 16.8,
+          "discharge_ml": 11.1
+        },
+        {
+          "month": 7,
+          "withdrawal_ml": 37.9,
+          "consumption_ml": 17.3,
+          "discharge_ml": 10.5
+        },
+        {
+          "month": 8,
+          "withdrawal_ml": 36.7,
+          "consumption_ml": 16.8,
+          "discharge_ml": 11.1
+        },
+        {
+          "month": 9,
+          "withdrawal_ml": 33.5,
+          "consumption_ml": 15.3,
+          "discharge_ml": 12.8
+        },
+        {
+          "month": 10,
+          "withdrawal_ml": 29.2,
+          "consumption_ml": 13.3,
+          "discharge_ml": 15.0
+        },
+        {
+          "month": 11,
+          "withdrawal_ml": 24.8,
+          "consumption_ml": 11.3,
+          "discharge_ml": 17.2
+        },
+        {
+          "month": 12,
+          "withdrawal_ml": 21.6,
+          "consumption_ml": 9.9,
+          "discharge_ml": 18.9
+        }
+      ]
+    },
+    "assurance": {
+      "level": "none",
+      "methodology": "ICMM_2021"
+    },
+    "sources": [
+      {
+        "title": "Synthetic demo record (generate_synthetic.py)",
+        "extraction": "reported_directly"
+      }
+    ],
+    "context": {
+      "competing_users": [
+        "municipal_drinking",
+        "tourism",
+        "ecosystems_wetlands",
+        "agriculture"
+      ],
+      "seasonality": "moderate",
+      "water_grievances": 0,
+      "water_incidents": 0
+    }
+  },
+  {
+    "passport_version": "0.1",
+    "synthetic": true,
+    "tier": "tier1",
+    "site": {
+      "site_id": "MWP-PT-0012",
+      "name": "Serra Clara Lithium (project)",
+      "operator": "Serra Clara Litio Lda. (fictional)",
+      "country": "PT",
+      "latitude": 41.71,
+      "longitude": -7.63,
+      "primary_commodity": "Li",
+      "mine_type": "open_pit",
+      "processing_route": [
+        "dense_media_separation",
+        "flotation"
+      ],
+      "lifecycle_stage": "construction",
+      "basin": {
+        "name": "Upper Douro-type catchment (illustrative)",
+        "bws_score": 3.1,
+        "bws_category": "high",
+        "bws_source": "Illustrative placeholder - production system looks up WRI Aqueduct 4.0 from coordinates"
+      }
+    },
+    "period": {
+      "year": 2025,
+      "start_date": "2025-01-01",
+      "end_date": "2025-12-31"
+    },
+    "production": {
+      "products": [
+        {
+          "commodity": "Li",
+          "product_form": "Spodumene/petalite concentrate (design)",
+          "metal_content_t": 14000,
+          "basis": "LCE",
+          "allocation_share": 1.0,
+          "product_t": 170000
+        }
+      ],
+      "ore_processed_t": 1500000
+    },
+    "water": {
+      "withdrawals": [
+        {
+          "source": "surface_water",
+          "volume_ml": 450.0,
+          "dq": "calculated",
+          "subtype": "river_lake_abstraction",
+          "quality": "cat1",
+          "freshwater_gri": true
+        },
+        {
+          "source": "surface_water",
+          "volume_ml": 270.0,
+          "dq": "estimated",
+          "subtype": "precipitation_runoff",
+          "quality": "cat1",
+          "freshwater_gri": true
+        },
+        {
+          "source": "groundwater",
+          "volume_ml": 180.0,
+          "dq": "estimated",
+          "subtype": "mine_dewatering",
+          "quality": "cat2",
+          "freshwater_gri": false
+        }
+      ],
+      "discharges": [
+        {
+          "destination": "surface_water",
+          "volume_ml": 150,
+          "dq": "calculated",
+          "treated": true,
+          "quality": "cat2"
+        }
+      ],
+      "consumption": {
+        "total_ml": 750.0,
+        "total_dq": "estimated"
+      },
+      "reuse": {
+        "reused_recycled_ml": 1080.0,
+        "dq": "calculated"
+      }
+    },
+    "assurance": {
+      "level": "none",
+      "methodology": "company_specific"
+    },
+    "sources": [
+      {
+        "title": "Synthetic demo record (generate_synthetic.py)",
+        "extraction": "reported_directly"
+      }
+    ],
+    "context": {
+      "competing_users": [
+        "agriculture",
+        "municipal_drinking",
+        "ecosystems_wetlands"
+      ],
+      "seasonality": "strong",
+      "water_grievances": 7,
+      "water_incidents": 0
+    }
+  },
+  {
+    "passport_version": "0.1",
+    "synthetic": true,
+    "tier": "tier1",
+    "site": {
+      "site_id": "MWP-RS-0013",
+      "name": "Drina Valley Lithium-Borate (project)",
+      "operator": "Drina Valley Minerals d.o.o. (fictional)",
+      "country": "RS",
+      "latitude": 44.52,
+      "longitude": 19.21,
+      "primary_commodity": "Li",
+      "mine_type": "underground",
+      "processing_route": [
+        "agitated_leach_sx_ew"
+      ],
+      "lifecycle_stage": "construction",
+      "basin": {
+        "name": "Sava tributary catchment (illustrative)",
+        "bws_score": 2.2,
+        "bws_category": "medium_high",
+        "bws_source": "Illustrative placeholder - production system looks up WRI Aqueduct 4.0 from coordinates"
+      }
+    },
+    "period": {
+      "year": 2025,
+      "start_date": "2025-01-01",
+      "end_date": "2025-12-31"
+    },
+    "production": {
+      "products": [
+        {
+          "commodity": "Li",
+          "product_form": "Li2CO3 (design)",
+          "metal_content_t": 18000,
+          "basis": "LCE",
+          "allocation_share": 0.7,
+          "product_t": 18000
+        },
+        {
+          "commodity": "other",
+          "product_form": "Boric acid (design)",
+          "metal_content_t": 150000,
+          "basis": "contained_metal",
+          "allocation_share": 0.3,
+          "product_t": 150000
+        }
+      ],
+      "ore_processed_t": 1200000
+    },
+    "water": {
+      "withdrawals": [
+        {
+          "source": "groundwater",
+          "volume_ml": 660.0,
+          "dq": "calculated",
+          "subtype": "mine_dewatering",
+          "quality": "cat2",
+          "freshwater_gri": false
+        },
+        {
+          "source": "surface_water",
+          "volume_ml": 440.0,
+          "dq": "estimated",
+          "subtype": "river_lake_abstraction",
+          "quality": "cat1",
+          "freshwater_gri": true
+        }
+      ],
+      "discharges": [
+        {
+          "destination": "surface_water",
+          "volume_ml": 700,
+          "dq": "calculated",
+          "treated": true,
+          "quality": "cat2"
+        }
+      ],
+      "consumption": {
+        "total_ml": 390.0,
+        "total_dq": "estimated"
+      },
+      "reuse": {
+        "reused_recycled_ml": 990.0,
+        "dq": "calculated"
+      },
+      "storage": {
+        "opening_ml": 5252.0,
+        "closing_ml": 5262.0,
+        "dq": "calculated"
+      }
+    },
+    "assurance": {
+      "level": "none",
+      "methodology": "company_specific"
+    },
+    "sources": [
+      {
+        "title": "Synthetic demo record (generate_synthetic.py)",
+        "extraction": "reported_directly"
+      }
+    ],
+    "context": {
+      "competing_users": [
+        "agriculture",
+        "municipal_drinking"
+      ],
+      "seasonality": "moderate",
+      "water_grievances": 11,
+      "water_incidents": 0
+    }
+  },
+  {
+    "passport_version": "0.1",
+    "synthetic": true,
+    "tier": "tier1",
+    "site": {
+      "site_id": "MWP-CD-0014",
+      "name": "Kalemba Copper-Cobalt",
+      "operator": "Kalemba Mining SARL (fictional)",
+      "country": "CD",
+      "latitude": -10.71,
+      "longitude": 25.52,
+      "primary_commodity": "Cu",
+      "mine_type": "open_pit",
+      "processing_route": [
+        "agitated_leach_sx_ew"
+      ],
+      "lifecycle_stage": "operating",
+      "basin": {
+        "name": "Upper Congo headwater catchment (illustrative)",
+        "bws_score": 1.3,
+        "bws_category": "low_medium",
+        "bws_source": "Illustrative placeholder - production system looks up WRI Aqueduct 4.0 from coordinates"
+      }
+    },
+    "period": {
+      "year": 2025,
+      "start_date": "2025-01-01",
+      "end_date": "2025-12-31"
+    },
+    "production": {
+      "products": [
+        {
+          "commodity": "Cu",
+          "product_form": "Cu cathode",
+          "metal_content_t": 120000,
+          "basis": "contained_metal",
+          "allocation_share": 0.75,
+          "product_t": 120000
+        },
+        {
+          "commodity": "Co",
+          "product_form": "Co hydroxide",
+          "metal_content_t": 12000,
+          "basis": "contained_metal",
+          "allocation_share": 0.25,
+          "product_t": 34000
+        }
+      ],
+      "ore_processed_t": 6000000
+    },
+    "water": {
+      "withdrawals": [
+        {
+          "source": "surface_water",
+          "volume_ml": 5600.0,
+          "dq": "estimated",
+          "quality": "cat1",
+          "freshwater_gri": true
+        },
+        {
+          "source": "groundwater",
+          "volume_ml": 6300.0,
+          "dq": "estimated",
+          "subtype": "mine_dewatering",
+          "quality": "cat2",
+          "freshwater_gri": false
+        },
+        {
+          "source": "surface_water",
+          "volume_ml": 2100.0,
+          "dq": "estimated",
+          "quality": "cat1",
+          "freshwater_gri": true
+        }
+      ],
+      "discharges": [
+        {
+          "destination": "surface_water",
+          "volume_ml": 8000,
+          "dq": "estimated",
+          "treated": false,
+          "quality": "cat2"
+        }
+      ],
+      "consumption": {
+        "total_ml": 4474.9,
+        "total_dq": "estimated"
+      },
+      "reuse": {
+        "reused_recycled_ml": 7840.0,
+        "dq": "estimated"
+      },
+      "storage": {
+        "opening_ml": 4863.0,
+        "closing_ml": 5263.0,
+        "dq": "estimated"
+      }
+    },
+    "assurance": {
+      "level": "internal_review",
+      "methodology": "company_specific"
+    },
+    "sources": [
+      {
+        "title": "Synthetic demo record (generate_synthetic.py)",
+        "extraction": "reported_directly"
+      }
+    ],
+    "context": {
+      "competing_users": [
+        "agriculture",
+        "municipal_drinking",
+        "indigenous_communities"
+      ],
+      "seasonality": "strong",
+      "water_grievances": 14,
+      "water_incidents": 3
+    }
+  },
+  {
+    "passport_version": "0.1",
+    "synthetic": true,
+    "tier": "tier1",
+    "site": {
+      "site_id": "MWP-CD-0015",
+      "name": "Lufira Cobalt",
+      "operator": "Lufira Cobalt SARL (fictional)",
+      "country": "CD",
+      "latitude": -11.38,
+      "longitude": 27.31,
+      "primary_commodity": "Co",
+      "mine_type": "open_pit",
+      "processing_route": [
+        "agitated_leach_sx_ew"
+      ],
+      "lifecycle_stage": "operating",
+      "basin": {
+        "name": "Lufira sub-catchment (illustrative)",
+        "bws_score": 1.6,
+        "bws_category": "low_medium",
+        "bws_source": "Illustrative placeholder - production system looks up WRI Aqueduct 4.0 from coordinates"
+      }
+    },
+    "period": {
+      "year": 2025,
+      "start_date": "2025-01-01",
+      "end_date": "2025-12-31"
+    },
+    "production": {
+      "products": [
+        {
+          "commodity": "Co",
+          "product_form": "Co hydroxide",
+          "metal_content_t": 8000,
+          "basis": "contained_metal",
+          "allocation_share": 0.8,
+          "product_t": 22000
+        },
+        {
+          "commodity": "Cu",
+          "product_form": "Cu cathode",
+          "metal_content_t": 12000,
+          "basis": "contained_metal",
+          "allocation_share": 0.2,
+          "product_t": 12000
+        }
+      ],
+      "ore_processed_t": 1800000
+    },
+    "water": {
+      "withdrawals": [
+        {
+          "source": "surface_water",
+          "volume_ml": 2660.0,
+          "dq": "calculated",
+          "subtype": "river_lake_abstraction"
+        },
+        {
+          "source": "groundwater",
+          "volume_ml": 1140.0,
+          "dq": "estimated",
+          "subtype": "mine_dewatering"
+        }
+      ],
+      "discharges": [
+        {
+          "destination": "surface_water",
+          "volume_ml": 1500,
+          "dq": "estimated",
+          "treated": false
+        }
+      ],
+      "consumption": {
+        "total_ml": 2090.9,
+        "total_dq": "estimated"
+      },
+      "reuse": {
+        "reused_recycled_ml": 1064.0,
+        "dq": "estimated"
+      }
+    },
+    "assurance": {
+      "level": "none",
+      "methodology": "company_specific"
+    },
+    "sources": [
+      {
+        "title": "Synthetic demo record (generate_synthetic.py)",
+        "extraction": "reported_directly"
+      }
+    ]
+  },
+  {
+    "passport_version": "0.1",
+    "synthetic": true,
+    "tier": "tier2",
+    "site": {
+      "site_id": "MWP-ES-0016",
+      "name": "Sierra Morena Copper-Zinc",
+      "operator": "Minas Sierra Morena S.L. (fictional)",
+      "country": "ES",
+      "latitude": 37.71,
+      "longitude": -6.62,
+      "primary_commodity": "Cu",
+      "mine_type": "open_pit_and_underground",
+      "processing_route": [
+        "flotation"
+      ],
+      "lifecycle_stage": "operating",
+      "basin": {
+        "name": "Guadiana-type Mediterranean basin (illustrative)",
+        "bws_score": 4.1,
+        "bws_category": "extremely_high",
+        "bws_source": "Illustrative placeholder - production system looks up WRI Aqueduct 4.0 from coordinates"
+      }
+    },
+    "period": {
+      "year": 2025,
+      "start_date": "2025-01-01",
+      "end_date": "2025-12-31"
+    },
+    "production": {
+      "products": [
+        {
+          "commodity": "Cu",
+          "product_form": "Cu concentrate",
+          "metal_content_t": 60000,
+          "basis": "contained_metal",
+          "allocation_share": 0.7,
+          "product_t": 240000
+        },
+        {
+          "commodity": "Zn",
+          "product_form": "Zn concentrate",
+          "metal_content_t": 70000,
+          "basis": "contained_metal",
+          "allocation_share": 0.3,
+          "product_t": 140000
+        }
+      ],
+      "ore_processed_t": 5500000
+    },
+    "water": {
+      "withdrawals": [
+        {
+          "source": "surface_water",
+          "volume_ml": 2160.0,
+          "dq": "estimated",
+          "subtype": "precipitation_runoff",
+          "quality": "cat1",
+          "freshwater_gri": true
+        },
+        {
+          "source": "groundwater",
+          "volume_ml": 1680.0,
+          "dq": "measured",
+          "subtype": "mine_dewatering",
+          "quality": "cat3",
+          "freshwater_gri": false
+        },
+        {
+          "source": "third_party",
+          "volume_ml": 960.0,
+          "dq": "estimated",
+          "subtype": "treated_wastewater",
+          "quality": "cat2",
+          "freshwater_gri": false
+        }
+      ],
+      "discharges": [
+        {
+          "destination": "surface_water",
+          "volume_ml": 1900,
+          "dq": "measured",
+          "treated": true,
+          "quality": "cat2"
+        }
+      ],
+      "consumption": {
+        "total_ml": 2929.4,
+        "total_dq": "calculated",
+        "evaporation_ml": 1025.3,
+        "evaporation_dq": "calculated",
+        "entrainment_ml": 1757.6,
+        "entrainment_dq": "calculated",
+        "other_ml": 146.5,
+        "other_dq": "estimated"
+      },
+      "reuse": {
+        "reused_recycled_ml": 7728.0,
+        "dq": "calculated",
+        "task_water_ml": 11040.0,
+        "tsf_return_ml": 3477.6
+      },
+      "storage": {
+        "opening_ml": 4888.0,
+        "closing_ml": 4788.0,
+        "dq": "calculated"
+      },
+      "monthly": [
+        {
+          "month": 1,
+          "withdrawal_ml": 200.0,
+          "consumption_ml": 122.1,
+          "discharge_ml": 237.5
+        },
+        {
+          "month": 2,
+          "withdrawal_ml": 226.8,
+          "consumption_ml": 138.4,
+          "discharge_ml": 226.9
+        },
+        {
+          "month": 3,
+          "withdrawal_ml": 300.0,
+          "consumption_ml": 183.1,
+          "discharge_ml": 197.9
+        },
+        {
+          "month": 4,
+          "withdrawal_ml": 400.0,
+          "consumption_ml": 244.1,
+          "discharge_ml": 158.3
+        },
+        {
+          "month": 5,
+          "withdrawal_ml": 500.0,
+          "consumption_ml": 305.1,
+          "discharge_ml": 118.8
+        },
+        {
+          "month": 6,
+          "withdrawal_ml": 573.2,
+          "consumption_ml": 349.8,
+          "discharge_ml": 89.8
+        },
+        {
+          "month": 7,
+          "withdrawal_ml": 600.0,
+          "consumption_ml": 366.2,
+          "discharge_ml": 79.2
+        },
+        {
+          "month": 8,
+          "withdrawal_ml": 573.2,
+          "consumption_ml": 349.8,
+          "discharge_ml": 89.8
+        },
+        {
+          "month": 9,
+          "withdrawal_ml": 500.0,
+          "consumption_ml": 305.1,
+          "discharge_ml": 118.8
+        },
+        {
+          "month": 10,
+          "withdrawal_ml": 400.0,
+          "consumption_ml": 244.1,
+          "discharge_ml": 158.3
+        },
+        {
+          "month": 11,
+          "withdrawal_ml": 300.0,
+          "consumption_ml": 183.1,
+          "discharge_ml": 197.9
+        },
+        {
+          "month": 12,
+          "withdrawal_ml": 226.8,
+          "consumption_ml": 138.4,
+          "discharge_ml": 226.9
+        }
+      ]
+    },
+    "assurance": {
+      "level": "limited",
+      "methodology": "GRI_303_2018",
+      "provider": "Example Assurance Partner (fictional)"
+    },
+    "sources": [
+      {
+        "title": "Synthetic demo record (generate_synthetic.py)",
+        "extraction": "reported_directly"
+      }
+    ],
+    "context": {
+      "competing_users": [
+        "agriculture",
+        "municipal_drinking",
+        "ecosystems_wetlands"
+      ],
+      "seasonality": "strong",
+      "water_grievances": 3,
+      "water_incidents": 1
+    }
+  },
+  {
+    "passport_version": "0.1",
+    "synthetic": true,
+    "tier": "tier1",
+    "site": {
+      "site_id": "MWP-ID-0017",
+      "name": "Teluk Biru Nickel HPAL",
+      "operator": "PT Teluk Biru Nikel (fictional)",
+      "country": "ID",
+      "latitude": -2.94,
+      "longitude": 122.18,
+      "primary_commodity": "Ni",
+      "mine_type": "open_pit",
+      "processing_route": [
+        "hpal"
+      ],
+      "lifecycle_stage": "operating",
+      "basin": {
+        "name": "Tropical coastal catchment (illustrative)",
+        "bws_score": 0.6,
+        "bws_category": "low",
+        "bws_source": "Illustrative placeholder - production system looks up WRI Aqueduct 4.0 from coordinates"
+      }
+    },
+    "period": {
+      "year": 2025,
+      "start_date": "2025-01-01",
+      "end_date": "2025-12-31"
+    },
+    "production": {
+      "products": [
+        {
+          "commodity": "Ni",
+          "product_form": "Mixed hydroxide precipitate",
+          "metal_content_t": 60000,
+          "basis": "contained_metal",
+          "allocation_share": 0.88,
+          "product_t": 150000
+        },
+        {
+          "commodity": "Co",
+          "product_form": "in MHP",
+          "metal_content_t": 6000,
+          "basis": "contained_metal",
+          "allocation_share": 0.12
+        }
+      ],
+      "ore_processed_t": 8000000
+    },
+    "water": {
+      "withdrawals": [
+        {
+          "source": "seawater",
+          "volume_ml": 18000.0,
+          "dq": "measured",
+          "quality": "cat3",
+          "freshwater_gri": false
+        },
+        {
+          "source": "surface_water",
+          "volume_ml": 9000.0,
+          "dq": "measured",
+          "quality": "cat1",
+          "freshwater_gri": true
+        },
+        {
+          "source": "surface_water",
+          "volume_ml": 3000.0,
+          "dq": "estimated",
+          "subtype": "precipitation_runoff",
+          "quality": "cat1",
+          "freshwater_gri": true
+        }
+      ],
+      "discharges": [
+        {
+          "destination": "seawater",
+          "volume_ml": 24000,
+          "dq": "measured",
+          "treated": true,
+          "quality": "cat3"
+        }
+      ],
+      "consumption": {
+        "total_ml": 5806.1,
+        "total_dq": "calculated"
+      },
+      "reuse": {
+        "reused_recycled_ml": 13500.0,
+        "dq": "calculated"
+      },
+      "storage": {
+        "opening_ml": 4313.0,
+        "closing_ml": 4513.0,
+        "dq": "calculated"
+      },
+      "monthly": [
+        {
+          "month": 1,
+          "withdrawal_ml": 3000.0,
+          "consumption_ml": 580.6,
+          "discharge_ml": 1600.0
+        },
+        {
+          "month": 2,
+          "withdrawal_ml": 2933.0,
+          "consumption_ml": 567.6,
+          "discharge_ml": 1653.6
+        },
+        {
+          "month": 3,
+          "withdrawal_ml": 2750.0,
+          "consumption_ml": 532.2,
+          "discharge_ml": 1800.0
+        },
+        {
+          "month": 4,
+          "withdrawal_ml": 2500.0,
+          "consumption_ml": 483.8,
+          "discharge_ml": 2000.0
+        },
+        {
+          "month": 5,
+          "withdrawal_ml": 2250.0,
+          "consumption_ml": 435.5,
+          "discharge_ml": 2200.0
+        },
+        {
+          "month": 6,
+          "withdrawal_ml": 2067.0,
+          "consumption_ml": 400.0,
+          "discharge_ml": 2346.4
+        },
+        {
+          "month": 7,
+          "withdrawal_ml": 2000.0,
+          "consumption_ml": 387.1,
+          "discharge_ml": 2400.0
+        },
+        {
+          "month": 8,
+          "withdrawal_ml": 2067.0,
+          "consumption_ml": 400.0,
+          "discharge_ml": 2346.4
+        },
+        {
+          "month": 9,
+          "withdrawal_ml": 2250.0,
+          "consumption_ml": 435.5,
+          "discharge_ml": 2200.0
+        },
+        {
+          "month": 10,
+          "withdrawal_ml": 2500.0,
+          "consumption_ml": 483.8,
+          "discharge_ml": 2000.0
+        },
+        {
+          "month": 11,
+          "withdrawal_ml": 2750.0,
+          "consumption_ml": 532.2,
+          "discharge_ml": 1800.0
+        },
+        {
+          "month": 12,
+          "withdrawal_ml": 2933.0,
+          "consumption_ml": 567.6,
+          "discharge_ml": 1653.6
+        }
+      ]
+    },
+    "assurance": {
+      "level": "limited",
+      "methodology": "GRI_303_2018",
+      "provider": "Example Assurance Partner (fictional)"
+    },
+    "sources": [
+      {
+        "title": "Synthetic demo record (generate_synthetic.py)",
+        "extraction": "reported_directly"
+      }
+    ],
+    "context": {
+      "competing_users": [
+        "indigenous_communities",
+        "ecosystems_wetlands",
+        "agriculture"
+      ],
+      "seasonality": "moderate",
+      "water_grievances": 6,
+      "water_incidents": 2
+    }
+  }
+]

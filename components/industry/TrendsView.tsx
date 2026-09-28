@@ -5,8 +5,11 @@ import { Area, CartesianGrid, ComposedChart, Legend, Line, ResponsiveContainer, 
 import { HORIZONS, NOW_YEAR } from "@/lib/corpus/trends";
 import { INDICATORS, industryTrend, type CompanyProfile, type IndicatorId } from "@/lib/corpus/indicators";
 import { cx } from "@/lib/format";
+import type { Corpus } from "@/lib/corpus/types";
+import ResearchBenchmark from "./ResearchBenchmark";
 
 interface Props {
+  corpus: Corpus;
   profiles: CompanyProfile[];
   company: string | null;
   setCompany: (c: string | null) => void;
@@ -17,7 +20,7 @@ const PALETTE = ["#1f5c7a", "#a33a2a", "#2f7a6b", "#8a5f0f", "#6b4c9a", "#3d7fa0
 const fmtVal = (v: number, pct?: boolean) => (pct ? `${v.toFixed(0)}%` : v >= 100 ? v.toLocaleString("en-US", { maximumFractionDigits: 0 }) : v.toLocaleString("en-US", { maximumFractionDigits: 2 }));
 const fmtChange = (c: number, pct?: boolean) => (pct ? `${c >= 0 ? "+" : ""}${(c * 100).toFixed(1)} pts/yr` : `${c >= 0 ? "+" : ""}${(c * 100).toFixed(1)}%/yr`);
 
-export default function TrendsView({ profiles, company, setCompany }: Props) {
+export default function TrendsView({ corpus, profiles, company, setCompany }: Props) {
   const [ind, setInd] = useState<IndicatorId>("withdrawal");
   const [indexed, setIndexed] = useState(true);
   const meta = INDICATORS.find((i) => i.id === ind)!;
@@ -211,6 +214,7 @@ export default function TrendsView({ profiles, company, setCompany }: Props) {
         Where a company publishes no total, the sum of its reported sites is used. Scope changes (acquisitions, divestments, closures) move these
         series; they are listed under Data integrity as jumps. Confidence reflects the number of years and how well a constant rate fits them.
       </p>
+      <ResearchBenchmark corpus={corpus} company={company} />
     </div>
   );
 }

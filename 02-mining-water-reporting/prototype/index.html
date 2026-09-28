@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MineWater Passport</title>
+<link rel="stylesheet" href="vendor/leaflet.css">
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/foresight.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><rect x="1" y="1" width="32" height="32" rx="8" fill="#1c5cab"/><path d="M17 6c4 5.2 7 9 7 13a7 7 0 0 1-14 0c0-4 3-7.8 7-13z" fill="#fff"/><path d="M12.5 21h9M14 24h6" stroke="#1c5cab" stroke-width="1.8" stroke-linecap="round"/></svg>
+    <div><h1>MineWater Passport</h1><div class="sub">Open site-level water reporting for mines &middot; standard + tool + extraction</div></div>
+  </div>
+  <div class="spacer"></div>
+  <span class="ver">Draft standard v0.1</span>
+  <span class="synth" title="All sites, operators and figures in this prototype are fictional">Illustrative synthetic data &middot; fictional sites</span>
+</header>
+<nav class="tabs" id="tabs">
+  <button data-view="explorer" class="active"><span class="n">1</span>Explorer</button>
+  <button data-view="hotspots"><span class="n">2</span>Hotspots</button>
+  <button data-view="supply"><span class="n">3</span>Supply-chain lens</button>
+  <button data-view="card"><span class="n">4</span>Report card</button>
+  <button data-view="entry"><span class="n">5</span>Enter &amp; validate</button>
+  <button data-view="extract"><span class="n">6</span>Report extractor</button>
+  <button data-view="framework"><span class="n">7</span>The standard</button>
+  <button data-view="foresight"><span class="n">8</span>Foresight</button>
+  <button data-view="impact"><span class="n">9</span>Impact &amp; evidence</button>
+</nav>
+<main>
+  <!-- 1 EXPLORER -->
+  <section class="view active" id="v-explorer">
+    <div class="vhead"><div><h2>Who uses how much water &ndash; and where it hurts</h2>
+      <p>17 fictional sites reported in the MineWater Passport format. Circle colour = basin baseline water stress; circle size = water volume. Toggle withdrawal vs consumption to see why the distinction matters.</p></div>
+      <div class="seg" id="sizeSeg"><button data-k="C" class="on">Size: consumption</button><button data-k="W">Size: withdrawal</button></div>
+    </div>
+    <div class="tiles" id="tiles"></div>
+    <div class="grid2">
+      <div class="card"><div id="map"></div><div class="legend" id="mapLegend"></div></div>
+      <div class="card" id="siteDetail"></div>
+    </div>
+    <div class="card" style="margin-top:16px">
+      <div class="row between wrap" style="margin-bottom:8px"><h3>Comparison table &ndash; normalised KPIs</h3><div class="chipf" id="comFilter"></div></div>
+      <div class="tscroll"><table class="tbl" id="cmpTable"></table></div>
+      <p class="tiny muted">m³/t metal uses economic allocation between co-products; lithium on a lithium-carbonate-equivalent (LCE) basis. Stress categories are illustrative placeholders; the production tool looks up WRI Aqueduct 4.0 from coordinates.</p>
+    </div>
+  </section>
+
+  <!-- 2 HOTSPOTS -->
+  <section class="view" id="v-hotspots">
+    <div class="vhead"><div><h2>Hotspots: high consumption in high-stress basins</h2>
+      <p>Where should regulators, investors and buyers look first? Each bubble is a site: x = basin water stress, y = water consumed (log scale). Top-right quadrant = hotspot. Ranking uses stress-weighted consumption (consumption &times; stress weight; illustrative weights).</p></div></div>
+    <div class="grid2">
+      <div class="card"><div class="chartbox" id="hotBox"><canvas id="hotChart"></canvas></div>
+        <div class="legend"><span><span class="sw" style="background:#c23434"></span>Hotspot (stress &ge; high and consumption &ge; 3,000 ML)</span><span><span class="sw" style="background:#2a78d6"></span>Other sites</span><span class="muted">Bubble area &prop; consumption per t ore</span></div></div>
+      <div class="card rank"><h3>Ranking &ndash; stress-weighted consumption</h3><ol id="rankList"></ol></div>
+    </div>
+  </section>
+
+  <!-- 3 SUPPLY CHAIN -->
+  <section class="view" id="v-supply">
+    <div class="vhead"><div><h2>Supply-chain lens for due-diligence teams</h2>
+      <p>Pick a battery / transition metal and compare the water footprint per tonne of metal across candidate supplier sites &ndash; split by water quality, coloured by basin stress &ndash; then test a sourcing mix.</p></div>
+      <div class="chipf" id="supCom"></div></div>
+    <div class="grid2e">
+      <div class="card"><h3>Consumption per t metal (allocated) &ndash; coloured by basin stress</h3><div class="chartbox sm"><canvas id="supC"></canvas></div><div class="legend" id="supLegend"></div></div>
+      <div class="card"><h3>Withdrawal per t metal by water quality (WAF category)</h3><div class="chartbox sm"><canvas id="supW"></canvas></div>
+        <p class="tiny muted">Brine sites withdraw large volumes of Cat 3 (hypersaline) water but little freshwater &ndash; a single &ldquo;litres per tonne&rdquo; figure hides this. MWP reports both.</p></div>
+    </div>
+    <div class="grid2e" style="margin-top:16px">
+      <div class="card"><h3>Sourcing-mix simulator</h3><p class="small muted">Set the share of annual offtake from each site. Results update live.</p><div id="mix"></div><div class="result" id="mixRes"></div></div>
+      <div class="card"><div class="row between"><h3>Supplier screening</h3><select id="supSite" style="width:auto"></select></div><ul class="flags" id="supFlags"></ul>
+        <div class="reg" id="supReg"></div></div>
+    </div>
+  </section>
+
+  <!-- 4 REPORT CARD -->
+  <section class="view" id="v-card">
+    <div class="toolbar noprint"><strong>Site:</strong><select id="cardSite" style="width:auto"></select><button class="btn ghost" id="printBtn">Print / save as PDF</button></div>
+    <div class="rc" id="rc"></div>
+  </section>
+
+  <!-- 5 ENTRY -->
+  <section class="view" id="v-entry">
+    <div class="vhead"><div><h2>Enter &amp; validate a site passport</h2>
+      <p>The form is generated from <code>mine-water-passport.schema.json</code>. Validation, mass balance (inputs &minus; outputs &minus; &Delta;storage &asymp; 0) and the transparency score update as you type. Tier 1 = 12 must-report data points; switch to Tier 2 for the full balance.</p></div></div>
+    <div class="toolbar">
+      <button class="btn" id="fBlank">New blank (Tier 1)</button>
+      <select id="fExample" style="width:auto"></select>
+      <button class="btn ghost" id="fDownload">Download JSON</button>
+      <label class="btn ghost" style="display:inline-block">Import JSON<input type="file" id="fImport" accept=".json,application/json" hidden></label>
+      <span class="small muted" id="fMsg"></span>
+    </div>
+    <div class="formwrap"><div id="formRoot"></div><aside class="side" id="formSide"></aside></div>
+  </section>
+
+  <!-- 6 EXTRACTOR -->
+  <section class="view" id="v-extract">
+    <div class="vhead"><div><h2>Report extractor &ndash; backfill passports from existing reports</h2>
+      <p>Paste a paragraph from a sustainability report. A deterministic extractor pulls water figures, normalises units to megalitres, detects the year, and flags confidence. This is the seed (and the verifier) of an LLM-assisted pipeline that backfills thousands of sites from public reports.</p></div></div>
+    <div class="grid2e">
+      <div class="card"><h3>Input text</h3><div class="samples" id="samples"></div>
+        <textarea id="exText" placeholder="Paste report text here..."></textarea>
+        <div class="row" style="margin-top:8px"><button class="btn" id="exRun">Extract</button><button class="btn ghost" id="exSend">Open in passport form &rarr;</button><span class="tiny muted">Sample paragraphs are fictional.</span></div>
+        <div class="pipeline"><div class="now"><b>1 &middot; Heuristic parse</b>units, years, keywords (this demo)</div><div><b>2 &middot; LLM extraction</b>schema-constrained JSON, page cites</div><div><b>3 &middot; Cross-check</b>regex vs LLM, mass balance, units</div><div><b>4 &middot; Human review</b>low-confidence queue</div><div><b>5 &middot; Publish</b>passport + provenance</div></div>
+      </div>
+      <div class="card"><h3>Detected figures</h3><div class="hl" id="exHl"><span class="muted">Run the extractor to see highlighted evidence.</span></div>
+        <div class="tscroll" style="margin-top:10px"><table class="tbl" id="exTable"></table></div><div id="exNotes" class="small" style="margin-top:8px"></div></div>
+    </div>
+  </section>
+
+  <!-- 7 FRAMEWORK -->
+  <section class="view" id="v-framework">
+    <div class="vhead"><div><h2>The MineWater Passport standard (draft v0.1)</h2>
+      <p>A minimum site-level reporting format built on ICMM (2021) and the MCA Water Accounting Framework, with every field mapped to GRI 303 / GRI 14, ESRS E3, CDP and IRMA. The crosswalk below is read live from the schema&rsquo;s machine-readable annotations.</p></div></div>
+    <div class="principles">
+      <div class="card"><h3>Comparability</h3><p>Site level, not company level. Normalised intensities (m³/t ore, m³/t metal or LCE with explicit allocation). Consumption and withdrawal always reported separately, with WAF water-quality categories.</p></div>
+      <div class="card"><h3>Minimal burden</h3><p>Tier 1 = 12 data points any site can report in a day. Tier 2 = full WAF-style balance. Basin context is derived from coordinates &ndash; not asked of the reporter.</p></div>
+      <div class="card"><h3>Decision relevance</h3><p>Every figure carries a data-quality flag. Basin stress, competing users and monthly profiles turn totals into impact signals for buyers, basin authorities and researchers.</p></div>
+      <div class="card"><h3>Open data</h3><p>Open JSON Schema, open validator, CC-BY dataset. One passport satisfies GRI, ESRS, CDP and IRMA requests &ndash; &ldquo;report once, reuse everywhere&rdquo;.</p></div>
+    </div>
+    <div class="grid2">
+      <div class="card"><h3>Field crosswalk (from schema <code>x-mwp</code> annotations)</h3><div class="tscroll"><table class="tbl fwtable" id="fwTable"></table></div></div>
+      <div class="card"><h3>Tier 1 &ndash; the 12 must-report data points</h3><ol id="t1List" style="padding-left:20px;margin:6px 0"></ol>
+        <h3 style="margin-top:14px">Quality categories (MCA WAF)</h3>
+        <table class="kv"><tr><td><span class="sq" style="display:inline-block;width:10px;height:10px;background:var(--q1);border-radius:2px"></span> Cat 1</td><td style="font-weight:400;text-align:left;padding-left:10px">High quality, minimal treatment (ICMM &ldquo;high&rdquo;)</td></tr>
+        <tr><td><span style="display:inline-block;width:10px;height:10px;background:var(--q2);border-radius:2px"></span> Cat 2</td><td style="font-weight:400;text-align:left;padding-left:10px">Medium quality, moderate treatment (ICMM &ldquo;low&rdquo;)</td></tr>
+        <tr><td><span style="display:inline-block;width:10px;height:10px;background:var(--q3);border-radius:2px"></span> Cat 3</td><td style="font-weight:400;text-align:left;padding-left:10px">Low quality: high TDS, metals, extreme pH (ICMM &ldquo;low&rdquo;)</td></tr></table>
+        <p class="tiny muted">ICMM high/low split vs WAF Cat 1/2/3 is our crosswalk convention; GRI 303 &ldquo;freshwater&rdquo; (&le;1,000 mg/L TDS) is a separate flag per flow.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 FORESIGHT (foresight.js) -->
+  <section class="view" id="v-foresight">
+    <div class="vhead"><div><h2>Market foresight: what happens to mine water transparency by 2036</h2>
+      <p>The passports in this tool, projected forward under three futures. Each year every site is re-scored with the same transparency engine as the report card. Green tags are published figures; amber tags are our assumptions, adjustable live.</p></div></div>
+
+    <div class="card">
+      <div class="fs-explorer">
+        <div class="fs-ctl">
+          <div><label for="fs_year">Show year <output id="fsYearOut">2031</output></label><input type="range" id="fs_year" min="2026" max="2036" step="1" value="2031"><div class="hint">NOW = 2026 &middot; +2 = 2028 &middot; +5 = 2031 &middot; +10 = 2036</div></div>
+          <div><label>Passport adoption speed</label><div class="seg" id="fsSpeed"><button data-v="0.25">Slow</button><button data-v="0.4" class="on">Base</button><button data-v="0.6">Fast</button></div>
+            <div class="hint">Share of un-metered volume that becomes metered each year once EU buyers ask <span class="tag asm">assumption</span></div></div>
+          <div><label for="fs_g">Output growth <output id="fs_gOut">2.0%</output></label><input type="range" id="fs_g" min="0" max="4" step="0.1" value="2"><div class="hint">% per year <span class="tag asm">assumption</span></div></div>
+          <div><label for="fs_k">Water growth vs output <output id="fs_kOut">1.50×</output></label><input type="range" id="fs_k" min="1" max="2" step="0.05" value="1.5"><div class="hint">1.5× = water grew 50% faster than copper output, 2015–19 <span class="tag src">Lutter 2025</span></div></div>
+          <div class="formula">Nothing changes: 3%/yr of un-metered volume gets metered, no new assurance.<br>Regulation only (from 2027): 15%/yr and limited assurance from 2029, but only for sites in EU reach (battery DD metals Co/Li/Ni or EU location). Others 3%/yr.<br>Passport (from 2027): all sites at the adoption speed; limited assurance 2028; reasonable assurance 2031 in high-stress basins.</div>
+        </div>
+        <div style="min-width:0">
+          <div class="row between wrap" style="margin-bottom:8px">
+            <div class="seg" id="fsMetric"><button data-v="unver" class="on">Unmetered water in stressed basins</button><button data-v="met">Water volume metered</button><button data-v="score">Mean transparency score</button></div>
+            <div class="legend fs-legend" style="margin:0"><span><i style="background:#2a78d6"></i>Nothing changes</span><span><i style="background:#eb6834"></i>Regulation only</span><span><i style="background:#1baf7a"></i>Regulation + passport</span></div>
+          </div>
+          <div class="chartbox sm"><canvas id="fsChart"></canvas></div>
+          <div class="tiles" id="fsTiles" style="margin-top:12px"></div>
+        </div>
+      </div>
+      <div class="fs-callout" id="fsGapNote"></div>
+    </div>
+
+    <div class="card" style="margin-top:16px">
+      <div class="row between wrap" style="margin-bottom:8px"><h3 id="fsSiteHead">Site grades</h3>
+        <div class="seg" id="fsScen"><button data-v="none">Nothing changes</button><button data-v="reg">Regulation only</button><button data-v="pass" class="on">Regulation + passport</button></div></div>
+      <div class="tscroll"><table class="tbl" id="fsSites"></table></div>
+    </div>
+
+    <h2 style="margin:26px 0 10px">Market Foresight Canvas</h2>
+    <div class="fs-canvas">
+      <div class="fs-box fs-c1">
+        <h3><span>1.</span> Current trend &amp; 10-year development</h3>
+        <div class="fs-trendname">Trend: supply-chain water accountability for critical minerals. From one company-wide total (withdrawal and consumption mixed up) to per-site, basin-aware water data that EU buyers must check.</div>
+        <svg id="fsTrend" viewBox="0 0 640 230" role="img" aria-label="Mean transparency score of the passports, regulation only vs regulation plus passport"></svg>
+        <div class="legend fs-legend" style="margin:0"><span><i style="background:#eb6834"></i>Expected: regulation only</span><span><i style="background:#1baf7a"></i>Desired: regulation + passport</span><span class="muted">y = mean A–E transparency score of all passports (60–100), from the projection above</span></div>
+        <div class="fs-sub2">
+          <div class="fs-mini"><b>Drivers (societal / business / technological)</b>
+            <div class="fs-notes">
+              <div class="fs-note"><b>Drier mines</b>Copper-mine water use grew 50% faster than output; over half of 2019 output came from regions with declining freshwater.<small>Lutter et al. 2025</small></div>
+              <div class="fs-note"><b>Copper gap</b>IEA: copper supply could fall ~30% short of demand by 2035.<small>IEA, Dec 2025</small></div>
+              <div class="fs-note"><b>EU buyer liability</b>Battery passport Feb 2027, battery due diligence Aug 2027, CRMA strategic projects.<small>Reg. 2023/1542, 2025/1561</small></div>
+              <div class="fs-note"><b>Tech is ready</b>Satellites + ML estimate site withdrawal where firms don't report.<small>Lutter et al. 2025</small></div>
+            </div></div>
+          <div class="fs-mini"><b>Observed &amp; expected milestones</b>
+            <div class="fs-ms">
+              <div><span class="y">Aug 2025</span><span>Copper mines withdrew 13.6 trillion litres in 2015–19; intensity ~2× earlier estimates</span></div>
+              <div><span class="y">Jul 2026</span><span>ICMM dataset: ~12k facilities, 65.7% at high water risk, no withdrawal, consumption or discharge volumes</span></div>
+              <div><span class="y">Feb 2027</span><span>EU battery passport mandatory</span></div>
+              <div><span class="y">Aug 2027</span><span>Battery due-diligence duties apply</span></div>
+              <div><span class="y">FY 2027</span><span>Revised ESRS apply</span></div>
+              <div><span class="y exp">2030</span><span class="exp">CRMA benchmarks: 10% EU extraction, 40% processing, 25% recycling</span></div>
+              <div><span class="y exp">2034</span><span class="exp">Cochilco: ~two-thirds of Chilean mining water from the sea</span></div>
+              <div><span class="y exp">2035</span><span class="exp">~30% copper supply shortfall (IEA)</span></div>
+            </div></div>
+        </div>
+      </div>
+      <div class="fs-box"><h3><span>2.</span> Market consequences</h3><p class="sub">If rules arrive but data stays company-level</p>
+        <div class="fs-notes">
+          <div class="fs-note"><b>Compliance on paper</b>Company totals pass audits but can't show which site drains which basin.</div>
+          <div class="fs-note"><b>Blanket risk discounts</b>Whole countries priced as "water risk"; careful mines get no credit.</div>
+          <div class="fs-note"><b>Questionnaire fatigue</b>Every OEM surveys the same mines. Cost multiplies, quality doesn't.</div>
+          <div class="fs-note"><b>Surprise supply shocks</b>Water permits and conflicts stop mines without warning to buyers.</div>
+          <div class="fs-note"><b>Copper left out</b>Battery due diligence covers Co, Li, Ni and graphite. Copper sites stay dark.</div>
+        </div></div>
+      <div class="fs-box"><h3><span>3.</span> Desired future</h3><p class="sub">Different from the "nothing changes" path</p>
+        <div class="fs-notes">
+          <div class="fs-note"><b>A passport per site</b>Withdrawal, consumption and discharge kept separate, with source quality and basin stress.</div>
+          <div class="fs-note"><b>Every number says how it was made</b>Measured, calculated or estimated, graded A–E.</div>
+          <div class="fs-note"><b>Gaps filled, then replaced</b>Open ML estimates until metered data arrives.</div>
+          <div class="fs-note"><b>One set of numbers</b>Buyers, banks, researchers, communities read the same data.</div>
+          <div class="fs-note"><b>Water in the contract</b>Offtake and finance terms reward water-responsible sites.</div>
+        </div></div>
+      <div class="fs-box fs-c4"><h3><span>4.</span> Interventions</h3><p class="sub">Actions at each point on the trend line</p>
+        <div class="fs-iv">
+          <div><span class="w">NOW &middot; 2026</span><ul><li>Open passport schema mapped to ICMM, GRI 303/14, ESRS E3, MCA WAF, IRMA (tab 7)</li><li>Validator + A–E grade (tabs 4, 5)</li><li>Report extractor backfills sites (tab 6)</li><li>90-day pilot: 3 mines, 1 EU battery buyer, WU Wien</li></ul></div>
+          <div><span class="w">+2 YEARS &middot; 2028</span><ul><li>Plug into battery due-diligence and battery passport workflows</li><li>Buyer API: one passport replaces N questionnaires</li><li>Align with revised ESRS E3 and assurance providers</li></ul></div>
+          <div><span class="w">+5 YEARS &middot; 2031</span><ul><li>Satellite + ML check flags reported vs observed mismatches</li><li>Extend to copper supply chains outside battery DD</li><li>Water KPIs in offtake contracts and project finance</li></ul></div>
+          <div><span class="w">+10 YEARS &middot; 2036</span><ul><li>Basin-scale shared water accounts</li><li>Passport is default evidence for EU critical-mineral imports</li><li>Water-linked finance</li></ul></div>
+        </div></div>
+    </div>
+
+    <h2 style="margin:26px 0 10px">Global view from published data</h2>
+    <div class="fs-ins">
+      <div class="tile"><div class="k">Insight 1 &middot; demand</div><div class="big">+50%</div><div class="small">Copper-mine water use grew 50% faster than output (2015–19). Over half of 2019 output came from regions with declining freshwater.</div><div class="tiny muted">Lutter, Maus, Luckeneder, Tost 2025</div></div>
+      <div class="tile"><div class="k">Insight 2 &middot; the gap</div><div class="big">0</div><div class="small">Water volumes in ICMM's July 2026 dataset of ~12,000 facilities. It maps where risk is, not who uses how much.</div><div class="tiny muted">ICMM, 22 Jul 2026</div></div>
+      <div class="tile"><div class="k">Insight 3 &middot; timing</div><div class="big">2027</div><div class="small">Battery passport (Feb) and due diligence (Aug) make EU buyers liable. Revised ESRS apply from FY 2027.</div><div class="tiny muted">Reg. (EU) 2023/1542; 2025/1561</div></div>
+    </div>
+    <div class="grid2e" style="margin-top:16px">
+      <div class="card">
+        <h3>Copper-mine water invisible to buyers in stressed regions (km³/yr)</h3>
+        <div class="chartbox xs" style="height:240px"><canvas id="fsGlobal"></canvas></div>
+        <div class="tiles" style="margin:12px 0 0">
+          <div class="tile"><div class="k">Global copper-mine withdrawal 2026 → 2036</div><div class="v" id="fsG1"></div></div>
+          <div class="tile"><div class="k">Invisible in 2036: regulation only → passport</div><div class="v" id="fsG2"></div></div>
+          <div class="tile"><div class="k">Made visible 2027–36 by the passport</div><div class="v" id="fsG3"></div><div class="s">Lake Starnberg holds ~3 km³</div></div>
+        </div>
+      </div>
+      <div class="card fs-ctl">
+        <div><label for="fs_stress">Output in water-stressed regions <output id="fs_stressOut">50%</output></label><input type="range" id="fs_stress" min="30" max="70" step="1" value="50"><div class="hint">"Over half" of 2019 output <span class="tag src">Lutter 2025</span></div></div>
+        <div><label for="fs_t0">Output with public site-level data today <output id="fs_t0Out">20%</output></label><input type="range" id="fs_t0" min="5" max="40" step="1" value="20"><div class="hint">No global figure exists; ICMM's dataset has none <span class="tag asm">assumption</span></div></div>
+        <div class="formula">W(t) = 2.72 km³ × (1 + growth × water factor)^(t − 2017) ← 13.6 km³ in 2015–19 ÷ 5 (Lutter 2025)<br>Invisible(t) = W(t) × stressed share × (1 − share with site data)<br>Site-data share caps: 35% / 60% / 90% (assumption)</div>
+        <h3 style="margin-top:6px">Share of ~12,000 facilities at high water risk</h3>
+        <div id="fsIcmm"></div>
+        <div class="fs-gap"><div><b>Missing: withdrawal</b>How much each site takes</div><div><b>Missing: consumption</b>How much never returns</div><div><b>Missing: discharge</b>Volume and quality back to the basin</div></div>
+        <p class="tiny muted">ICMM Global Mining &amp; Metals Water Dataset, July 2026. In Chile, 85.8% of facilities face high stress plus high year-to-year variability.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9 IMPACT & EVIDENCE (foresight.js) -->
+  <section class="view" id="v-impact">
+    <div class="vhead"><div><h2>Who pays, the pilot, and what is proven</h2>
+      <p>Mines fill the passport for free. Buyers, lenders and traders pay to rely on it.</p></div></div>
+    <div class="grid3">
+      <div class="card"><h3>Pays: EU battery &amp; cell makers, OEMs</h3><p class="small">Due-diligence duty from Aug 2027. One passport replaces dozens of supplier questionnaires.</p></div>
+      <div class="card"><h3>Pays: lenders &amp; traders</h3><p class="small">Site-level water grade for project finance and offtake screening.</p></div>
+      <div class="card"><h3>Free: mines &amp; researchers</h3><p class="small">One format for every buyer; open site data for research groups like WU Wien to train and validate models.</p></div>
+    </div>
+    <div class="card" style="margin-top:16px">
+      <div class="fs-explorer">
+        <div class="fs-ctl">
+          <div><label for="fb_n">Supplier mine sites to check <output id="fb_nOut"></output></label><input type="range" id="fb_n" min="5" max="150" step="5" value="40"></div>
+          <div><label for="fb_h1">Analyst hours per site today <output id="fb_h1Out"></output></label><input type="range" id="fb_h1" min="8" max="80" step="2" value="30"><div class="hint">Collect reports, send questionnaire, chase, normalise <span class="tag asm">assumption</span></div></div>
+          <div><label for="fb_h2">Hours per site with passport <output id="fb_h2Out"></output></label><input type="range" id="fb_h2" min="1" max="12" step="1" value="4"><div class="hint">Review grade, flags, gaps <span class="tag asm">assumption</span></div></div>
+          <div><label for="fb_rate">Loaded analyst cost <output id="fb_rateOut"></output></label><input type="range" id="fb_rate" min="50" max="150" step="5" value="90"><div class="hint">€ per hour <span class="tag asm">assumption</span></div></div>
+          <div><label for="fb_price">Price per monitored site / year <output id="fb_priceOut"></output></label><input type="range" id="fb_price" min="200" max="3000" step="100" value="900"><div class="hint">Pricing hypothesis for the pilot <span class="tag asm">assumption</span></div></div>
+        </div>
+        <div>
+          <div class="tiles">
+            <div class="tile"><div class="k">Analyst hours saved per buyer per year</div><div class="v" id="fbH"></div></div>
+            <div class="tile"><div class="k">Cost saved per buyer per year</div><div class="v" id="fbE"></div></div>
+            <div class="tile"><div class="k">Buyer pays per year</div><div class="v" id="fbP"></div><div class="s" id="fbR"></div></div>
+          </div>
+          <div class="formula">saved € = sites × (hours today − hours with passport) × € per hour &nbsp;·&nbsp; ROI = saved € ÷ (sites × price per site)</div>
+          <h3 style="margin:14px 0 8px">90-day pilot</h3>
+          <div class="fs-pilot">
+            <div><b>Weeks 1–2</b>3 copper/lithium mines with public reports + 1 EU battery buyer.</div>
+            <div><b>Weeks 3–6</b>Backfill passports with the extractor; ML estimates for gaps; grade A–E.</div>
+            <div><b>Weeks 7–10</b>WU Wien checks estimates against measured site data; log buyer hours saved.</div>
+            <div><b>Weeks 11–12</b>Go/no-go on price per site; publish open schema v1.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid2e" style="margin-top:16px">
+      <div class="card"><h3>Proven, built, assumed</h3>
+        <div class="tscroll"><table class="tbl fs-crit">
+          <thead><tr><th>Claim</th><th>Status</th><th>Evidence</th></tr></thead><tbody>
+          <tr><td>ML can estimate site withdrawal where companies don't report</td><td><span class="pill p-proven">Proven</span></td><td>Lutter et al. 2025; github.com/fineprint-global/global-copper-water</td></tr>
+          <tr><td>Water use grows faster than output</td><td><span class="pill p-proven">Proven</span></td><td>Lutter et al. 2025</td></tr>
+          <tr><td>Industry's largest dataset has no volumes</td><td><span class="pill p-proven">Proven</span></td><td>ICMM, 22 Jul 2026</td></tr>
+          <tr><td>EU buyer duties from 2027</td><td><span class="pill p-proven">Law</span></td><td>Reg. (EU) 2023/1542, 2025/1561</td></tr>
+          <tr><td>Schema, validator, mass balance, A–E grade, extractor, supply-chain lens, projection engine</td><td><span class="pill p-built">Built</span></td><td>This tool, tabs 1–8; runs offline</td></tr>
+          <tr><td>Site passports shown in tabs 1–8</td><td><span class="pill p-assumed">Synthetic</span></td><td>17 fictional sites; real sites via extractor in pilot</td></tr>
+          <tr><td>Adoption speeds, assurance timing, share with site data today</td><td><span class="pill p-assumed">Assumed</span></td><td>Adjustable in tab 8</td></tr>
+          <tr><td>Hours saved and price per site</td><td><span class="pill p-assumed">Assumed</span></td><td>Measured in the pilot</td></tr>
+          <tr><td>Satellite estimates of consumption and discharge; minerals beyond copper</td><td><span class="pill p-exp">Experimental</span></td><td>Research question with WU Wien</td></tr>
+          </tbody></table></div></div>
+      <div class="card"><h3>Jury criteria &rarr; where to look</h3>
+        <div class="tscroll"><table class="tbl fs-crit">
+          <thead><tr><th>Criterion</th><th>Evidence in the tool</th></tr></thead><tbody>
+          <tr><td><b>Strategic alignment &amp; climate impact</b> (25)</td><td>Tab 1–2: consumption in stressed basins; tab 8: water made visible by 2036; EU Battery Reg., CRMA, ESRS E3</td></tr>
+          <tr><td><b>Innovation &amp; technical feasibility</b> (25)</td><td>Tabs 4–7: schema, validator, mass balance, extractor; tab 8: projection re-scores every site with the same engine</td></tr>
+          <tr><td><b>Business readiness &amp; scalability</b> (30)</td><td>Tab 3: buyer due-diligence lens; tab 9: who pays, ROI, 90-day pilot</td></tr>
+          <tr><td><b>Team &amp; pitch</b> (20)</td><td>Live demo across tabs; one A-grade and one E-grade passport; one failure explained</td></tr>
+          </tbody></table></div>
+        <h3 style="margin-top:14px">Sources</h3>
+        <ol class="fs-src">
+          <li>Lutter, Maus, Luckeneder, Tost (2025). Increasing Water Use in Global Copper Production Threatens Freshwater Availability. WU Vienna WP 49/2025.</li>
+          <li>ICMM (22 Jul 2026). Global Mining and Metals Water Dataset; "Competition for water poses risks to the energy transition".</li>
+          <li>Regulation (EU) 2023/1542 (Batteries); Regulation (EU) 2025/1561 (due diligence from 18 Aug 2027).</li>
+          <li>European Commission, revised ESRS proposal, 6 May 2026 (apply FY 2027).</li>
+          <li>IEA via S&amp;P Global, 1 Dec 2025: copper ~30% supply deficit by 2035.</li>
+          <li>Cochilco water outlook for Chilean copper mining (via Kitco, Mar 2026).</li>
+          <li>EU CRMA strategic projects: 47 in the EU (Mar 2025), 13 outside (Jun 2025).</li>
+        </ol></div>
+    </div>
+  </section>
+</main>
+<footer>MineWater Passport &middot; EIT Water Hackathon Munich 2026 prototype &middot; <b>All site data are illustrative synthetic data (fictional sites, operators and figures).</b> Framework references: ICMM (2021), MCA WAF v2.0, GRI 303 / GRI 14, ESRS E3, CDP, IRMA 4.2. Basemap: Natural Earth (public domain). Runs fully offline.</footer>
+
+<script src="vendor/leaflet.js"></script>
+<script src="vendor/chart.umd.min.js"></script>
+<script src="vendor/world-50m.geo.js"></script>
+<script src="data/schema.js"></script>
+<script src="data/sites.js"></script>
+<script src="js/validator.js"></script>
+<script src="js/metrics.js"></script>
+<script src="js/form.js"></script>
+<script src="js/extractor.js"></script>
+<script src="js/app.js"></script>
+<script src="js/foresight.js"></script>
+</body>
+</html>

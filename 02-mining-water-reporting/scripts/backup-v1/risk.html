@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Water-at-Risk · MineWater Ledger</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/risk.css">
+</head>
+<body>
+<div class="register"><div class="wrap">
+  <span><a href="index.html"><b>MineWater Ledger</b></a></span>
+  <span><a href="dashboard.html">Dashboard</a></span>
+  <span><b>Water-at-Risk engine</b></span>
+  <span>Company <b>Newcrest Mining · FY20</b></span>
+  <span>Unit <b>ML</b> · money <b>US$</b></span>
+</div></div>
+
+<header class="hero slim"><div class="wrap">
+  <div>
+    <div class="eyebrow">Beyond reporting · reconcile → predict → decide</div>
+    <h1>What does a missing litre of water <em>cost</em> each mine?</h1>
+    <p class="lede">Parsing a report gives you numbers. This engine tells you which number to trust, how likely each mine is to run short of freshwater by 2030, how much revenue that puts at risk, and which fix pays back first.</p>
+  </div>
+  <div class="card stack">
+    <div class="eyebrow">Site</div>
+    <div class="chips" id="sites" role="group" aria-label="Site"></div>
+    <div class="small" id="site-note"></div>
+  </div>
+</div></header>
+
+<section class="panel r-why"><div class="wrap">
+  <div class="r-layers">
+    <div class="r-layer"><span class="r-n">1</span><div><h3>Reconcile</h3><p>Fuses three independent views of each mine's water: the company's figure, what its own water balance implies, and the WU Wien satellite + ML model. Each gets an error bar; the engine returns one best estimate and a trust score.</p></div></div>
+    <div class="r-layer"><span class="r-n">2</span><div><h3>Predict</h3><p>1,000 simulated futures per mine to 2030: demand growth, droughts, tighter licences. Output: probability of a freshwater shortfall and revenue at risk, in dollars.</p></div></div>
+    <div class="r-layer"><span class="r-n">3</span><div><h3>Decide</h3><p>Prices each fix (use less freshwater, secure a new source) against the risk it removes. The mine sees payback; the buyer sees supply risk; the bank sees a number it can lend against.</p></div></div>
+  </div>
+  <p class="note r-moat"><b>Why a spreadsheet can't copy this.</b> Every report we ingest becomes a reconciled site ledger that recalibrates the model for mines that don't report. The more companies use it, the narrower everyone's risk band gets. The asset is the reconciled dataset and the error model behind it, not the parser.</p>
+</div></section>
+
+<!-- 1 RECONCILE -->
+<section class="panel" id="p-rec"><div class="wrap stack">
+  <div class="panel-head"><div><div class="eyebrow">1 · Reconcile · which number to trust</div><h2 id="rec-title">–</h2></div>
+    <p>Each source gets an error bar: reported ±10% (±3% once the site balance closes), balance-implied ±10%, model ±35% (R² 0.79 on test data). The engine weights each source by its precision and flags sources that disagree.</p></div>
+  <div class="grid-2">
+    <div class="card stack">
+      <div class="chart" id="rec-chart"></div>
+      <label class="check"><input type="checkbox" id="verified"> Site publishes a verified ledger (balance closes, ±3%)</label>
+    </div>
+    <div class="card stack">
+      <div id="rec-status"></div>
+      <div class="kpis k2" id="rec-kpis"></div>
+      <p class="note" id="rec-note"></p>
+    </div>
+  </div>
+</div></section>
+
+<!-- 2 PREDICT -->
+<section class="panel l-alt" id="p-pred"><div class="wrap stack">
+  <div class="panel-head"><div><div class="eyebrow">2 · Predict · freshwater shortfall to 2030</div><h2 id="pred-title">–</h2></div>
+    <p>Blue band: freshwater the mine will need (5th to 95th percentile of 1,000 runs). Copper band: freshwater it can get. Where they cross, ore goes unprocessed. The starting point comes from step 1, so a tighter reconciled estimate gives a tighter forecast.</p></div>
+  <div class="card stack">
+    <div class="row r-ctl">
+      <div class="slider"><label for="p-g">Freshwater demand growth <output id="o-g"></output></label><input type="range" id="p-g" min="0" max="5" step="0.1" value="1.5"><span class="r-hint">to hold output as ore grades fall; copper-mine average 2015–19 was 4.3% <span class="tag assumed">assumed</span></span></div>
+      <div class="slider"><label for="p-drought">Drought chance per year <output id="o-drought"></output></label><input type="range" id="p-drought" min="0" max="50" step="1"><span class="r-hint">site default from basin context <span class="tag assumed">assumed</span></span></div>
+      <div class="slider"><label for="p-head">Licence headroom today <output id="o-head"></output></label><input type="range" id="p-head" min="0" max="40" step="1" value="25"><span class="r-hint">allowed freshwater above FY20 use <span class="tag assumed">assumed</span></span></div>
+      <div class="slider"><label for="p-reg">Licences tighten by <output id="o-reg"></output></label><input type="range" id="p-reg" min="0" max="3" step="0.25" value="0.25"><span class="r-hint">per year, after allocation reviews <span class="tag assumed">assumed</span></span></div>
+      <div class="slider"><label for="p-sens">Output lost per unit of shortfall <output id="o-sens"></output></label><input type="range" id="p-sens" min="20" max="100" step="5" value="50"><span class="r-hint">rest absorbed by storage and recycling <span class="tag assumed">assumed</span></span></div>
+    </div>
+    <div class="chart" id="pred-chart"></div>
+    <div class="legend"><span><i class="sw" style="background:var(--q2)"></i>Freshwater needed (median, 5–95%)</span><span><i class="sw" style="background:var(--copper)"></i>Freshwater available (median, 5–95%)</span><span><i class="sw" style="background:var(--good)"></i>Needed, with the fixes in step 3</span></div>
+  </div>
+  <div class="kpis" id="pred-kpis"></div>
+</div></section>
+
+<!-- 3 DECIDE -->
+<section class="panel" id="p-dec"><div class="wrap stack">
+  <div class="panel-head"><div><div class="eyebrow">3 · Decide · which fix pays back</div><h2 id="dec-title">–</h2></div>
+    <p>Each fix costs money every year. It pays back when the revenue it protects is larger. Costs are planning assumptions, shown so anyone can change them.</p></div>
+  <div class="grid-2">
+    <div class="card stack">
+      <div class="slider"><label for="l-rr">Cut freshwater need (recycling, thickened tailings) <output id="o-rr"></output></label><input type="range" id="l-rr" min="0" max="30" step="1" value="10"><span class="r-hint">% of freshwater, ramps in over 3 years</span></div>
+      <div class="slider"><label for="l-rrc">Cost of recycling <output id="o-rrc"></output></label><input type="range" id="l-rrc" min="0.3" max="3" step="0.1" value="1.2"><span class="r-hint">US$ per m³ of freshwater avoided <span class="tag assumed">assumed</span></span></div>
+      <div class="slider"><label for="l-alt">New source (treated effluent, desalination) <output id="o-alt"></output></label><input type="range" id="l-alt" min="0" max="30" step="1" value="0"><span class="r-hint">% of FY20 freshwater, online from 2023</span></div>
+      <div class="slider"><label for="l-altc">Cost of the new source <output id="o-altc"></output></label><input type="range" id="l-altc" min="0.5" max="4" step="0.1" value="2"><span class="r-hint">US$ per m³ delivered <span class="tag assumed">assumed</span></span></div>
+    </div>
+    <div class="card stack">
+      <div class="tbl-wrap" style="border:0"><table id="dec-table"></table></div>
+      <ul class="findings" id="dec-find"></ul>
+    </div>
+  </div>
+  <div class="card stack">
+    <h3>Company view: all sites at once</h3>
+    <p class="small">Same settings, each site with its own data and basin default. This is the view a buyer or lender asks for.</p>
+    <div class="tbl-wrap" style="border:0"><table id="port-table"></table></div>
+  </div>
+</div></section>
+
+<section class="panel l-alt"><div class="wrap stack">
+  <div class="panel-head"><div><div class="eyebrow">Evidence</div><h2>What is data, what is model, what is assumed</h2></div><p>The engine's inputs are real. The levers and risk parameters are planning assumptions that a pilot replaces with site data.</p></div>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>Input</th><th>Status</th><th>Source</th></tr></thead>
+    <tbody>
+      <tr><td>Withdrawal, freshwater share, discharge, consumption, recycled water, revenue per site</td><td><span class="tag proven">data</span></td><td>Newcrest FY20 GRI data file (GRI 200 + 300)</td></tr>
+      <tr><td>Model estimate per mine, R² 0.79; copper-mine water +18.3% in 2015–19 (4.3%/yr, upper reference for demand growth)</td><td><span class="tag proven">data</span></td><td>Lutter, Maus, Luckeneder &amp; Tost (2025), 447 mines with 2019 values</td></tr>
+      <tr><td>Drought that cut supply: Cadia returned ~2 of ~30 ML/day, Orange on level 5 restrictions (Oct 2019)</td><td><span class="tag proven">event</span></td><td>Central Western Daily, 25 Oct 2019</td></tr>
+      <tr><td>Reconciliation, Monte Carlo, lever pricing</td><td><span class="tag built">built today</span></td><td>js/risk.js, runs in the browser, same seed gives the same answer</td></tr>
+      <tr><td>Error bars per source, site demand growth, drought odds and depth (5–30% cut), licence headroom and tightening, output lost per shortfall, lever costs</td><td><span class="tag assumed">assumed</span></td><td>Planning values; replaced by site data in the pilot</td></tr>
+    </tbody></table></div>
+</div></section>
+
+<footer><div class="wrap">Built at the EIT Water Hackathon, Munich, 28 Sep 2026 · Data: Newcrest Mining 2020 GRI data file · Lutter et al. 2025 · Risk outputs are simulations from stated assumptions, not forecasts of company results.</div></footer>
+<div id="tip" role="status" aria-live="polite"></div>
+<script src="data/newcrest.js"></script>
+<script src="data/lutter.js"></script>
+<script src="js/risk.js"></script>
+</body>
+</html>

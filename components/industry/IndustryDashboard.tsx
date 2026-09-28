@@ -17,21 +17,48 @@ import IntegrityView from "./IntegrityView";
 import ForesightView from "./ForesightView";
 import IndustryAskView from "./IndustryAskView";
 import SubmissionView from "./SubmissionView";
+import MapBasinsView from "../passport/MapBasinsView";
+import HotspotsView from "../passport/HotspotsView";
+import SupplyChainView from "../passport/SupplyChainView";
+import ReportCardView from "../passport/ReportCardView";
+import type { PassportSet } from "@/lib/passport/data";
 
-type ViewId = "foresight" | "trends" | "benchmark" | "government" | "integrity" | "submit" | "ask";
+type ViewId =
+  | "foresight"
+  | "trends"
+  | "benchmark"
+  | "government"
+  | "integrity"
+  | "submit"
+  | "ask"
+  | "passport-explorer"
+  | "passport-hotspots"
+  | "passport-supply"
+  | "passport-card";
 
 const corpus = rawCorpus as Corpus;
+
+const PASSPORT_VIEWS: ViewId[] = ["passport-explorer", "passport-hotspots", "passport-supply", "passport-card"];
+const ALL_VIEWS: ViewId[] = ["foresight", "trends", "benchmark", "government", "integrity", "submit", "ask", ...PASSPORT_VIEWS];
 
 export default function IndustryDashboard() {
   const [view, setView] = useState<ViewId>("foresight");
   const [company, setCompany] = useState<string | null>(null);
   const [status, setStatus] = useState<Status>({ ai: false, model: "", supabase: false });
+  const [passportSet, setPassportSet] = useState<PassportSet>("demo");
+  const [passportCardId, setPassportCardId] = useState<string | null>(null);
+
+  const openCard = (siteId: string, set: PassportSet) => {
+    setPassportCardId(siteId);
+    setPassportSet(set);
+    setView("passport-card");
+  };
 
   // Deep links: /explore?view=integrity&company=Teck%20Resources
   useEffect(() => {
     const q = new URLSearchParams(window.location.search);
     const v = q.get("view") as ViewId | null;
-    if (v && ["foresight", "trends", "benchmark", "government", "integrity", "submit", "ask"].includes(v)) setView(v);
+    if (v && ALL_VIEWS.includes(v)) setView(v);
     const c = q.get("company");
     if (c && corpus.companies.includes(c)) setCompany(c);
   }, []);
@@ -52,7 +79,7 @@ export default function IndustryDashboard() {
   const highSignals = (company ? signals.filter((s) => s.company === company) : signals).filter((s) => s.severity === "high").length;
   const years = corpus.records.map((r) => r.year);
 
-  const views: { id: ViewId; label: string; badge?: number }[] = [
+  const views: { id: ViewId; label: string; badge?: number; group?: string }[] = [
     { id: "foresight", label: "Foresight" },
     { id: "trends", label: "Trends" },
     { id: "benchmark", label: "Peer benchmark" },
@@ -60,6 +87,10 @@ export default function IndustryDashboard() {
     { id: "integrity", label: "Data integrity", badge: highSignals },
     { id: "submit", label: "Analyse a submission" },
     { id: "ask", label: "Ask the data" },
+    { id: "passport-explorer", label: "Site explorer", group: "passport" },
+    { id: "passport-hotspots", label: "Hotspots", group: "passport" },
+    { id: "passport-supply", label: "Supply chain", group: "passport" },
+    { id: "passport-card", label: "Report card", group: "passport" },
   ];
 
   return (
@@ -117,27 +148,40 @@ export default function IndustryDashboard() {
 
       <div className="flex min-w-0 flex-col bg-paper">
         <nav aria-label="Views" className="sticky top-0 z-10 flex gap-1 overflow-x-auto border-b border-hairline bg-paper px-8">
-          {views.map((v) => (
-            <button
-              key={v.id}
-              onClick={() => setView(v.id)}
-              aria-current={view === v.id ? "page" : undefined}
-              className={cx("relative whitespace-nowrap px-3 py-4 text-[0.9rem]", view === v.id ? "font-semibold text-basalt" : "text-shale hover:text-basalt")}
-            >
-              {v.label}
-              {!!v.badge && <span className="num ml-1.5 rounded-sm bg-oxide/10 px-1.5 py-0.5 text-[0.72rem] font-semibold text-oxide">{v.badge}</span>}
-              {view === v.id && <span className="absolute inset-x-3 bottom-0 h-[3px] bg-fresh" />}
-            </button>
+          {views.map((v, i) => (
+            <>
+              {v.group === "passport" && views[i - 1]?.group !== "passport" && (
+                <span key="sep" className="mx-1 my-auto h-5 w-px shrink-0 bg-hairline" aria-hidden />
+              )}
+              <button
+                key={v.id}
+                onClick={() => setView(v.id)}
+                aria-current={view === v.id ? "page" : undefined}
+                className={cx(
+                  "relative whitespace-nowrap px-3 py-4 text-[0.9rem]",
+                  view === v.id ? "font-semibold text-basalt" : "text-shale hover:text-basalt",
+                  v.group === "passport" && "text-[0.85rem]"
+                )}
+              >
+                {v.label}
+                {!!v.badge && <span className="num ml-1.5 rounded-sm bg-oxide/10 px-1.5 py-0.5 text-[0.72rem] font-semibold text-oxide">{v.badge}</span>}
+                {view === v.id && <span className={cx("absolute inset-x-3 bottom-0 h-[3px]", v.group === "passport" ? "bg-ochre" : "bg-fresh")} />}
+              </button>
+            </>
           ))}
         </nav>
         <main className="flex-1 px-8 py-8">
           {view === "foresight" && <ForesightView corpus={corpus} profiles={profiles} signals={signals} />}
-          {view === "trends" && <TrendsView profiles={profiles} company={company} setCompany={setCompany} />}
+          {view === "trends" && <TrendsView corpus={corpus} profiles={profiles} company={company} setCompany={setCompany} />}
           {view === "benchmark" && <BenchmarkView corpus={corpus} profiles={profiles} signals={signals} company={company} setCompany={setCompany} />}
           {view === "government" && <GovernmentView corpus={corpus} series={series} profiles={profiles} />}
           {view === "integrity" && <IntegrityView corpus={corpus} signals={signals} company={company} supabase={status.supabase} />}
           {view === "submit" && <SubmissionView corpus={corpus} />}
           {view === "ask" && <IndustryAskView context={aiContext} company={company} status={status} />}
+          {view === "passport-explorer" && <MapBasinsView onOpenCard={openCard} />}
+          {view === "passport-hotspots" && <HotspotsView onOpenCard={openCard} />}
+          {view === "passport-supply" && <SupplyChainView onOpenCard={openCard} />}
+          {view === "passport-card" && <ReportCardView initialSet={passportSet} initialSiteId={passportCardId} />}
         </main>
       </div>
     </div>

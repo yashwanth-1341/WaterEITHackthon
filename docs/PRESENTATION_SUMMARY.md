@@ -28,6 +28,19 @@ AquaTrace reads the water reports mining companies already publish, puts every f
 | **Analyse a submission** | A company uploads the template and immediately gets its trend, 2036 projection, peer rank, figures to fix and a to-do list | Shows how a new customer is onboarded; a live demo with fictional sample data |
 | **Ask the data** | Plain-English Q&A (OpenAI) grounded only in the figures on screen; the context sent is visible | Makes the data usable for non-experts and the jury |
 
+**Research cross-check (inside Trends).** A panel compares companies' reported figures with the WU Vienna model of water use at 507 copper mines (Lutter, Maus, Luckeneder & Tost 2025). The model's fit is R² 0.79, so it serves as an independent sanity check, not ground truth. *Why:* it links our data to the challenge owner's own research and shows where disclosure and the model disagree.
+
+### MineWater Passport views (`/explore`, second group of tabs)
+
+Each view has a toggle between **real** passports, backfilled from the public reports (only what was disclosed), and a **fictional demo set** of 17 sites in full Tier-2 passport format, labelled as fictional. The toggle shows what complete, standardised site data makes possible.
+
+| View | What it shows | Why it's needed |
+| --- | --- | --- |
+| **Site explorer** | World map of sites: colour = basin water stress, size = consumption or withdrawal (toggle); sortable table; detail panel per site | Water risk is local. A company total hides which basin is under pressure |
+| **Hotspots** | Bubble chart of consumption against basin stress, plus a ranked list | "Where to look first": high consumption in high-stress basins, top right |
+| **Supply chain** | Water per tonne of metal for candidate supplier sites, split by water quality and coloured by stress; sourcing-mix simulator; supplier screening | Battery and metal buyers need this for due diligence (EU Batteries Regulation, from August 2027) |
+| **Report card** | Grade A–E per site: transparency score, mass balance, Tier-1 checklist, framework coverage (GRI, ESRS, CDP, IRMA, ICMM), flags | One page a non-expert can read: is this site's water data complete and trustworthy? |
+
 ### Site ledger (`/ledger`)
 
 One company in depth: the site water balance, the mapping of legacy reports to ICMM 2021, checks, and **Cost and regulation**. That view has presets for **tariffs +400% (+2 years)** and **tariffs +1,000% plus a 50% intake cut by law (+10 years)**, which are exactly the milestones on our canvas trend line, and shows cost and output at risk per site.
@@ -40,13 +53,14 @@ One company in depth: the site water balance, the mapping of legacy reports to I
 | **Explain the problem and who is affected** | Problem cards and three audiences: companies, investors/buyers, regulators | Landing: *The problem*, *Who it's for* |
 | **Market growing or about to explode** | Withdrawal still rising; demand for battery and AI-hardware metals is growing; reporting rules are tightening (ESRS E3, ISSB/SASB water metrics, EU Battery Regulation due diligence, Chile's 2022 water code reform) | Foresight view; landing *Risk* timeline |
 | **Why the timing is now** | Disclosure is fragmented today (5 of 16 disclose stressed withdrawal), while buyers and rules will demand site-level proof within about 2 years | Foresight *Now* and *+2 years* |
-| **Real or well-constructed data** | Real: 24 public reports from 16 companies (BHP, Freeport, Anglo American, Teck, Newmont, Barrick…). Well-constructed sample: fictional Andes Ridge Copper, labelled as fictional, with four deliberate mistakes | Sidebar counts; *Analyse a submission* |
+| **Real or well-constructed data** | Real: 24 public reports from 16 companies (BHP, Freeport, Anglo American, Teck, Newmont, Barrick…). Well-constructed samples, all labelled fictional: Andes Ridge Copper (with four deliberate mistakes) and 17 full Tier-2 passports | Sidebar counts; *Analyse a submission*; passport set toggle |
 | **Explain where the data comes from** | Every figure links to its file and page or cell; all 4,387 workbook figures were re-checked against their cells; the 1,636 PDF figures were checked against the cited page | *Data integrity* → *Show evidence*; `npm run verify-corpus` |
 | **2–3 key insights** | 1) Water use grows about 3.5% a year while reuse slips. 2) Half the companies publish figures that don't add up. 3) Most companies don't disclose water from stressed basins, which is where risk is highest | Landing *Findings*; Foresight headline |
-| **At least one interactive visualisation** | Trends chart (indicator × company, projections); scenario sliders (tariff, intake cut); foresight horizons; submission analysis | *Trends*; ledger *Cost and regulation* |
+| **At least one interactive visualisation** | Trends chart (indicator × company, projections); scenario sliders (tariff, intake cut); foresight horizons; world map of sites by basin stress; hotspot bubble chart; sourcing-mix simulator; submission analysis | *Trends*; *Site explorer*; *Supply chain*; ledger *Cost and regulation* |
+| **Explore scenarios and compare options live** | Tariff +400% vs +1,000% with a 50% cut; withdrawal vs consumption toggle on the map; supplier mix in the simulator; real vs fictional passport set | Ledger *Cost and regulation*; *Site explorer*; *Supply chain* |
 | **Simple enough for non-experts** | Plain-language landing page, colour meaning explained, *Ask the data* | Landing, *Ask the data* |
 | **Technical annex (1–2 pages)** | Components, data flow, algorithms, risks and assumptions | [`docs/TECHNICAL_ANNEX.md`](TECHNICAL_ANNEX.md) |
-| **Evidence of feasibility** | Working prototype; reproducible pipeline (`build-corpus`, `verify-corpus`, `verify`); built on public standards (ICMM Water Reporting Guide 2021, GRI 303, SASB EM-MM-140a, CDP Water) | Repo, README *Sources* |
+| **Evidence of feasibility** | Working prototype; reproducible pipeline (`build-corpus`, `verify-corpus`, `verify`); built on public standards (ICMM Water Reporting Guide 2021, GRI 303, SASB EM-MM-140a, CDP Water); cross-checked against published research (Lutter et al. 2025, WU Vienna, 507 copper mines) | Repo, README *Sources*; research panel in *Trends* |
 | **Proven vs assumed** | Proven: extraction accuracy, the checks, the trend fits. Assumed and labelled in the app: projections are extrapolations, scenario prices are illustrative, the foresight narrative is analysis, the sample company is fictional | Footers on every view |
 
 ## 3. How the app maps to our Market Foresight Canvas
@@ -74,5 +88,6 @@ The *Foresight* view is our canvas, live. Every sticky note is on screen, and th
 4. **Ledger → Cost and regulation** (45 s): click *Tariffs +400%*, then *+1,000% and a 50% cut*; show the output at risk.
 5. **Analyse a submission** (60 s): load Andes Ridge Copper and show the four planted errors being caught, with the to-do list.
 6. **Data integrity** (30 s): every number traced, every file fingerprinted. "Proven today vs assumed" is on screen.
+7. *(If time allows)* **Site explorer → Hotspots → Supply chain** (45 s): the map by basin stress, where to look first, and what a battery buyer sees.
 
 Direct links: `/`, `/explore?view=foresight`, `/explore?view=trends&company=BHP`, `/ledger`, `/explore?view=submit&sample=andes`, `/explore?view=integrity`.

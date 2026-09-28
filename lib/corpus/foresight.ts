@@ -6,6 +6,7 @@ import type { CompanyProfile } from "./indicators";
 import { industryTrend } from "./indicators";
 import type { Signal } from "./integrity";
 import { HORIZONS, median, type HorizonId } from "./trends";
+import { lutterTotals } from "@/lib/research/lutter";
 
 export interface Facts {
   companies: number;
@@ -113,7 +114,8 @@ export function trendStatement(f: Facts) {
       `${p1(f.withdrawalChange === null ? null : f.withdrawalChange * 100)}% a year (${f.withdrawalGrowing} of ${f.withdrawalCompanies} companies rising). ` +
       `Recycling has plateaued: the median reuse share is ${i0(f.reuseLatestMedian)}% and moves ${p1(f.reuseChangePts)} points a year. ` +
       `Only ${f.stressDisclosed} of ${f.companies} give a figure for withdrawal in water-stressed areas in their latest year, and ` +
-      `${f.companiesWithHigh} of ${f.companies} have at least one figure that fails a basic consistency check. Meanwhile water tariffs are rising ` +
+      `${f.companiesWithHigh} of ${f.companies} have at least one figure that fails a basic consistency check. WU Vienna's independent model of ` +
+      `${lutterTotals().mines} copper mines finds the same direction: +${Math.round(lutterTotals().growth * 100)}% freshwater use from 2015 to 2019. Meanwhile water tariffs are rising ` +
       `and regulation is coming. Circular water use has to be measured before it can be priced, traded or required.`,
   };
 }

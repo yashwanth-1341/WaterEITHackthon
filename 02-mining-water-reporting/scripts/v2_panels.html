@@ -1,0 +1,25 @@
+<section class="panel" id="p-years" role="tabpanel" aria-labelledby="t-years" hidden><div class="wrap stack">
+  <div class="panel-head"><div><div class="eyebrow">History · water in, ore and gold out</div><h2 id="yr-title">–</h2></div>
+    <p>Every year the file (or an earlier report) gives us becomes a data point: water taken, ore processed, gold produced. Dark blue: this report. Light blue: earlier years compiled by WU Wien from company reports. Grey: model estimate. <span class="small" id="yr-hint"></span></p></div>
+  <div class="card stack"><div class="chart" id="yr-chart"></div>
+    <div class="legend"><span><i class="sw" style="background:var(--q1)"></i>Reported in this file</span><span><i class="sw" style="background:var(--q2)"></i>Earlier reports (Lutter et al. compilation)</span><span><i class="sw" style="background:var(--muted)"></i>Model estimate</span></div></div>
+  <div class="card stack"><h3>Water per unit of output</h3><div class="tbl-wrap" style="border:0"><table id="yr-table"></table></div></div>
+  <div class="card stack"><h3>Predict output from the water you can get</h3><p class="small">Uses the site's own water-per-tonne history. Move the slider to see how much ore, gold and revenue a given freshwater volume supports.</p><div id="yr-pred" class="stack"></div></div>
+</div></section>
+
+<section class="panel" id="p-cost" role="tabpanel" aria-labelledby="t-cost" hidden><div class="wrap stack">
+  <div class="panel-head"><div><div class="eyebrow">What the water costs · per source</div><h2>The water bill, site by site</h2></div>
+    <p>Volumes by source come from the report. Unit costs are planning values (<span class="tag assumed">assumed</span>): pumping surface water, running a borefield, buying from a third party, pumping seawater, treating what goes back out. Change them to the site's real tariffs.</p></div>
+  <div class="card stack"><div class="cost-ctl" id="cost-ctl"></div></div>
+  <div class="card stack"><div class="chart" id="cost-chart"></div><div class="legend" id="cost-legend"></div></div>
+  <div class="card stack"><div class="tbl-wrap" style="border:0"><table id="cost-table"></table></div><p class="note" id="cost-note"></p></div>
+</div></section>
+
+<section class="panel" id="p-codes" role="tabpanel" aria-labelledby="t-codes" hidden><div class="wrap stack">
+  <div class="panel-head"><div><div class="eyebrow">How the import reads a report</div><h2>Disclosure codes decide where each number goes</h2></div>
+    <p>Reports tag each table with a GRI or ICMM code. The import uses the code to know the table (withdrawal, discharge, storage, consumption, output), then the row labels to know the source and the water quality. This is what makes any company's file readable, not just this one.</p></div>
+  <div class="card stack"><h3>Codes found in the sample file</h3><div class="tbl-wrap" style="border:0"><table id="code-table"></table></div></div>
+  <div class="card stack"><h3>Row labels and what they become</h3><div class="tbl-wrap" style="border:0"><table id="row-table"></table></div>
+    <p class="note"><b>Needs a human:</b> 303-5 storage change is "-" for Lihir and Telfer. The import keeps it as "not reported" and flags it, instead of reading it as zero.</p></div>
+</div></section>
+

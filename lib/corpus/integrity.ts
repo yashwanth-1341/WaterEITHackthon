@@ -1,6 +1,7 @@
 // Data integrity and tamper signals on the corpus. None of these prove manipulation:
 // they point an analyst to the numbers that need a second look, with the evidence.
 import { canonical, fileYears, key } from "./series";
+import { modelComparisons } from "@/lib/research/lutter";
 import { CORPORATE, isAggregate, type Corpus, type CorpusRecord, type Metric } from "./types";
 
 export type SignalKind =
@@ -13,7 +14,8 @@ export type SignalKind =
   | "duplicate"
   | "impossible"
   | "benford"
-  | "rounding";
+  | "rounding"
+  | "model-gap";
 
 export interface Signal {
   kind: SignalKind;
@@ -38,6 +40,7 @@ export const SIGNAL_LABEL: Record<SignalKind, string> = {
   impossible: "Impossible value",
   benford: "Digit pattern unusual",
   rounding: "Heavy rounding",
+  "model-gap": "Differs from independent model",
 };
 
 const WATER_VOLUME: Metric[] = [
@@ -336,6 +339,25 @@ export function integritySignals(corpus: Corpus, opts: { tolerancePct?: number }
         });
       }
     }
+  }
+
+  // 9. Reported freshwater vs the WU Vienna copper-mine model (independent estimate, ±35%).
+  for (const m of modelComparisons(corpus)) {
+    if (m.sameSource || Math.abs(m.z) < 1.5) continue;
+    out.push({
+      kind: "model-gap",
+      severity: Math.abs(m.z) >= 2 ? "medium" : "low",
+      company: m.company,
+      site: m.site,
+      year: m.year,
+      metric: m.reportedMetric,
+      title: `Reported ${m.reportedMetric === "withdrawal_fresh" ? "freshwater" : "withdrawal"} is ${m.ratio < 1 ? `${Math.round((1 - m.ratio) * 100)}% below` : `${m.ratio.toFixed(1)}× above`} the WU Vienna model (${fmt(m.reported)} vs ${fmt(m.modelled)} ML)`,
+      detail: `An independent machine-learning estimate for ${m.mine} (Lutter et al. 2025, R² 0.79) disagrees by more than its own error band. Either the report uses a narrower definition (e.g. excludes dewatering or recycled make-up) or a figure is wrong.`,
+      evidence: [
+        { label: `Reported ${m.year}`, value: m.reported, source: m.source, location: m.location },
+        { label: `Modelled ${m.year} (new water)`, value: Math.round(m.modelled), source: "Lutter et al. 2025, WU Vienna", location: m.mine },
+      ],
+    });
   }
 
   const rank = { high: 0, medium: 1, low: 2 };

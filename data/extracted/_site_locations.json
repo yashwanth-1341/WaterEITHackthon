@@ -1,0 +1,1442 @@
+[
+ {
+  "company": "Agnico Eagle Mines",
+  "site": "LaRonde",
+  "lat": 48.25,
+  "lon": -78.43,
+  "precision": "mine",
+  "place": "LaRonde mine, Preissac, Abitibi, Quebec",
+  "confidence": "high"
+ },
+ {
+  "company": "Agnico Eagle Mines",
+  "site": "Goldex",
+  "lat": 48.1,
+  "lon": -77.87,
+  "precision": "mine",
+  "place": "Goldex mine, Val-d'Or, Quebec",
+  "confidence": "high"
+ },
+ {
+  "company": "Agnico Eagle Mines",
+  "site": "Kittila",
+  "lat": 67.91,
+  "lon": 25.39,
+  "precision": "mine",
+  "place": "Kittilä (Suurikuusikko) mine, Lapland, Finland",
+  "confidence": "high"
+ },
+ {
+  "company": "Agnico Eagle Mines",
+  "site": "Pinos Altos",
+  "lat": 28.27,
+  "lon": -108.27,
+  "precision": "mine",
+  "place": "Pinos Altos mine, Ocampo, Chihuahua, Mexico",
+  "confidence": "medium"
+ },
+ {
+  "company": "Agnico Eagle Mines",
+  "site": "La India",
+  "lat": 28.7,
+  "lon": -108.9,
+  "precision": "district",
+  "place": "La India mine between Tarachi and Matarachi, Sahuaripa, Sonora, Mexico",
+  "confidence": "medium"
+ },
+ {
+  "company": "Agnico Eagle Mines",
+  "site": "Meadowbank",
+  "lat": 65.02,
+  "lon": -96.07,
+  "precision": "mine",
+  "place": "Meadowbank (Amaruq) complex near Baker Lake, Nunavut",
+  "confidence": "high"
+ },
+ {
+  "company": "Agnico Eagle Mines",
+  "site": "Meliadine",
+  "lat": 63.03,
+  "lon": -92.2,
+  "precision": "mine",
+  "place": "Meliadine mine near Rankin Inlet, Nunavut",
+  "confidence": "high"
+ },
+ {
+  "company": "Anglo American",
+  "site": "Limpopo WMA catchment group (South Africa)",
+  "lat": -23.4,
+  "lon": 29.0,
+  "precision": "region",
+  "place": "Limpopo WMA, Limpopo Province (between Mogalakwena and Venetia)",
+  "confidence": "medium"
+ },
+ {
+  "company": "Anglo American",
+  "site": "Olifants WMA catchment group (South Africa)",
+  "lat": -25.8,
+  "lon": 29.3,
+  "precision": "region",
+  "place": "Olifants WMA upper basin, eMalahleni-Middelburg coalfield, Mpumalanga",
+  "confidence": "medium"
+ },
+ {
+  "company": "Anglo American",
+  "site": "Vaal WMA catchment group (South Africa)",
+  "lat": -27.75,
+  "lon": 23.0,
+  "precision": "region",
+  "place": "Lower Vaal WMA, Sishen/Kathu, Northern Cape (representative)",
+  "confidence": "low"
+ },
+ {
+  "company": "Anglo American",
+  "site": "Orange WMA catchment group (South Africa)",
+  "lat": -28.37,
+  "lon": 22.98,
+  "precision": "region",
+  "place": "Orange WMA, Kolomela mine near Postmasburg, Northern Cape (representative)",
+  "confidence": "low"
+ },
+ {
+  "company": "Anglo American",
+  "site": "Aconcagua catchment group (Chile)",
+  "lat": -32.63,
+  "lon": -71.07,
+  "precision": "region",
+  "place": "Aconcagua basin, El Soldado mine / Chagres smelter area, Valparaíso, Chile",
+  "confidence": "medium"
+ },
+ {
+  "company": "Anglo American",
+  "site": "Los Bronces",
+  "lat": -33.15,
+  "lon": -70.28,
+  "precision": "mine",
+  "place": "Los Bronces mine, Santiago Metropolitan Region, Chile",
+  "confidence": "high"
+ },
+ {
+  "company": "Anglo American",
+  "site": "Mantoverde",
+  "lat": -26.6,
+  "lon": -70.3,
+  "precision": "mine",
+  "place": "Mantoverde mine near Chañaral, Atacama, Chile",
+  "confidence": "medium"
+ },
+ {
+  "company": "Anglo American",
+  "site": "Mantos Blancos",
+  "lat": -23.44,
+  "lon": -70.08,
+  "precision": "mine",
+  "place": "Mantos Blancos mine, Antofagasta, Chile",
+  "confidence": "high"
+ },
+ {
+  "company": "Anglo American",
+  "site": "Quellaveco",
+  "lat": -17.12,
+  "lon": -70.62,
+  "precision": "mine",
+  "place": "Quellaveco mine, Moquegua, Peru",
+  "confidence": "high"
+ },
+ {
+  "company": "Anglo American",
+  "site": "Minas-Rio",
+  "lat": -19.03,
+  "lon": -43.43,
+  "precision": "mine",
+  "place": "Minas-Rio mine, Conceição do Mato Dentro, Minas Gerais, Brazil",
+  "confidence": "medium"
+ },
+ {
+  "company": "Anglo American",
+  "site": "Sao Francisco catchment group (Brazil: Nickel, Niobium, Phosphates)",
+  "lat": -18.5,
+  "lon": -45.5,
+  "precision": "region",
+  "place": "Upper São Francisco basin, Minas Gerais (representative point)",
+  "confidence": "low"
+ },
+ {
+  "company": "Anglo American",
+  "site": "Parana catchment group (Brazil: Niobium, Phosphates)",
+  "lat": -18.15,
+  "lon": -47.83,
+  "precision": "region",
+  "place": "Paraná basin (Paranaíba), Catalão/Ouvidor niobium & phosphate operations, Goiás",
+  "confidence": "medium"
+ },
+ {
+  "company": "Anglo American",
+  "site": "Barro Alto & Codemin (Tocantins, Brazil)",
+  "lat": -15.05,
+  "lon": -48.95,
+  "precision": "district",
+  "place": "Barro Alto nickel operation, Goiás (Tocantins basin); Codemin at Niquelândia ~70 km N",
+  "confidence": "medium"
+ },
+ {
+  "company": "Anglo American",
+  "site": "Drayton / Dartbrook (NSW, Australia)",
+  "lat": -32.27,
+  "lon": 150.89,
+  "precision": "district",
+  "place": "Drayton / Dartbrook mines near Muswellbrook, Hunter Valley, NSW",
+  "confidence": "medium"
+ },
+ {
+  "company": "Anglo American",
+  "site": "Fitzroy basin coal operations (Queensland, Australia)",
+  "lat": -22.0,
+  "lon": 148.05,
+  "precision": "region",
+  "place": "Fitzroy basin (Bowen Basin) coal operations, representative near Moranbah, Queensland",
+  "confidence": "medium"
+ },
+ {
+  "company": "Anglo American",
+  "site": "De Beers Canada group (Snap Lake, Victor, Gahcho Kue)",
+  "lat": 63.5,
+  "lon": -110.0,
+  "precision": "region",
+  "place": "Snap Lake / Gahcho Kué area, Northwest Territories (Victor in Ontario not represented)",
+  "confidence": "medium"
+ },
+ {
+  "company": "Anglo American",
+  "site": "Victor",
+  "lat": 52.82,
+  "lon": -83.89,
+  "precision": "mine",
+  "place": "Victor mine near Attawapiskat, Ontario",
+  "confidence": "high"
+ },
+ {
+  "company": "Anglo American",
+  "site": "Mackenzie River catchment group (Canada: Gahcho Kue, Snap Lake, Trend)",
+  "lat": 63.5,
+  "lon": -110.0,
+  "precision": "region",
+  "place": "Mackenzie basin, Snap Lake / Gahcho Kué area, Northwest Territories",
+  "confidence": "medium"
+ },
+ {
+  "company": "Anglo American",
+  "site": "Unki",
+  "lat": -19.72,
+  "lon": 30.01,
+  "precision": "mine",
+  "place": "Unki mine, Shurugwi, Great Dyke, Zimbabwe",
+  "confidence": "high"
+ },
+ {
+  "company": "Anglo American",
+  "site": "South Atlantic Coast catchment group (De Beers Namibia / Namaqualand)",
+  "lat": -28.55,
+  "lon": 16.45,
+  "precision": "region",
+  "place": "Orange River mouth coast, Oranjemund (Namdeb) / Namaqualand",
+  "confidence": "medium"
+ },
+ {
+  "company": "Anglo American",
+  "site": "Debswana (Okavango, Botswana)",
+  "lat": -21.31,
+  "lon": 25.37,
+  "precision": "region",
+  "place": "Orapa / Letlhakane (Debswana), central Botswana (representative)",
+  "confidence": "low"
+ },
+ {
+  "company": "Anglo American",
+  "site": "Mogalakwena",
+  "lat": -24.0,
+  "lon": 28.85,
+  "precision": "mine",
+  "place": "Mogalakwena mine, ~30 km NW of Mokopane, Limpopo",
+  "confidence": "medium"
+ },
+ {
+  "company": "Barrick Gold",
+  "site": "Loulo-Gounkoto",
+  "lat": 13.0,
+  "lon": -11.45,
+  "precision": "mine",
+  "place": "Loulo-Gounkoto complex, Kéniéba, Kayes, Mali",
+  "confidence": "medium"
+ },
+ {
+  "company": "Barrick Gold",
+  "site": "Morila",
+  "lat": 11.68,
+  "lon": -6.85,
+  "precision": "mine",
+  "place": "Morila mine near Sanso, Sikasso, Mali",
+  "confidence": "high"
+ },
+ {
+  "company": "Barrick Gold",
+  "site": "Tongon",
+  "lat": 9.86,
+  "lon": -5.77,
+  "precision": "mine",
+  "place": "Tongon mine ~22 km SE of M'Bengué, Savanes, Côte d'Ivoire",
+  "confidence": "medium"
+ },
+ {
+  "company": "Barrick Gold",
+  "site": "Kibali",
+  "lat": 3.12,
+  "lon": 29.59,
+  "precision": "mine",
+  "place": "Kibali mine near Durba, Haut-Uélé, DRC",
+  "confidence": "medium"
+ },
+ {
+  "company": "Barrick Gold",
+  "site": "Jabal Sayid",
+  "lat": 23.85,
+  "lon": 40.93,
+  "precision": "mine",
+  "place": "Jabal Sayid mine, Madinah Province, Saudi Arabia",
+  "confidence": "medium"
+ },
+ {
+  "company": "Barrick Gold",
+  "site": "Bulyanhulu",
+  "lat": -3.23,
+  "lon": 32.49,
+  "precision": "mine",
+  "place": "Bulyanhulu mine, Kahama, Shinyanga, Tanzania",
+  "confidence": "medium"
+ },
+ {
+  "company": "Barrick Gold",
+  "site": "Buzwagi",
+  "lat": -3.85,
+  "lon": 32.63,
+  "precision": "mine",
+  "place": "Buzwagi mine near Kahama, Tanzania",
+  "confidence": "medium"
+ },
+ {
+  "company": "Barrick Gold",
+  "site": "North Mara",
+  "lat": -1.44,
+  "lon": 34.54,
+  "precision": "mine",
+  "place": "North Mara mine, Nyamongo, Mara, Tanzania",
+  "confidence": "medium"
+ },
+ {
+  "company": "Barrick Gold",
+  "site": "Lumwana",
+  "lat": -12.25,
+  "lon": 25.85,
+  "precision": "mine",
+  "place": "Lumwana mine, North-Western Province, Zambia",
+  "confidence": "medium"
+ },
+ {
+  "company": "Barrick Gold",
+  "site": "Veladero",
+  "lat": -29.37,
+  "lon": -69.95,
+  "precision": "mine",
+  "place": "Veladero mine, San Juan, Argentina",
+  "confidence": "high"
+ },
+ {
+  "company": "Barrick Gold",
+  "site": "Lama",
+  "lat": -29.33,
+  "lon": -70.01,
+  "precision": "mine",
+  "place": "Lama (Argentine side of Pascua-Lama), San Juan, Argentina",
+  "confidence": "medium"
+ },
+ {
+  "company": "Barrick Gold",
+  "site": "Pascua",
+  "lat": -29.32,
+  "lon": -70.03,
+  "precision": "mine",
+  "place": "Pascua (Chilean side of Pascua-Lama), Atacama, Chile",
+  "confidence": "medium"
+ },
+ {
+  "company": "Barrick Gold",
+  "site": "Closure (Chile)",
+  "lat": null,
+  "lon": null,
+  "precision": "none",
+  "place": "Unspecified Barrick closure sites in Chile",
+  "confidence": "low"
+ },
+ {
+  "company": "Barrick Gold",
+  "site": "Pueblo Viejo",
+  "lat": 18.93,
+  "lon": -70.17,
+  "precision": "mine",
+  "place": "Pueblo Viejo mine, Sánchez Ramírez, Dominican Republic",
+  "confidence": "high"
+ },
+ {
+  "company": "Barrick Gold",
+  "site": "Lagunas Norte",
+  "lat": -7.94,
+  "lon": -78.24,
+  "precision": "mine",
+  "place": "Lagunas Norte mine, La Libertad, Peru",
+  "confidence": "medium"
+ },
+ {
+  "company": "Barrick Gold",
+  "site": "Pierina",
+  "lat": -9.45,
+  "lon": -77.59,
+  "precision": "mine",
+  "place": "Pierina mine near Huaraz, Áncash, Peru",
+  "confidence": "medium"
+ },
+ {
+  "company": "Barrick Gold",
+  "site": "Porgera",
+  "lat": -5.47,
+  "lon": 143.08,
+  "precision": "mine",
+  "place": "Porgera mine, Enga, Papua New Guinea",
+  "confidence": "high"
+ },
+ {
+  "company": "Barrick Gold",
+  "site": "Hemlo",
+  "lat": 48.69,
+  "lon": -85.9,
+  "precision": "mine",
+  "place": "Hemlo (Williams/David Bell) mine near Marathon, Ontario",
+  "confidence": "high"
+ },
+ {
+  "company": "Barrick Gold",
+  "site": "Eskay Creek",
+  "lat": 56.65,
+  "lon": -130.45,
+  "precision": "mine",
+  "place": "Eskay Creek mine, northwest British Columbia",
+  "confidence": "medium"
+ },
+ {
+  "company": "Barrick Gold",
+  "site": "Giant Nickel",
+  "lat": 49.48,
+  "lon": -121.48,
+  "precision": "mine",
+  "place": "Giant Mascot (Giant Nickel) mine near Hope, British Columbia",
+  "confidence": "high"
+ },
+ {
+  "company": "Barrick Gold",
+  "site": "Nickel Plate",
+  "lat": 49.37,
+  "lon": -120.05,
+  "precision": "mine",
+  "place": "Nickel Plate mine above Hedley, British Columbia",
+  "confidence": "medium"
+ },
+ {
+  "company": "Barrick Gold",
+  "site": "Golden Sunlight",
+  "lat": 45.9,
+  "lon": -112.02,
+  "precision": "mine",
+  "place": "Golden Sunlight mine near Whitehall, Montana",
+  "confidence": "medium"
+ },
+ {
+  "company": "Barrick Gold",
+  "site": "Homestake / Lead",
+  "lat": 44.35,
+  "lon": -103.76,
+  "precision": "mine",
+  "place": "Homestake mine, Lead, South Dakota",
+  "confidence": "high"
+ },
+ {
+  "company": "Barrick Gold",
+  "site": "Richmond Hill",
+  "lat": 44.39,
+  "lon": -103.84,
+  "precision": "mine",
+  "place": "Richmond Hill mine near Lead, South Dakota",
+  "confidence": "medium"
+ },
+ {
+  "company": "Barrick Gold",
+  "site": "Grants",
+  "lat": 35.23,
+  "lon": -107.84,
+  "precision": "mine",
+  "place": "Homestake Grants uranium mill reclamation site, ~5.5 mi NE of Milan, New Mexico",
+  "confidence": "medium"
+ },
+ {
+  "company": "Barrick Gold",
+  "site": "McLaughlin",
+  "lat": 38.84,
+  "lon": -122.36,
+  "precision": "mine",
+  "place": "McLaughlin mine, Napa/Yolo/Lake counties, California",
+  "confidence": "medium"
+ },
+ {
+  "company": "Barrick Gold",
+  "site": "Pitch",
+  "lat": 38.41,
+  "lon": -106.3,
+  "precision": "mine",
+  "place": "Pitch uranium mine, ~6.5 mi E of Sargents, Saguache County, Colorado",
+  "confidence": "medium"
+ },
+ {
+  "company": "Barrick Gold",
+  "site": "CHRP",
+  "lat": null,
+  "lon": null,
+  "precision": "none",
+  "place": "CHRP: unidentified closed US site (acronym not resolvable)",
+  "confidence": "low"
+ },
+ {
+  "company": "Barrick Gold",
+  "site": "Mercur",
+  "lat": 40.31,
+  "lon": -112.21,
+  "precision": "mine",
+  "place": "Mercur mine, Oquirrh Mountains, Tooele County, Utah",
+  "confidence": "medium"
+ },
+ {
+  "company": "Barrick Gold",
+  "site": "Carlin",
+  "lat": 40.95,
+  "lon": -116.35,
+  "precision": "district",
+  "place": "Carlin complex (Goldstrike/Gold Quarry), Carlin Trend, Nevada",
+  "confidence": "high"
+ },
+ {
+  "company": "Barrick Gold",
+  "site": "Cortez",
+  "lat": 40.16,
+  "lon": -116.62,
+  "precision": "mine",
+  "place": "Cortez (Cortez Hills/Pipeline), Lander/Eureka counties, Nevada",
+  "confidence": "medium"
+ },
+ {
+  "company": "Barrick Gold",
+  "site": "Long Canyon",
+  "lat": 40.97,
+  "lon": -114.53,
+  "precision": "mine",
+  "place": "Long Canyon mine, Pequop Mountains, Elko County, Nevada",
+  "confidence": "high"
+ },
+ {
+  "company": "Barrick Gold",
+  "site": "Phoenix",
+  "lat": 40.55,
+  "lon": -117.12,
+  "precision": "mine",
+  "place": "Phoenix mine near Battle Mountain, Nevada",
+  "confidence": "medium"
+ },
+ {
+  "company": "Barrick Gold",
+  "site": "Turquoise Ridge",
+  "lat": 41.22,
+  "lon": -117.23,
+  "precision": "mine",
+  "place": "Turquoise Ridge (Getchell) mine, Humboldt County, Nevada",
+  "confidence": "medium"
+ },
+ {
+  "company": "BHP",
+  "site": "Escondida",
+  "lat": -24.27,
+  "lon": -69.07,
+  "precision": "mine",
+  "place": "Escondida mine, Antofagasta, Chile",
+  "confidence": "high"
+ },
+ {
+  "company": "BHP",
+  "site": "Pampa Norte",
+  "lat": -22.8,
+  "lon": -69.25,
+  "precision": "region",
+  "place": "Pampa Norte: Spence mine, Antofagasta (Cerro Colorado ~300 km N)",
+  "confidence": "medium"
+ },
+ {
+  "company": "BHP",
+  "site": "Olympic Dam",
+  "lat": -30.44,
+  "lon": 136.88,
+  "precision": "mine",
+  "place": "Olympic Dam mine, Roxby Downs, South Australia",
+  "confidence": "high"
+ },
+ {
+  "company": "BHP",
+  "site": "Western Australia Iron Ore (WAIO)",
+  "lat": -23.36,
+  "lon": 119.73,
+  "precision": "region",
+  "place": "Pilbara iron ore operations, Newman / Mt Whaleback hub, WA",
+  "confidence": "medium"
+ },
+ {
+  "company": "BHP",
+  "site": "BMA",
+  "lat": -22.1,
+  "lon": 148.1,
+  "precision": "region",
+  "place": "BMA Bowen Basin coal mines, representative near Moranbah, Queensland",
+  "confidence": "medium"
+ },
+ {
+  "company": "BHP",
+  "site": "NSW Energy Coal",
+  "lat": -32.33,
+  "lon": 150.86,
+  "precision": "mine",
+  "place": "Mt Arthur coal mine near Muswellbrook, NSW",
+  "confidence": "high"
+ },
+ {
+  "company": "BHP",
+  "site": "Nickel West",
+  "lat": -30.75,
+  "lon": 121.47,
+  "precision": "region",
+  "place": "Nickel West, WA Goldfields (Kalgoorlie smelter; Leinster/Mt Keith/Kambalda/Kwinana also)",
+  "confidence": "medium"
+ },
+ {
+  "company": "BHP",
+  "site": "Jansen Potash Project",
+  "lat": 51.8,
+  "lon": -104.75,
+  "precision": "mine",
+  "place": "Jansen potash project near Jansen, Saskatchewan",
+  "confidence": "medium"
+ },
+ {
+  "company": "BHP",
+  "site": "Legacy assets",
+  "lat": null,
+  "lon": null,
+  "precision": "none",
+  "place": "Multiple legacy/closed copper sites across the USA",
+  "confidence": "low"
+ },
+ {
+  "company": "Centerra Gold",
+  "site": "Kumtor",
+  "lat": 41.86,
+  "lon": 78.19,
+  "precision": "mine",
+  "place": "Kumtor mine, Issyk-Kul Region, Kyrgyzstan",
+  "confidence": "high"
+ },
+ {
+  "company": "Centerra Gold",
+  "site": "Mount Milligan",
+  "lat": 55.13,
+  "lon": -124.03,
+  "precision": "mine",
+  "place": "Mount Milligan mine, north-central British Columbia",
+  "confidence": "high"
+ },
+ {
+  "company": "Centerra Gold",
+  "site": "Öksüt",
+  "lat": 38.13,
+  "lon": 35.5,
+  "precision": "mine",
+  "place": "Öksüt mine near Develi, Kayseri, Turkey",
+  "confidence": "medium"
+ },
+ {
+  "company": "Evolution Mining",
+  "site": "Cowal",
+  "lat": -33.64,
+  "lon": 147.43,
+  "precision": "mine",
+  "place": "Cowal mine, Lake Cowal near West Wyalong, NSW",
+  "confidence": "high"
+ },
+ {
+  "company": "Evolution Mining",
+  "site": "Red Lake",
+  "lat": 51.06,
+  "lon": -93.76,
+  "precision": "mine",
+  "place": "Red Lake mine, Balmertown, Ontario",
+  "confidence": "high"
+ },
+ {
+  "company": "Evolution Mining",
+  "site": "Mungari",
+  "lat": -30.83,
+  "lon": 121.2,
+  "precision": "mine",
+  "place": "Mungari operations west of Kalgoorlie, WA",
+  "confidence": "medium"
+ },
+ {
+  "company": "Evolution Mining",
+  "site": "Mt Rawdon",
+  "lat": -25.23,
+  "lon": 151.71,
+  "precision": "mine",
+  "place": "Mt Rawdon mine near Mount Perry, Queensland",
+  "confidence": "medium"
+ },
+ {
+  "company": "Evolution Mining",
+  "site": "Ernest Henry",
+  "lat": -20.44,
+  "lon": 140.71,
+  "precision": "mine",
+  "place": "Ernest Henry mine near Cloncurry, Queensland",
+  "confidence": "high"
+ },
+ {
+  "company": "Evolution Mining",
+  "site": "Northparkes",
+  "lat": -32.93,
+  "lon": 148.0,
+  "precision": "mine",
+  "place": "Northparkes mine near Parkes, NSW",
+  "confidence": "high"
+ },
+ {
+  "company": "First Quantum Minerals",
+  "site": "Kansanshi",
+  "lat": -12.09,
+  "lon": 26.43,
+  "precision": "mine",
+  "place": "Kansanshi mine near Solwezi, Zambia",
+  "confidence": "high"
+ },
+ {
+  "company": "First Quantum Minerals",
+  "site": "Sentinel",
+  "lat": -12.26,
+  "lon": 25.3,
+  "precision": "mine",
+  "place": "Sentinel mine, Kalumbila, North-Western Province, Zambia",
+  "confidence": "high"
+ },
+ {
+  "company": "First Quantum Minerals",
+  "site": "Cobre Panamá",
+  "lat": 8.83,
+  "lon": -80.65,
+  "precision": "mine",
+  "place": "Cobre Panamá mine, Colón Province, Panama",
+  "confidence": "medium"
+ },
+ {
+  "company": "First Quantum Minerals",
+  "site": "Cobre Las Cruces",
+  "lat": 37.5,
+  "lon": -6.09,
+  "precision": "mine",
+  "place": "Cobre Las Cruces mine near Gerena, Seville, Spain",
+  "confidence": "medium"
+ },
+ {
+  "company": "First Quantum Minerals",
+  "site": "Pyhäsalmi",
+  "lat": 63.66,
+  "lon": 26.04,
+  "precision": "mine",
+  "place": "Pyhäsalmi mine, North Ostrobothnia, Finland",
+  "confidence": "high"
+ },
+ {
+  "company": "First Quantum Minerals",
+  "site": "Ravensthorpe",
+  "lat": -33.62,
+  "lon": 120.3,
+  "precision": "mine",
+  "place": "Ravensthorpe nickel operation east of Ravensthorpe, WA",
+  "confidence": "low"
+ },
+ {
+  "company": "First Quantum Minerals",
+  "site": "Guelb Moghrein",
+  "lat": 19.75,
+  "lon": -14.4,
+  "precision": "mine",
+  "place": "Guelb Moghrein mine, Akjoujt, Mauritania",
+  "confidence": "medium"
+ },
+ {
+  "company": "First Quantum Minerals",
+  "site": "Çayeli",
+  "lat": 41.08,
+  "lon": 40.73,
+  "precision": "mine",
+  "place": "Çayeli mine, Rize Province, Turkey",
+  "confidence": "medium"
+ },
+ {
+  "company": "Freeport-McMoRan",
+  "site": "Bagdad",
+  "lat": 34.59,
+  "lon": -113.21,
+  "precision": "mine",
+  "place": "Bagdad mine, Yavapai County, Arizona",
+  "confidence": "high"
+ },
+ {
+  "company": "Freeport-McMoRan",
+  "site": "Cerro Verde",
+  "lat": -16.53,
+  "lon": -71.59,
+  "precision": "mine",
+  "place": "Cerro Verde mine near Arequipa, Peru",
+  "confidence": "high"
+ },
+ {
+  "company": "Freeport-McMoRan",
+  "site": "Chino",
+  "lat": 32.79,
+  "lon": -108.07,
+  "precision": "mine",
+  "place": "Chino (Santa Rita) mine, Grant County, New Mexico",
+  "confidence": "high"
+ },
+ {
+  "company": "Freeport-McMoRan",
+  "site": "Climax",
+  "lat": 39.37,
+  "lon": -106.18,
+  "precision": "mine",
+  "place": "Climax mine, Fremont Pass, Colorado",
+  "confidence": "high"
+ },
+ {
+  "company": "Freeport-McMoRan",
+  "site": "El Abra",
+  "lat": -21.93,
+  "lon": -68.83,
+  "precision": "mine",
+  "place": "El Abra mine near Calama, Antofagasta, Chile",
+  "confidence": "medium"
+ },
+ {
+  "company": "Freeport-McMoRan",
+  "site": "Henderson",
+  "lat": 39.77,
+  "lon": -105.84,
+  "precision": "mine",
+  "place": "Henderson mine near Empire, Colorado",
+  "confidence": "high"
+ },
+ {
+  "company": "Freeport-McMoRan",
+  "site": "Miami",
+  "lat": 33.41,
+  "lon": -110.87,
+  "precision": "mine",
+  "place": "Miami mine/smelter, Gila County, Arizona",
+  "confidence": "high"
+ },
+ {
+  "company": "Freeport-McMoRan",
+  "site": "Morenci",
+  "lat": 33.08,
+  "lon": -109.36,
+  "precision": "mine",
+  "place": "Morenci mine, Greenlee County, Arizona",
+  "confidence": "high"
+ },
+ {
+  "company": "Freeport-McMoRan",
+  "site": "PT-FI (Grasberg)",
+  "lat": -4.05,
+  "lon": 137.12,
+  "precision": "mine",
+  "place": "Grasberg mine, Central Papua, Indonesia",
+  "confidence": "high"
+ },
+ {
+  "company": "Freeport-McMoRan",
+  "site": "Safford",
+  "lat": 32.96,
+  "lon": -109.75,
+  "precision": "mine",
+  "place": "Safford (Dos Pobres/San Juan) mine, Graham County, Arizona",
+  "confidence": "medium"
+ },
+ {
+  "company": "Freeport-McMoRan",
+  "site": "Sierrita",
+  "lat": 31.87,
+  "lon": -111.12,
+  "precision": "mine",
+  "place": "Sierrita mine near Green Valley, Arizona",
+  "confidence": "high"
+ },
+ {
+  "company": "Freeport-McMoRan",
+  "site": "Tyrone",
+  "lat": 32.63,
+  "lon": -108.37,
+  "precision": "mine",
+  "place": "Tyrone mine, Grant County, New Mexico",
+  "confidence": "high"
+ },
+ {
+  "company": "Freeport-McMoRan",
+  "site": "Copper Mining - North America",
+  "lat": null,
+  "lon": null,
+  "precision": "none",
+  "place": "Business segment: Arizona, New Mexico and other US copper mines",
+  "confidence": "high"
+ },
+ {
+  "company": "Freeport-McMoRan",
+  "site": "Copper Mining - South America",
+  "lat": null,
+  "lon": null,
+  "precision": "none",
+  "place": "Business segment: Chile and Peru copper mines",
+  "confidence": "high"
+ },
+ {
+  "company": "Freeport-McMoRan",
+  "site": "Copper Mining - Indonesia (PT-FI)",
+  "lat": -4.05,
+  "lon": 137.12,
+  "precision": "mine",
+  "place": "Grasberg / PT-FI operations, Central Papua, Indonesia",
+  "confidence": "high"
+ },
+ {
+  "company": "Freeport-McMoRan",
+  "site": "Molybdenum Mining - North America",
+  "lat": 39.57,
+  "lon": -106.0,
+  "precision": "region",
+  "place": "Colorado molybdenum mines (Climax and Henderson)",
+  "confidence": "medium"
+ },
+ {
+  "company": "Freeport-McMoRan",
+  "site": "Smelting & Refining - North America",
+  "lat": null,
+  "lon": null,
+  "precision": "none",
+  "place": "Business segment: multiple US smelting/refining sites",
+  "confidence": "high"
+ },
+ {
+  "company": "Freeport-McMoRan",
+  "site": "Smelting & Refining - Europe",
+  "lat": null,
+  "lon": null,
+  "precision": "none",
+  "place": "Business segment: European smelting/refining (Atlantic Copper Spain and others)",
+  "confidence": "medium"
+ },
+ {
+  "company": "Freeport-McMoRan",
+  "site": "Other",
+  "lat": null,
+  "lon": null,
+  "precision": "none",
+  "place": "Business segment: other/corporate",
+  "confidence": "high"
+ },
+ {
+  "company": "Freeport-McMoRan",
+  "site": "El Paso Refinery & Rod",
+  "lat": 31.77,
+  "lon": -106.37,
+  "precision": "district",
+  "place": "El Paso copper refinery & rod mill, El Paso, Texas",
+  "confidence": "medium"
+ },
+ {
+  "company": "Hudbay Minerals",
+  "site": "Manitoba",
+  "lat": 54.77,
+  "lon": -101.88,
+  "precision": "district",
+  "place": "Flin Flon, Manitoba (Hudbay Manitoba ops incl. Lalor/Snow Lake ~130 km E)",
+  "confidence": "medium"
+ },
+ {
+  "company": "Hudbay Minerals",
+  "site": "Peru (Constancia)",
+  "lat": -14.46,
+  "lon": -71.79,
+  "precision": "mine",
+  "place": "Constancia mine, Chumbivilcas, Cusco, Peru",
+  "confidence": "medium"
+ },
+ {
+  "company": "MMG Limited",
+  "site": "Las Bambas",
+  "lat": -14.08,
+  "lon": -72.33,
+  "precision": "mine",
+  "place": "Las Bambas mine, Apurímac, Peru",
+  "confidence": "medium"
+ },
+ {
+  "company": "MMG Limited",
+  "site": "Kinsevere",
+  "lat": -11.36,
+  "lon": 27.57,
+  "precision": "mine",
+  "place": "Kinsevere mine near Lubumbashi, Haut-Katanga, DRC",
+  "confidence": "medium"
+ },
+ {
+  "company": "MMG Limited",
+  "site": "Dugald River",
+  "lat": -20.24,
+  "lon": 140.16,
+  "precision": "mine",
+  "place": "Dugald River mine near Cloncurry, Queensland",
+  "confidence": "medium"
+ },
+ {
+  "company": "MMG Limited",
+  "site": "Rosebery",
+  "lat": -41.78,
+  "lon": 145.54,
+  "precision": "mine",
+  "place": "Rosebery mine, western Tasmania",
+  "confidence": "high"
+ },
+ {
+  "company": "Newcrest Mining",
+  "site": "Lihir",
+  "lat": -3.12,
+  "lon": 152.64,
+  "precision": "mine",
+  "place": "Lihir (Ladolam) mine, Lihir Island, New Ireland, PNG",
+  "confidence": "high"
+ },
+ {
+  "company": "Newcrest Mining",
+  "site": "Telfer",
+  "lat": -21.71,
+  "lon": 122.23,
+  "precision": "mine",
+  "place": "Telfer mine, Pilbara, WA",
+  "confidence": "high"
+ },
+ {
+  "company": "Newcrest Mining",
+  "site": "Cadia",
+  "lat": -33.46,
+  "lon": 148.99,
+  "precision": "mine",
+  "place": "Cadia Valley mine near Orange, NSW",
+  "confidence": "high"
+ },
+ {
+  "company": "Newcrest Mining",
+  "site": "Gosowong",
+  "lat": 0.98,
+  "lon": 127.88,
+  "precision": "mine",
+  "place": "Gosowong mine, Halmahera, North Maluku, Indonesia",
+  "confidence": "medium"
+ },
+ {
+  "company": "Newcrest Mining",
+  "site": "Red Chris",
+  "lat": 57.7,
+  "lon": -129.79,
+  "precision": "mine",
+  "place": "Red Chris mine near Iskut, British Columbia",
+  "confidence": "medium"
+ },
+ {
+  "company": "Newmont",
+  "site": "Ahafo",
+  "lat": 7.0,
+  "lon": -2.35,
+  "precision": "mine",
+  "place": "Ahafo mine near Kenyasi, Ahafo Region, Ghana",
+  "confidence": "medium"
+ },
+ {
+  "company": "Newmont",
+  "site": "Akyem",
+  "lat": 6.36,
+  "lon": -1.0,
+  "precision": "mine",
+  "place": "Akyem mine near New Abirem, Eastern Region, Ghana",
+  "confidence": "medium"
+ },
+ {
+  "company": "Newmont",
+  "site": "CC&V",
+  "lat": 38.72,
+  "lon": -105.15,
+  "precision": "mine",
+  "place": "Cripple Creek & Victor mine, Teller County, Colorado",
+  "confidence": "high"
+ },
+ {
+  "company": "Newmont",
+  "site": "Éléonore",
+  "lat": 52.72,
+  "lon": -76.08,
+  "precision": "mine",
+  "place": "Éléonore mine, Eeyou Istchee James Bay, Quebec",
+  "confidence": "medium"
+ },
+ {
+  "company": "Newmont",
+  "site": "Musselwhite",
+  "lat": 52.61,
+  "lon": -90.37,
+  "precision": "mine",
+  "place": "Musselwhite mine, northwestern Ontario",
+  "confidence": "medium"
+ },
+ {
+  "company": "Newmont",
+  "site": "Porcupine",
+  "lat": 48.48,
+  "lon": -81.33,
+  "precision": "district",
+  "place": "Porcupine operations, Timmins, Ontario",
+  "confidence": "high"
+ },
+ {
+  "company": "Newmont",
+  "site": "Red Lake",
+  "lat": 51.06,
+  "lon": -93.76,
+  "precision": "mine",
+  "place": "Red Lake mine, Balmertown, Ontario",
+  "confidence": "high"
+ },
+ {
+  "company": "Newmont",
+  "site": "Peñasquito",
+  "lat": 24.65,
+  "lon": -101.72,
+  "precision": "mine",
+  "place": "Peñasquito mine, Mazapil, Zacatecas, Mexico",
+  "confidence": "medium"
+ },
+ {
+  "company": "Newmont",
+  "site": "Cerro Negro",
+  "lat": -46.94,
+  "lon": -70.18,
+  "precision": "mine",
+  "place": "Cerro Negro mine, Santa Cruz, Argentina",
+  "confidence": "high"
+ },
+ {
+  "company": "Newmont",
+  "site": "Merian",
+  "lat": 4.91,
+  "lon": -54.36,
+  "precision": "mine",
+  "place": "Merian mine, Sipaliwini/Brokopondo, Suriname",
+  "confidence": "medium"
+ },
+ {
+  "company": "Newmont",
+  "site": "Yanacocha",
+  "lat": -6.98,
+  "lon": -78.52,
+  "precision": "mine",
+  "place": "Yanacocha mine near Cajamarca, Peru",
+  "confidence": "medium"
+ },
+ {
+  "company": "Newmont",
+  "site": "Boddington",
+  "lat": -32.75,
+  "lon": 116.37,
+  "precision": "mine",
+  "place": "Boddington mine, WA",
+  "confidence": "high"
+ },
+ {
+  "company": "Newmont",
+  "site": "KCGM",
+  "lat": -30.78,
+  "lon": 121.5,
+  "precision": "mine",
+  "place": "KCGM Fimiston Super Pit, Kalgoorlie, WA",
+  "confidence": "high"
+ },
+ {
+  "company": "Newmont",
+  "site": "Tanami",
+  "lat": -20.53,
+  "lon": 129.92,
+  "precision": "mine",
+  "place": "Tanami (Callie / Dead Bullock Soak), Northern Territory",
+  "confidence": "high"
+ },
+ {
+  "company": "OceanaGold",
+  "site": "Didipio",
+  "lat": 16.33,
+  "lon": 121.46,
+  "precision": "mine",
+  "place": "Didipio mine, Nueva Vizcaya/Quirino, Philippines",
+  "confidence": "medium"
+ },
+ {
+  "company": "OceanaGold",
+  "site": "Haile",
+  "lat": 34.58,
+  "lon": -80.54,
+  "precision": "mine",
+  "place": "Haile mine, Kershaw, South Carolina",
+  "confidence": "high"
+ },
+ {
+  "company": "OceanaGold",
+  "site": "Macraes",
+  "lat": -45.37,
+  "lon": 170.43,
+  "precision": "mine",
+  "place": "Macraes mine, Otago, New Zealand",
+  "confidence": "medium"
+ },
+ {
+  "company": "OceanaGold",
+  "site": "Waihi",
+  "lat": -37.39,
+  "lon": 175.84,
+  "precision": "mine",
+  "place": "Waihi (Martha) mine, Waikato, New Zealand",
+  "confidence": "high"
+ },
+ {
+  "company": "Pan American Silver",
+  "site": "La Colorada",
+  "lat": 23.37,
+  "lon": -103.75,
+  "precision": "mine",
+  "place": "La Colorada mine, Zacatecas, Mexico",
+  "confidence": "high"
+ },
+ {
+  "company": "Pan American Silver",
+  "site": "Dolores",
+  "lat": 28.99,
+  "lon": -108.54,
+  "precision": "mine",
+  "place": "Dolores mine, Madera, Chihuahua, Mexico",
+  "confidence": "high"
+ },
+ {
+  "company": "Pan American Silver",
+  "site": "Alamo Dorado",
+  "lat": 26.78,
+  "lon": -108.7,
+  "precision": "mine",
+  "place": "Alamo Dorado mine, ~40 km SE of Álamos, Sonora, Mexico",
+  "confidence": "low"
+ },
+ {
+  "company": "Pan American Silver",
+  "site": "Huaron",
+  "lat": -11.0,
+  "lon": -76.43,
+  "precision": "mine",
+  "place": "Huarón mine, Pasco, Peru",
+  "confidence": "medium"
+ },
+ {
+  "company": "Pan American Silver",
+  "site": "Morococha",
+  "lat": -11.61,
+  "lon": -76.14,
+  "precision": "mine",
+  "place": "Morococha mine, Junín, Peru",
+  "confidence": "medium"
+ },
+ {
+  "company": "Pan American Silver",
+  "site": "San Vicente",
+  "lat": -21.27,
+  "lon": -66.35,
+  "precision": "mine",
+  "place": "San Vicente mine, Potosí, Bolivia",
+  "confidence": "medium"
+ },
+ {
+  "company": "Pan American Silver",
+  "site": "Manantial Espejo",
+  "lat": -48.77,
+  "lon": -69.5,
+  "precision": "mine",
+  "place": "Manantial Espejo mine, Santa Cruz, Argentina",
+  "confidence": "high"
+ },
+ {
+  "company": "Pan American Silver",
+  "site": "Timmins",
+  "lat": 48.48,
+  "lon": -81.33,
+  "precision": "district",
+  "place": "Timmins (Bell Creek / Timmins West) operations, Ontario",
+  "confidence": "medium"
+ },
+ {
+  "company": "Pan American Silver",
+  "site": "Shahuindo",
+  "lat": -7.58,
+  "lon": -78.03,
+  "precision": "mine",
+  "place": "Shahuindo mine near Cajabamba, Cajamarca, Peru",
+  "confidence": "medium"
+ },
+ {
+  "company": "Pan American Silver",
+  "site": "La Arena",
+  "lat": -7.9,
+  "lon": -78.07,
+  "precision": "mine",
+  "place": "La Arena mine near Huamachuco, La Libertad, Peru",
+  "confidence": "medium"
+ },
+ {
+  "company": "Sandfire MATSA",
+  "site": "Mina Aguas Teñidas",
+  "lat": 37.87,
+  "lon": -6.83,
+  "precision": "mine",
+  "place": "Aguas Teñidas mine, Almonaster la Real, Huelva, Spain",
+  "confidence": "medium"
+ },
+ {
+  "company": "Sandfire MATSA",
+  "site": "Mina Magdalena",
+  "lat": 37.86,
+  "lon": -6.85,
+  "precision": "district",
+  "place": "Magdalena deposit near Aguas Teñidas, Huelva, Spain",
+  "confidence": "low"
+ },
+ {
+  "company": "Sandfire MATSA",
+  "site": "Mina Sotiel",
+  "lat": 37.6,
+  "lon": -6.84,
+  "precision": "mine",
+  "place": "Sotiel mine, Calañas, Huelva, Spain",
+  "confidence": "medium"
+ },
+ {
+  "company": "Teck Resources",
+  "site": "Elkview Operations",
+  "lat": 49.75,
+  "lon": -114.83,
+  "precision": "mine",
+  "place": "Elkview Operations near Sparwood, Elk Valley, BC",
+  "confidence": "high"
+ },
+ {
+  "company": "Teck Resources",
+  "site": "Fording River Operations",
+  "lat": 50.2,
+  "lon": -114.87,
+  "precision": "mine",
+  "place": "Fording River Operations near Elkford, BC",
+  "confidence": "medium"
+ },
+ {
+  "company": "Teck Resources",
+  "site": "Line Creek Operations",
+  "lat": 49.99,
+  "lon": -114.78,
+  "precision": "mine",
+  "place": "Line Creek Operations north of Sparwood, BC",
+  "confidence": "medium"
+ },
+ {
+  "company": "Teck Resources",
+  "site": "Greenhills Operations",
+  "lat": 50.06,
+  "lon": -114.84,
+  "precision": "mine",
+  "place": "Greenhills Operations near Elkford, BC",
+  "confidence": "medium"
+ },
+ {
+  "company": "Teck Resources",
+  "site": "Highland Valley Copper",
+  "lat": 50.49,
+  "lon": -121.04,
+  "precision": "mine",
+  "place": "Highland Valley Copper near Logan Lake, BC",
+  "confidence": "high"
+ },
+ {
+  "company": "Teck Resources",
+  "site": "Red Dog",
+  "lat": 68.07,
+  "lon": -162.87,
+  "precision": "mine",
+  "place": "Red Dog mine, Northwest Arctic Borough, Alaska",
+  "confidence": "high"
+ },
+ {
+  "company": "Teck Resources",
+  "site": "Carmen de Andacollo",
+  "lat": -30.26,
+  "lon": -71.11,
+  "precision": "mine",
+  "place": "Carmen de Andacollo mine, Coquimbo, Chile",
+  "confidence": "high"
+ },
+ {
+  "company": "Teck Resources",
+  "site": "Quebrada Blanca",
+  "lat": -20.98,
+  "lon": -68.8,
+  "precision": "mine",
+  "place": "Quebrada Blanca mine, Tarapacá, Chile",
+  "confidence": "medium"
+ },
+ {
+  "company": "Teck Resources",
+  "site": "Trail Operations",
+  "lat": 49.1,
+  "lon": -117.71,
+  "precision": "mine",
+  "place": "Trail smelter, Trail, BC",
+  "confidence": "high"
+ }
+]

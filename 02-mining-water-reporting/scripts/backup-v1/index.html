@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MineWater Ledger</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/landing.css">
+</head>
+<body class="landing-page">
+<nav class="topbar"><div class="wrap">
+  <a class="brand" href="index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5c3.6 4.6 6.5 8.2 6.5 11.6A6.5 6.5 0 0 1 5.5 14.1C5.5 10.7 8.4 7.1 12 2.5z" fill="currentColor"/></svg>MineWater Ledger</a>
+  <div class="toplinks"><a href="#how">How it works</a><a href="#answers">What it answers</a><a href="risk.html">Water-at-Risk</a><a class="btn primary" href="dashboard.html">Open dashboard</a></div>
+</div></nav>
+
+<header class="l-hero"><div class="wrap">
+  <div class="l-copy">
+    <div class="eyebrow">Water reporting for mining companies</div>
+    <h1>Know how much water each mine <em>really</em> uses.</h1>
+    <p class="lede">Import a sustainability report or type in the numbers. MineWater Ledger builds a water account for every site, checks that it adds up, and shows where each mine is heading.</p>
+    <div class="row l-cta"><a class="btn primary big" href="dashboard.html">See the Newcrest example →</a><a class="btn big ghost" href="#how">How it works</a></div>
+  </div>
+  <div class="l-preview" aria-label="Dashboard preview">
+    <div class="pv-head"><span class="pv-dot"></span><span class="pv-dot"></span><span class="pv-dot"></span><span class="pv-title">Newcrest · Telfer · FY20</span></div>
+    <div class="pv-kpis">
+      <div><div class="pv-v">18,159</div><div class="pv-l">ML withdrawn</div></div>
+      <div><div class="pv-v">97%</div><div class="pv-l">freshwater</div></div>
+      <div><div class="pv-v pv-bad">+20%</div><div class="pv-l">balance gap</div></div>
+    </div>
+    <svg class="pv-chart" viewBox="0 0 400 120" role="img" aria-label="Water in and water out for Telfer">
+      <defs><pattern id="pvh" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="var(--copper-soft)"/><line x1="0" y1="0" x2="0" y2="6" stroke="var(--crit)" stroke-width="2.4"/></pattern></defs>
+      <text x="0" y="30" class="t-ink">In</text>
+      <rect x="36" y="12" width="262" height="28" rx="4" fill="var(--q1)"/>
+      <rect x="300" y="12" width="52" height="28" rx="4" fill="url(#pvh)" stroke="var(--crit)"/>
+      <text x="0" y="86" class="t-ink">Out</text>
+      <rect x="36" y="68" width="44" height="28" rx="4" fill="var(--ink-2)"/>
+      <rect x="82" y="68" width="270" height="28" rx="4" fill="var(--copper)"/>
+      <text x="40" y="115" class="t-muted" style="font-size:11px">3,667 ML missing from the inflows</text>
+    </svg>
+    <div class="pv-foot"><span class="pill crit">Does not close</span><span class="pill good">Forecast to 2030 ready</span></div>
+  </div>
+</div></header>
+
+<section class="l-band"><div class="wrap l-problems">
+  <div class="l-prob"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="6" width="24" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 20v-4M14 20v-8M19 20v-6M24 20v-10" stroke="currentColor" stroke-width="2"/></svg>
+    <h3>One number for many mines</h3><p>Reports give one water total for the whole company. Nobody can see which mine uses the water.</p></div>
+  <div class="l-prob"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4c4.5 5.8 8 10 8 14a8 8 0 0 1-16 0c0-4 3.5-8.2 8-14z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 20h16" stroke="currentColor" stroke-width="2" stroke-dasharray="3 3"/></svg>
+    <h3>Seawater and freshwater mixed</h3><p>Only freshwater competes with towns, farms and rivers, yet both sit in the same total.</p></div>
+  <div class="l-prob"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 12h20M6 20h20" stroke="currentColor" stroke-width="2"/><path d="M13 26l6-20" stroke="currentColor" stroke-width="2"/></svg>
+    <h3>Numbers that don't add up</h3><p>Water in should equal water out. In published reports it often doesn't, and nobody checks.</p></div>
+</div></section>
+
+<section class="panel" id="how"><div class="wrap stack">
+  <div class="l-section-head"><div class="eyebrow">How it works</div><h2>From report to answers in three steps</h2></div>
+  <ol class="l-steps">
+    <li><span class="num">1</span><div><h3>Bring the data in</h3><p>Import the company's sustainability data file, or type the figures for a site into a short form. Both end up in the same site account.</p></div></li>
+    <li><span class="num">2</span><div><h3>Report and check</h3><p>Every site gets the same account: freshwater and seawater, sources, discharge, consumption and recycling, checked against the ICMM industry rules.</p></div></li>
+    <li><span class="num">3</span><div><h3>Look ahead</h3><p>See each site's trend and a forecast to 2030, and test a sustainable option such as recycling more water.</p></div></li>
+  </ol>
+</div></section>
+
+<section class="panel l-alt" id="answers"><div class="wrap stack">
+  <div class="l-section-head"><div class="eyebrow">What the dashboard answers</div><h2>Four questions, one screen</h2></div>
+  <div class="l-answers">
+    <div class="l-q"><span class="tag built">Now</span><h3>How much water does each mine use, and what kind?</h3><p>Withdrawal per site, split into freshwater and seawater and by source.</p></div>
+    <div class="l-q"><span class="tag built">Now</span><h3>Can we trust the numbers?</h3><p>A balance check per site: does water in equal water out, within 5%?</p></div>
+    <div class="l-q"><span class="tag assumed">Forecast</span><h3>Where is each mine heading?</h3><p>Freshwater demand to 2030, starting from what the company reports.</p></div>
+    <div class="l-q"><span class="tag proven">Outcome</span><h3>What would make it more sustainable?</h3><p>How much freshwater more recycling saves, and what a buyer needs to see.</p></div>
+  </div>
+</div></section>
+
+<section class="l-final"><div class="wrap">
+  <div><div class="eyebrow">Worked example</div><h2>Newcrest Mining, FY20</h2><p>Gold and copper mines in Papua New Guinea, Australia, Indonesia and Canada. Import its report in one click and watch the dashboard fill.</p></div>
+  <a class="btn big light" href="dashboard.html">Open the dashboard →</a>
+</div></section>
+<footer><div class="wrap">Built at the EIT Water Hackathon, Munich, 28 Sep 2026 · Data: Newcrest Mining 2020 Sustainability Report · ICMM Water Reporting Guide 2021 · Lutter et al. 2025</div></footer>
+</body>
+</html>

@@ -1,0 +1,109 @@
+{
+  "passport_version": "0.1",
+  "synthetic": true,
+  "tier": "tier1",
+  "site": {
+    "site_id": "MWP-PT-0012",
+    "name": "Serra Clara Lithium (project)",
+    "operator": "Serra Clara Litio Lda. (fictional)",
+    "country": "PT",
+    "latitude": 41.71,
+    "longitude": -7.63,
+    "primary_commodity": "Li",
+    "mine_type": "open_pit",
+    "processing_route": [
+      "dense_media_separation",
+      "flotation"
+    ],
+    "lifecycle_stage": "construction",
+    "basin": {
+      "name": "Upper Douro-type catchment (illustrative)",
+      "bws_score": 3.1,
+      "bws_category": "high",
+      "bws_source": "Illustrative placeholder - production system looks up WRI Aqueduct 4.0 from coordinates"
+    }
+  },
+  "period": {
+    "year": 2025,
+    "start_date": "2025-01-01",
+    "end_date": "2025-12-31"
+  },
+  "production": {
+    "products": [
+      {
+        "commodity": "Li",
+        "product_form": "Spodumene/petalite concentrate (design)",
+        "metal_content_t": 14000,
+        "basis": "LCE",
+        "allocation_share": 1.0,
+        "product_t": 170000
+      }
+    ],
+    "ore_processed_t": 1500000
+  },
+  "water": {
+    "withdrawals": [
+      {
+        "source": "surface_water",
+        "volume_ml": 450.0,
+        "dq": "calculated",
+        "subtype": "river_lake_abstraction",
+        "quality": "cat1",
+        "freshwater_gri": true
+      },
+      {
+        "source": "surface_water",
+        "volume_ml": 270.0,
+        "dq": "estimated",
+        "subtype": "precipitation_runoff",
+        "quality": "cat1",
+        "freshwater_gri": true
+      },
+      {
+        "source": "groundwater",
+        "volume_ml": 180.0,
+        "dq": "estimated",
+        "subtype": "mine_dewatering",
+        "quality": "cat2",
+        "freshwater_gri": false
+      }
+    ],
+    "discharges": [
+      {
+        "destination": "surface_water",
+        "volume_ml": 150,
+        "dq": "calculated",
+        "treated": true,
+        "quality": "cat2"
+      }
+    ],
+    "consumption": {
+      "total_ml": 750.0,
+      "total_dq": "estimated"
+    },
+    "reuse": {
+      "reused_recycled_ml": 1080.0,
+      "dq": "calculated"
+    }
+  },
+  "assurance": {
+    "level": "none",
+    "methodology": "company_specific"
+  },
+  "sources": [
+    {
+      "title": "Synthetic demo record (generate_synthetic.py)",
+      "extraction": "reported_directly"
+    }
+  ],
+  "context": {
+    "competing_users": [
+      "agriculture",
+      "municipal_drinking",
+      "ecosystems_wetlands"
+    ],
+    "seasonality": "strong",
+    "water_grievances": 7,
+    "water_incidents": 0
+  }
+}
