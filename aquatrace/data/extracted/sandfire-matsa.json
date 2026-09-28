@@ -1,0 +1,517 @@
+{
+  "company": "Sandfire MATSA",
+  "files": [
+    {
+      "file": "Aguas Tenidas_EINF_Sandfire_MATSA_2022.pdf",
+      "relevant": true,
+      "yearsCovered": [
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "granularity": "site",
+      "reason": "Spanish EINF 2021-2022: site-level fresh water intake ('consumo aguas') and discharge ('vertido') for Aguas Teñidas, Magdalena, Sotiel mines for FY2019-20, 2020-21, 2021-22 (p.76); water intensity (p.57, p.76); concentrate production (p.79)"
+    }
+  ],
+  "sites": [
+    {
+      "site": "Mina Aguas Teñidas",
+      "country": "Spain",
+      "commodity": [
+        "copper",
+        "zinc",
+        "lead"
+      ],
+      "waterStressReported": null,
+      "status": "operating"
+    },
+    {
+      "site": "Mina Magdalena",
+      "country": "Spain",
+      "commodity": [
+        "copper",
+        "zinc",
+        "lead"
+      ],
+      "waterStressReported": null,
+      "status": "operating"
+    },
+    {
+      "site": "Mina Sotiel",
+      "country": "Spain",
+      "commodity": [
+        "copper",
+        "zinc",
+        "lead"
+      ],
+      "waterStressReported": null,
+      "status": "operating"
+    }
+  ],
+  "records": [
+    {
+      "site": "Mina Aguas Teñidas",
+      "year": 2020,
+      "metric": "withdrawal_fresh",
+      "value": 615.361,
+      "rawValue": "615.361",
+      "rawUnit": "m³",
+      "sourceFile": "Aguas Tenidas_EINF_Sandfire_MATSA_2022.pdf",
+      "location": "p.76 table 'CONSUMO AGUAS (m³)' row 'MINA AT' col 2019-2020",
+      "note": "Source label 'Consumo aguas'; p.57 describes the metric as 'consumo de agua fresca procedente de fuentes externas' (fresh water from external sources), i.e. freshwater intake, so mapped to withdrawal_fresh. Period '2019-2020' recorded as end year 2020; 12-month period under the previous fiscal calendar (p.82: fiscal close changed 'de Octubre a Junio')"
+    },
+    {
+      "site": "Mina Aguas Teñidas",
+      "year": 2021,
+      "metric": "withdrawal_fresh",
+      "value": 466.752,
+      "rawValue": "466.752",
+      "rawUnit": "m³",
+      "sourceFile": "Aguas Tenidas_EINF_Sandfire_MATSA_2022.pdf",
+      "location": "p.76 table 'CONSUMO AGUAS (m³)' row 'MINA AT' col 2020-2021",
+      "note": "Source label 'Consumo aguas'; p.57 describes the metric as 'consumo de agua fresca procedente de fuentes externas' (fresh water from external sources), i.e. freshwater intake, so mapped to withdrawal_fresh. Period '2020-2021' recorded as end year 2021; 12-month period under the previous fiscal calendar (p.82: fiscal close changed 'de Octubre a Junio')"
+    },
+    {
+      "site": "Mina Aguas Teñidas",
+      "year": 2022,
+      "metric": "withdrawal_fresh",
+      "value": 306.461,
+      "rawValue": "306.461",
+      "rawUnit": "m³",
+      "sourceFile": "Aguas Tenidas_EINF_Sandfire_MATSA_2022.pdf",
+      "location": "p.76 table 'CONSUMO AGUAS (m³)' row 'MINA AT' col 2021-2022",
+      "note": "Source label 'Consumo aguas'; p.57 describes the metric as 'consumo de agua fresca procedente de fuentes externas' (fresh water from external sources), i.e. freshwater intake, so mapped to withdrawal_fresh. Period '2021-2022' recorded as end year 2022; 9-month period 1 Oct 2021-30 Jun 2022 after fiscal year change"
+    },
+    {
+      "site": "Mina Magdalena",
+      "year": 2020,
+      "metric": "withdrawal_fresh",
+      "value": 109.697,
+      "rawValue": "109.697",
+      "rawUnit": "m³",
+      "sourceFile": "Aguas Tenidas_EINF_Sandfire_MATSA_2022.pdf",
+      "location": "p.76 table 'CONSUMO AGUAS (m³)' row 'MINA MAGDALENA' col 2019-2020",
+      "note": "Source label 'Consumo aguas'; p.57 describes the metric as 'consumo de agua fresca procedente de fuentes externas' (fresh water from external sources), i.e. freshwater intake, so mapped to withdrawal_fresh. Period '2019-2020' recorded as end year 2020; 12-month period under the previous fiscal calendar (p.82: fiscal close changed 'de Octubre a Junio')"
+    },
+    {
+      "site": "Mina Magdalena",
+      "year": 2021,
+      "metric": "withdrawal_fresh",
+      "value": 102.853,
+      "rawValue": "102.853",
+      "rawUnit": "m³",
+      "sourceFile": "Aguas Tenidas_EINF_Sandfire_MATSA_2022.pdf",
+      "location": "p.76 table 'CONSUMO AGUAS (m³)' row 'MINA MAGDALENA' col 2020-2021",
+      "note": "Source label 'Consumo aguas'; p.57 describes the metric as 'consumo de agua fresca procedente de fuentes externas' (fresh water from external sources), i.e. freshwater intake, so mapped to withdrawal_fresh. Period '2020-2021' recorded as end year 2021; 12-month period under the previous fiscal calendar (p.82: fiscal close changed 'de Octubre a Junio')"
+    },
+    {
+      "site": "Mina Magdalena",
+      "year": 2022,
+      "metric": "withdrawal_fresh",
+      "value": 80.611,
+      "rawValue": "80.611",
+      "rawUnit": "m³",
+      "sourceFile": "Aguas Tenidas_EINF_Sandfire_MATSA_2022.pdf",
+      "location": "p.76 table 'CONSUMO AGUAS (m³)' row 'MINA MAGDALENA' col 2021-2022",
+      "note": "Source label 'Consumo aguas'; p.57 describes the metric as 'consumo de agua fresca procedente de fuentes externas' (fresh water from external sources), i.e. freshwater intake, so mapped to withdrawal_fresh. Period '2021-2022' recorded as end year 2022; 9-month period 1 Oct 2021-30 Jun 2022 after fiscal year change"
+    },
+    {
+      "site": "Mina Sotiel",
+      "year": 2020,
+      "metric": "withdrawal_fresh",
+      "value": 0,
+      "rawValue": "0",
+      "rawUnit": "m³",
+      "sourceFile": "Aguas Tenidas_EINF_Sandfire_MATSA_2022.pdf",
+      "location": "p.76 table 'CONSUMO AGUAS (m³)' row 'MINA SOTIEL' col 2019-2020",
+      "note": "Source label 'Consumo aguas'; p.57 describes the metric as 'consumo de agua fresca procedente de fuentes externas' (fresh water from external sources), i.e. freshwater intake, so mapped to withdrawal_fresh. Period '2019-2020' recorded as end year 2020; 12-month period under the previous fiscal calendar (p.82: fiscal close changed 'de Octubre a Junio')"
+    },
+    {
+      "site": "Mina Sotiel",
+      "year": 2021,
+      "metric": "withdrawal_fresh",
+      "value": 0,
+      "rawValue": "0",
+      "rawUnit": "m³",
+      "sourceFile": "Aguas Tenidas_EINF_Sandfire_MATSA_2022.pdf",
+      "location": "p.76 table 'CONSUMO AGUAS (m³)' row 'MINA SOTIEL' col 2020-2021",
+      "note": "Source label 'Consumo aguas'; p.57 describes the metric as 'consumo de agua fresca procedente de fuentes externas' (fresh water from external sources), i.e. freshwater intake, so mapped to withdrawal_fresh. Period '2020-2021' recorded as end year 2021; 12-month period under the previous fiscal calendar (p.82: fiscal close changed 'de Octubre a Junio')"
+    },
+    {
+      "site": "Mina Sotiel",
+      "year": 2022,
+      "metric": "withdrawal_fresh",
+      "value": 0,
+      "rawValue": "0",
+      "rawUnit": "m³",
+      "sourceFile": "Aguas Tenidas_EINF_Sandfire_MATSA_2022.pdf",
+      "location": "p.76 table 'CONSUMO AGUAS (m³)' row 'MINA SOTIEL' col 2021-2022",
+      "note": "Source label 'Consumo aguas'; p.57 describes the metric as 'consumo de agua fresca procedente de fuentes externas' (fresh water from external sources), i.e. freshwater intake, so mapped to withdrawal_fresh. Period '2021-2022' recorded as end year 2022; 9-month period 1 Oct 2021-30 Jun 2022 after fiscal year change"
+    },
+    {
+      "site": "_corporate",
+      "year": 2020,
+      "metric": "withdrawal_fresh",
+      "value": 725.058,
+      "rawValue": "725.058",
+      "rawUnit": "m³",
+      "sourceFile": "Aguas Tenidas_EINF_Sandfire_MATSA_2022.pdf",
+      "location": "p.76 table 'CONSUMO AGUAS (m³)' row 'TOTAL CONSUMO (m³)' col 2019-2020",
+      "note": "Source label 'Consumo aguas'; p.57 describes the metric as 'consumo de agua fresca procedente de fuentes externas' (fresh water from external sources), i.e. freshwater intake, so mapped to withdrawal_fresh. Period '2019-2020' recorded as end year 2020; 12-month period under the previous fiscal calendar (p.82: fiscal close changed 'de Octubre a Junio')"
+    },
+    {
+      "site": "_corporate",
+      "year": 2021,
+      "metric": "withdrawal_fresh",
+      "value": 569.605,
+      "rawValue": "569.605",
+      "rawUnit": "m³",
+      "sourceFile": "Aguas Tenidas_EINF_Sandfire_MATSA_2022.pdf",
+      "location": "p.76 table 'CONSUMO AGUAS (m³)' row 'TOTAL CONSUMO (m³)' col 2020-2021",
+      "note": "Source label 'Consumo aguas'; p.57 describes the metric as 'consumo de agua fresca procedente de fuentes externas' (fresh water from external sources), i.e. freshwater intake, so mapped to withdrawal_fresh. Period '2020-2021' recorded as end year 2021; 12-month period under the previous fiscal calendar (p.82: fiscal close changed 'de Octubre a Junio')"
+    },
+    {
+      "site": "_corporate",
+      "year": 2022,
+      "metric": "withdrawal_fresh",
+      "value": 387.072,
+      "rawValue": "387.072",
+      "rawUnit": "m³",
+      "sourceFile": "Aguas Tenidas_EINF_Sandfire_MATSA_2022.pdf",
+      "location": "p.76 table 'CONSUMO AGUAS (m³)' row 'TOTAL CONSUMO (m³)' col 2021-2022",
+      "note": "Source label 'Consumo aguas'; p.57 describes the metric as 'consumo de agua fresca procedente de fuentes externas' (fresh water from external sources), i.e. freshwater intake, so mapped to withdrawal_fresh. Period '2021-2022' recorded as end year 2022; 9-month period 1 Oct 2021-30 Jun 2022 after fiscal year change"
+    },
+    {
+      "site": "Mina Aguas Teñidas",
+      "year": 2020,
+      "metric": "discharge_total",
+      "value": 74.876,
+      "rawValue": "74.876",
+      "rawUnit": "m³",
+      "sourceFile": "Aguas Tenidas_EINF_Sandfire_MATSA_2022.pdf",
+      "location": "p.76 table 'VERTIDO AGUAS (m³)' row 'MINA AT' col 2019-2020",
+      "note": "Receiving water body not specified. Period '2019-2020' recorded as end year 2020; 12-month period under the previous fiscal calendar (p.82: fiscal close changed 'de Octubre a Junio')"
+    },
+    {
+      "site": "Mina Aguas Teñidas",
+      "year": 2021,
+      "metric": "discharge_total",
+      "value": 133.676,
+      "rawValue": "133.676",
+      "rawUnit": "m³",
+      "sourceFile": "Aguas Tenidas_EINF_Sandfire_MATSA_2022.pdf",
+      "location": "p.76 table 'VERTIDO AGUAS (m³)' row 'MINA AT' col 2020-2021",
+      "note": "Receiving water body not specified. Period '2020-2021' recorded as end year 2021; 12-month period under the previous fiscal calendar (p.82: fiscal close changed 'de Octubre a Junio')"
+    },
+    {
+      "site": "Mina Aguas Teñidas",
+      "year": 2022,
+      "metric": "discharge_total",
+      "value": 0,
+      "rawValue": "0",
+      "rawUnit": "m³",
+      "sourceFile": "Aguas Tenidas_EINF_Sandfire_MATSA_2022.pdf",
+      "location": "p.76 table 'VERTIDO AGUAS (m³)' row 'MINA AT' col 2021-2022",
+      "note": "Receiving water body not specified. Period '2021-2022' recorded as end year 2022; 9-month period 1 Oct 2021-30 Jun 2022 after fiscal year change"
+    },
+    {
+      "site": "Mina Magdalena",
+      "year": 2020,
+      "metric": "discharge_total",
+      "value": 185.047,
+      "rawValue": "185.047",
+      "rawUnit": "m³",
+      "sourceFile": "Aguas Tenidas_EINF_Sandfire_MATSA_2022.pdf",
+      "location": "p.76 table 'VERTIDO AGUAS (m³)' row 'MINA MAGDALENA' col 2019-2020",
+      "note": "Receiving water body not specified. Period '2019-2020' recorded as end year 2020; 12-month period under the previous fiscal calendar (p.82: fiscal close changed 'de Octubre a Junio')"
+    },
+    {
+      "site": "Mina Magdalena",
+      "year": 2021,
+      "metric": "discharge_total",
+      "value": 265.014,
+      "rawValue": "265.014",
+      "rawUnit": "m³",
+      "sourceFile": "Aguas Tenidas_EINF_Sandfire_MATSA_2022.pdf",
+      "location": "p.76 table 'VERTIDO AGUAS (m³)' row 'MINA MAGDALENA' col 2020-2021",
+      "note": "Receiving water body not specified. Period '2020-2021' recorded as end year 2021; 12-month period under the previous fiscal calendar (p.82: fiscal close changed 'de Octubre a Junio')"
+    },
+    {
+      "site": "Mina Magdalena",
+      "year": 2022,
+      "metric": "discharge_total",
+      "value": 46.634,
+      "rawValue": "46.634",
+      "rawUnit": "m³",
+      "sourceFile": "Aguas Tenidas_EINF_Sandfire_MATSA_2022.pdf",
+      "location": "p.76 table 'VERTIDO AGUAS (m³)' row 'MINA MAGDALENA' col 2021-2022",
+      "note": "Receiving water body not specified. Period '2021-2022' recorded as end year 2022; 9-month period 1 Oct 2021-30 Jun 2022 after fiscal year change"
+    },
+    {
+      "site": "Mina Sotiel",
+      "year": 2020,
+      "metric": "discharge_total",
+      "value": 57.352,
+      "rawValue": "57.352",
+      "rawUnit": "m³",
+      "sourceFile": "Aguas Tenidas_EINF_Sandfire_MATSA_2022.pdf",
+      "location": "p.76 table 'VERTIDO AGUAS (m³)' row 'MINA SOTIEL' col 2019-2020",
+      "note": "Receiving water body not specified. Period '2019-2020' recorded as end year 2020; 12-month period under the previous fiscal calendar (p.82: fiscal close changed 'de Octubre a Junio')"
+    },
+    {
+      "site": "Mina Sotiel",
+      "year": 2021,
+      "metric": "discharge_total",
+      "value": 131.544,
+      "rawValue": "131.544",
+      "rawUnit": "m³",
+      "sourceFile": "Aguas Tenidas_EINF_Sandfire_MATSA_2022.pdf",
+      "location": "p.76 table 'VERTIDO AGUAS (m³)' row 'MINA SOTIEL' col 2020-2021",
+      "note": "Receiving water body not specified. Period '2020-2021' recorded as end year 2021; 12-month period under the previous fiscal calendar (p.82: fiscal close changed 'de Octubre a Junio')"
+    },
+    {
+      "site": "Mina Sotiel",
+      "year": 2022,
+      "metric": "discharge_total",
+      "value": 87.051,
+      "rawValue": "87.051",
+      "rawUnit": "m³",
+      "sourceFile": "Aguas Tenidas_EINF_Sandfire_MATSA_2022.pdf",
+      "location": "p.76 table 'VERTIDO AGUAS (m³)' row 'MINA SOTIEL' col 2021-2022",
+      "note": "Receiving water body not specified. Period '2021-2022' recorded as end year 2022; 9-month period 1 Oct 2021-30 Jun 2022 after fiscal year change"
+    },
+    {
+      "site": "_corporate",
+      "year": 2020,
+      "metric": "discharge_total",
+      "value": 317.275,
+      "rawValue": "317.275",
+      "rawUnit": "m³",
+      "sourceFile": "Aguas Tenidas_EINF_Sandfire_MATSA_2022.pdf",
+      "location": "p.76 table 'VERTIDO AGUAS (m³)' row 'TOTAL VERTIDO (m³)' col 2019-2020",
+      "note": "Receiving water body not specified. Period '2019-2020' recorded as end year 2020; 12-month period under the previous fiscal calendar (p.82: fiscal close changed 'de Octubre a Junio')"
+    },
+    {
+      "site": "_corporate",
+      "year": 2021,
+      "metric": "discharge_total",
+      "value": 530.234,
+      "rawValue": "530.234",
+      "rawUnit": "m³",
+      "sourceFile": "Aguas Tenidas_EINF_Sandfire_MATSA_2022.pdf",
+      "location": "p.76 table 'VERTIDO AGUAS (m³)' row 'TOTAL VERTIDO (m³)' col 2020-2021",
+      "note": "Receiving water body not specified. Period '2020-2021' recorded as end year 2021; 12-month period under the previous fiscal calendar (p.82: fiscal close changed 'de Octubre a Junio')"
+    },
+    {
+      "site": "_corporate",
+      "year": 2022,
+      "metric": "discharge_total",
+      "value": 133.685,
+      "rawValue": "133.685",
+      "rawUnit": "m³",
+      "sourceFile": "Aguas Tenidas_EINF_Sandfire_MATSA_2022.pdf",
+      "location": "p.76 table 'VERTIDO AGUAS (m³)' row 'TOTAL VERTIDO (m³)' col 2021-2022",
+      "note": "Receiving water body not specified. Period '2021-2022' recorded as end year 2022; 9-month period 1 Oct 2021-30 Jun 2022 after fiscal year change"
+    },
+    {
+      "site": "_corporate",
+      "year": 2020,
+      "metric": "water_intensity_reported",
+      "value": 0.1699,
+      "rawValue": "0,1699",
+      "rawUnit": "m³/t mineral",
+      "sourceFile": "Aguas Tenidas_EINF_Sandfire_MATSA_2022.pdf",
+      "location": "p.76 table 'CONSUMO AGUAS' row 'Ratio consumo (m³/t mineral)' col 2019-2020",
+      "note": "Fresh water from external sources per tonne of ore processed (m3/t). Period '2019-2020' recorded as end year 2020; 12-month period under the previous fiscal calendar (p.82: fiscal close changed 'de Octubre a Junio')"
+    },
+    {
+      "site": "_corporate",
+      "year": 2021,
+      "metric": "water_intensity_reported",
+      "value": 0.1353,
+      "rawValue": "0,1353",
+      "rawUnit": "m³/t mineral",
+      "sourceFile": "Aguas Tenidas_EINF_Sandfire_MATSA_2022.pdf",
+      "location": "p.76 table 'CONSUMO AGUAS' row 'Ratio consumo (m³/t mineral)' col 2020-2021",
+      "note": "Fresh water from external sources per tonne of ore processed (m3/t). Period '2020-2021' recorded as end year 2021; 12-month period under the previous fiscal calendar (p.82: fiscal close changed 'de Octubre a Junio')"
+    },
+    {
+      "site": "_corporate",
+      "year": 2022,
+      "metric": "water_intensity_reported",
+      "value": 0.1154,
+      "rawValue": "0,1154",
+      "rawUnit": "m³/t mineral",
+      "sourceFile": "Aguas Tenidas_EINF_Sandfire_MATSA_2022.pdf",
+      "location": "p.76 table 'CONSUMO AGUAS' row 'Ratio consumo (m³/t mineral)' col 2021-2022",
+      "note": "Fresh water from external sources per tonne of ore processed (m3/t). Period '2021-2022' recorded as end year 2022; 9-month period 1 Oct 2021-30 Jun 2022 after fiscal year change"
+    },
+    {
+      "site": "_corporate",
+      "year": 2019,
+      "metric": "water_intensity_reported",
+      "value": 0.2275,
+      "rawValue": "0,2275",
+      "rawUnit": "m³/t mineral",
+      "sourceFile": "Aguas Tenidas_EINF_Sandfire_MATSA_2022.pdf",
+      "location": "p.57 chart 'Consumo agua fresca (m3) / mineral procesado (t)', bar labelled '2018'",
+      "note": "Chart x-axis labels 2018/2019/2020/2021 but the other three bars (0,1699/0,1353/0,1154) equal the p.76 table values for 2019-2020/2020-2021/2021-2022, and text says 2022 ratio fell 15% vs prior year (0,1154 vs 0,1353). The bar labelled '2018' is therefore taken as period 2018-2019 (end year 2019). Uncertain."
+    },
+    {
+      "site": "_corporate",
+      "year": 2020,
+      "metric": "other_production",
+      "value": 304153,
+      "rawValue": "304.153",
+      "rawUnit": "t (concentrate, unit not printed)",
+      "sourceFile": "Aguas Tenidas_EINF_Sandfire_MATSA_2022.pdf",
+      "location": "p.79 table 'Principales magnitudes operativas' (CONCENTRADO) row 'Cobre' col 2020",
+      "note": "copper concentrate tonnage (not contained metal); unit not printed, assumed tonnes; columns labelled 2020/2021/2022, presumably the same fiscal periods as the environmental tables (2022 = 9 months)"
+    },
+    {
+      "site": "_corporate",
+      "year": 2021,
+      "metric": "other_production",
+      "value": 310207,
+      "rawValue": "310.207",
+      "rawUnit": "t (concentrate, unit not printed)",
+      "sourceFile": "Aguas Tenidas_EINF_Sandfire_MATSA_2022.pdf",
+      "location": "p.79 table 'Principales magnitudes operativas' (CONCENTRADO) row 'Cobre' col 2021",
+      "note": "copper concentrate tonnage (not contained metal); unit not printed, assumed tonnes; columns labelled 2020/2021/2022, presumably the same fiscal periods as the environmental tables (2022 = 9 months)"
+    },
+    {
+      "site": "_corporate",
+      "year": 2022,
+      "metric": "other_production",
+      "value": 240532,
+      "rawValue": "240.532",
+      "rawUnit": "t (concentrate, unit not printed)",
+      "sourceFile": "Aguas Tenidas_EINF_Sandfire_MATSA_2022.pdf",
+      "location": "p.79 table 'Principales magnitudes operativas' (CONCENTRADO) row 'Cobre' col 2022",
+      "note": "copper concentrate tonnage (not contained metal); unit not printed, assumed tonnes; columns labelled 2020/2021/2022, presumably the same fiscal periods as the environmental tables (2022 = 9 months)"
+    },
+    {
+      "site": "_corporate",
+      "year": 2020,
+      "metric": "other_production",
+      "value": 194739,
+      "rawValue": "194.739",
+      "rawUnit": "t (concentrate, unit not printed)",
+      "sourceFile": "Aguas Tenidas_EINF_Sandfire_MATSA_2022.pdf",
+      "location": "p.79 table 'Principales magnitudes operativas' (CONCENTRADO) row 'Zinc' col 2020",
+      "note": "zinc concentrate tonnage (not contained metal); unit not printed, assumed tonnes; columns labelled 2020/2021/2022, presumably the same fiscal periods as the environmental tables (2022 = 9 months)"
+    },
+    {
+      "site": "_corporate",
+      "year": 2021,
+      "metric": "other_production",
+      "value": 193279,
+      "rawValue": "193.279",
+      "rawUnit": "t (concentrate, unit not printed)",
+      "sourceFile": "Aguas Tenidas_EINF_Sandfire_MATSA_2022.pdf",
+      "location": "p.79 table 'Principales magnitudes operativas' (CONCENTRADO) row 'Zinc' col 2021",
+      "note": "zinc concentrate tonnage (not contained metal); unit not printed, assumed tonnes; columns labelled 2020/2021/2022, presumably the same fiscal periods as the environmental tables (2022 = 9 months)"
+    },
+    {
+      "site": "_corporate",
+      "year": 2022,
+      "metric": "other_production",
+      "value": 126327,
+      "rawValue": "126.327",
+      "rawUnit": "t (concentrate, unit not printed)",
+      "sourceFile": "Aguas Tenidas_EINF_Sandfire_MATSA_2022.pdf",
+      "location": "p.79 table 'Principales magnitudes operativas' (CONCENTRADO) row 'Zinc' col 2022",
+      "note": "zinc concentrate tonnage (not contained metal); unit not printed, assumed tonnes; columns labelled 2020/2021/2022, presumably the same fiscal periods as the environmental tables (2022 = 9 months)"
+    },
+    {
+      "site": "_corporate",
+      "year": 2020,
+      "metric": "other_production",
+      "value": 45672,
+      "rawValue": "45.672",
+      "rawUnit": "t (concentrate, unit not printed)",
+      "sourceFile": "Aguas Tenidas_EINF_Sandfire_MATSA_2022.pdf",
+      "location": "p.79 table 'Principales magnitudes operativas' (CONCENTRADO) row 'Plomo' col 2020",
+      "note": "lead concentrate tonnage (not contained metal); unit not printed, assumed tonnes; columns labelled 2020/2021/2022, presumably the same fiscal periods as the environmental tables (2022 = 9 months)"
+    },
+    {
+      "site": "_corporate",
+      "year": 2021,
+      "metric": "other_production",
+      "value": 52570,
+      "rawValue": "52.570",
+      "rawUnit": "t (concentrate, unit not printed)",
+      "sourceFile": "Aguas Tenidas_EINF_Sandfire_MATSA_2022.pdf",
+      "location": "p.79 table 'Principales magnitudes operativas' (CONCENTRADO) row 'Plomo' col 2021",
+      "note": "lead concentrate tonnage (not contained metal); unit not printed, assumed tonnes; columns labelled 2020/2021/2022, presumably the same fiscal periods as the environmental tables (2022 = 9 months)"
+    },
+    {
+      "site": "_corporate",
+      "year": 2022,
+      "metric": "other_production",
+      "value": 26167,
+      "rawValue": "26.167",
+      "rawUnit": "t (concentrate, unit not printed)",
+      "sourceFile": "Aguas Tenidas_EINF_Sandfire_MATSA_2022.pdf",
+      "location": "p.79 table 'Principales magnitudes operativas' (CONCENTRADO) row 'Plomo' col 2022",
+      "note": "lead concentrate tonnage (not contained metal); unit not printed, assumed tonnes; columns labelled 2020/2021/2022, presumably the same fiscal periods as the environmental tables (2022 = 9 months)"
+    },
+    {
+      "site": "_corporate",
+      "year": 2020,
+      "metric": "other_production",
+      "value": 544564,
+      "rawValue": "544.564",
+      "rawUnit": "t (concentrate, unit not printed)",
+      "sourceFile": "Aguas Tenidas_EINF_Sandfire_MATSA_2022.pdf",
+      "location": "p.79 table 'Principales magnitudes operativas' (CONCENTRADO) row 'Total' col 2020",
+      "note": "total concentrate tonnage (not contained metal); unit not printed, assumed tonnes; columns labelled 2020/2021/2022, presumably the same fiscal periods as the environmental tables (2022 = 9 months)"
+    },
+    {
+      "site": "_corporate",
+      "year": 2021,
+      "metric": "other_production",
+      "value": 556055,
+      "rawValue": "556.055",
+      "rawUnit": "t (concentrate, unit not printed)",
+      "sourceFile": "Aguas Tenidas_EINF_Sandfire_MATSA_2022.pdf",
+      "location": "p.79 table 'Principales magnitudes operativas' (CONCENTRADO) row 'Total' col 2021",
+      "note": "total concentrate tonnage (not contained metal); unit not printed, assumed tonnes; columns labelled 2020/2021/2022, presumably the same fiscal periods as the environmental tables (2022 = 9 months)"
+    },
+    {
+      "site": "_corporate",
+      "year": 2022,
+      "metric": "other_production",
+      "value": 393026,
+      "rawValue": "393.026",
+      "rawUnit": "t (concentrate, unit not printed)",
+      "sourceFile": "Aguas Tenidas_EINF_Sandfire_MATSA_2022.pdf",
+      "location": "p.79 table 'Principales magnitudes operativas' (CONCENTRADO) row 'Total' col 2022",
+      "note": "total concentrate tonnage (not contained metal); unit not printed, assumed tonnes; columns labelled 2020/2021/2022, presumably the same fiscal periods as the environmental tables (2022 = 9 months)"
+    },
+    {
+      "site": "_corporate",
+      "year": 2022,
+      "metric": "other:env_sanctions_count",
+      "value": 0,
+      "rawValue": "No ... habiendo recibido sanciones",
+      "rawUnit": "text",
+      "sourceFile": "Aguas Tenidas_EINF_Sandfire_MATSA_2022.pdf",
+      "location": "p.53 text (GRI 307-1)",
+      "note": "'No detectando incumplimientos de la normativa de aplicación ni habiendo recibido sanciones por parte de las administraciones competentes' - no environmental non-compliances or sanctions (not water-specific). Period Oct 2021-Jun 2022."
+    }
+  ],
+  "observations": [
+    "Reporting period change: after Sandfire Resources acquired MATSA (1 Feb 2022) the fiscal year was changed to close in June, so the 2021-2022 period covers only 9 months (1 Oct 2021-30 Jun 2022) (p.6, p.82, p.93). The report itself says comparability with prior years is affected (p.93). 2022 absolute volumes (fresh water 387,072 m3, discharge 133,685 m3) are therefore not directly comparable with the 12-month prior periods; the intensity ratio is.",
+    "Years recorded as period end year: 2019-2020 -> 2020, 2020-2021 -> 2021, 2021-2022 -> 2022.",
+    "Metric definition: the table is labelled 'CONSUMO AGUAS' but the text (p.57) refers to 'consumo de agua fresca procedente de fuentes externas' (fresh water from external sources); mapped to withdrawal_fresh, not to GRI consumption. No breakdown by source (surface/ground), no total withdrawal including mine water, no GRI 303-5 consumption and no recycled volume reported despite GRI 303-3/303-5 references.",
+    "Fresh water intensity fell from 0.2275 (chart, apparently FY2018-19) to 0.1699, 0.1353 and 0.1154 m3/t ore (FY2019-20 to FY2021-22); the report states a 15% reduction in 2022 vs prior year (p.57), and notes facilities have so far buffered a sharp drop in rainfall in the current hydrological year (drought).",
+    "Chart labelling inconsistency: the p.57 chart labels the bars 2018-2021, but the values match the p.76 table periods 2019-2020 to 2021-2022 (i.e. labels appear shifted by one year / use the period start year).",
+    "Sotiel mine reports zero fresh water intake in all three periods but discharges 57-132 thousand m3; Aguas Teñidas reports zero discharge in 2021-2022 (vs 133,676 m3 in 2020-2021). Discharge rose sharply in 2020-2021 (530,234 m3) then fell to 133,685 m3 in the 9-month 2021-2022 period.",
+    "Ore processed tonnage is not stated in the document (only ratios per tonne and the plant capacity of >4.5 Mt/yr, p.78); ore_processed_t therefore not recorded. Production is given only as concentrate tonnage (copper, zinc, lead) on p.79, not contained metal.",
+    "Methodology: water footprint calculated per Water Footprint Network standard and MATSA is starting adaptation to ISO 14046 water footprint (p.58). Member of EsAgua network (Gold category) (p.57).",
+    "Targets/initiatives: LIFE Remine Water project (zero liquid discharge treatment train) targets recovery of 90% of water for reuse, 90% of sulphuric acid, 70% of copper and 40% of zinc from effluents, and 70% lower CO2 vs thermal evaporation (pp.59-60). Effluent concentrations to the exterior reportedly reduced since 2017 (grey water footprint) (p.59). No quantified corporate water withdrawal target.",
+    "Compliance: no non-compliances with applicable environmental regulations detected and no sanctions received from the competent authorities (p.53, GRI 307-1)."
+  ]
+}

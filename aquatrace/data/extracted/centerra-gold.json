@@ -1,0 +1,1170 @@
+{
+  "company": "Centerra Gold",
+  "files": [
+    {
+      "file": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "relevant": true,
+      "yearsCovered": [
+        2016,
+        2017,
+        2018
+      ],
+      "granularity": "site",
+      "reason": "Site water tables for Kumtor (Table 7, p.13) and Mount Milligan (Table 8, p.14) 2016-2018; corporate gold/copper production (p.10)"
+    },
+    {
+      "file": "Centerra Gold 2019 ESG Report.pdf",
+      "relevant": true,
+      "yearsCovered": [
+        2017,
+        2018,
+        2019
+      ],
+      "granularity": "site",
+      "reason": "SASB water summary by site 2019 (Kumtor, Mount Milligan, Öksüt; Table 8 p.32), water non-compliance incidents (Table 9), text comparisons to 2018, production 2017-2019 (p.6)"
+    }
+  ],
+  "sites": [
+    {
+      "site": "Kumtor",
+      "country": "Kyrgyz Republic",
+      "commodity": [
+        "gold"
+      ],
+      "waterStressReported": null,
+      "status": "operating"
+    },
+    {
+      "site": "Mount Milligan",
+      "country": "Canada",
+      "commodity": [
+        "gold",
+        "copper"
+      ],
+      "waterStressReported": null,
+      "status": "operating"
+    },
+    {
+      "site": "Öksüt",
+      "country": "Turkey",
+      "commodity": [
+        "gold"
+      ],
+      "waterStressReported": "high",
+      "status": null
+    }
+  ],
+  "records": [
+    {
+      "site": "Kumtor",
+      "year": 2018,
+      "metric": "withdrawal_surface",
+      "value": 5170.0,
+      "rawValue": "5.17",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.13 Table 7 'Water Management at Kumtor' row 'Total Water Extracted from Petrov Lake' col 2018",
+      "note": "Petrov Lake. Note: 2019 ESG Report p.32 fn 8 states Petrov Lake is not fresh water under SASB/GRI (>1000 ppm TDS) though previously reported as such."
+    },
+    {
+      "site": "Kumtor",
+      "year": 2017,
+      "metric": "withdrawal_surface",
+      "value": 5210.0,
+      "rawValue": "5.21",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.13 Table 7 'Water Management at Kumtor' row 'Total Water Extracted from Petrov Lake' col 2017",
+      "note": "Petrov Lake. Note: 2019 ESG Report p.32 fn 8 states Petrov Lake is not fresh water under SASB/GRI (>1000 ppm TDS) though previously reported as such."
+    },
+    {
+      "site": "Kumtor",
+      "year": 2016,
+      "metric": "withdrawal_surface",
+      "value": 5250.0,
+      "rawValue": "5.25",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.13 Table 7 'Water Management at Kumtor' row 'Total Water Extracted from Petrov Lake' col 2016",
+      "note": "Petrov Lake. Note: 2019 ESG Report p.32 fn 8 states Petrov Lake is not fresh water under SASB/GRI (>1000 ppm TDS) though previously reported as such."
+    },
+    {
+      "site": "Kumtor",
+      "year": 2018,
+      "metric": "other:pit_water_pumped_to_mill",
+      "value": 1540.0,
+      "rawValue": "1.54",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.13 Table 7 'Water Management at Kumtor' row 'Pit water pumped to the Mill' col 2018",
+      "note": "Open-pit water (incl. groundwater and glacier melt) pumped to the mill"
+    },
+    {
+      "site": "Kumtor",
+      "year": 2017,
+      "metric": "other:pit_water_pumped_to_mill",
+      "value": 1140.0,
+      "rawValue": "1.14",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.13 Table 7 'Water Management at Kumtor' row 'Pit water pumped to the Mill' col 2017",
+      "note": "Open-pit water (incl. groundwater and glacier melt) pumped to the mill"
+    },
+    {
+      "site": "Kumtor",
+      "year": 2016,
+      "metric": "other:pit_water_pumped_to_mill",
+      "value": 1010.0,
+      "rawValue": "1.01",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.13 Table 7 'Water Management at Kumtor' row 'Pit water pumped to the Mill' col 2016",
+      "note": "Open-pit water (incl. groundwater and glacier melt) pumped to the mill"
+    },
+    {
+      "site": "Kumtor",
+      "year": 2018,
+      "metric": "other:pit_water_pumped_to_environment",
+      "value": 25170.0,
+      "rawValue": "25.17",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.13 Table 7 'Water Management at Kumtor' row 'Pit water pumped to the environment' col 2018",
+      "note": "Pit dewatering released to environment; not labelled as 'discharge' in source. Compare 2019 report Table 8 Kumtor 'Total Water Discharged' 6.13 Mm3 (2019)."
+    },
+    {
+      "site": "Kumtor",
+      "year": 2017,
+      "metric": "other:pit_water_pumped_to_environment",
+      "value": 29240.0,
+      "rawValue": "29.24",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.13 Table 7 'Water Management at Kumtor' row 'Pit water pumped to the environment' col 2017",
+      "note": "Pit dewatering released to environment; not labelled as 'discharge' in source. Compare 2019 report Table 8 Kumtor 'Total Water Discharged' 6.13 Mm3 (2019)."
+    },
+    {
+      "site": "Kumtor",
+      "year": 2016,
+      "metric": "other:pit_water_pumped_to_environment",
+      "value": 12750.0,
+      "rawValue": "12.75",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.13 Table 7 'Water Management at Kumtor' row 'Pit water pumped to the environment' col 2016",
+      "note": "Pit dewatering released to environment; not labelled as 'discharge' in source. Compare 2019 report Table 8 Kumtor 'Total Water Discharged' 6.13 Mm3 (2019)."
+    },
+    {
+      "site": "Kumtor",
+      "year": 2018,
+      "metric": "other:camp_domestic_water_petrov",
+      "value": 140.0,
+      "rawValue": "0.14",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.13 Table 7 'Water Management at Kumtor' row 'Water Used for camp domestic purposes (from Petrov Lake)' col 2018"
+    },
+    {
+      "site": "Kumtor",
+      "year": 2017,
+      "metric": "other:camp_domestic_water_petrov",
+      "value": 130.0,
+      "rawValue": "0.13",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.13 Table 7 'Water Management at Kumtor' row 'Water Used for camp domestic purposes (from Petrov Lake)' col 2017"
+    },
+    {
+      "site": "Kumtor",
+      "year": 2016,
+      "metric": "other:camp_domestic_water_petrov",
+      "value": 130.0,
+      "rawValue": "0.13",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.13 Table 7 'Water Management at Kumtor' row 'Water Used for camp domestic purposes (from Petrov Lake)' col 2016"
+    },
+    {
+      "site": "Kumtor",
+      "year": 2018,
+      "metric": "other:mill_domestic_water_petrov",
+      "value": 20.0,
+      "rawValue": "0.02",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.13 Table 7 'Water Management at Kumtor' row 'Water Used for Mill domestic purposes (from Petrov Lake)' col 2018"
+    },
+    {
+      "site": "Kumtor",
+      "year": 2017,
+      "metric": "other:mill_domestic_water_petrov",
+      "value": 20.0,
+      "rawValue": "0.02",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.13 Table 7 'Water Management at Kumtor' row 'Water Used for Mill domestic purposes (from Petrov Lake)' col 2017"
+    },
+    {
+      "site": "Kumtor",
+      "year": 2016,
+      "metric": "other:mill_domestic_water_petrov",
+      "value": 20.0,
+      "rawValue": "0.02",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.13 Table 7 'Water Management at Kumtor' row 'Water Used for Mill domestic purposes (from Petrov Lake)' col 2016"
+    },
+    {
+      "site": "Kumtor",
+      "year": 2018,
+      "metric": "other:raw_water_used_at_mill_petrov",
+      "value": 4910.0,
+      "rawValue": "4.91",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.13 Table 7 'Water Management at Kumtor' row 'Raw water used at Mill (from Petrov Lake)' col 2018"
+    },
+    {
+      "site": "Kumtor",
+      "year": 2017,
+      "metric": "other:raw_water_used_at_mill_petrov",
+      "value": 5030.0,
+      "rawValue": "5.03",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.13 Table 7 'Water Management at Kumtor' row 'Raw water used at Mill (from Petrov Lake)' col 2017"
+    },
+    {
+      "site": "Kumtor",
+      "year": 2016,
+      "metric": "other:raw_water_used_at_mill_petrov",
+      "value": 5060.0,
+      "rawValue": "5.06",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.13 Table 7 'Water Management at Kumtor' row 'Raw water used at Mill (from Petrov Lake)' col 2016"
+    },
+    {
+      "site": "Kumtor",
+      "year": 2018,
+      "metric": "other:total_water_used_at_mill",
+      "value": 6450.0,
+      "rawValue": "6.45",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.13 Table 7 'Water Management at Kumtor' row 'Total water used at Mill (Petrov Lake + pit water)' col 2018"
+    },
+    {
+      "site": "Kumtor",
+      "year": 2017,
+      "metric": "other:total_water_used_at_mill",
+      "value": 6170.0,
+      "rawValue": "6.17",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.13 Table 7 'Water Management at Kumtor' row 'Total water used at Mill (Petrov Lake + pit water)' col 2017"
+    },
+    {
+      "site": "Kumtor",
+      "year": 2016,
+      "metric": "other:total_water_used_at_mill",
+      "value": 6070.0,
+      "rawValue": "6.07",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.13 Table 7 'Water Management at Kumtor' row 'Total water used at Mill (Petrov Lake + pit water)' col 2016"
+    },
+    {
+      "site": "Kumtor",
+      "year": 2018,
+      "metric": "reused_recycled",
+      "value": 8060.0,
+      "rawValue": "8.06",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.13 Table 7 'Water Management at Kumtor' row 'Water internally recycled at Mill' col 2018"
+    },
+    {
+      "site": "Kumtor",
+      "year": 2017,
+      "metric": "reused_recycled",
+      "value": 6190.0,
+      "rawValue": "6.19",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.13 Table 7 'Water Management at Kumtor' row 'Water internally recycled at Mill' col 2017"
+    },
+    {
+      "site": "Kumtor",
+      "year": 2016,
+      "metric": "reused_recycled",
+      "value": 6500.0,
+      "rawValue": "6.50",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.13 Table 7 'Water Management at Kumtor' row 'Water internally recycled at Mill' col 2016"
+    },
+    {
+      "site": "Kumtor",
+      "year": 2018,
+      "metric": "other:dust_suppression_water",
+      "value": 850.0,
+      "rawValue": "0.85",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.13 Table 7 'Water Management at Kumtor' row 'Water used for dust suppression (from Petrov Lake + pit water)' col 2018"
+    },
+    {
+      "site": "Kumtor",
+      "year": 2017,
+      "metric": "other:dust_suppression_water",
+      "value": 820.0,
+      "rawValue": "0.82",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.13 Table 7 'Water Management at Kumtor' row 'Water used for dust suppression (from Petrov Lake + pit water)' col 2017"
+    },
+    {
+      "site": "Kumtor",
+      "year": 2016,
+      "metric": "other:dust_suppression_water",
+      "value": 40.0,
+      "rawValue": "0.04",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.13 Table 7 'Water Management at Kumtor' row 'Water used for dust suppression (from Petrov Lake + pit water)' col 2016"
+    },
+    {
+      "site": "Kumtor",
+      "year": 2018,
+      "metric": "ore_processed_t",
+      "value": 6300000.0,
+      "rawValue": "6.3",
+      "rawUnit": "tonnes (as printed; evidently million tonnes)",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.13 Table 7 'Water Management at Kumtor' row 'Ore Feed to Mill' col 2018",
+      "note": "Unit printed as 'tonnes' but value is clearly million tonnes (consistent with 776 L/t x 6.3 Mt ~ 4.9 Mm3 raw water); converted as Mt"
+    },
+    {
+      "site": "Kumtor",
+      "year": 2017,
+      "metric": "ore_processed_t",
+      "value": 6200000.0,
+      "rawValue": "6.2",
+      "rawUnit": "tonnes (as printed; evidently million tonnes)",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.13 Table 7 'Water Management at Kumtor' row 'Ore Feed to Mill' col 2017",
+      "note": "Unit printed as 'tonnes' but value is clearly million tonnes (consistent with 776 L/t x 6.3 Mt ~ 4.9 Mm3 raw water); converted as Mt"
+    },
+    {
+      "site": "Kumtor",
+      "year": 2016,
+      "metric": "ore_processed_t",
+      "value": 6300000.0,
+      "rawValue": "6.3",
+      "rawUnit": "tonnes (as printed; evidently million tonnes)",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.13 Table 7 'Water Management at Kumtor' row 'Ore Feed to Mill' col 2016",
+      "note": "Unit printed as 'tonnes' but value is clearly million tonnes (consistent with 776 L/t x 6.3 Mt ~ 4.9 Mm3 raw water); converted as Mt"
+    },
+    {
+      "site": "Kumtor",
+      "year": 2018,
+      "metric": "water_intensity_reported",
+      "value": 776.0,
+      "rawValue": "776",
+      "rawUnit": "litres/tonne Mill Feed",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.13 Table 7 'Water Management at Kumtor' row 'Raw Water Intensity Ratio' col 2018",
+      "note": "Unit: litres of raw (Petrov Lake) water per tonne mill feed"
+    },
+    {
+      "site": "Kumtor",
+      "year": 2017,
+      "metric": "water_intensity_reported",
+      "value": 805.0,
+      "rawValue": "805",
+      "rawUnit": "litres/tonne Mill Feed",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.13 Table 7 'Water Management at Kumtor' row 'Raw Water Intensity Ratio' col 2017",
+      "note": "Unit: litres of raw (Petrov Lake) water per tonne mill feed"
+    },
+    {
+      "site": "Kumtor",
+      "year": 2016,
+      "metric": "water_intensity_reported",
+      "value": 1074.0,
+      "rawValue": "1,074",
+      "rawUnit": "litres/tonne Mill Feed",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.13 Table 7 'Water Management at Kumtor' row 'Raw Water Intensity Ratio' col 2016",
+      "note": "Unit: litres of raw (Petrov Lake) water per tonne mill feed"
+    },
+    {
+      "site": "Kumtor",
+      "year": 2018,
+      "metric": "other:pit_water_pumped_total",
+      "value": 27450.0,
+      "rawValue": "27.45",
+      "rawUnit": "million m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.13 Table 7 explanatory note 8",
+      "note": "Total pumped from pit incl. groundwater and glacier melt. Does not equal table rows 'to Mill' 1.54 + 'to environment' 25.17 = 26.71."
+    },
+    {
+      "site": "Mount Milligan",
+      "year": 2018,
+      "metric": "withdrawal_surface",
+      "value": 1640.0,
+      "rawValue": "1.64",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.14 Table 8 'Water Management at Mount Milligan' row 'Volume of water withdrawn from surface water' col 2018",
+      "note": "2018 values revised following 2019 methodology review (note 9)"
+    },
+    {
+      "site": "Mount Milligan",
+      "year": 2017,
+      "metric": "withdrawal_surface",
+      "value": 650.0,
+      "rawValue": "0.65",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.14 Table 8 'Water Management at Mount Milligan' row 'Volume of water withdrawn from surface water' col 2017"
+    },
+    {
+      "site": "Mount Milligan",
+      "year": 2016,
+      "metric": "withdrawal_surface",
+      "value": 0.0,
+      "rawValue": "0",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.14 Table 8 'Water Management at Mount Milligan' row 'Volume of water withdrawn from surface water' col 2016"
+    },
+    {
+      "site": "Mount Milligan",
+      "year": 2018,
+      "metric": "withdrawal_ground",
+      "value": 2950.0,
+      "rawValue": "2.95",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.14 Table 8 'Water Management at Mount Milligan' row 'Volume of water withdrawn from ground' col 2018",
+      "note": "2018 values revised following 2019 methodology review (note 9)"
+    },
+    {
+      "site": "Mount Milligan",
+      "year": 2017,
+      "metric": "withdrawal_ground",
+      "value": 230.0,
+      "rawValue": "0.23",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.14 Table 8 'Water Management at Mount Milligan' row 'Volume of water withdrawn from ground' col 2017"
+    },
+    {
+      "site": "Mount Milligan",
+      "year": 2016,
+      "metric": "withdrawal_ground",
+      "value": 56.0,
+      "rawValue": "0.056",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.14 Table 8 'Water Management at Mount Milligan' row 'Volume of water withdrawn from ground' col 2016"
+    },
+    {
+      "site": "Mount Milligan",
+      "year": 2018,
+      "metric": "withdrawal_rain_runoff",
+      "value": 2830.0,
+      "rawValue": "2.83",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.14 Table 8 'Water Management at Mount Milligan' row 'Volume of water withdrawn from rainwater and snowpack collected by the organization' col 2018",
+      "note": "2018 values revised following 2019 methodology review (note 9)"
+    },
+    {
+      "site": "Mount Milligan",
+      "year": 2017,
+      "metric": "withdrawal_rain_runoff",
+      "value": 4200.0,
+      "rawValue": "4.2",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.14 Table 8 'Water Management at Mount Milligan' row 'Volume of water withdrawn from rainwater and snowpack collected by the organization' col 2017"
+    },
+    {
+      "site": "Mount Milligan",
+      "year": 2016,
+      "metric": "withdrawal_rain_runoff",
+      "value": 6200.0,
+      "rawValue": "6.2",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.14 Table 8 'Water Management at Mount Milligan' row 'Volume of water withdrawn from rainwater and snowpack collected by the organization' col 2016"
+    },
+    {
+      "site": "Mount Milligan",
+      "year": 2018,
+      "metric": "withdrawal_total",
+      "value": 7420.0,
+      "rawValue": "7.42",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.14 Table 8 'Water Management at Mount Milligan' row 'Total water consumption' col 2018",
+      "note": "Labelled 'Total water consumption' but defined in note 9 as 'all the water withdrawn from various sources for operations' and equals the sum of the three withdrawal rows; mapped to withdrawal_total; 2018 values revised following 2019 methodology review (note 9)"
+    },
+    {
+      "site": "Mount Milligan",
+      "year": 2017,
+      "metric": "withdrawal_total",
+      "value": 5080.0,
+      "rawValue": "5.08",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.14 Table 8 'Water Management at Mount Milligan' row 'Total water consumption' col 2017",
+      "note": "Labelled 'Total water consumption' but defined in note 9 as 'all the water withdrawn from various sources for operations' and equals the sum of the three withdrawal rows; mapped to withdrawal_total"
+    },
+    {
+      "site": "Mount Milligan",
+      "year": 2016,
+      "metric": "withdrawal_total",
+      "value": 6256.0,
+      "rawValue": "6.256",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.14 Table 8 'Water Management at Mount Milligan' row 'Total water consumption' col 2016",
+      "note": "Labelled 'Total water consumption' but defined in note 9 as 'all the water withdrawn from various sources for operations' and equals the sum of the three withdrawal rows; mapped to withdrawal_total"
+    },
+    {
+      "site": "Mount Milligan",
+      "year": 2018,
+      "metric": "reused_recycled",
+      "value": 23120.0,
+      "rawValue": "23.12",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.14 Table 8 'Water Management at Mount Milligan' row 'Water recycled and reused' col 2018",
+      "note": "Note 9 defines it as Total water demand minus Total water consumption (note text states the subtraction the other way round); 2018 values revised following 2019 methodology review (note 9)"
+    },
+    {
+      "site": "Mount Milligan",
+      "year": 2017,
+      "metric": "reused_recycled",
+      "value": 36490.0,
+      "rawValue": "36.49",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.14 Table 8 'Water Management at Mount Milligan' row 'Water recycled and reused' col 2017",
+      "note": "Note 9 defines it as Total water demand minus Total water consumption (note text states the subtraction the other way round)"
+    },
+    {
+      "site": "Mount Milligan",
+      "year": 2016,
+      "metric": "reused_recycled",
+      "value": 40480.0,
+      "rawValue": "40.48",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.14 Table 8 'Water Management at Mount Milligan' row 'Water recycled and reused' col 2016",
+      "note": "Note 9 defines it as Total water demand minus Total water consumption (note text states the subtraction the other way round)"
+    },
+    {
+      "site": "Mount Milligan",
+      "year": 2018,
+      "metric": "other:total_water_demand",
+      "value": 30540.0,
+      "rawValue": "30.54",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.14 Table 8 'Water Management at Mount Milligan' row 'Total water demand' col 2018",
+      "note": "Water required for milling operations (note 9); 2018 values revised following 2019 methodology review (note 9)"
+    },
+    {
+      "site": "Mount Milligan",
+      "year": 2017,
+      "metric": "other:total_water_demand",
+      "value": 41570.0,
+      "rawValue": "41.57",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.14 Table 8 'Water Management at Mount Milligan' row 'Total water demand' col 2017",
+      "note": "Water required for milling operations (note 9)"
+    },
+    {
+      "site": "Mount Milligan",
+      "year": 2016,
+      "metric": "other:total_water_demand",
+      "value": 46730.0,
+      "rawValue": "46.73",
+      "rawUnit": "mil.m³",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.14 Table 8 'Water Management at Mount Milligan' row 'Total water demand' col 2016",
+      "note": "Water required for milling operations (note 9)"
+    },
+    {
+      "site": "Mount Milligan",
+      "year": 2018,
+      "metric": "reuse_rate_pct",
+      "value": 75.7,
+      "rawValue": "75.70",
+      "rawUnit": "mil.m³ (as printed; actually %)",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.14 Table 8 'Water Management at Mount Milligan' row 'Ratio of water demand supplied using recycled water' col 2018",
+      "note": "Unit printed as mil.m³ but value is a percentage (23.12/30.54 = 75.7%)"
+    },
+    {
+      "site": "Mount Milligan",
+      "year": 2017,
+      "metric": "reuse_rate_pct",
+      "value": 87.78,
+      "rawValue": "87.78",
+      "rawUnit": "mil.m³ (as printed; actually %)",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.14 Table 8 'Water Management at Mount Milligan' row 'Ratio of water demand supplied using recycled water' col 2017",
+      "note": "Unit printed as mil.m³ but value is a percentage (23.12/30.54 = 75.7%)"
+    },
+    {
+      "site": "Mount Milligan",
+      "year": 2016,
+      "metric": "reuse_rate_pct",
+      "value": 86.61,
+      "rawValue": "86.61",
+      "rawUnit": "mil.m³ (as printed; actually %)",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.14 Table 8 'Water Management at Mount Milligan' row 'Ratio of water demand supplied using recycled water' col 2016",
+      "note": "Unit printed as mil.m³ but value is a percentage (23.12/30.54 = 75.7%)"
+    },
+    {
+      "site": "_corporate",
+      "year": 2018,
+      "metric": "gold_production_oz",
+      "value": 729556.0,
+      "rawValue": "729,556",
+      "rawUnit": "ounces poured",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.10 Table 3 'Financial Highlights' row 'Gold produced (ounces poured)' col 2018",
+      "note": "Kumtor + Mount Milligan (100% basis); 2016 includes Mount Milligan only from 20 Oct 2016"
+    },
+    {
+      "site": "_corporate",
+      "year": 2017,
+      "metric": "gold_production_oz",
+      "value": 785316.0,
+      "rawValue": "785,316",
+      "rawUnit": "ounces poured",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.10 Table 3 'Financial Highlights' row 'Gold produced (ounces poured)' col 2017",
+      "note": "Kumtor + Mount Milligan (100% basis); 2016 includes Mount Milligan only from 20 Oct 2016"
+    },
+    {
+      "site": "_corporate",
+      "year": 2016,
+      "metric": "gold_production_oz",
+      "value": 598677.0,
+      "rawValue": "598,677",
+      "rawUnit": "ounces poured",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.10 Table 3 'Financial Highlights' row 'Gold produced (ounces poured)' col 2016",
+      "note": "Kumtor + Mount Milligan (100% basis); 2016 includes Mount Milligan only from 20 Oct 2016"
+    },
+    {
+      "site": "_corporate",
+      "year": 2018,
+      "metric": "copper_production_t",
+      "value": 21360118.3,
+      "rawValue": "47,091",
+      "rawUnit": "000 lbs payable copper",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.10 Table 3 'Financial Highlights' row 'Payable Copper Produced (000ls lbs)' col 2018",
+      "note": "Payable copper, Mount Milligan 100% basis; converted from lb at 0.45359237 kg/lb"
+    },
+    {
+      "site": "_corporate",
+      "year": 2017,
+      "metric": "copper_production_t",
+      "value": 24310736.7,
+      "rawValue": "53,596",
+      "rawUnit": "000 lbs payable copper",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.10 Table 3 'Financial Highlights' row 'Payable Copper Produced (000ls lbs)' col 2017",
+      "note": "Payable copper, Mount Milligan 100% basis; converted from lb at 0.45359237 kg/lb"
+    },
+    {
+      "site": "_corporate",
+      "year": 2016,
+      "metric": "copper_production_t",
+      "value": 4716907.1,
+      "rawValue": "10,399",
+      "rawUnit": "000 lbs payable copper",
+      "sourceFile": "Centerra Gold_2018_Sustainability_Data_Supplement.pdf",
+      "location": "p.10 Table 3 'Financial Highlights' row 'Payable Copper Produced (000ls lbs)' col 2016",
+      "note": "Payable copper, Mount Milligan 100% basis; converted from lb at 0.45359237 kg/lb"
+    },
+    {
+      "site": "_corporate",
+      "year": 2019,
+      "metric": "gold_production_oz",
+      "value": 783308.0,
+      "rawValue": "783,308",
+      "rawUnit": "oz",
+      "sourceFile": "Centerra Gold 2019 ESG Report.pdf",
+      "location": "p.6 Table 1 'Operational Results' row 'Gold produced (oz)' col 2019"
+    },
+    {
+      "site": "_corporate",
+      "year": 2018,
+      "metric": "gold_production_oz",
+      "value": 729556.0,
+      "rawValue": "729,556",
+      "rawUnit": "oz",
+      "sourceFile": "Centerra Gold 2019 ESG Report.pdf",
+      "location": "p.6 Table 1 'Operational Results' row 'Gold produced (oz)' col 2018"
+    },
+    {
+      "site": "_corporate",
+      "year": 2017,
+      "metric": "gold_production_oz",
+      "value": 785316.0,
+      "rawValue": "785,316",
+      "rawUnit": "oz",
+      "sourceFile": "Centerra Gold 2019 ESG Report.pdf",
+      "location": "p.6 Table 1 'Operational Results' row 'Gold produced (oz)' col 2017"
+    },
+    {
+      "site": "_corporate",
+      "year": 2019,
+      "metric": "copper_production_t",
+      "value": 32271282.8,
+      "rawValue": "71,146",
+      "rawUnit": "000 lbs payable copper",
+      "sourceFile": "Centerra Gold 2019 ESG Report.pdf",
+      "location": "p.6 Table 1 'Operational Results' row 'Payable Copper Produced (000 lbs)' col 2019",
+      "note": "Payable copper; converted from lb at 0.45359237 kg/lb"
+    },
+    {
+      "site": "_corporate",
+      "year": 2018,
+      "metric": "copper_production_t",
+      "value": 21360118.3,
+      "rawValue": "47,091",
+      "rawUnit": "000 lbs payable copper",
+      "sourceFile": "Centerra Gold 2019 ESG Report.pdf",
+      "location": "p.6 Table 1 'Operational Results' row 'Payable Copper Produced (000 lbs)' col 2018",
+      "note": "Payable copper; converted from lb at 0.45359237 kg/lb"
+    },
+    {
+      "site": "_corporate",
+      "year": 2017,
+      "metric": "copper_production_t",
+      "value": 24310736.7,
+      "rawValue": "53,596",
+      "rawUnit": "000 lbs payable copper",
+      "sourceFile": "Centerra Gold 2019 ESG Report.pdf",
+      "location": "p.6 Table 1 'Operational Results' row 'Payable Copper Produced (000 lbs)' col 2017",
+      "note": "Payable copper; converted from lb at 0.45359237 kg/lb"
+    },
+    {
+      "site": "Kumtor",
+      "year": 2019,
+      "metric": "withdrawal_fresh",
+      "value": 0.0,
+      "rawValue": "0",
+      "rawUnit": "Mm3",
+      "sourceFile": "Centerra Gold 2019 ESG Report.pdf",
+      "location": "p.32 Table 8 '2019 Water Summary by Site' row 'Kumtor' col 'Total Freshwater Withdrawn Mm3'",
+      "note": "Kumtor's Petrov Lake source reclassified as non-fresh (fn 8)"
+    },
+    {
+      "site": "Kumtor",
+      "year": 2019,
+      "metric": "other:withdrawal_high_stress_pct",
+      "value": 0.0,
+      "rawValue": "0%",
+      "rawUnit": "%",
+      "sourceFile": "Centerra Gold 2019 ESG Report.pdf",
+      "location": "p.32 Table 8 '2019 Water Summary by Site' row 'Kumtor' col 'Total Water Withdrawn - % from High or Extremely High Baseline Stress'",
+      "note": "% of freshwater withdrawal from areas of High/Extremely High Baseline Water Stress (WRI Aqueduct), per SASB EM-MM-140a.1"
+    },
+    {
+      "site": "Kumtor",
+      "year": 2019,
+      "metric": "withdrawal_low_quality",
+      "value": 7860.0,
+      "rawValue": "7.86",
+      "rawUnit": "Mm3",
+      "sourceFile": "Centerra Gold 2019 ESG Report.pdf",
+      "location": "p.32 Table 8 '2019 Water Summary by Site' row 'Kumtor' col 'Total Other Water Withdrawn Mm3'",
+      "note": "'Other water' = non-fresh (>1000 ppm TDS per SASB/GRI, fn 8); Kumtor's Petrov Lake source reclassified as non-fresh (fn 8)"
+    },
+    {
+      "site": "Kumtor",
+      "year": 2019,
+      "metric": "discharge_total",
+      "value": 6130.0,
+      "rawValue": "6.13",
+      "rawUnit": "Mm3",
+      "sourceFile": "Centerra Gold 2019 ESG Report.pdf",
+      "location": "p.32 Table 8 '2019 Water Summary by Site' row 'Kumtor' col 'Total Water Discharged Mm3'"
+    },
+    {
+      "site": "Kumtor",
+      "year": 2019,
+      "metric": "other:consumption_fresh",
+      "value": 0.0,
+      "rawValue": "0",
+      "rawUnit": "Mm3",
+      "sourceFile": "Centerra Gold 2019 ESG Report.pdf",
+      "location": "p.32 Table 8 '2019 Water Summary by Site' row 'Kumtor' col 'Total Freshwater Consumed Mm3'",
+      "note": "Consumed = withdrawn minus total discharges (table header)"
+    },
+    {
+      "site": "Kumtor",
+      "year": 2019,
+      "metric": "other:consumption_high_stress_pct",
+      "value": 0.0,
+      "rawValue": "0%",
+      "rawUnit": "%",
+      "sourceFile": "Centerra Gold 2019 ESG Report.pdf",
+      "location": "p.32 Table 8 '2019 Water Summary by Site' row 'Kumtor' col 'Total Water Consumed - % from High or Extremely High Baseline Stress'"
+    },
+    {
+      "site": "Kumtor",
+      "year": 2019,
+      "metric": "other:consumption_other_water",
+      "value": 1720.0,
+      "rawValue": "1.72",
+      "rawUnit": "Mm3",
+      "sourceFile": "Centerra Gold 2019 ESG Report.pdf",
+      "location": "p.32 Table 8 '2019 Water Summary by Site' row 'Kumtor' col 'Total Other Water Consumed Mm3'",
+      "note": "Consumed = withdrawn minus total discharges (table header)"
+    },
+    {
+      "site": "Kumtor",
+      "year": 2019,
+      "metric": "reuse_rate_pct",
+      "value": 91.2,
+      "rawValue": "91.2%",
+      "rawUnit": "%",
+      "sourceFile": "Centerra Gold 2019 ESG Report.pdf",
+      "location": "p.32 Table 8 '2019 Water Summary by Site' row 'Kumtor' col 'Total Water Recycled'"
+    },
+    {
+      "site": "Mount Milligan",
+      "year": 2019,
+      "metric": "withdrawal_fresh",
+      "value": 7590.0,
+      "rawValue": "7.59",
+      "rawUnit": "Mm3",
+      "sourceFile": "Centerra Gold 2019 ESG Report.pdf",
+      "location": "p.32 Table 8 '2019 Water Summary by Site' row 'Mount Milligan' col 'Total Freshwater Withdrawn Mm3'"
+    },
+    {
+      "site": "Mount Milligan",
+      "year": 2019,
+      "metric": "other:withdrawal_high_stress_pct",
+      "value": 0.0,
+      "rawValue": "0%",
+      "rawUnit": "%",
+      "sourceFile": "Centerra Gold 2019 ESG Report.pdf",
+      "location": "p.32 Table 8 '2019 Water Summary by Site' row 'Mount Milligan' col 'Total Water Withdrawn - % from High or Extremely High Baseline Stress'",
+      "note": "% of freshwater withdrawal from areas of High/Extremely High Baseline Water Stress (WRI Aqueduct), per SASB EM-MM-140a.1"
+    },
+    {
+      "site": "Mount Milligan",
+      "year": 2019,
+      "metric": "withdrawal_low_quality",
+      "value": 4440.0,
+      "rawValue": "4.44",
+      "rawUnit": "Mm3",
+      "sourceFile": "Centerra Gold 2019 ESG Report.pdf",
+      "location": "p.32 Table 8 '2019 Water Summary by Site' row 'Mount Milligan' col 'Total Other Water Withdrawn Mm3'",
+      "note": "'Other water' = non-fresh (>1000 ppm TDS per SASB/GRI, fn 8); Inconsistent with text on same page stating MM 2019 water consumption 7.59 Mm3 total; 4.44 'other water' may overlap/duplicate"
+    },
+    {
+      "site": "Mount Milligan",
+      "year": 2019,
+      "metric": "discharge_total",
+      "value": 0.0,
+      "rawValue": "0",
+      "rawUnit": "Mm3",
+      "sourceFile": "Centerra Gold 2019 ESG Report.pdf",
+      "location": "p.32 Table 8 '2019 Water Summary by Site' row 'Mount Milligan' col 'Total Water Discharged Mm3'"
+    },
+    {
+      "site": "Mount Milligan",
+      "year": 2019,
+      "metric": "other:consumption_fresh",
+      "value": 7590.0,
+      "rawValue": "7.59",
+      "rawUnit": "Mm3",
+      "sourceFile": "Centerra Gold 2019 ESG Report.pdf",
+      "location": "p.32 Table 8 '2019 Water Summary by Site' row 'Mount Milligan' col 'Total Freshwater Consumed Mm3'",
+      "note": "Consumed = withdrawn minus total discharges (table header)"
+    },
+    {
+      "site": "Mount Milligan",
+      "year": 2019,
+      "metric": "other:consumption_high_stress_pct",
+      "value": 0.0,
+      "rawValue": "0",
+      "rawUnit": "%",
+      "sourceFile": "Centerra Gold 2019 ESG Report.pdf",
+      "location": "p.32 Table 8 '2019 Water Summary by Site' row 'Mount Milligan' col 'Total Water Consumed - % from High or Extremely High Baseline Stress'"
+    },
+    {
+      "site": "Mount Milligan",
+      "year": 2019,
+      "metric": "other:consumption_other_water",
+      "value": 4440.0,
+      "rawValue": "4.44",
+      "rawUnit": "Mm3",
+      "sourceFile": "Centerra Gold 2019 ESG Report.pdf",
+      "location": "p.32 Table 8 '2019 Water Summary by Site' row 'Mount Milligan' col 'Total Other Water Consumed Mm3'",
+      "note": "Consumed = withdrawn minus total discharges (table header)"
+    },
+    {
+      "site": "Mount Milligan",
+      "year": 2019,
+      "metric": "reuse_rate_pct",
+      "value": 75.0,
+      "rawValue": "75%",
+      "rawUnit": "%",
+      "sourceFile": "Centerra Gold 2019 ESG Report.pdf",
+      "location": "p.32 Table 8 '2019 Water Summary by Site' row 'Mount Milligan' col 'Total Water Recycled'"
+    },
+    {
+      "site": "Öksüt",
+      "year": 2019,
+      "metric": "withdrawal_fresh",
+      "value": 133.603,
+      "rawValue": "0.133603",
+      "rawUnit": "Mm3",
+      "sourceFile": "Centerra Gold 2019 ESG Report.pdf",
+      "location": "p.32 Table 8 '2019 Water Summary by Site' row 'Öksüt' col 'Total Freshwater Withdrawn Mm3'"
+    },
+    {
+      "site": "Öksüt",
+      "year": 2019,
+      "metric": "other:withdrawal_high_stress_pct",
+      "value": 100.0,
+      "rawValue": "100%",
+      "rawUnit": "%",
+      "sourceFile": "Centerra Gold 2019 ESG Report.pdf",
+      "location": "p.32 Table 8 '2019 Water Summary by Site' row 'Öksüt' col 'Total Water Withdrawn - % from High or Extremely High Baseline Stress'",
+      "note": "% of freshwater withdrawal from areas of High/Extremely High Baseline Water Stress (WRI Aqueduct), per SASB EM-MM-140a.1"
+    },
+    {
+      "site": "Öksüt",
+      "year": 2019,
+      "metric": "withdrawal_low_quality",
+      "value": 0.0,
+      "rawValue": "0",
+      "rawUnit": "Mm3",
+      "sourceFile": "Centerra Gold 2019 ESG Report.pdf",
+      "location": "p.32 Table 8 '2019 Water Summary by Site' row 'Öksüt' col 'Total Other Water Withdrawn Mm3'",
+      "note": "'Other water' = non-fresh (>1000 ppm TDS per SASB/GRI, fn 8)"
+    },
+    {
+      "site": "Öksüt",
+      "year": 2019,
+      "metric": "discharge_total",
+      "value": 3.628,
+      "rawValue": "0.003628",
+      "rawUnit": "Mm3",
+      "sourceFile": "Centerra Gold 2019 ESG Report.pdf",
+      "location": "p.32 Table 8 '2019 Water Summary by Site' row 'Öksüt' col 'Total Water Discharged Mm3'"
+    },
+    {
+      "site": "Öksüt",
+      "year": 2019,
+      "metric": "other:consumption_fresh",
+      "value": 129.975,
+      "rawValue": "0.129975",
+      "rawUnit": "Mm3",
+      "sourceFile": "Centerra Gold 2019 ESG Report.pdf",
+      "location": "p.32 Table 8 '2019 Water Summary by Site' row 'Öksüt' col 'Total Freshwater Consumed Mm3'",
+      "note": "Consumed = withdrawn minus total discharges (table header)"
+    },
+    {
+      "site": "Öksüt",
+      "year": 2019,
+      "metric": "other:consumption_high_stress_pct",
+      "value": 100.0,
+      "rawValue": "100%",
+      "rawUnit": "%",
+      "sourceFile": "Centerra Gold 2019 ESG Report.pdf",
+      "location": "p.32 Table 8 '2019 Water Summary by Site' row 'Öksüt' col 'Total Water Consumed - % from High or Extremely High Baseline Stress'"
+    },
+    {
+      "site": "Öksüt",
+      "year": 2019,
+      "metric": "other:consumption_other_water",
+      "value": 0.0,
+      "rawValue": "0",
+      "rawUnit": "Mm3",
+      "sourceFile": "Centerra Gold 2019 ESG Report.pdf",
+      "location": "p.32 Table 8 '2019 Water Summary by Site' row 'Öksüt' col 'Total Other Water Consumed Mm3'",
+      "note": "Consumed = withdrawn minus total discharges (table header)"
+    },
+    {
+      "site": "Öksüt",
+      "year": 2019,
+      "metric": "reuse_rate_pct",
+      "value": 0.0,
+      "rawValue": "0%",
+      "rawUnit": "%",
+      "sourceFile": "Centerra Gold 2019 ESG Report.pdf",
+      "location": "p.32 Table 8 '2019 Water Summary by Site' row 'Öksüt' col 'Total Water Recycled'"
+    },
+    {
+      "site": "Kumtor",
+      "year": 2018,
+      "metric": "withdrawal_total",
+      "value": 7460.0,
+      "rawValue": "7.46",
+      "rawUnit": "Mm3",
+      "sourceFile": "Centerra Gold 2019 ESG Report.pdf",
+      "location": "p.32 section 2.5.2 Performance (text)",
+      "note": "Text says 'water consumption' ; equals Table 8 withdrawal for 2019 (7.86), so mapped to withdrawal_total. 2018 Data Supplement p.13 gives no total; Petrov Lake 5.17 + pit water to mill 1.54 = 6.71, not 7.46."
+    },
+    {
+      "site": "Kumtor",
+      "year": 2019,
+      "metric": "withdrawal_total",
+      "value": 7860.0,
+      "rawValue": "7.86",
+      "rawUnit": "Mm3",
+      "sourceFile": "Centerra Gold 2019 ESG Report.pdf",
+      "location": "p.32 section 2.5.2 Performance (text)",
+      "note": "Text says 'water consumption'; equals Table 8 'Total Other Water Withdrawn' for Kumtor. Table 8 consumption (withdrawn minus discharge) is 1.72 Mm3."
+    },
+    {
+      "site": "Mount Milligan",
+      "year": 2018,
+      "metric": "withdrawal_total",
+      "value": 7420.0,
+      "rawValue": "7.42",
+      "rawUnit": "Mm3",
+      "sourceFile": "Centerra Gold 2019 ESG Report.pdf",
+      "location": "p.32 section 2.5.2 Performance (text)",
+      "note": "Text says 'water consumption'; matches 2018 Data Supplement 'Total water consumption' (sum of withdrawals)"
+    },
+    {
+      "site": "Mount Milligan",
+      "year": 2019,
+      "metric": "withdrawal_total",
+      "value": 7590.0,
+      "rawValue": "7.59",
+      "rawUnit": "Mm3",
+      "sourceFile": "Centerra Gold 2019 ESG Report.pdf",
+      "location": "p.32 section 2.5.2 Performance (text)",
+      "note": "Text says 'water consumption'; equals Table 8 freshwater withdrawn. Table 8 also shows 4.44 Mm3 'other water withdrawn' not included here."
+    },
+    {
+      "site": "Kumtor",
+      "year": 2018,
+      "metric": "reuse_rate_pct",
+      "value": 91.0,
+      "rawValue": "91%",
+      "rawUnit": "%",
+      "sourceFile": "Centerra Gold 2019 ESG Report.pdf",
+      "location": "p.32 section 2.5.2 Performance (text)",
+      "note": "'Our recycling rate was consistent at 91% from 2018'"
+    },
+    {
+      "site": "Mount Milligan",
+      "year": 2018,
+      "metric": "reuse_rate_pct",
+      "value": 75.0,
+      "rawValue": "75%",
+      "rawUnit": "%",
+      "sourceFile": "Centerra Gold 2019 ESG Report.pdf",
+      "location": "p.32 section 2.5.2 Performance (text)",
+      "note": "'Our recycling rate remained constant from 2018 at 75%'; 2018 Data Supplement shows 75.70"
+    },
+    {
+      "site": "Kumtor",
+      "year": 2019,
+      "metric": "water_incidents_count",
+      "value": 1.0,
+      "rawValue": "1",
+      "rawUnit": "# of non-compliances",
+      "sourceFile": "Centerra Gold 2019 ESG Report.pdf",
+      "location": "p.32 Table 9 'Water Incidents of Non-Compliance by Site' row 'Kumtor'",
+      "note": "Kumtor: penalty for discharging without permits and exceeding MAC standards from ETP and STP; stated as not significant"
+    },
+    {
+      "site": "Mount Milligan",
+      "year": 2019,
+      "metric": "water_incidents_count",
+      "value": 0.0,
+      "rawValue": "0",
+      "rawUnit": "# of non-compliances",
+      "sourceFile": "Centerra Gold 2019 ESG Report.pdf",
+      "location": "p.32 Table 9 'Water Incidents of Non-Compliance by Site' row 'Mount Milligan'"
+    },
+    {
+      "site": "Öksüt",
+      "year": 2019,
+      "metric": "water_incidents_count",
+      "value": 0.0,
+      "rawValue": "0",
+      "rawUnit": "# of non-compliances",
+      "sourceFile": "Centerra Gold 2019 ESG Report.pdf",
+      "location": "p.32 Table 9 'Water Incidents of Non-Compliance by Site' row 'Öksüt'"
+    },
+    {
+      "site": "_corporate",
+      "year": 2019,
+      "metric": "water_incidents_count",
+      "value": 1.0,
+      "rawValue": "1",
+      "rawUnit": "# of non-compliances",
+      "sourceFile": "Centerra Gold 2019 ESG Report.pdf",
+      "location": "p.32 Table 9 'Water Incidents of Non-Compliance by Site' row 'Total'",
+      "note": "Kumtor: penalty for discharging without permits and exceeding MAC standards from ETP and STP; stated as not significant"
+    },
+    {
+      "site": "Kumtor",
+      "year": 2019,
+      "metric": "other:process_wastewater_treated_discharged",
+      "value": 5900.0,
+      "rawValue": "5.9",
+      "rawUnit": "Mm3",
+      "sourceFile": "Centerra Gold 2019 ESG Report.pdf",
+      "location": "p.36 text (Waste section)",
+      "note": "'treated and discharged 5.9Mm3 of process wastewater'; Table 8 p.32 gives total discharged 6.13 Mm3"
+    },
+    {
+      "site": "Kumtor",
+      "year": 2018,
+      "metric": "other:process_wastewater_treated_discharged",
+      "value": 4500.0,
+      "rawValue": "4.5",
+      "rawUnit": "Mm3 (printed 'Mm3 tonnes')",
+      "sourceFile": "Centerra Gold 2019 ESG Report.pdf",
+      "location": "p.36 text (Waste section)",
+      "note": "2018 value as stated in 2019 report; text claims 31% increase (5.9/4.5 = +31%)"
+    }
+  ],
+  "observations": [
+    "Kumtor and Mount Milligan both show 0% of withdrawal from High/Extremely High baseline water stress in 2019 (Table 8 p.32); Öksüt shows 100%. waterStressReported left null for 0% sites because the report does not classify them as low stress.",
+    "Öksüt was under construction in 2019 (commercial production 2020); 2019 is the first year water data reported for it (2019 report p.32). Status left null.",
+    "Reclassification: 2019 ESG report fn 8 (p.32) states Kumtor's main source Petrov Lake is not fresh water under SASB/GRI (>1000 ppm TDS) although previous reports presented it as such; Kumtor 2019 fresh withdrawal therefore reported as 0 and 7.86 Mm3 as 'other water'.",
+    "Terminology inconsistency: 2019 report text (p.32) calls 7.86 Mm3 (Kumtor) and 7.59 Mm3 (Mount Milligan) 'water consumption', but in Table 8 those are withdrawals; Table 8 consumption for Kumtor is only 1.72 Mm3. Mount Milligan 2018 Data Supplement likewise labels total withdrawal as 'Total water consumption' (defined as all water withdrawn). These were mapped to withdrawal_total.",
+    "Mount Milligan 2019 Table 8 shows both 7.59 Mm3 freshwater and 4.44 Mm3 other water withdrawn (and consumed, with 0 discharge), while the text gives 7.59 Mm3 as total 2019 water use; the 4.44 figure is unexplained.",
+    "Kumtor 2018 'water consumption' of 7.46 Mm3 in the 2019 report (p.32) cannot be reconciled with the 2018 Data Supplement (Petrov Lake 5.17 + pit water to mill 1.54 = 6.71 Mm3; total pit pumping 27.45 Mm3).",
+    "Kumtor pit dewatering 'pumped to the environment' was 12.75/29.24/25.17 Mm3 (2016/2017/2018, 2018 Supplement p.13) but 2019 Table 8 reports total Kumtor discharge of only 6.13 Mm3, suggesting pit dewatering is excluded from the 2019 discharge definition (scope change).",
+    "Kumtor 2018 note (p.13): pit pumping total 27.45 Mm3 does not equal table rows to mill (1.54) + to environment (25.17) = 26.71 Mm3.",
+    "Mount Milligan 2018 water figures were revised following a 2019 methodology review (2018 Supplement p.14 note 9), lowering the recycled-water ratio (75.7% in 2018 vs 87.8% 2017, 86.6% 2016). Note 9 defines 'water recycled and reused' as demand minus consumption, though the text wording reverses the subtraction.",
+    "Mount Milligan ratio row in 2018 Supplement Table 8 is labelled 'mil.m³' but is a percentage. Kumtor 'Ore Feed to Mill' is labelled 'tonnes' but values (6.3, 6.2, 6.3) are million tonnes.",
+    "Water scarcity at Mount Milligan: low water storage from 2016 caused processing shutdown Dec 2017 to early 2018; an EA Certificate amendment allowed limited withdrawal from Philip Lake until Oct 2018 (2018 Supplement p.8); surface pumping from Philip Lake 1 and Rainbow Creek authorized to Nov 2021, groundwater licences (Meadows Creek, Lower Rainbow wellfields) to Dec 2023; long-term groundwater not proven over life-of-mine (2019 report p.32).",
+    "Rainwater/snowpack share at Mount Milligan fell from 6.2 Mm3 (2016) to 2.83 Mm3 (2018) while groundwater rose from 0.056 to 2.95 Mm3 and surface water from 0 to 1.64 Mm3 (2018 Supplement p.14): shift to active abstraction during drought.",
+    "2019 incident/fine: Kumtor received a penalty for discharging without permits and exceeding maximum allowable concentration (MAC) standards from its Effluent and Sewage Treatment Plants; stated as resolved and not significant; amount not disclosed (2019 report p.32). 1 water non-compliance at Kumtor, 0 at Mount Milligan and Öksüt (Table 9).",
+    "Mount Milligan and Öksüt are designed as zero-discharge facilities (2019 report p.29-30). About 97% of Kumtor water is used at the mill and ~5 Mm3 is recycled within the mill annually (p.30, approximate, not recorded as a record).",
+    "No water targets stated in either report. Copper production reported in 000 lbs payable (Mount Milligan 100% basis); converted to tonnes. 2017 and 2018 production figures are identical in both reports (no restatement).",
+    "Mongolian assets (Boroo, Gatsuurt) sold Oct 2018; no water data reported for them."
+  ]
+}

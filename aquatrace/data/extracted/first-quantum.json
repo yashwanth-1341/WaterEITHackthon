@@ -1,0 +1,1563 @@
+{
+  "company": "First Quantum Minerals",
+  "files": [
+    {
+      "file": "First Quantum mines 2019-2021.xlsx",
+      "relevant": true,
+      "yearsCovered": [
+        2019,
+        2020,
+        2021
+      ],
+      "granularity": "site",
+      "reason": "User-compiled single-sheet workbook: site withdrawal by source (fresh surface, ground, sea, municipal) 2019-2021 transcribed from FQM 2021 ESG Data Summary p.56, plus a hand-compiled block of rounded site withdrawal, intensity (m3/t ore) and reuse rates. Many cells are derived formulas (estimates) and were NOT extracted."
+    }
+  ],
+  "sites": [
+    {
+      "site": "Kansanshi",
+      "country": "Zambia",
+      "commodity": [
+        "copper",
+        "gold"
+      ],
+      "waterStressReported": null,
+      "status": null
+    },
+    {
+      "site": "Sentinel",
+      "country": "Zambia",
+      "commodity": [
+        "copper"
+      ],
+      "waterStressReported": null,
+      "status": null
+    },
+    {
+      "site": "Cobre Panamá",
+      "country": "Panama",
+      "commodity": [
+        "copper",
+        "gold",
+        "silver",
+        "molybdenum"
+      ],
+      "waterStressReported": null,
+      "status": null
+    },
+    {
+      "site": "Cobre Las Cruces",
+      "country": "Spain",
+      "commodity": [
+        "copper"
+      ],
+      "waterStressReported": null,
+      "status": null
+    },
+    {
+      "site": "Pyhäsalmi",
+      "country": "Finland",
+      "commodity": [
+        "copper",
+        "zinc",
+        "pyrite"
+      ],
+      "waterStressReported": null,
+      "status": null
+    },
+    {
+      "site": "Ravensthorpe",
+      "country": "Australia",
+      "commodity": [
+        "nickel"
+      ],
+      "waterStressReported": null,
+      "status": null
+    },
+    {
+      "site": "Guelb Moghrein",
+      "country": "Mauritania",
+      "commodity": [
+        "copper",
+        "gold"
+      ],
+      "waterStressReported": null,
+      "status": null
+    },
+    {
+      "site": "Çayeli",
+      "country": "Turkey",
+      "commodity": [
+        "copper",
+        "zinc"
+      ],
+      "waterStressReported": null,
+      "status": null
+    }
+  ],
+  "records": [
+    {
+      "site": "Çayeli",
+      "year": 2020,
+      "metric": "withdrawal_total",
+      "value": 4200,
+      "rawValue": "4200",
+      "rawUnit": "ML (header: \"Water Withdrawal [ML = 1000m³]\")",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell D7 (row 7 col D)",
+      "note": "Hand-compiled summary block \"From ESG Report 2019/2020/2021\" in a user-assembled workbook (not an FQM original); rounded to ~100 ML. Appears to include seawater withdrawal (e.g. Çayeli/Ravensthorpe match fresh+sea from the ESG Data Summary block)."
+    },
+    {
+      "site": "Çayeli",
+      "year": 2021,
+      "metric": "withdrawal_total",
+      "value": 4700,
+      "rawValue": "4700",
+      "rawUnit": "ML (header: \"Water Withdrawal [ML = 1000m³]\")",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell E7 (row 7 col E)",
+      "note": "Hand-compiled summary block \"From ESG Report 2019/2020/2021\" in a user-assembled workbook (not an FQM original); rounded to ~100 ML. Appears to include seawater withdrawal (e.g. Çayeli/Ravensthorpe match fresh+sea from the ESG Data Summary block)."
+    },
+    {
+      "site": "Çayeli",
+      "year": 2020,
+      "metric": "water_intensity_reported",
+      "value": 5.43,
+      "rawValue": "5.43",
+      "rawUnit": "m3/t ore",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell G7 (row 7 col G)",
+      "note": "Intensity [m³/t ore], hand-compiled block"
+    },
+    {
+      "site": "Çayeli",
+      "year": 2021,
+      "metric": "water_intensity_reported",
+      "value": 5.7,
+      "rawValue": "5.7",
+      "rawUnit": "m3/t ore",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell H7 (row 7 col H)",
+      "note": "Intensity [m³/t ore], hand-compiled block"
+    },
+    {
+      "site": "Çayeli",
+      "year": 2019,
+      "metric": "reuse_rate_pct",
+      "value": 15,
+      "rawValue": "0.15",
+      "rawUnit": "fraction (column \"Reuse\")",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell I7 (row 7 col I)",
+      "note": "Stored as fraction under header \"Reuse\"; converted to %. Same values repeated in rows 27-34 cols I-K."
+    },
+    {
+      "site": "Çayeli",
+      "year": 2020,
+      "metric": "reuse_rate_pct",
+      "value": 13,
+      "rawValue": "0.13",
+      "rawUnit": "fraction (column \"Reuse\")",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell J7 (row 7 col J)",
+      "note": "Stored as fraction under header \"Reuse\"; converted to %. Same values repeated in rows 27-34 cols I-K."
+    },
+    {
+      "site": "Çayeli",
+      "year": 2021,
+      "metric": "reuse_rate_pct",
+      "value": 14,
+      "rawValue": "0.14",
+      "rawUnit": "fraction (column \"Reuse\")",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell K7 (row 7 col K)",
+      "note": "Stored as fraction under header \"Reuse\"; converted to %. Same values repeated in rows 27-34 cols I-K."
+    },
+    {
+      "site": "Cobre Las Cruces",
+      "year": 2020,
+      "metric": "withdrawal_total",
+      "value": 3100,
+      "rawValue": "3100",
+      "rawUnit": "ML (header: \"Water Withdrawal [ML = 1000m³]\")",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell D8 (row 8 col D)",
+      "note": "Hand-compiled summary block \"From ESG Report 2019/2020/2021\" in a user-assembled workbook (not an FQM original); rounded to ~100 ML. Appears to include seawater withdrawal (e.g. Çayeli/Ravensthorpe match fresh+sea from the ESG Data Summary block)."
+    },
+    {
+      "site": "Cobre Las Cruces",
+      "year": 2021,
+      "metric": "withdrawal_total",
+      "value": 3000,
+      "rawValue": "3000",
+      "rawUnit": "ML (header: \"Water Withdrawal [ML = 1000m³]\")",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell E8 (row 8 col E)",
+      "note": "Hand-compiled summary block \"From ESG Report 2019/2020/2021\" in a user-assembled workbook (not an FQM original); rounded to ~100 ML. Appears to include seawater withdrawal (e.g. Çayeli/Ravensthorpe match fresh+sea from the ESG Data Summary block)."
+    },
+    {
+      "site": "Cobre Las Cruces",
+      "year": 2020,
+      "metric": "water_intensity_reported",
+      "value": 2.15,
+      "rawValue": "2.15",
+      "rawUnit": "m3/t ore",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell G8 (row 8 col G)",
+      "note": "Intensity [m³/t ore], hand-compiled block"
+    },
+    {
+      "site": "Cobre Las Cruces",
+      "year": 2021,
+      "metric": "water_intensity_reported",
+      "value": 2.3,
+      "rawValue": "2.3",
+      "rawUnit": "m3/t ore",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell H8 (row 8 col H)",
+      "note": "Intensity [m³/t ore], hand-compiled block"
+    },
+    {
+      "site": "Cobre Las Cruces",
+      "year": 2019,
+      "metric": "reuse_rate_pct",
+      "value": 30,
+      "rawValue": "0.3",
+      "rawUnit": "fraction (column \"Reuse\")",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell I8 (row 8 col I)",
+      "note": "Stored as fraction under header \"Reuse\"; converted to %. Same values repeated in rows 27-34 cols I-K."
+    },
+    {
+      "site": "Cobre Las Cruces",
+      "year": 2020,
+      "metric": "reuse_rate_pct",
+      "value": 40,
+      "rawValue": "0.4",
+      "rawUnit": "fraction (column \"Reuse\")",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell J8 (row 8 col J)",
+      "note": "Stored as fraction under header \"Reuse\"; converted to %. Same values repeated in rows 27-34 cols I-K."
+    },
+    {
+      "site": "Cobre Las Cruces",
+      "year": 2021,
+      "metric": "reuse_rate_pct",
+      "value": 43,
+      "rawValue": "0.43",
+      "rawUnit": "fraction (column \"Reuse\")",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell K8 (row 8 col K)",
+      "note": "Stored as fraction under header \"Reuse\"; converted to %. Same values repeated in rows 27-34 cols I-K."
+    },
+    {
+      "site": "Cobre Panamá",
+      "year": 2020,
+      "metric": "other:withdrawal_incl_power_cooling_seawater",
+      "value": 581900,
+      "rawValue": "581900",
+      "rawUnit": "ML (header: \"Water Withdrawal [ML = 1000m³]\")",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell D9 (row 9 col D)",
+      "note": "Hand-compiled summary block \"From ESG Report 2019/2020/2021\" in a user-assembled workbook (not an FQM original); rounded to ~100 ML. Appears to include seawater withdrawal (e.g. Çayeli/Ravensthorpe match fresh+sea from the ESG Data Summary block). Cobre Panamá 2020 value (581,900) evidently includes the ~468,517 ML seawater used for power-station cooling that FQM excludes from operational totals; not comparable with 2021 (138,100)."
+    },
+    {
+      "site": "Cobre Panamá",
+      "year": 2021,
+      "metric": "withdrawal_total",
+      "value": 138100,
+      "rawValue": "138100",
+      "rawUnit": "ML (header: \"Water Withdrawal [ML = 1000m³]\")",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell E9 (row 9 col E)",
+      "note": "Hand-compiled summary block \"From ESG Report 2019/2020/2021\" in a user-assembled workbook (not an FQM original); rounded to ~100 ML. Appears to include seawater withdrawal (e.g. Çayeli/Ravensthorpe match fresh+sea from the ESG Data Summary block)."
+    },
+    {
+      "site": "Cobre Panamá",
+      "year": 2020,
+      "metric": "water_intensity_reported",
+      "value": 2.08,
+      "rawValue": "2.08",
+      "rawUnit": "m3/t ore",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell G9 (row 9 col G)",
+      "note": "Intensity [m³/t ore], hand-compiled block"
+    },
+    {
+      "site": "Cobre Panamá",
+      "year": 2021,
+      "metric": "water_intensity_reported",
+      "value": 1.7,
+      "rawValue": "1.7",
+      "rawUnit": "m3/t ore",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell H9 (row 9 col H)",
+      "note": "Intensity [m³/t ore], hand-compiled block"
+    },
+    {
+      "site": "Cobre Panamá",
+      "year": 2019,
+      "metric": "reuse_rate_pct",
+      "value": 59,
+      "rawValue": "0.59",
+      "rawUnit": "fraction (column \"Reuse\")",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell I9 (row 9 col I)",
+      "note": "Stored as fraction under header \"Reuse\"; converted to %. Same values repeated in rows 27-34 cols I-K."
+    },
+    {
+      "site": "Cobre Panamá",
+      "year": 2020,
+      "metric": "reuse_rate_pct",
+      "value": 70,
+      "rawValue": "0.7",
+      "rawUnit": "fraction (column \"Reuse\")",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell J9 (row 9 col J)",
+      "note": "Stored as fraction under header \"Reuse\"; converted to %. Same values repeated in rows 27-34 cols I-K."
+    },
+    {
+      "site": "Cobre Panamá",
+      "year": 2021,
+      "metric": "reuse_rate_pct",
+      "value": 78,
+      "rawValue": "0.78",
+      "rawUnit": "fraction (column \"Reuse\")",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell K9 (row 9 col K)",
+      "note": "Stored as fraction under header \"Reuse\"; converted to %. Same values repeated in rows 27-34 cols I-K."
+    },
+    {
+      "site": "Guelb Moghrein",
+      "year": 2020,
+      "metric": "withdrawal_total",
+      "value": 2500,
+      "rawValue": "2500",
+      "rawUnit": "ML (header: \"Water Withdrawal [ML = 1000m³]\")",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell D10 (row 10 col D)",
+      "note": "Hand-compiled summary block \"From ESG Report 2019/2020/2021\" in a user-assembled workbook (not an FQM original); rounded to ~100 ML. Appears to include seawater withdrawal (e.g. Çayeli/Ravensthorpe match fresh+sea from the ESG Data Summary block)."
+    },
+    {
+      "site": "Guelb Moghrein",
+      "year": 2021,
+      "metric": "withdrawal_total",
+      "value": 2600,
+      "rawValue": "2600",
+      "rawUnit": "ML (header: \"Water Withdrawal [ML = 1000m³]\")",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell E10 (row 10 col E)",
+      "note": "Hand-compiled summary block \"From ESG Report 2019/2020/2021\" in a user-assembled workbook (not an FQM original); rounded to ~100 ML. Appears to include seawater withdrawal (e.g. Çayeli/Ravensthorpe match fresh+sea from the ESG Data Summary block)."
+    },
+    {
+      "site": "Guelb Moghrein",
+      "year": 2020,
+      "metric": "water_intensity_reported",
+      "value": 0.66,
+      "rawValue": "0.66",
+      "rawUnit": "m3/t ore",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell G10 (row 10 col G)",
+      "note": "Intensity [m³/t ore], hand-compiled block"
+    },
+    {
+      "site": "Guelb Moghrein",
+      "year": 2021,
+      "metric": "water_intensity_reported",
+      "value": 0.8,
+      "rawValue": "0.8",
+      "rawUnit": "m3/t ore",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell H10 (row 10 col H)",
+      "note": "Intensity [m³/t ore], hand-compiled block"
+    },
+    {
+      "site": "Guelb Moghrein",
+      "year": 2019,
+      "metric": "reuse_rate_pct",
+      "value": 73,
+      "rawValue": "0.73",
+      "rawUnit": "fraction (column \"Reuse\")",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell I10 (row 10 col I)",
+      "note": "Stored as fraction under header \"Reuse\"; converted to %. Same values repeated in rows 27-34 cols I-K."
+    },
+    {
+      "site": "Guelb Moghrein",
+      "year": 2020,
+      "metric": "reuse_rate_pct",
+      "value": 72,
+      "rawValue": "0.72",
+      "rawUnit": "fraction (column \"Reuse\")",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell J10 (row 10 col J)",
+      "note": "Stored as fraction under header \"Reuse\"; converted to %. Same values repeated in rows 27-34 cols I-K."
+    },
+    {
+      "site": "Guelb Moghrein",
+      "year": 2021,
+      "metric": "reuse_rate_pct",
+      "value": 72,
+      "rawValue": "0.72",
+      "rawUnit": "fraction (column \"Reuse\")",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell K10 (row 10 col K)",
+      "note": "Stored as fraction under header \"Reuse\"; converted to %. Same values repeated in rows 27-34 cols I-K."
+    },
+    {
+      "site": "Kansanshi",
+      "year": 2020,
+      "metric": "withdrawal_total",
+      "value": 43100,
+      "rawValue": "43100",
+      "rawUnit": "ML (header: \"Water Withdrawal [ML = 1000m³]\")",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell D11 (row 11 col D)",
+      "note": "Hand-compiled summary block \"From ESG Report 2019/2020/2021\" in a user-assembled workbook (not an FQM original); rounded to ~100 ML. Appears to include seawater withdrawal (e.g. Çayeli/Ravensthorpe match fresh+sea from the ESG Data Summary block)."
+    },
+    {
+      "site": "Kansanshi",
+      "year": 2021,
+      "metric": "withdrawal_total",
+      "value": 46800,
+      "rawValue": "46800",
+      "rawUnit": "ML (header: \"Water Withdrawal [ML = 1000m³]\")",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell E11 (row 11 col E)",
+      "note": "Hand-compiled summary block \"From ESG Report 2019/2020/2021\" in a user-assembled workbook (not an FQM original); rounded to ~100 ML. Appears to include seawater withdrawal (e.g. Çayeli/Ravensthorpe match fresh+sea from the ESG Data Summary block)."
+    },
+    {
+      "site": "Kansanshi",
+      "year": 2020,
+      "metric": "water_intensity_reported",
+      "value": 1.48,
+      "rawValue": "1.48",
+      "rawUnit": "m3/t ore",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell G11 (row 11 col G)",
+      "note": "Intensity [m³/t ore], hand-compiled block"
+    },
+    {
+      "site": "Kansanshi",
+      "year": 2021,
+      "metric": "water_intensity_reported",
+      "value": 1.7,
+      "rawValue": "1.7",
+      "rawUnit": "m3/t ore",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell H11 (row 11 col H)",
+      "note": "Intensity [m³/t ore], hand-compiled block"
+    },
+    {
+      "site": "Kansanshi",
+      "year": 2019,
+      "metric": "reuse_rate_pct",
+      "value": 78,
+      "rawValue": "0.78",
+      "rawUnit": "fraction (column \"Reuse\")",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell I11 (row 11 col I)",
+      "note": "Stored as fraction under header \"Reuse\"; converted to %. Same values repeated in rows 27-34 cols I-K."
+    },
+    {
+      "site": "Kansanshi",
+      "year": 2020,
+      "metric": "reuse_rate_pct",
+      "value": 76,
+      "rawValue": "0.76",
+      "rawUnit": "fraction (column \"Reuse\")",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell J11 (row 11 col J)",
+      "note": "Stored as fraction under header \"Reuse\"; converted to %. Same values repeated in rows 27-34 cols I-K."
+    },
+    {
+      "site": "Kansanshi",
+      "year": 2021,
+      "metric": "reuse_rate_pct",
+      "value": 66,
+      "rawValue": "0.66",
+      "rawUnit": "fraction (column \"Reuse\")",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell K11 (row 11 col K)",
+      "note": "Stored as fraction under header \"Reuse\"; converted to %. Same values repeated in rows 27-34 cols I-K."
+    },
+    {
+      "site": "Pyhäsalmi",
+      "year": 2020,
+      "metric": "withdrawal_total",
+      "value": 4400,
+      "rawValue": "4400",
+      "rawUnit": "ML (header: \"Water Withdrawal [ML = 1000m³]\")",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell D12 (row 12 col D)",
+      "note": "Hand-compiled summary block \"From ESG Report 2019/2020/2021\" in a user-assembled workbook (not an FQM original); rounded to ~100 ML. Appears to include seawater withdrawal (e.g. Çayeli/Ravensthorpe match fresh+sea from the ESG Data Summary block)."
+    },
+    {
+      "site": "Pyhäsalmi",
+      "year": 2021,
+      "metric": "withdrawal_total",
+      "value": 4100,
+      "rawValue": "4100",
+      "rawUnit": "ML (header: \"Water Withdrawal [ML = 1000m³]\")",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell E12 (row 12 col E)",
+      "note": "Hand-compiled summary block \"From ESG Report 2019/2020/2021\" in a user-assembled workbook (not an FQM original); rounded to ~100 ML. Appears to include seawater withdrawal (e.g. Çayeli/Ravensthorpe match fresh+sea from the ESG Data Summary block)."
+    },
+    {
+      "site": "Pyhäsalmi",
+      "year": 2020,
+      "metric": "water_intensity_reported",
+      "value": 5.81,
+      "rawValue": "5.81",
+      "rawUnit": "m3/t ore",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell G12 (row 12 col G)",
+      "note": "Intensity [m³/t ore], hand-compiled block"
+    },
+    {
+      "site": "Pyhäsalmi",
+      "year": 2021,
+      "metric": "water_intensity_reported",
+      "value": 6.2,
+      "rawValue": "6.2",
+      "rawUnit": "m3/t ore",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell H12 (row 12 col H)",
+      "note": "Intensity [m³/t ore], hand-compiled block"
+    },
+    {
+      "site": "Pyhäsalmi",
+      "year": 2019,
+      "metric": "reuse_rate_pct",
+      "value": 28,
+      "rawValue": "0.28",
+      "rawUnit": "fraction (column \"Reuse\")",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell I12 (row 12 col I)",
+      "note": "Stored as fraction under header \"Reuse\"; converted to %. Same values repeated in rows 27-34 cols I-K."
+    },
+    {
+      "site": "Pyhäsalmi",
+      "year": 2020,
+      "metric": "reuse_rate_pct",
+      "value": 25,
+      "rawValue": "0.25",
+      "rawUnit": "fraction (column \"Reuse\")",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell J12 (row 12 col J)",
+      "note": "Stored as fraction under header \"Reuse\"; converted to %. Same values repeated in rows 27-34 cols I-K."
+    },
+    {
+      "site": "Pyhäsalmi",
+      "year": 2021,
+      "metric": "reuse_rate_pct",
+      "value": 43,
+      "rawValue": "0.43",
+      "rawUnit": "fraction (column \"Reuse\")",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell K12 (row 12 col K)",
+      "note": "Stored as fraction under header \"Reuse\"; converted to %. Same values repeated in rows 27-34 cols I-K."
+    },
+    {
+      "site": "Ravensthorpe",
+      "year": 2020,
+      "metric": "withdrawal_total",
+      "value": 6600,
+      "rawValue": "6600",
+      "rawUnit": "ML (header: \"Water Withdrawal [ML = 1000m³]\")",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell D13 (row 13 col D)",
+      "note": "Hand-compiled summary block \"From ESG Report 2019/2020/2021\" in a user-assembled workbook (not an FQM original); rounded to ~100 ML. Appears to include seawater withdrawal (e.g. Çayeli/Ravensthorpe match fresh+sea from the ESG Data Summary block)."
+    },
+    {
+      "site": "Ravensthorpe",
+      "year": 2021,
+      "metric": "withdrawal_total",
+      "value": 6300,
+      "rawValue": "6300",
+      "rawUnit": "ML (header: \"Water Withdrawal [ML = 1000m³]\")",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell E13 (row 13 col E)",
+      "note": "Hand-compiled summary block \"From ESG Report 2019/2020/2021\" in a user-assembled workbook (not an FQM original); rounded to ~100 ML. Appears to include seawater withdrawal (e.g. Çayeli/Ravensthorpe match fresh+sea from the ESG Data Summary block)."
+    },
+    {
+      "site": "Ravensthorpe",
+      "year": 2020,
+      "metric": "water_intensity_reported",
+      "value": 1.56,
+      "rawValue": "1.56",
+      "rawUnit": "m3/t ore",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell G13 (row 13 col G)",
+      "note": "Intensity [m³/t ore], hand-compiled block"
+    },
+    {
+      "site": "Ravensthorpe",
+      "year": 2021,
+      "metric": "water_intensity_reported",
+      "value": 1.1,
+      "rawValue": "1.1",
+      "rawUnit": "m3/t ore",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell H13 (row 13 col H)",
+      "note": "Intensity [m³/t ore], hand-compiled block"
+    },
+    {
+      "site": "Ravensthorpe",
+      "year": 2020,
+      "metric": "reuse_rate_pct",
+      "value": 43,
+      "rawValue": "0.43",
+      "rawUnit": "fraction (column \"Reuse\")",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell J13 (row 13 col J)",
+      "note": "Stored as fraction under header \"Reuse\"; converted to %. Same values repeated in rows 27-34 cols I-K."
+    },
+    {
+      "site": "Ravensthorpe",
+      "year": 2021,
+      "metric": "reuse_rate_pct",
+      "value": 46,
+      "rawValue": "0.46",
+      "rawUnit": "fraction (column \"Reuse\")",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell K13 (row 13 col K)",
+      "note": "Stored as fraction under header \"Reuse\"; converted to %. Same values repeated in rows 27-34 cols I-K."
+    },
+    {
+      "site": "Sentinel",
+      "year": 2020,
+      "metric": "withdrawal_total",
+      "value": 60900,
+      "rawValue": "60900",
+      "rawUnit": "ML (header: \"Water Withdrawal [ML = 1000m³]\")",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell D14 (row 14 col D)",
+      "note": "Hand-compiled summary block \"From ESG Report 2019/2020/2021\" in a user-assembled workbook (not an FQM original); rounded to ~100 ML. Appears to include seawater withdrawal (e.g. Çayeli/Ravensthorpe match fresh+sea from the ESG Data Summary block)."
+    },
+    {
+      "site": "Sentinel",
+      "year": 2021,
+      "metric": "withdrawal_total",
+      "value": 57500,
+      "rawValue": "57500",
+      "rawUnit": "ML (header: \"Water Withdrawal [ML = 1000m³]\")",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell E14 (row 14 col E)",
+      "note": "Hand-compiled summary block \"From ESG Report 2019/2020/2021\" in a user-assembled workbook (not an FQM original); rounded to ~100 ML. Appears to include seawater withdrawal (e.g. Çayeli/Ravensthorpe match fresh+sea from the ESG Data Summary block)."
+    },
+    {
+      "site": "Sentinel",
+      "year": 2020,
+      "metric": "water_intensity_reported",
+      "value": 1.08,
+      "rawValue": "1.08",
+      "rawUnit": "m3/t ore",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell G14 (row 14 col G)",
+      "note": "Intensity [m³/t ore], hand-compiled block"
+    },
+    {
+      "site": "Sentinel",
+      "year": 2021,
+      "metric": "water_intensity_reported",
+      "value": 1,
+      "rawValue": "1",
+      "rawUnit": "m3/t ore",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell H14 (row 14 col H)",
+      "note": "Intensity [m³/t ore], hand-compiled block"
+    },
+    {
+      "site": "Sentinel",
+      "year": 2019,
+      "metric": "reuse_rate_pct",
+      "value": 67,
+      "rawValue": "0.67",
+      "rawUnit": "fraction (column \"Reuse\")",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell I14 (row 14 col I)",
+      "note": "Stored as fraction under header \"Reuse\"; converted to %. Same values repeated in rows 27-34 cols I-K."
+    },
+    {
+      "site": "Sentinel",
+      "year": 2020,
+      "metric": "reuse_rate_pct",
+      "value": 56,
+      "rawValue": "0.56",
+      "rawUnit": "fraction (column \"Reuse\")",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell J14 (row 14 col J)",
+      "note": "Stored as fraction under header \"Reuse\"; converted to %. Same values repeated in rows 27-34 cols I-K."
+    },
+    {
+      "site": "Sentinel",
+      "year": 2021,
+      "metric": "reuse_rate_pct",
+      "value": 61,
+      "rawValue": "0.61",
+      "rawUnit": "fraction (column \"Reuse\")",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell K14 (row 14 col K)",
+      "note": "Stored as fraction under header \"Reuse\"; converted to %. Same values repeated in rows 27-34 cols I-K."
+    },
+    {
+      "site": "_corporate",
+      "year": 2019,
+      "metric": "withdrawal_total",
+      "value": 252853,
+      "rawValue": "252853",
+      "rawUnit": "ML (header: \"Water Withdrawal [ML = 1000m³]\")",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell C15 (row 15 col C)",
+      "note": "Hard-coded \"Total\" of the hand-compiled block; 5,000 ML higher than the 247,853 ML in the ESG Data Summary block (C24) - likely a transcription error."
+    },
+    {
+      "site": "_corporate",
+      "year": 2019,
+      "metric": "withdrawal_total",
+      "value": 247853,
+      "rawValue": "247853",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell C24 (row 24 col C)",
+      "note": "Total operational water withdrawal. From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "_corporate",
+      "year": 2019,
+      "metric": "withdrawal_sea",
+      "value": 412,
+      "rawValue": "412",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell C36 (row 36 col C)",
+      "note": "Water withdrawal: sea water (total excludes Cobre Panamá power cooling seawater). From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "_corporate",
+      "year": 2019,
+      "metric": "withdrawal_surface",
+      "value": 200706,
+      "rawValue": "200706",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell C41 (row 41 col C)",
+      "note": "Label: \"Water withdrawal fresh surface water\". From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "_corporate",
+      "year": 2019,
+      "metric": "withdrawal_ground",
+      "value": 45576,
+      "rawValue": "45576",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell C51 (row 51 col C)",
+      "note": "From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "_corporate",
+      "year": 2019,
+      "metric": "withdrawal_third_party",
+      "value": 1160,
+      "rawValue": "1160",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell C61 (row 61 col C)",
+      "note": "Label: \"municipal water and other industrial users\". From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Çayeli",
+      "year": 2019,
+      "metric": "withdrawal_sea",
+      "value": 287,
+      "rawValue": "287",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell C37 (row 37 col C)",
+      "note": "From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Ravensthorpe",
+      "year": 2019,
+      "metric": "withdrawal_sea",
+      "value": 125,
+      "rawValue": "125",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell C38 (row 38 col C)",
+      "note": "From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Cobre Panamá",
+      "year": 2019,
+      "metric": "other:withdrawal_sea_power_cooling",
+      "value": 446748,
+      "rawValue": "446748",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell C39 (row 39 col C)",
+      "note": "Seawater withdrawn for Cobre Panamá power-station cooling; FQM excludes it from operational withdrawal totals (note in G36/G24)."
+    },
+    {
+      "site": "Çayeli",
+      "year": 2019,
+      "metric": "withdrawal_surface",
+      "value": 584,
+      "rawValue": "584",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell C42 (row 42 col C)",
+      "note": "Fresh surface water. From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Cobre Las Cruces",
+      "year": 2019,
+      "metric": "withdrawal_surface",
+      "value": 353,
+      "rawValue": "353",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell C43 (row 43 col C)",
+      "note": "Fresh surface water. From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Cobre Panamá",
+      "year": 2019,
+      "metric": "withdrawal_surface",
+      "value": 120883,
+      "rawValue": "120883",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell C44 (row 44 col C)",
+      "note": "Fresh surface water. From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Kansanshi",
+      "year": 2019,
+      "metric": "withdrawal_surface",
+      "value": 14156,
+      "rawValue": "14156",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell C46 (row 46 col C)",
+      "note": "Fresh surface water. From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Pyhäsalmi",
+      "year": 2019,
+      "metric": "withdrawal_surface",
+      "value": 4249,
+      "rawValue": "4249",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell C47 (row 47 col C)",
+      "note": "Fresh surface water. From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Ravensthorpe",
+      "year": 2019,
+      "metric": "withdrawal_surface",
+      "value": 500,
+      "rawValue": "500",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell C48 (row 48 col C)",
+      "note": "Fresh surface water. From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Sentinel",
+      "year": 2019,
+      "metric": "withdrawal_surface",
+      "value": 59980,
+      "rawValue": "59980",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell C49 (row 49 col C)",
+      "note": "Fresh surface water. From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Çayeli",
+      "year": 2019,
+      "metric": "withdrawal_ground",
+      "value": 3166,
+      "rawValue": "3166",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell C52 (row 52 col C)",
+      "note": "From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Cobre Las Cruces",
+      "year": 2019,
+      "metric": "withdrawal_ground",
+      "value": 567,
+      "rawValue": "567",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell C53 (row 53 col C)",
+      "note": "From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Cobre Panamá",
+      "year": 2019,
+      "metric": "withdrawal_ground",
+      "value": 965,
+      "rawValue": "965",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell C54 (row 54 col C)",
+      "note": "From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Guelb Moghrein",
+      "year": 2019,
+      "metric": "withdrawal_ground",
+      "value": 2327,
+      "rawValue": "2327",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell C55 (row 55 col C)",
+      "note": "From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Kansanshi",
+      "year": 2019,
+      "metric": "withdrawal_ground",
+      "value": 31525,
+      "rawValue": "31525",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell C56 (row 56 col C)",
+      "note": "From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Pyhäsalmi",
+      "year": 2019,
+      "metric": "withdrawal_ground",
+      "value": 589,
+      "rawValue": "589",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell C57 (row 57 col C)",
+      "note": "From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Ravensthorpe",
+      "year": 2019,
+      "metric": "withdrawal_ground",
+      "value": 55,
+      "rawValue": "55",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell C58 (row 58 col C)",
+      "note": "From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Sentinel",
+      "year": 2019,
+      "metric": "withdrawal_ground",
+      "value": 6382,
+      "rawValue": "6382",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell C59 (row 59 col C)",
+      "note": "From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Cobre Las Cruces",
+      "year": 2019,
+      "metric": "withdrawal_third_party",
+      "value": 1127,
+      "rawValue": "1127",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell C62 (row 62 col C)",
+      "note": "Municipal water and other industrial users. From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Pyhäsalmi",
+      "year": 2019,
+      "metric": "withdrawal_third_party",
+      "value": 33,
+      "rawValue": "33",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell C63 (row 63 col C)",
+      "note": "Municipal water and other industrial users. From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "_corporate",
+      "year": 2020,
+      "metric": "withdrawal_total",
+      "value": 238070,
+      "rawValue": "238070",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell D24 (row 24 col D)",
+      "note": "Total operational water withdrawal. From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "_corporate",
+      "year": 2020,
+      "metric": "withdrawal_sea",
+      "value": 5760,
+      "rawValue": "5760",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell D36 (row 36 col D)",
+      "note": "Water withdrawal: sea water (total excludes Cobre Panamá power cooling seawater). From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "_corporate",
+      "year": 2020,
+      "metric": "withdrawal_surface",
+      "value": 189056,
+      "rawValue": "189056",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell D41 (row 41 col D)",
+      "note": "Label: \"Water withdrawal fresh surface water\". From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "_corporate",
+      "year": 2020,
+      "metric": "withdrawal_ground",
+      "value": 41514,
+      "rawValue": "41514",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell D51 (row 51 col D)",
+      "note": "From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "_corporate",
+      "year": 2020,
+      "metric": "withdrawal_third_party",
+      "value": 1741,
+      "rawValue": "1741",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell D61 (row 61 col D)",
+      "note": "Label: \"municipal water and other industrial users\". From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Çayeli",
+      "year": 2020,
+      "metric": "withdrawal_sea",
+      "value": 244,
+      "rawValue": "244",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell D37 (row 37 col D)",
+      "note": "From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Ravensthorpe",
+      "year": 2020,
+      "metric": "withdrawal_sea",
+      "value": 5516,
+      "rawValue": "5516",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell D38 (row 38 col D)",
+      "note": "From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Cobre Panamá",
+      "year": 2020,
+      "metric": "other:withdrawal_sea_power_cooling",
+      "value": 468517,
+      "rawValue": "468517",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell D39 (row 39 col D)",
+      "note": "Seawater withdrawn for Cobre Panamá power-station cooling; FQM excludes it from operational withdrawal totals (note in G36/G24)."
+    },
+    {
+      "site": "Çayeli",
+      "year": 2020,
+      "metric": "withdrawal_surface",
+      "value": 97,
+      "rawValue": "97",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell D42 (row 42 col D)",
+      "note": "Fresh surface water. From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Cobre Las Cruces",
+      "year": 2020,
+      "metric": "withdrawal_surface",
+      "value": 614,
+      "rawValue": "614",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell D43 (row 43 col D)",
+      "note": "Fresh surface water. From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Cobre Panamá",
+      "year": 2020,
+      "metric": "withdrawal_surface",
+      "value": 111960,
+      "rawValue": "111960",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell D44 (row 44 col D)",
+      "note": "Fresh surface water. From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Kansanshi",
+      "year": 2020,
+      "metric": "withdrawal_surface",
+      "value": 16668,
+      "rawValue": "16668",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell D46 (row 46 col D)",
+      "note": "Fresh surface water. From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Pyhäsalmi",
+      "year": 2020,
+      "metric": "withdrawal_surface",
+      "value": 3720,
+      "rawValue": "3720",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell D47 (row 47 col D)",
+      "note": "Fresh surface water. From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Ravensthorpe",
+      "year": 2020,
+      "metric": "withdrawal_surface",
+      "value": 500,
+      "rawValue": "500",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell D48 (row 48 col D)",
+      "note": "Fresh surface water. From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Sentinel",
+      "year": 2020,
+      "metric": "withdrawal_surface",
+      "value": 55497,
+      "rawValue": "55497",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell D49 (row 49 col D)",
+      "note": "Fresh surface water. From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Çayeli",
+      "year": 2020,
+      "metric": "withdrawal_ground",
+      "value": 3875,
+      "rawValue": "3875",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell D52 (row 52 col D)",
+      "note": "From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Cobre Las Cruces",
+      "year": 2020,
+      "metric": "withdrawal_ground",
+      "value": 813,
+      "rawValue": "813",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell D53 (row 53 col D)",
+      "note": "From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Cobre Panamá",
+      "year": 2020,
+      "metric": "withdrawal_ground",
+      "value": 1361,
+      "rawValue": "1361",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell D54 (row 54 col D)",
+      "note": "From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Guelb Moghrein",
+      "year": 2020,
+      "metric": "withdrawal_ground",
+      "value": 2486,
+      "rawValue": "2486",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell D55 (row 55 col D)",
+      "note": "From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Kansanshi",
+      "year": 2020,
+      "metric": "withdrawal_ground",
+      "value": 26407,
+      "rawValue": "26407",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell D56 (row 56 col D)",
+      "note": "From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Pyhäsalmi",
+      "year": 2020,
+      "metric": "withdrawal_ground",
+      "value": 650,
+      "rawValue": "650",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell D57 (row 57 col D)",
+      "note": "From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Ravensthorpe",
+      "year": 2020,
+      "metric": "withdrawal_ground",
+      "value": 511,
+      "rawValue": "511",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell D58 (row 58 col D)",
+      "note": "From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Sentinel",
+      "year": 2020,
+      "metric": "withdrawal_ground",
+      "value": 5411,
+      "rawValue": "5411",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell D59 (row 59 col D)",
+      "note": "From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Cobre Las Cruces",
+      "year": 2020,
+      "metric": "withdrawal_third_party",
+      "value": 1716,
+      "rawValue": "1716",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell D62 (row 62 col D)",
+      "note": "Municipal water and other industrial users. From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Pyhäsalmi",
+      "year": 2020,
+      "metric": "withdrawal_third_party",
+      "value": 25,
+      "rawValue": "25",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell D63 (row 63 col D)",
+      "note": "Municipal water and other industrial users. From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "_corporate",
+      "year": 2021,
+      "metric": "withdrawal_total",
+      "value": 263162,
+      "rawValue": "263162",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell E24 (row 24 col E)",
+      "note": "Total operational water withdrawal. From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "_corporate",
+      "year": 2021,
+      "metric": "withdrawal_sea",
+      "value": 5832,
+      "rawValue": "5832",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell E36 (row 36 col E)",
+      "note": "Water withdrawal: sea water (total excludes Cobre Panamá power cooling seawater). From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "_corporate",
+      "year": 2021,
+      "metric": "withdrawal_surface",
+      "value": 203715,
+      "rawValue": "203715",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell E41 (row 41 col E)",
+      "note": "Label: \"Water withdrawal fresh surface water\". From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "_corporate",
+      "year": 2021,
+      "metric": "withdrawal_ground",
+      "value": 51907,
+      "rawValue": "51907",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell E51 (row 51 col E)",
+      "note": "From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "_corporate",
+      "year": 2021,
+      "metric": "withdrawal_third_party",
+      "value": 1709,
+      "rawValue": "1709",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell E61 (row 61 col E)",
+      "note": "Label: \"municipal water and other industrial users\". From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Çayeli",
+      "year": 2021,
+      "metric": "withdrawal_sea",
+      "value": 256,
+      "rawValue": "256",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell E37 (row 37 col E)",
+      "note": "From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Ravensthorpe",
+      "year": 2021,
+      "metric": "withdrawal_sea",
+      "value": 5576,
+      "rawValue": "5576",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell E38 (row 38 col E)",
+      "note": "From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Cobre Panamá",
+      "year": 2021,
+      "metric": "other:withdrawal_sea_power_cooling",
+      "value": 438064,
+      "rawValue": "438064",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell E39 (row 39 col E)",
+      "note": "Seawater withdrawn for Cobre Panamá power-station cooling; FQM excludes it from operational withdrawal totals (note in G36/G24)."
+    },
+    {
+      "site": "Çayeli",
+      "year": 2021,
+      "metric": "withdrawal_surface",
+      "value": 90,
+      "rawValue": "90",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell E42 (row 42 col E)",
+      "note": "Fresh surface water. From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Cobre Las Cruces",
+      "year": 2021,
+      "metric": "withdrawal_surface",
+      "value": 436,
+      "rawValue": "436",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell E43 (row 43 col E)",
+      "note": "Fresh surface water. From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Cobre Panamá",
+      "year": 2021,
+      "metric": "withdrawal_surface",
+      "value": 133820,
+      "rawValue": "133820",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell E44 (row 44 col E)",
+      "note": "Fresh surface water. From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Guelb Moghrein",
+      "year": 2021,
+      "metric": "withdrawal_surface",
+      "value": 64,
+      "rawValue": "64",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell E45 (row 45 col E)",
+      "note": "Fresh surface water. From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Kansanshi",
+      "year": 2021,
+      "metric": "withdrawal_surface",
+      "value": 12855,
+      "rawValue": "12855",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell E46 (row 46 col E)",
+      "note": "Fresh surface water. From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Pyhäsalmi",
+      "year": 2021,
+      "metric": "withdrawal_surface",
+      "value": 3471,
+      "rawValue": "3471",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell E47 (row 47 col E)",
+      "note": "Fresh surface water. From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Ravensthorpe",
+      "year": 2021,
+      "metric": "withdrawal_surface",
+      "value": 500,
+      "rawValue": "500",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell E48 (row 48 col E)",
+      "note": "Fresh surface water. From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Sentinel",
+      "year": 2021,
+      "metric": "withdrawal_surface",
+      "value": 52479,
+      "rawValue": "52479",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell E49 (row 49 col E)",
+      "note": "Fresh surface water. From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Çayeli",
+      "year": 2021,
+      "metric": "withdrawal_ground",
+      "value": 4350,
+      "rawValue": "4350",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell E52 (row 52 col E)",
+      "note": "From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Cobre Las Cruces",
+      "year": 2021,
+      "metric": "withdrawal_ground",
+      "value": 897,
+      "rawValue": "897",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell E53 (row 53 col E)",
+      "note": "From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Cobre Panamá",
+      "year": 2021,
+      "metric": "withdrawal_ground",
+      "value": 4253,
+      "rawValue": "4253",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell E54 (row 54 col E)",
+      "note": "From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Guelb Moghrein",
+      "year": 2021,
+      "metric": "withdrawal_ground",
+      "value": 2546,
+      "rawValue": "2546",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell E55 (row 55 col E)",
+      "note": "From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Kansanshi",
+      "year": 2021,
+      "metric": "withdrawal_ground",
+      "value": 33921,
+      "rawValue": "33921",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell E56 (row 56 col E)",
+      "note": "From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Pyhäsalmi",
+      "year": 2021,
+      "metric": "withdrawal_ground",
+      "value": 637,
+      "rawValue": "637",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell E57 (row 57 col E)",
+      "note": "From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Ravensthorpe",
+      "year": 2021,
+      "metric": "withdrawal_ground",
+      "value": 256,
+      "rawValue": "256",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell E58 (row 58 col E)",
+      "note": "From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Sentinel",
+      "year": 2021,
+      "metric": "withdrawal_ground",
+      "value": 5047,
+      "rawValue": "5047",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell E59 (row 59 col E)",
+      "note": "From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Cobre Las Cruces",
+      "year": 2021,
+      "metric": "withdrawal_third_party",
+      "value": 1687,
+      "rawValue": "1687",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell E62 (row 62 col E)",
+      "note": "Municipal water and other industrial users. From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    },
+    {
+      "site": "Pyhäsalmi",
+      "year": 2021,
+      "metric": "withdrawal_third_party",
+      "value": 22,
+      "rawValue": "22",
+      "rawUnit": "megalitre",
+      "sourceFile": "First Quantum mines 2019-2021.xlsx",
+      "location": "sheet 'Tabelle1' cell E63 (row 63 col E)",
+      "note": "Municipal water and other industrial users. From block \"From 2021 ESG Data Summary (p. 56)\". Excludes seawater used for Cobre Panamá power-station cooling."
+    }
+  ],
+  "observations": [
+    "Source is not an original FQM data file: single sheet \"Tabelle1\" assembled by a user (German Excel), with stray unrelated cells (A1 \"Wunugetushan\", A2 \"Bangpu\" marked \"PoDe\"; DC365 a URL to an Antamina 2017 report). Only hard-coded input cells were extracted.",
+    "All 98 formula cells were skipped: 2019 site withdrawal in C7:C14 (estimated as \"share in total\" x total, i.e. not reported), \"Total water use\" L:N (= withdrawal/(1-reuse), derived), \"Ore production [kt]\" P:Q (= withdrawal/intensity, back-calculated - so no ore-processed figures are extractable), D15/E15 SUMs, and site totals \"Water withdrawal: total (excl. Sea water)\" C27:E34 (SUMIF of the source rows). No FQM-stated site withdrawal totals exist in the ESG-summary block.",
+    "Two inconsistent 2019 corporate totals in the same sheet: C15 = 252,853 ML (hand-compiled block) vs C24 = 247,853 ML (ESG Data Summary). The 5,000 ML gap looks like a typo; 247,853 reconciles with surface 200,706 + ground 45,576 + municipal 1,160 + sea 412 (= 247,854).",
+    "Corporate totals 2020 = 238,070 ML and 2021 = 263,162 ML; they reconcile with fresh surface + ground + municipal + sea (Çayeli & Ravensthorpe only). Cobre Panamá power-station cooling seawater (446,748 / 468,517 / 438,064 ML in 2019/20/21) is excluded from totals and recorded under other:withdrawal_sea_power_cooling.",
+    "Hand-compiled block rows 7-14 are inconsistent in basis: Cobre Panamá 2020 = 581,900 ML includes cooling seawater (113,321 operational + 468,517 cooling), while 2021 = 138,100 ML excludes it. Ravensthorpe 6,600/6,300 ML include ~5,500 ML seawater; its ESG-summary non-sea withdrawal is only ~1,000/756 ML.",
+    "Cobre Panamá dominates: ~48-52% of operational withdrawal (121,848 / 113,321 / 138,073 ML excl. sea, from SUMIF helper), almost all fresh surface water. Kansanshi is groundwater-dominated (31,525 / 26,407 / 33,921 ML ground). Ravensthorpe groundwater jumps from 55 ML (2019) to 511 ML (2020); its seawater from 125 to 5,516 ML.",
+    "Reuse rates (column \"Reuse\", fractions): Cobre Panamá rose 59% -> 70% -> 78%; Kansanshi fell 78% -> 76% -> 66%; Ravensthorpe 2019 blank. Unclear whether these are reuse/total water use or reuse/withdrawal.",
+    "No discharge, consumption, water-stress, incidents or fines data in this file. Guelb Moghrein surface water appears only in 2021 (64 ML).",
+    "Site names normalised: \"Cayeli\"/\"Çayeli\" -> Çayeli, \"Cobre las Cruces\" -> Cobre Las Cruces, \"Cobre Panama\" -> Cobre Panamá."
+  ]
+}

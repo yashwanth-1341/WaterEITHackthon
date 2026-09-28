@@ -1,0 +1,398 @@
+{
+  "company": "Newcrest Mining",
+  "period": "FY20",
+  "framework": "legacy-waf",
+  "sourceLabel": "Newcrest 2020 Sustainability Report, GRI supplementary data (FY20 data GRI 300-Environment)",
+  "sites": [
+    {
+      "id": "lihir",
+      "name": "Lihir",
+      "country": "Papua New Guinea",
+      "commodity": [
+        "Gold"
+      ],
+      "processRoute": "Pressure oxidation + CIL, geothermal power, seawater cooling",
+      "waterStress": "low",
+      "stressSource": "assumed",
+      "coastal": true,
+      "method": "not-disclosed",
+      "oreMilledT": 13798024,
+      "productionOzAuEq": 775978,
+      "withdrawal": {
+        "surface": {
+          "high": 92214,
+          "low": 0
+        },
+        "ground": {
+          "high": 0,
+          "low": 0
+        },
+        "sea": {
+          "high": 0,
+          "low": 222149
+        },
+        "thirdParty": {
+          "high": 0,
+          "low": 0
+        }
+      },
+      "omwWithdrawal": null,
+      "discharge": {
+        "surface": {
+          "high": 33728,
+          "low": 1031
+        },
+        "ground": {
+          "high": 0,
+          "low": 3282
+        },
+        "sea": {
+          "high": 0,
+          "low": null
+        },
+        "thirdParty": {
+          "high": 0,
+          "low": 0
+        }
+      },
+      "consumption": 276322,
+      "reuse": 17309,
+      "deltaStorage": null,
+      "unknownFields": [
+        "discharge.sea.low",
+        "deltaStorage"
+      ],
+      "notes": [
+        "Tropical island with high rainfall; most withdrawal is seawater for cooling."
+      ]
+    },
+    {
+      "id": "telfer",
+      "name": "Telfer",
+      "country": "Australia (WA)",
+      "commodity": [
+        "Gold",
+        "Copper"
+      ],
+      "processRoute": "Flotation + CIL, dump leach",
+      "waterStress": "high",
+      "stressSource": "assumed",
+      "coastal": false,
+      "method": "not-disclosed",
+      "oreMilledT": 16209458,
+      "productionOzAuEq": 482883,
+      "withdrawal": {
+        "surface": {
+          "high": 354,
+          "low": 292
+        },
+        "ground": {
+          "high": 17273,
+          "low": 240
+        },
+        "sea": {
+          "high": 0,
+          "low": 0
+        },
+        "thirdParty": {
+          "high": 0,
+          "low": 0
+        }
+      },
+      "omwWithdrawal": null,
+      "discharge": {
+        "surface": {
+          "high": 12.21,
+          "low": 0
+        },
+        "ground": {
+          "high": 0,
+          "low": 3655
+        },
+        "sea": {
+          "high": 0,
+          "low": 0
+        },
+        "thirdParty": {
+          "high": 0,
+          "low": 0
+        }
+      },
+      "consumption": 18159,
+      "reuse": 4081,
+      "deltaStorage": null,
+      "unknownFields": [
+        "deltaStorage"
+      ],
+      "notes": [
+        "Arid inland site; relies almost entirely on groundwater."
+      ]
+    },
+    {
+      "id": "cadia",
+      "name": "Cadia",
+      "country": "Australia (NSW)",
+      "commodity": [
+        "Gold",
+        "Copper"
+      ],
+      "processRoute": "Block cave, flotation to concentrate",
+      "waterStress": "high",
+      "stressSource": "assumed",
+      "coastal": false,
+      "method": "not-disclosed",
+      "oreMilledT": 29346774,
+      "productionOzAuEq": 1372682,
+      "withdrawal": {
+        "surface": {
+          "high": 8677,
+          "low": 0
+        },
+        "ground": {
+          "high": 809,
+          "low": 0
+        },
+        "sea": {
+          "high": 0,
+          "low": 0
+        },
+        "thirdParty": {
+          "high": 4876,
+          "low": 0
+        }
+      },
+      "omwWithdrawal": null,
+      "discharge": {
+        "surface": {
+          "high": 638,
+          "low": 0
+        },
+        "ground": {
+          "high": 0,
+          "low": 0
+        },
+        "sea": {
+          "high": 0,
+          "low": 0
+        },
+        "thirdParty": {
+          "high": 0,
+          "low": 0
+        }
+      },
+      "consumption": 13056,
+      "reuse": 70455,
+      "deltaStorage": -480,
+      "unknownFields": [],
+      "notes": [
+        "Drought-exposed inland catchment; high internal recycling."
+      ]
+    },
+    {
+      "id": "gosowong",
+      "name": "Gosowong",
+      "country": "Indonesia",
+      "commodity": [
+        "Gold"
+      ],
+      "processRoute": "Underground, CIL",
+      "waterStress": "low",
+      "stressSource": "assumed",
+      "coastal": false,
+      "method": "not-disclosed",
+      "oreMilledT": 478185,
+      "productionOzAuEq": 103282,
+      "withdrawal": {
+        "surface": {
+          "high": 859,
+          "low": 0
+        },
+        "ground": {
+          "high": 6999,
+          "low": 0
+        },
+        "sea": {
+          "high": 0,
+          "low": 0
+        },
+        "thirdParty": {
+          "high": 0,
+          "low": 0
+        }
+      },
+      "omwWithdrawal": null,
+      "discharge": null,
+      "consumption": null,
+      "reuse": null,
+      "deltaStorage": null,
+      "unknownFields": [],
+      "notes": [
+        "Divested 4 March 2020; FY20 data is partial.",
+        "Not included in the discharge table.",
+        "Not included in the consumption table.",
+        "Not included in the recycled and reused table.",
+        "Not included in the change in storage table."
+      ]
+    }
+  ],
+  "history": [
+    {
+      "period": "FY18",
+      "highQuality": 322121,
+      "lowQuality": null,
+      "total": 322121
+    },
+    {
+      "period": "FY19",
+      "highQuality": 144017,
+      "lowQuality": 217713,
+      "total": 361730
+    },
+    {
+      "period": "FY20",
+      "highQuality": 132061,
+      "lowQuality": 222681,
+      "total": 354742
+    }
+  ],
+  "mappingLog": [
+    {
+      "site": "Lihir",
+      "from": "WAF Category 1 surface water",
+      "to": "High-quality surface water (withdrawal)",
+      "volume": 55798
+    },
+    {
+      "site": "Telfer",
+      "from": "WAF Category 1 surface water",
+      "to": "High-quality surface water (withdrawal)",
+      "volume": 226
+    },
+    {
+      "site": "Cadia",
+      "from": "WAF Category 1 surface water",
+      "to": "High-quality surface water (withdrawal)",
+      "volume": 4296
+    },
+    {
+      "site": "Gosowong",
+      "from": "WAF Category 1 surface water",
+      "to": "High-quality surface water (withdrawal)",
+      "volume": 859
+    },
+    {
+      "site": "Telfer",
+      "from": "WAF Category 1 ground water",
+      "to": "High-quality groundwater (withdrawal)",
+      "volume": 890
+    },
+    {
+      "site": "Cadia",
+      "from": "WAF Category 1 ground water",
+      "to": "High-quality groundwater (withdrawal)",
+      "volume": 215
+    },
+    {
+      "site": "Gosowong",
+      "from": "WAF Category 1 ground water",
+      "to": "High-quality groundwater (withdrawal)",
+      "volume": 3
+    },
+    {
+      "site": "Cadia",
+      "from": "WAF Category 1 third-party water",
+      "to": "High-quality third-party water (withdrawal)",
+      "volume": 4876
+    },
+    {
+      "site": "Lihir",
+      "from": "WAF Category 2 surface water",
+      "to": "High-quality surface water (withdrawal)",
+      "volume": 36416
+    },
+    {
+      "site": "Telfer",
+      "from": "WAF Category 2 surface water",
+      "to": "High-quality surface water (withdrawal)",
+      "volume": 128
+    },
+    {
+      "site": "Cadia",
+      "from": "WAF Category 2 surface water",
+      "to": "High-quality surface water (withdrawal)",
+      "volume": 4381
+    },
+    {
+      "site": "Telfer",
+      "from": "WAF Category 2 ground water",
+      "to": "High-quality groundwater (withdrawal)",
+      "volume": 16383
+    },
+    {
+      "site": "Cadia",
+      "from": "WAF Category 2 ground water",
+      "to": "High-quality groundwater (withdrawal)",
+      "volume": 594
+    },
+    {
+      "site": "Gosowong",
+      "from": "WAF Category 2 ground water",
+      "to": "High-quality groundwater (withdrawal)",
+      "volume": 6996
+    },
+    {
+      "site": "Telfer",
+      "from": "WAF Category 3 surface water",
+      "to": "Low-quality surface water (withdrawal)",
+      "volume": 292
+    },
+    {
+      "site": "Telfer",
+      "from": "WAF Category 3 ground water",
+      "to": "Low-quality groundwater (withdrawal)",
+      "volume": 240
+    },
+    {
+      "site": "Lihir",
+      "from": "WAF Category 3 sea water",
+      "to": "Low-quality seawater (withdrawal)",
+      "volume": 222149
+    },
+    {
+      "site": "Cadia",
+      "from": "WAF Category 1 surface water",
+      "to": "High-quality surface water (discharge)",
+      "volume": 638
+    },
+    {
+      "site": "Lihir",
+      "from": "WAF Category 2 surface water",
+      "to": "High-quality surface water (discharge)",
+      "volume": 33728
+    },
+    {
+      "site": "Telfer",
+      "from": "WAF Category 2 surface water",
+      "to": "High-quality surface water (discharge)",
+      "volume": 12.21
+    },
+    {
+      "site": "Lihir",
+      "from": "WAF Category 3 surface water",
+      "to": "Low-quality surface water (discharge)",
+      "volume": 1031
+    },
+    {
+      "site": "Lihir",
+      "from": "WAF Category 3 ground water",
+      "to": "Low-quality groundwater (discharge)",
+      "volume": 3282
+    },
+    {
+      "site": "Telfer",
+      "from": "WAF Category 3 ground water",
+      "to": "Low-quality groundwater (discharge)",
+      "volume": 3655
+    }
+  ]
+}

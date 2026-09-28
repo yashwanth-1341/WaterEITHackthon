@@ -1,0 +1,965 @@
+{
+  "company": "MMG Limited",
+  "files": [
+    {
+      "file": "MMG-SR-Appendix-B-2022.xlsx",
+      "relevant": true,
+      "yearsCovered": [
+        2021,
+        2022
+      ],
+      "granularity": "site",
+      "reason": "2022 site withdrawal by source and by quality, discharge by destination and quality, consumption and intensity by WRI stress band (sheet \"Water\"); 2021-2022 consumption and intensity in HKEx sheet. No production figures."
+    }
+  ],
+  "sites": [
+    {
+      "site": "Las Bambas",
+      "country": "Peru",
+      "commodity": [
+        "copper",
+        "molybdenum",
+        "gold",
+        "silver"
+      ],
+      "waterStressReported": "medium",
+      "status": "operating"
+    },
+    {
+      "site": "Kinsevere",
+      "country": "Democratic Republic of the Congo",
+      "commodity": [
+        "copper"
+      ],
+      "waterStressReported": "medium",
+      "status": "operating"
+    },
+    {
+      "site": "Dugald River",
+      "country": "Australia",
+      "commodity": [
+        "zinc",
+        "lead",
+        "silver"
+      ],
+      "waterStressReported": "medium",
+      "status": "operating"
+    },
+    {
+      "site": "Rosebery",
+      "country": "Australia",
+      "commodity": [
+        "zinc",
+        "lead",
+        "copper",
+        "gold",
+        "silver"
+      ],
+      "waterStressReported": "low",
+      "status": "operating"
+    }
+  ],
+  "records": [
+    {
+      "site": "Dugald River",
+      "year": 2022,
+      "metric": "withdrawal_total",
+      "value": 2665.4,
+      "rawValue": "2,665.40",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D8 (row 8 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Dugald River",
+      "year": 2022,
+      "metric": "withdrawal_ground",
+      "value": 175.8,
+      "rawValue": "175.8",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D9 (row 9 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Dugald River",
+      "year": 2022,
+      "metric": "withdrawal_surface",
+      "value": 633.9,
+      "rawValue": "633.9",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D10 (row 10 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Dugald River",
+      "year": 2022,
+      "metric": "withdrawal_third_party",
+      "value": 1855.7,
+      "rawValue": "1,855.70",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D11 (row 11 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Kinsevere",
+      "year": 2022,
+      "metric": "withdrawal_total",
+      "value": 19219.6,
+      "rawValue": "19,219.60",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D12 (row 12 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Kinsevere",
+      "year": 2022,
+      "metric": "withdrawal_ground",
+      "value": 14896.16,
+      "rawValue": "14,896.16",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D13 (row 13 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Kinsevere",
+      "year": 2022,
+      "metric": "withdrawal_surface",
+      "value": 4323.44,
+      "rawValue": "4,323.44",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D14 (row 14 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Las Bambas",
+      "year": 2022,
+      "metric": "withdrawal_total",
+      "value": 24475,
+      "rawValue": "24,475.00",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D15 (row 15 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Las Bambas",
+      "year": 2022,
+      "metric": "withdrawal_ground",
+      "value": 3488,
+      "rawValue": "3,488.00",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D16 (row 16 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Las Bambas",
+      "year": 2022,
+      "metric": "withdrawal_surface",
+      "value": 20987,
+      "rawValue": "20,987.00",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D17 (row 17 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Las Bambas",
+      "year": 2022,
+      "metric": "withdrawal_third_party",
+      "value": 0,
+      "rawValue": "0",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D18 (row 18 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Rosebery",
+      "year": 2022,
+      "metric": "withdrawal_total",
+      "value": 8001,
+      "rawValue": "8,001.00",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D19 (row 19 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Rosebery",
+      "year": 2022,
+      "metric": "withdrawal_ground",
+      "value": 2325,
+      "rawValue": "2,325.00",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D20 (row 20 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Rosebery",
+      "year": 2022,
+      "metric": "withdrawal_surface",
+      "value": 5676,
+      "rawValue": "5,676.00",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D21 (row 21 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Rosebery",
+      "year": 2022,
+      "metric": "withdrawal_third_party",
+      "value": 0,
+      "rawValue": "0",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D22 (row 22 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "_corporate",
+      "year": 2022,
+      "metric": "withdrawal_total",
+      "value": 54361,
+      "rawValue": "54,361.00",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D23 (row 23 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "_corporate",
+      "year": 2022,
+      "metric": "withdrawal_water_stressed",
+      "value": 46360,
+      "rawValue": "46,360.00",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D31 (row 31 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed. \"Medium - High Stress (2-3)\" WRI band = Dugald River + Kinsevere + Las Bambas."
+    },
+    {
+      "site": "_corporate",
+      "year": 2022,
+      "metric": "other:withdrawal_low_stress",
+      "value": 8001,
+      "rawValue": "8,001.00",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D27 (row 27 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed. \"Low Stress (0-1)\" WRI band = Rosebery."
+    },
+    {
+      "site": "Dugald River",
+      "year": 2022,
+      "metric": "withdrawal_fresh",
+      "value": 1906.5,
+      "rawValue": "1,906.50",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D40 (row 40 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Dugald River",
+      "year": 2022,
+      "metric": "withdrawal_low_quality",
+      "value": 758.9,
+      "rawValue": "758.9",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D41 (row 41 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Kinsevere",
+      "year": 2022,
+      "metric": "withdrawal_fresh",
+      "value": 16270.8,
+      "rawValue": "16,270.80",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D43 (row 43 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Kinsevere",
+      "year": 2022,
+      "metric": "withdrawal_low_quality",
+      "value": 2948.8,
+      "rawValue": "2,948.80",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D44 (row 44 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Las Bambas",
+      "year": 2022,
+      "metric": "withdrawal_fresh",
+      "value": 3049,
+      "rawValue": "3,049.00",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D46 (row 46 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Las Bambas",
+      "year": 2022,
+      "metric": "withdrawal_low_quality",
+      "value": 21426,
+      "rawValue": "21,426.00",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D47 (row 47 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Rosebery",
+      "year": 2022,
+      "metric": "withdrawal_fresh",
+      "value": 4008,
+      "rawValue": "4,008.00",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D49 (row 49 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Rosebery",
+      "year": 2022,
+      "metric": "withdrawal_low_quality",
+      "value": 3993,
+      "rawValue": "3,993.00",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D50 (row 50 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Dugald River",
+      "year": 2022,
+      "metric": "discharge_total",
+      "value": 513.8,
+      "rawValue": "513.8",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D58 (row 58 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Dugald River",
+      "year": 2022,
+      "metric": "discharge_ground",
+      "value": 472.5,
+      "rawValue": "472.5",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D59 (row 59 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Dugald River",
+      "year": 2022,
+      "metric": "discharge_surface",
+      "value": 38.3,
+      "rawValue": "38.3",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D60 (row 60 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Dugald River",
+      "year": 2022,
+      "metric": "discharge_third_party",
+      "value": 3,
+      "rawValue": "3",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D61 (row 61 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Kinsevere",
+      "year": 2022,
+      "metric": "discharge_total",
+      "value": 14972.02,
+      "rawValue": "14,972.02",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D62 (row 62 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Kinsevere",
+      "year": 2022,
+      "metric": "discharge_ground",
+      "value": 375.76,
+      "rawValue": "375.76",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D63 (row 63 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Kinsevere",
+      "year": 2022,
+      "metric": "discharge_surface",
+      "value": 14458.4,
+      "rawValue": "14,458.40",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D64 (row 64 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Kinsevere",
+      "year": 2022,
+      "metric": "discharge_third_party",
+      "value": 137.86,
+      "rawValue": "137.86",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D65 (row 65 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Las Bambas",
+      "year": 2022,
+      "metric": "discharge_total",
+      "value": 10903,
+      "rawValue": "10,903.00",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D66 (row 66 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Las Bambas",
+      "year": 2022,
+      "metric": "discharge_ground",
+      "value": 0,
+      "rawValue": "0",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D67 (row 67 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Las Bambas",
+      "year": 2022,
+      "metric": "discharge_surface",
+      "value": 10903,
+      "rawValue": "10,903.00",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D68 (row 68 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Las Bambas",
+      "year": 2022,
+      "metric": "discharge_third_party",
+      "value": 0,
+      "rawValue": "0",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D69 (row 69 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Rosebery",
+      "year": 2022,
+      "metric": "discharge_total",
+      "value": 6041,
+      "rawValue": "6,041.00",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D70 (row 70 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Rosebery",
+      "year": 2022,
+      "metric": "discharge_ground",
+      "value": 482,
+      "rawValue": "482",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D71 (row 71 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Rosebery",
+      "year": 2022,
+      "metric": "discharge_surface",
+      "value": 5559,
+      "rawValue": "5,559.00",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D72 (row 72 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "_corporate",
+      "year": 2022,
+      "metric": "discharge_total",
+      "value": 32429.82,
+      "rawValue": "32,429.82",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D73 (row 73 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "_corporate",
+      "year": 2022,
+      "metric": "other:discharge_water_stressed",
+      "value": 26388.82,
+      "rawValue": "26,388.82",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D80 (row 80 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed. Discharge from Medium-High stress (WRI 2-3) sites."
+    },
+    {
+      "site": "Dugald River",
+      "year": 2022,
+      "metric": "other:discharge_fresh",
+      "value": 31.7,
+      "rawValue": "31.7",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D88 (row 88 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Dugald River",
+      "year": 2022,
+      "metric": "other:discharge_other_quality",
+      "value": 482.1,
+      "rawValue": "482.1",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D89 (row 89 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Kinsevere",
+      "year": 2022,
+      "metric": "other:discharge_fresh",
+      "value": 14650.86,
+      "rawValue": "14,650.86",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D91 (row 91 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Kinsevere",
+      "year": 2022,
+      "metric": "other:discharge_other_quality",
+      "value": 321.16,
+      "rawValue": "321.16",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D92 (row 92 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Las Bambas",
+      "year": 2022,
+      "metric": "other:discharge_fresh",
+      "value": 0,
+      "rawValue": "0",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D94 (row 94 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Las Bambas",
+      "year": 2022,
+      "metric": "other:discharge_other_quality",
+      "value": 10903,
+      "rawValue": "10,903.00",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D95 (row 95 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Rosebery",
+      "year": 2022,
+      "metric": "other:discharge_fresh",
+      "value": 201,
+      "rawValue": "201",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D97 (row 97 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Rosebery",
+      "year": 2022,
+      "metric": "other:discharge_other_quality",
+      "value": 5840,
+      "rawValue": "5,840.00",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell D98 (row 98 col D)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed."
+    },
+    {
+      "site": "Dugald River",
+      "year": 2022,
+      "metric": "consumption_total",
+      "value": 2203.7,
+      "rawValue": "2,203.70",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell C104 (row 104 col C)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed. Water sheet (GRI 303-5)."
+    },
+    {
+      "site": "Kinsevere",
+      "year": 2022,
+      "metric": "consumption_total",
+      "value": 4216.96,
+      "rawValue": "4,216.96",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell C105 (row 105 col C)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed. Water sheet (GRI 303-5)."
+    },
+    {
+      "site": "Las Bambas",
+      "year": 2022,
+      "metric": "consumption_total",
+      "value": 15224,
+      "rawValue": "15,224.00",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell C106 (row 106 col C)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed. Water sheet (GRI 303-5)."
+    },
+    {
+      "site": "Rosebery",
+      "year": 2022,
+      "metric": "consumption_total",
+      "value": 943,
+      "rawValue": "943",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell C107 (row 107 col C)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed. Water sheet (GRI 303-5)."
+    },
+    {
+      "site": "_corporate",
+      "year": 2022,
+      "metric": "consumption_total",
+      "value": 22587.66,
+      "rawValue": "22,587.66",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell C108 (row 108 col C)",
+      "note": "Calendar year 2022. Volume unit not stated in the workbook; MMG reports under the MCA Water Accounting Framework in megalitres, so ML assumed. Water sheet (GRI 303-5)."
+    },
+    {
+      "site": "Dugald River",
+      "year": 2022,
+      "metric": "water_intensity_reported",
+      "value": 1.194928,
+      "rawValue": "1.19",
+      "rawUnit": "unstated",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell C119 (row 119 col C)",
+      "note": "Water consumption intensity; unit not stated (magnitude consistent with m3/t ore milled or ML/kt)."
+    },
+    {
+      "site": "Kinsevere",
+      "year": 2022,
+      "metric": "water_intensity_reported",
+      "value": 1.795445,
+      "rawValue": "1.80",
+      "rawUnit": "unstated",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell C120 (row 120 col C)",
+      "note": "Water consumption intensity; unit not stated (magnitude consistent with m3/t ore milled or ML/kt)."
+    },
+    {
+      "site": "Las Bambas",
+      "year": 2022,
+      "metric": "water_intensity_reported",
+      "value": 0.345661,
+      "rawValue": "0.35",
+      "rawUnit": "unstated",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell C121 (row 121 col C)",
+      "note": "Water consumption intensity; unit not stated (magnitude consistent with m3/t ore milled or ML/kt)."
+    },
+    {
+      "site": "Rosebery",
+      "year": 2022,
+      "metric": "water_intensity_reported",
+      "value": 1.051445,
+      "rawValue": "1.05",
+      "rawUnit": "unstated",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell C122 (row 122 col C)",
+      "note": "Water consumption intensity; unit not stated (magnitude consistent with m3/t ore milled or ML/kt)."
+    },
+    {
+      "site": "_corporate",
+      "year": 2022,
+      "metric": "water_intensity_reported",
+      "value": 0.459725,
+      "rawValue": "0.46",
+      "rawUnit": "unstated",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'Water' cell C123 (row 123 col C)",
+      "note": "Water consumption intensity; unit not stated (magnitude consistent with m3/t ore milled or ML/kt)."
+    },
+    {
+      "site": "Dugald River",
+      "year": 2022,
+      "metric": "consumption_total",
+      "value": 2204,
+      "rawValue": "2,204",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'HKEx disclosures - ESG report' cell C193 (row 193 col C)",
+      "note": "HKEx KPI A2.2 table; unit not stated (ML assumed)."
+    },
+    {
+      "site": "Dugald River",
+      "year": 2021,
+      "metric": "consumption_total",
+      "value": 2557,
+      "rawValue": "2,557",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'HKEx disclosures - ESG report' cell D193 (row 193 col D)",
+      "note": "HKEx KPI A2.2 table, prior-year comparative; unit not stated (ML assumed)."
+    },
+    {
+      "site": "Kinsevere",
+      "year": 2022,
+      "metric": "consumption_total",
+      "value": 4992,
+      "rawValue": "4,992",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'HKEx disclosures - ESG report' cell C194 (row 194 col C)",
+      "note": "HKEx KPI A2.2 table; unit not stated (ML assumed)."
+    },
+    {
+      "site": "Kinsevere",
+      "year": 2021,
+      "metric": "consumption_total",
+      "value": 4544,
+      "rawValue": "4,544",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'HKEx disclosures - ESG report' cell D194 (row 194 col D)",
+      "note": "HKEx KPI A2.2 table, prior-year comparative; unit not stated (ML assumed)."
+    },
+    {
+      "site": "Rosebery",
+      "year": 2022,
+      "metric": "consumption_total",
+      "value": 943,
+      "rawValue": "943",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'HKEx disclosures - ESG report' cell C195 (row 195 col C)",
+      "note": "HKEx KPI A2.2 table; unit not stated (ML assumed)."
+    },
+    {
+      "site": "Rosebery",
+      "year": 2021,
+      "metric": "consumption_total",
+      "value": 921,
+      "rawValue": "921",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'HKEx disclosures - ESG report' cell D195 (row 195 col D)",
+      "note": "HKEx KPI A2.2 table, prior-year comparative; unit not stated (ML assumed)."
+    },
+    {
+      "site": "Las Bambas",
+      "year": 2022,
+      "metric": "consumption_total",
+      "value": 15224,
+      "rawValue": "15,224",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'HKEx disclosures - ESG report' cell C196 (row 196 col C)",
+      "note": "HKEx KPI A2.2 table; unit not stated (ML assumed)."
+    },
+    {
+      "site": "Las Bambas",
+      "year": 2021,
+      "metric": "consumption_total",
+      "value": 15958,
+      "rawValue": "15,958",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'HKEx disclosures - ESG report' cell D196 (row 196 col D)",
+      "note": "HKEx KPI A2.2 table, prior-year comparative; unit not stated (ML assumed)."
+    },
+    {
+      "site": "_corporate",
+      "year": 2022,
+      "metric": "consumption_total",
+      "value": 23363,
+      "rawValue": "23,363",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'HKEx disclosures - ESG report' cell C197 (row 197 col C)",
+      "note": "HKEx KPI A2.2 table; unit not stated (ML assumed)."
+    },
+    {
+      "site": "_corporate",
+      "year": 2021,
+      "metric": "consumption_total",
+      "value": 23980,
+      "rawValue": "23,980",
+      "rawUnit": "unstated (ML assumed; column header mislabelled \"Consumption\")",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'HKEx disclosures - ESG report' cell D197 (row 197 col D)",
+      "note": "HKEx KPI A2.2 table, prior-year comparative; unit not stated (ML assumed)."
+    },
+    {
+      "site": "Dugald River",
+      "year": 2022,
+      "metric": "water_intensity_reported",
+      "value": 1.19,
+      "rawValue": "1.19",
+      "rawUnit": "unstated",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'HKEx disclosures - ESG report' cell C201 (row 201 col C)",
+      "note": "HKEx \"Water Consumption Intensity\"; unit not stated."
+    },
+    {
+      "site": "Dugald River",
+      "year": 2021,
+      "metric": "water_intensity_reported",
+      "value": 1.35,
+      "rawValue": "1.35",
+      "rawUnit": "unstated",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'HKEx disclosures - ESG report' cell D201 (row 201 col D)",
+      "note": "HKEx \"Water Consumption Intensity\" 2021; unit not stated."
+    },
+    {
+      "site": "Kinsevere",
+      "year": 2022,
+      "metric": "water_intensity_reported",
+      "value": 2.13,
+      "rawValue": "2.13",
+      "rawUnit": "unstated",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'HKEx disclosures - ESG report' cell C202 (row 202 col C)",
+      "note": "HKEx \"Water Consumption Intensity\"; unit not stated."
+    },
+    {
+      "site": "Kinsevere",
+      "year": 2021,
+      "metric": "water_intensity_reported",
+      "value": 1.86,
+      "rawValue": "1.86",
+      "rawUnit": "unstated",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'HKEx disclosures - ESG report' cell D202 (row 202 col D)",
+      "note": "HKEx \"Water Consumption Intensity\" 2021; unit not stated."
+    },
+    {
+      "site": "Rosebery",
+      "year": 2022,
+      "metric": "water_intensity_reported",
+      "value": 1.05,
+      "rawValue": "1.05",
+      "rawUnit": "unstated",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'HKEx disclosures - ESG report' cell C203 (row 203 col C)",
+      "note": "HKEx \"Water Consumption Intensity\"; unit not stated."
+    },
+    {
+      "site": "Rosebery",
+      "year": 2021,
+      "metric": "water_intensity_reported",
+      "value": 0.9,
+      "rawValue": "0.9",
+      "rawUnit": "unstated",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'HKEx disclosures - ESG report' cell D203 (row 203 col D)",
+      "note": "HKEx \"Water Consumption Intensity\" 2021; unit not stated."
+    },
+    {
+      "site": "Las Bambas",
+      "year": 2022,
+      "metric": "water_intensity_reported",
+      "value": 0.35,
+      "rawValue": "0.35",
+      "rawUnit": "unstated",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'HKEx disclosures - ESG report' cell C204 (row 204 col C)",
+      "note": "HKEx \"Water Consumption Intensity\"; unit not stated."
+    },
+    {
+      "site": "Las Bambas",
+      "year": 2021,
+      "metric": "water_intensity_reported",
+      "value": 0.33,
+      "rawValue": "0.33",
+      "rawUnit": "unstated",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'HKEx disclosures - ESG report' cell D204 (row 204 col D)",
+      "note": "HKEx \"Water Consumption Intensity\" 2021; unit not stated."
+    },
+    {
+      "site": "_corporate",
+      "year": 2022,
+      "metric": "water_intensity_reported",
+      "value": 0.48,
+      "rawValue": "0.48",
+      "rawUnit": "unstated",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'HKEx disclosures - ESG report' cell C205 (row 205 col C)",
+      "note": "HKEx \"Water Consumption Intensity\"; unit not stated."
+    },
+    {
+      "site": "_corporate",
+      "year": 2021,
+      "metric": "water_intensity_reported",
+      "value": 0.45,
+      "rawValue": "0.45",
+      "rawUnit": "unstated",
+      "sourceFile": "MMG-SR-Appendix-B-2022.xlsx",
+      "location": "sheet 'HKEx disclosures - ESG report' cell D205 (row 205 col D)",
+      "note": "HKEx \"Water Consumption Intensity\" 2021; unit not stated."
+    }
+  ],
+  "observations": [
+    "No volume unit is given anywhere in the Water or HKEx sheets; every value column is headed \"Consumption\" even for withdrawal and discharge tables (mislabel). ML assumed (MMG reports per MCA Water Accounting Framework). Treat unit as unverified.",
+    "Internal inconsistency on 2022 consumption: Water sheet (GRI 303-5) gives Kinsevere 4,216.96 and total 22,587.66, while the HKEx sheet gives Kinsevere 4,992 and total 23,363; Kinsevere intensity 1.80 vs 2.13 and total 0.46 vs 0.48. Other sites agree (Dugald River 2,203.70 vs 2,204 is rounding).",
+    "Consumption is not simply withdrawal minus discharge (e.g. Dugald River 2,665.4 - 513.8 = 2,151.6 vs 2,203.7 reported; Kinsevere 19,219.6 - 14,972.0 = 4,247.6 vs 4,216.96/4,992), implying storage change/entrainment terms not disclosed.",
+    "2022 total withdrawal 54,361; 85% (46,360) is from sites in WRI \"Medium - High Stress (2-3)\" areas (Dugald River, Kinsevere, Las Bambas); only Rosebery is Low stress (0-1). Sites flagged \"medium\" in sites[] reflect this Medium-High band.",
+    "Las Bambas is the largest user (24,475 withdrawal, 15,224 consumption) but mostly \"Other water\" (21,426) with only 3,049 freshwater; Kinsevere is 85% freshwater (16,270.8 of 19,219.6) and 78% groundwater.",
+    "Consumption 2021 -> 2022 (HKEx): total 23,980 -> 23,363; Dugald River 2,557 -> 2,204; Kinsevere 4,544 -> 4,992; Las Bambas 15,958 -> 15,224; Rosebery 921 -> 943.",
+    "Methodology: all operations commenced a gap analysis against the ICMM Water Reporting Good Practice Guide (Aug 2021) with an implementation plan due mid-2022 and compliance reporting from 2023 (Water!B54). 2022 assurance (CECEP) covered Las Bambas and included \"Responsible water consumption\". Site-specific water targets exist but no values given.",
+    "No water incidents, fines, reuse/recycling volumes or production data disclosed in this workbook. Data on 100% equity basis, calendar year."
+  ]
+}
