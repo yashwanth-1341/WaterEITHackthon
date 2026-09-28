@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+/* Palette drawn from mine water: limestone and basalt, freshwater blue,
+   seawater grey-blue, copper verdigris for passes, iron oxide for failures. */
+@theme {
+  --color-limestone: #e9edec;
+  --color-paper: #f7f9f8;
+  --color-basalt: #1e2a2f;
+  --color-shale: #4f6168;
+  --color-hairline: #cdd6d5;
+  --color-fresh: #1f5c7a;
+  --color-fresh-2: #3d7fa0;
+  --color-fresh-3: #0f3b52;
+  --color-sea: #8db1be;
+  --color-verdigris: #2f7a6b;
+  /* Chart green: passes the palette validator's chroma floor next to oxide (verdigris reads grey). */
+  --color-leaf: #1a8a6c;
+  --color-oxide: #a33a2a;
+  --color-ochre: #8a5f0f;
+
+  --font-sans: "Archivo Variable", "Archivo", ui-sans-serif, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+html,
+body {
+  background: var(--color-limestone);
+  color: var(--color-basalt);
+}
+
+body {
+  font-family: var(--font-sans);
+  font-feature-settings: "kern";
+}
+
+/* Ledger numbers: condensed, tabular. */
+.num {
+  font-variant-numeric: tabular-nums;
+}
+.cond {
+  font-stretch: 68%;
+}
+.semi-cond {
+  font-stretch: 85%;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-fresh);
+  outline-offset: 2px;
+}
+
+input[type="range"] {
+  accent-color: var(--color-fresh);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Landing: one gentle entrance, disabled by the reduced-motion rule above. */
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.rise {
+  animation: rise 0.5s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.rise-2 {
+  animation-delay: 0.08s;
+}
+.rise-3 {
+  animation-delay: 0.16s;
+}
