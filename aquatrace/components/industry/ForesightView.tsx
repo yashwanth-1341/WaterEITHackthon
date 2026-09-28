@@ -5,7 +5,7 @@ import { Area, CartesianGrid, ComposedChart, Line, ReferenceLine, ResponsiveCont
 import type { Corpus } from "@/lib/corpus/types";
 import type { CompanyProfile } from "@/lib/corpus/indicators";
 import type { Signal } from "@/lib/corpus/integrity";
-import { computeFacts, horizonCards, trendStatement, type Intervention } from "@/lib/corpus/foresight";
+import { CANVAS, computeFacts, horizonCards, trendStatement, type Intervention } from "@/lib/corpus/foresight";
 import { HORIZONS, type HorizonId } from "@/lib/corpus/trends";
 import { cx } from "@/lib/format";
 
@@ -43,9 +43,20 @@ export default function ForesightView({ corpus, profiles, signals }: Props) {
 
   return (
     <div className="max-w-6xl">
-      <p className="text-[0.78rem] font-semibold uppercase tracking-wide text-fresh">Market foresight</p>
+      <p className="text-[0.78rem] font-semibold uppercase tracking-wide text-fresh">Market foresight canvas · Trend: {CANVAS.trend}</p>
       <h1 className="mt-1 text-[1.6rem] font-semibold leading-tight tracking-tight">{trend.headline}</h1>
       <p className="mt-3 max-w-4xl text-[0.95rem] leading-relaxed">{trend.body}</p>
+      <p className="mt-2 max-w-4xl text-[0.85rem] leading-relaxed text-shale">{CANVAS.vertical}</p>
+
+      <div className="mt-5 grid gap-3 md:grid-cols-2">
+        {CANVAS.drivers.map((d) => (
+          <div key={d.title} className="rounded-md border border-hairline bg-white px-4 py-3">
+            <div className="text-[0.72rem] font-semibold uppercase tracking-wide text-shale">Driver</div>
+            <div className="text-[0.95rem] font-semibold">{d.title}</div>
+            <p className="mt-0.5 text-[0.82rem] leading-relaxed text-shale">{d.detail}</p>
+          </div>
+        ))}
+      </div>
 
       <div className="mt-6 grid gap-6 border-y border-hairline py-5 sm:grid-cols-4">
         <Stat big={facts.withdrawalChange === null ? "–" : `${facts.withdrawalChange >= 0 ? "+" : ""}${(facts.withdrawalChange * 100).toFixed(1)}%`} label="median annual change in disclosed withdrawal" tone="bad" />
@@ -76,6 +87,9 @@ export default function ForesightView({ corpus, profiles, signals }: Props) {
             <Area dataKey="gap" fill="var(--color-ochre)" fillOpacity={0.12} stroke="none" isAnimationActive={false} />
             <Line isAnimationActive={false} dataKey="expected" name="If nothing changes" stroke="var(--color-oxide)" strokeWidth={2.5} dot={false} />
             <Line isAnimationActive={false} dataKey="desired" name="Desired" stroke="var(--color-verdigris)" strokeWidth={2.5} dot={false} />
+            {CANVAS.milestones.map((m) => (
+              <ReferenceLine key={m.year} x={m.year} stroke="var(--color-leaf)" strokeDasharray="2 3" label={{ value: `${m.year}`, fontSize: 10, fill: "var(--color-leaf)", position: "insideBottomRight" }} />
+            ))}
             {HORIZONS.map((h) => (
               <ReferenceLine
                 key={h.id}
@@ -88,6 +102,14 @@ export default function ForesightView({ corpus, profiles, signals }: Props) {
           </ComposedChart>
         </ResponsiveContainer>
       </div>
+      <ol className="mt-2 flex flex-wrap gap-x-6 gap-y-1 text-[0.8rem]" aria-label="Observed and expected milestones">
+        {CANVAS.milestones.map((m) => (
+          <li key={m.year} className="flex items-center gap-1.5">
+            <span className="inline-block h-3 w-0 border-l-2 border-dashed border-leaf" aria-hidden />
+            <span className="num font-semibold text-leaf">{m.year}</span> {m.text}
+          </li>
+        ))}
+      </ol>
       <p className="mt-1 text-[0.75rem] text-shale">
         The shaded gap is what the interventions have to close. The median trend comes from {facts.withdrawalCompanies} companies with three or more
         disclosed years and includes acquisitions and method changes. Treat it as a direction, not a number to plan with.
@@ -105,6 +127,7 @@ export default function ForesightView({ corpus, profiles, signals }: Props) {
           >
             <span className="block text-[0.95rem] font-semibold">{c.label}</span>
             <span className={cx("num block text-[0.75rem]", active === c.id ? "text-white/80" : "text-shale")}>{c.year}</span>
+            <span className={cx("mt-1 block text-[0.78rem] leading-snug", active === c.id ? "text-white" : "text-basalt")}>{c.event}</span>
           </button>
         ))}
       </div>
@@ -112,7 +135,7 @@ export default function ForesightView({ corpus, profiles, signals }: Props) {
       <section className="mt-6" role="tabpanel" aria-label={card.label}>
         <div className="grid gap-8 lg:grid-cols-2">
           <div>
-            <h3 className="text-[0.78rem] font-semibold uppercase tracking-wide text-oxide">Expected trend if nothing changes</h3>
+            <h3 className="text-[0.78rem] font-semibold uppercase tracking-wide text-oxide">Expected trend if nothing changes · {card.event}</h3>
             <p className="mt-2 text-[0.92rem] leading-relaxed">{card.expected}</p>
           </div>
           <div>

@@ -79,6 +79,8 @@ export interface HorizonCard {
   id: HorizonId;
   label: string;
   year: number;
+  /** The event on our canvas trend line at this horizon. */
+  event: string;
   expected: string;
   consequences: { market: string; industry: string; customers: string; businessModel: string };
   desired: string;
@@ -88,16 +90,31 @@ export interface HorizonCard {
 const p1 = (x: number | null, d = 1) => (x === null ? "–" : `${x >= 0 ? "+" : ""}${x.toFixed(d)}`);
 const i0 = (x: number | null) => (x === null ? "–" : Math.round(x).toString());
 
+/** Our Market Foresight Canvas: trend, drivers and milestones as agreed on the poster. */
+export const CANVAS = {
+  trend: "Circular water use in industry",
+  vertical: "Mining is where it starts: the heaviest industrial water user, in the driest basins, supplying the battery and AI boom.",
+  drivers: [
+    { title: "AI boom and battery factories", detail: "Demand for copper, lithium, nickel and cobalt, and for water-hungry chip and battery plants, keeps rising." },
+    { title: "Regulation on water use", detail: "ESRS E3, ISSB/SASB water metrics, EU Battery Regulation due diligence, Chile's 2022 water code reform." },
+  ],
+  milestones: [
+    { year: 2028, text: "First water-positive plants" },
+    { year: 2030, text: "Water-rights trading schemes" },
+    { year: 2035, text: "Near-closed water loops are the norm" },
+  ],
+};
+
 export function trendStatement(f: Facts) {
   return {
-    headline: "Mining's water footprint keeps growing while the evidence behind it stays fragmented",
+    headline: "Circular water use in industry: mining's water footprint keeps growing, and the evidence behind it is fragmented",
     body:
-      `Across ${f.companies} companies and ${f.reports} reports (${f.firstYear}–${f.lastYear}), disclosed withdrawal grows a median ` +
+      `Across ${f.companies} mining companies and ${f.reports} reports (${f.firstYear}–${f.lastYear}), disclosed withdrawal grows a median ` +
       `${p1(f.withdrawalChange === null ? null : f.withdrawalChange * 100)}% a year (${f.withdrawalGrowing} of ${f.withdrawalCompanies} companies rising). ` +
       `Recycling has plateaued: the median reuse share is ${i0(f.reuseLatestMedian)}% and moves ${p1(f.reuseChangePts)} points a year. ` +
       `Only ${f.stressDisclosed} of ${f.companies} give a figure for withdrawal in water-stressed areas in their latest year, and ` +
-      `${f.companiesWithHigh} of ${f.companies} have at least one figure that fails a basic consistency check. Demand for copper, ` +
-      `gold and battery metals is rising at the same time, much of it from basins that are already short of water.`,
+      `${f.companiesWithHigh} of ${f.companies} have at least one figure that fails a basic consistency check. Meanwhile water tariffs are rising ` +
+      `and regulation is coming. Circular water use has to be measured before it can be priced, traded or required.`,
   };
 }
 
@@ -109,92 +126,90 @@ export function horizonCards(f: Facts): HorizonCard[] {
       id: "now",
       label: "Now",
       year: HORIZONS[0].year,
+      event: "Rising water tariffs",
       expected:
-        `Withdrawal index ${idx("now")} (${f.baseYear} = 100), reuse ~${reuse("now")}%. Water data lives in PDFs and one-off workbooks, ` +
-        `each company with its own definitions. ${f.siteLevel} of ${f.companies} publish site figures; restatements, reclassifications and ` +
-        `unit slips (all found in this corpus) go unflagged.`,
+        `Water tariffs start to rise. Withdrawal index ${idx("now")} (${f.baseYear} = 100), reuse ~${reuse("now")}%. Water data lives in PDFs and ` +
+        `one-off workbooks with each company's own definitions. ${f.siteLevel} of ${f.companies} publish site figures, and restatements, ` +
+        `reclassifications and unit slips (all found in this corpus) go unflagged.`,
       consequences: {
-        market: "Water risk is priced by rumour, not data. Lenders and insurers apply blanket loadings to 'dry' regions instead of pricing individual sites.",
-        industry: "Companies spend on reporting rather than on water. Every framework (GRI 303, ICMM, SASB, CDP, ESRS E3) asks for similar numbers in a different shape.",
-        customers: "Buyers of copper and battery metals ask for water data in due-diligence questionnaires and get PDFs they cannot compare or check.",
-        businessModel: "Water is a line item under site operating cost. Nobody owns the basin-level picture, and a good water performer has no way to prove it to buyers.",
+        market: "Water risk is priced by guesswork: lenders and insurers load whole regions instead of pricing individual sites.",
+        industry: "Early movers lock in long-term water contracts before tariffs climb further.",
+        customers: "Metal buyers ask for water data in due-diligence questionnaires and get PDFs they can't compare or check.",
+        businessModel: "Water is still an operating-cost line. A good water performer has no way to prove it.",
       },
-      desired:
-        "One comparable, traceable record per site and year. Any stakeholder can see where a number came from, whether it adds up and whether it changed since last year.",
+      desired: "Every site's real water use is measured and traceable, and anyone can see whether a number adds up and whether it changed since last year.",
       interventions: [
-        { action: "Common schema with provenance on every figure", detail: `Done for ${f.companies} companies and ${f.figures.toLocaleString("en-US")} figures, each linked to a page or cell.`, status: "built" },
-        { action: "File fingerprints and consistency checks", detail: "SHA-256 of every source report; restatement, balance, sum, jump, duplicate, unit-error and digit tests.", status: "built" },
-        { action: "Hash-chained audit log", detail: "Saved datasets are sealed, and the log exposes any later edit to a saved record.", status: "built" },
-        { action: "Importers for each major format", detail: "Make every company's workbook layout map to the schema without hand work, beginning with the formats in this corpus.", status: "next" },
+        { action: "PoC water-use monitoring", detail: `AquaTrace itself: ${f.companies} companies and ${f.figures.toLocaleString("en-US")} figures on one schema, each linked to a page or cell.`, status: "built" },
+        { action: "File fingerprints, consistency checks and audit log", detail: "SHA-256 of every report; restatement, balance, sum, jump, unit-error and digit tests; hash-chained log of every save.", status: "built" },
+        { action: "One submission template for every company", detail: "Companies report once in the AquaTrace template and get their trend, peer rank and fixes back immediately.", status: "built" },
       ],
     },
     {
       id: "2y",
       label: "+2 years",
       year: HORIZONS[1].year,
+      event: "Water tariffs +400%",
       expected:
-        `Withdrawal index ${idx("2y")}, reuse ~${reuse("2y")}%. Disclosure rules tighten but diverge: ESRS E3 for EU-scoped companies (scope narrowed by the 2025 Omnibus package), ` +
-        `ISSB/SASB water metrics where jurisdictions adopt them, battery-regulation due diligence for EU buyers. More numbers, still not comparable. AI-drafted ` +
-        `sustainability reports multiply, and so does the risk of figures that were never measured.`,
+        `Tariffs up about 400% in stressed basins (the ledger's Cost and regulation view shows the effect per site). Withdrawal index ${idx("2y")}, ` +
+        `reuse ~${reuse("2y")}%. Reporting rules tighten but diverge: ESRS E3, ISSB/SASB water metrics, battery-regulation due diligence. ` +
+        `Milestone: the first water-positive plants open (2028).`,
       consequences: {
-        market: "A price gap opens between metal with verifiable water data and metal without. Offtake contracts start to carry water clauses.",
-        industry: "Mid-tier miners without data teams fall behind majors in financing and permitting. Consultants fill the gap with more manual reporting.",
-        customers: "Battery makers and automakers need site-level water data for due diligence and later product passports. Company-level totals no longer pass.",
-        businessModel: "Assurance of water data becomes a service in its own right. Whoever can supply checked, comparable data becomes the default source for buyers.",
+        market: "Governments offer subsidies for technological adaptation (reuse, dry tailings, desalination) to soften the tariff shock.",
+        industry: "Long-term water contracts become the standard way to secure supply; mid-tier miners without data teams fall behind.",
+        customers: "Battery makers and automakers need site-level water data for due diligence. Company totals no longer pass.",
+        businessModel: "Water turns from an operating cost into a contract and financing question, and verified data becomes worth paying for.",
       },
-      desired:
-        "Companies submit once, in a machine-readable form, and every framework's view is generated from it. Buyers and auditors query the same verified record instead of sending questionnaires.",
+      desired: "Companies invest in circular plants because subsidies and contracts reward measured, verified reuse, not claims.",
       interventions: [
-        { action: "Submission API and framework mapping", detail: "Accept the schema directly (JSON/CSV/XBRL) and generate GRI 303, ICMM Table 4, SASB EM-MM-140a and ESRS E3 outputs from it.", status: "next" },
-        { action: "Signed submissions", detail: "Companies and assurers sign each dataset with their own keys, so the log shows who vouched for which number, not only that it didn't change.", status: "next" },
-        { action: "Basin stress attached automatically", detail: "Geolocate each site and attach WRI Aqueduct basin indicators, so 'water-stressed' no longer depends on each company's own definition.", status: "next" },
-        { action: "Buyer and assurer workspaces", detail: "Role-based access: companies publish, buyers and auditors view and comment, and every question and answer is logged.", status: "partner" },
+        { action: "Cheaper sensors, SCADA and IoT monitoring", detail: "Stream flow-meter and SCADA data straight into the ledger, signed at the device, so annual figures come from measurements.", status: "next" },
+        { action: "Submission API and framework mapping", detail: "Accept data directly and generate GRI 303, ICMM Table 4, SASB EM-MM-140a and ESRS E3 outputs from the same record.", status: "next" },
+        { action: "Basin stress attached automatically", detail: "Geolocate each site and attach WRI Aqueduct indicators, so 'water-stressed' no longer depends on each company's own definition.", status: "next" },
       ],
     },
     {
       id: "5y",
       label: "+5 years",
       year: HORIZONS[2].year,
+      event: "Political stalemate",
       expected:
-        `Withdrawal index ${idx("5y")}, reuse ~${reuse("5y")}%, if nothing changes. In stressed basins (Atacama, Andes, Western Australia, northern Mexico) ` +
-        `governments limit or reprice water rights. Chile's 2022 water code reform already makes new rights temporary and puts human consumption first. ` +
-        `Desalination becomes the marginal source, and its energy cost ties water risk to carbon cost.`,
+        `Political stalemate: rules lag behind the tariff shock and differ by country. Withdrawal index ${idx("5y")}, reuse ~${reuse("5y")}%, if nothing ` +
+        `changes. Milestone: water-rights trading schemes start (2030). Chile's 2022 water code reform already makes new rights temporary and puts ` +
+        `people first. Desalination becomes the marginal source, tying water cost to energy cost.`,
       consequences: {
-        market: "Supply of copper and battery metals from stressed basins becomes less reliable. Expansions are delayed by water permits, not ore grades, and price volatility rises.",
-        industry: "Consolidation: operators who can cut water per tonne (thickened tailings, dry stacking, closed circuits) win the expansions, and others sell or close.",
-        customers: "Buyers diversify away from sites with unverified or rising water intensity. Low-water metal is certified and sold at a premium.",
-        businessModel: "Water turns from an operating cost into a capital constraint that shapes mine plans, valuations and closure liabilities. Metered data is now worth money.",
+        market: "Production relocates to non-regulated markets outside the EU, where water is cheaper and rules are weaker.",
+        industry: "Monopolistic structures form around access to water infrastructure: whoever owns the pipeline, desalination plant or reuse network sets the terms.",
+        customers: "Buyers need certified water figures to trade water rights and prove compliance, and uncertified supply is discounted.",
+        businessModel: "Water becomes a tradable, audited asset, so certified use and reuse carry a price.",
       },
       desired:
-        "Water per tonne falls every year and reuse rises well above today's plateau, because a site's performance is visible to buyers, lenders and regulators. Permits reward verified improvement.",
+        "Adaptive, real-time water management at every site. Reuse and greywater are the default for cooling, cleaning and many process uses, and trading rewards verified savings.",
       interventions: [
-        { action: "Meter-to-ledger ingestion", detail: "Stream flow-meter data from sites and sign it at the device. Annual figures then come from measurements, not estimates, and gaps show up within days.", status: "next" },
-        { action: "Basin ledgers across companies", detail: "Combine every operator in a catchment to show cumulative withdrawal against the basin's renewable supply, which is what a regulator permits against.", status: "partner" },
-        { action: "Permit-aware scenarios", detail: "Link the cost and cap scenarios to actual permit terms and tariffs per site, and show output at risk under each rule change.", status: "next" },
-        { action: "Anomaly models trained on the corpus", detail: "Move from fixed-threshold checks to learned expectations per process route, so a heap leach and a flotation mill are judged against their own peers.", status: "next" },
+        { action: "Reliable certification of water use for the trading scheme", detail: "Signed submissions and assurer workspaces, so each traded volume is backed by metered, checked and audited data.", status: "next" },
+        { action: "Anomaly models trained on the corpus", detail: "Learned expectations per process route replace fixed thresholds, so certification catches what humans miss.", status: "next" },
+        { action: "Permit-aware scenarios", detail: "Link the tariff and cap scenarios to actual permit terms per site, showing output at risk under each rule.", status: "next" },
       ],
     },
     {
       id: "10y",
       label: "+10 years",
       year: HORIZONS[3].year,
+      event: "50% intake reduction by law, tariffs +1,000%",
       expected:
-        `If nothing changes: withdrawal index ${idx("10y")}, reuse stuck near ${reuse("10y")}%. Legal caps bind in the driest basins, and output that depends on ` +
-        `irreplaceable freshwater is curtailed. Community conflict over water becomes a main cause of lost licence to operate. Trust in company-reported ` +
-        `water data erodes after high-profile discrepancies.`,
+        `A 50% legal cut in freshwater intake and tariffs up about 1,000%. If nothing changes the withdrawal index is ${idx("10y")} and reuse is stuck near ` +
+        `${reuse("10y")}%, so the cap bites hard: output that depends on irreplaceable freshwater is curtailed. Milestone: near-closed water loops are ` +
+        `the norm (2035) for those who invested.`,
       consequences: {
-        market: "Water-constrained supply becomes a structural factor in metal prices. Assets without credible water data are discounted or cannot be financed.",
-        industry: "Water-positive or closed-loop operation becomes a precondition for new mines in stressed basins. Legacy sites face costly retrofits or early closure.",
-        customers: "Product passports and procurement rules require water provenance for metals in batteries, cars and electronics, and self-declared figures stop being accepted.",
-        businessModel: "Verified water data works as infrastructure: regulators, buyers and financiers read it directly. Reporting as a separate annual exercise disappears.",
+        market: "Water-constrained supply becomes a structural factor in metal prices; sites without credible water data can't be financed.",
+        industry: "Monopolies on water-infrastructure access harden, and operators outside shared circular systems close or sell.",
+        customers: "Procurement rules and product passports require water provenance for metals in batteries, cars and electronics.",
+        businessModel: "Verified water data is infrastructure that regulators, buyers and financiers read directly.",
       },
       desired:
-        "Each basin has one shared, verifiable water account. Mines draw within what the basin can renew, prove it continuously and compete on water per tonne as openly as on grade and cost.",
+        "Near-closed loops everywhere, and SMEs plug into shared reuse infrastructure instead of each building their own. Each basin has one shared, verifiable water account.",
       interventions: [
-        { action: "Open standard, neutral governance", detail: "Hand the schema and check rules to a multi-stakeholder body (industry, regulators, communities), so no single vendor controls the evidence.", status: "partner" },
-        { action: "Regulator and community access", detail: "Permit authorities read the ledger directly, and communities see their catchment's figures in their own language.", status: "partner" },
-        { action: "Metal-level water provenance", detail: "Carry verified water per tonne from site to concentrate to product, for passports and procurement.", status: "next" },
-        { action: "Predictive basin risk", detail: "Combine the ledger with climate projections to show which permits will bind, and when, years before they do.", status: "next" },
+        { action: "Basin-scale shared circular water infrastructure", detail: "Basin ledgers across companies show cumulative use against renewable supply and allocate shared reuse capacity, including to SMEs.", status: "partner" },
+        { action: "Open standard, neutral governance", detail: "Hand the schema and check rules to a multi-stakeholder body, so no single operator of water infrastructure controls the evidence.", status: "partner" },
+        { action: "Metal-level water provenance", detail: "Carry verified water per tonne from site to product, for passports and procurement.", status: "next" },
       ],
     },
   ];

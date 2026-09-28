@@ -148,16 +148,16 @@ export default function Landing() {
           <SectionHead dark kicker="The risk if nothing changes" title="What happens to companies that wait" />
           <ol className="mt-12 grid gap-8 md:grid-cols-4">
             <Risk when="Today" year={HORIZONS[0].year}>
-              Water risk is priced by guesswork. Buyers and lenders can&apos;t tell a careful operator from a careless one.
+              Water tariffs start to rise, and water risk is priced by guesswork. Buyers and lenders can&apos;t tell a careful operator from a careless one.
             </Risk>
             <Risk when="In 2 years" year={HORIZONS[1].year}>
-              New rules and battery-metal buyers ask for site-level proof. No verified data, no contract.
+              Tariffs up as much as 400% in dry basins. Buyers and new rules ask for site-level proof: no verified data, no contract.
             </Risk>
             <Risk when="In 5 years" year={HORIZONS[2].year}>
-              Dry regions cap or reprice water rights. Expansions stall on water permits, and costs jump where desalination is the only option.
+              Political stalemate. Water-rights trading starts, production moves to less regulated markets, and whoever owns the water infrastructure sets the terms.
             </Risk>
             <Risk when="In 10 years" year={HORIZONS[3].year}>
-              Hard limits in the driest basins. Output that depends on freshwater is cut, and conflict over water threatens the licence to operate.
+              A 50% legal cut in freshwater intake and tariffs up 1,000%. Sites without circular, shared water systems lose output or their licence to operate.
             </Risk>
           </ol>
         </div>
